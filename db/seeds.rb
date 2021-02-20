@@ -1,7 +1,14 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require "open-uri"
+
+puts "cleaning up database"
+
+Tour.destroy_all
+puts "database is clean"
+
+tour_1 = Tour.create(title: "Istanbul Full Day", description: "Inc Blue Mosque and Hagia Sophia", duration: "8 hours", tag_text: "Guided", group_size: "6-8 People", price: rand(40..100))
+file = URI.open("https://images.unsplash.com/photo-1491252476179-5f2566566ab8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
+tour_1.photo.attach(io: file, filename: 'photo1.jpg', content_type: 'image/jpg')
+
+puts "#{Tour.count} Tour created..."
+
+puts 'Finished!'

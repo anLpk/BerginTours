@@ -1,0 +1,19 @@
+<main>
+  <section>
+    <div class="container">
+      <div class="row">
+        <% @tours.each do |tour| %>
+          <div class="card col-lg-3 m-4">
+            <% tour.photo.attached? ? @image = "//res.cloudinary.com/apak/image/upload/#{tour.photo.key}": @image = tour.image_scr %>
+            <img class="card-img-top" src="<%= @image %>" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"><%= tour.name %></h5>
+              <p class="card-text"><%= tour.description %></p>
+              <%= link_to "Show Details", tour_path(tour) %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+</main>
