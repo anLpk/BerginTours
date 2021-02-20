@@ -1,6 +1,9 @@
 <main>
   <section>
     <div class="container">
+      <% ActsAsTaggableOn::Tag.all.each do |tag| %>
+        <%= link_to tag, tours_path(tag: tag.name) %>
+      <% end %>
       <div class="row">
         <% @tours.each do |tour| %>
           <div class="card col-lg-3 m-4">
