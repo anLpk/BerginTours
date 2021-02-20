@@ -1,0 +1,11 @@
+<main>
+  <section>
+    <div class="container">
+      <%= cl_image_tag @tour.photo.key, class: "card-img-top", alt: "#{@tour.title} Picture"  %>
+      <%= @tour.title %>
+      <%= @tour.description %>
+    </div>
+    <%= link_to "Back to main page", tours_path, class: "btn btn-success" %>
+    <%= link_to "Make a booking", tours_path, class: "btn btn-success" %>
+  </section>
+</main>
