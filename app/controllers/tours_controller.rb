@@ -3,12 +3,13 @@ class ToursController < ApplicationController
     @tours = Tour.all
   end
 
-  def show 
+  def show
+    @tour = Tour.find(params[:id])
   end
 
-#   private
+  private
 
-#   def tour_params
-#     params.require(:tour).permit(:title, :description, :duration, :tag_text, :group_size, :image, :price)
-#   end
+  def tour_params
+    params.require(:tour).permit(:title, :description, :duration, :tag_text, :group_size, :image, :price)
+  end
 end
