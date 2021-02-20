@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
   devise_for :users
+  
   root to: 'tours#index'
-  resources :tours do
-    resources :bookings, only: [:new, :create, :show]
+
+  authenticated :user do
+    root to: 'pages#dashboard', as: :authenticated_root
   end
+
+  resources :tours do
+    resources :bookings
+  end
+
+  get '/dashboard', to: 'pages#dashboard'
 end

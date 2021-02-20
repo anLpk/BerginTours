@@ -6,6 +6,6 @@
       <%= @tour.description %>
     </div>
     <%= link_to "Back to main page", tours_path, class: "btn btn-success" %>
-    <%= link_to "Make a booking", tours_path, class: "btn btn-success" %>
+    <%= link_to "Make a booking", new_tour_booking_path(@tour), class: "btn btn-success" %>
   </section>
 </main>

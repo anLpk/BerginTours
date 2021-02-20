@@ -1,0 +1,8 @@
+<main>
+  <section>
+    <div class="container">
+      <p>From: <%= @booking.start_date.strftime('%m/%d/%Y') %></p>
+      <%= link_to "Continue shopping", tours_path, class: "btn btn-sm btn-primary mr-2" %> <%= link_to "Back to Store", tours_path, class: "btn btn-outline-warning btn-sm" %>
+    </div>
+  </section>
+</main>
