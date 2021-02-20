@@ -13,19 +13,13 @@ class PagesController < ApplicationController
 
     # My bookings in progress && My past bookings
     @user_bookings.each do | booking |
-      if booking.end_date < Time.now + 1.day
+      if booking.start_date < Time.now + 10.day
         @user_past_bookings << booking
         @user_past_bookings_hash["#{booking.id}"] = Tour.where(id: booking.tour_id)
       else
         @user_current_bookings << booking
         @user_current_bookings_hash["#{booking.id}"] = Tour.where(id: booking.tour_id)
       end
-    end
-
-    #All my tours that are booked by other users
-    @my_tours_booked = Booking.joins(:tour).where("tours.user_id" => current_user.id)
-    @my_tours_booked.each do | booking |
-      @my_tours_booked_hash["#{booking.id}"] = Tour.where(id: booking.tour_id)
     end
     # authorize @user
   end
