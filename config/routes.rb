@@ -8,8 +8,13 @@ Rails.application.routes.draw do
   end
 
   resources :tours do
-    resources :bookings
+    resources :bookings, only: [:new, :create]
   end
   
+  resources :bookings, only: [:edit, :update] do
+    resources :reviews, only: [:new, :create]
+  end
+
+
   get '/dashboard', to: 'pages#dashboard'
 end

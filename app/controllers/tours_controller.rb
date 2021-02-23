@@ -1,4 +1,6 @@
 class ToursController < ApplicationController
+  skip_before_action :authenticate_user!, only: [ :index, :show ]
+
   def index
     if params[:tag].present?
       @tours = Tour.tagged_with(params[:tag])

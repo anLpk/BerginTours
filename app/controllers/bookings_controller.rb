@@ -20,14 +20,6 @@ class BookingsController < ApplicationController
     end
   end
 
-  def index
-    @tours = Booking.where(user_id: current_user.id)
-  end
-
-  def show
-    @tour = @booking.tour
-  end
-
   def edit
     @tour = Tour.find(params[:tour_id])
   end
