@@ -1,12 +1,40 @@
-.navbar-lewagon {
+.navbar-wagon {
+  background-color: $white;
+}
+.covid-container {
+  background-color: $black;
+  a {
+    color: $white;
+    font-size: 1.2em;
+  }
+}
+
+.logo {
+  width: 3em;
+  padding-bottom: 0.2em;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  background: white;
-}
+  ul {
+    display: flex;
+    color: $nav-link-color;
+    text-decoration: none;
+    list-style: none;
+  }
+  li {
+    margin-right: 1em;
+  }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+  a {
+    color: $nav-link-color;
+    font-size: 1.1em;
+    &:hover {
+      text-decoration: none;
+      color: $nav-link-color;
+      border-bottom: 4px solid $nav-link-color;
+    }
+  }
 }

@@ -1,0 +1,21 @@
+article {
+  .fa-thumbs-up,
+  .fa-meteor,
+  .fa-heart {
+    color: white;
+    background-color: tomato;
+    border-radius: 50%;
+    font-size: 1.8em;
+    font-weight: bolder;
+    padding: 0.3em;
+    margin-top: 0.3em;
+  }
+
+  h5 {
+    color: $nav-link-color;
+  }
+
+  p {
+    color: $whyUs-text-color;
+  }
+}
