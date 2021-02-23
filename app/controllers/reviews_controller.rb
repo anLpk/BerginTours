@@ -3,12 +3,13 @@ class ReviewsController < ApplicationController
   before_action :set_booking, only: [:new, :create]
 
   def new
+    @booking = Booking.find(params[:booking_id])
     @review = Review.new
-    # @booking = Booking.find(params[:booking_id])
     # authorize @review
   end
 
   def create
+    @booking = Booking.find(params[:booking_id])
     @review = Review.new(review_params)
     @review.booking = @booking
     @tour = @booking.tour
@@ -20,7 +21,7 @@ class ReviewsController < ApplicationController
       render :new
     end
   end
-  
+
   private
 
   def set_booking

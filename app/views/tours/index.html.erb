@@ -24,7 +24,7 @@
     <div class="container">
       <div class="text-center">
         <% ActsAsTaggableOn::Tag.all.each do |tag| %>
-          <%= link_to tag, tours_path(tag: tag.name), class: "btn btn-sm btn-success mr-5" %>
+          <%= link_to tag, tours_path(tag: tag.name), class: "btn btn-sm btn-success mr-4" %>
         <% end %>
       </div>
       <div class="row">

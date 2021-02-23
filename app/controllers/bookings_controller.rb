@@ -14,11 +14,15 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     # authorize @booking
     if @booking.save
-      redirect_to tour_booking_path(@tour, @booking)
+      # redirect_to tour_booking_path(@tour, @booking)
     else
       render :new
     end
   end
+
+  # def show
+  #   @tour = @booking.tour
+  # end
 
   def edit
     @tour = Tour.find(params[:tour_id])
