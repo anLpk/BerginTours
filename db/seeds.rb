@@ -29,6 +29,53 @@ tour_4.photo.attach(io: file, filename: 'photo4.jpg', content_type: 'image/jpg')
 tour_4.tag_list = "Pamukkale"
 tour_4.save
 
+tour_5 = Tour.create(title: "Pamukkale", description: "Inc Hierapolis Ancient City", duration: "11 hours", tag_text: "All Day", group_size: "20 People", price: rand(40..80))
+file = URI.open("https://images.unsplash.com/photo-1595846415458-404defd93fb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
+tour_5.photo.attach(io: file, filename: 'photo5.jpg', content_type: 'image/jpg')
+tour_5.tag_list = "Cappadocia"
+tour_5.save
+
+tour_6 = Tour.create(title: "Pamukkale", description: "Inc Hierapolis Ancient City", duration: "11 hours", tag_text: "All Day", group_size: "20 People", price: rand(40..80))
+file = URI.open("https://images.unsplash.com/photo-1595846415458-404defd93fb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
+tour_6.photo.attach(io: file, filename: 'photo6.jpg', content_type: 'image/jpg')
+tour_6.tag_list = "Gobeklitepe"
+tour_6.save
+
+tour_7 = Tour.create(title: "Pamukkale", description: "Inc Hierapolis Ancient City", duration: "11 hours", tag_text: "All Day", group_size: "20 People", price: rand(40..80))
+file = URI.open("https://images.unsplash.com/photo-1595846415458-404defd93fb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
+tour_7.photo.attach(io: file, filename: 'photo7.jpg', content_type: 'image/jpg')
+tour_7.tag_list = "Antalya"
+tour_7.save
+
+tour_8 = Tour.create(title: "Pamukkale", description: "Inc Hierapolis Ancient City", duration: "11 hours", tag_text: "All Day", group_size: "20 People", price: rand(40..80))
+file = URI.open("https://images.unsplash.com/photo-1595846415458-404defd93fb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
+tour_8.photo.attach(io: file, filename: 'photo8.jpg', content_type: 'image/jpg')
+tour_8.tag_list = "Pamukkale"
+tour_8.save
+
+tour_9 = Tour.create(title: "Pamukkale", description: "Inc Hierapolis Ancient City", duration: "11 hours", tag_text: "All Day", group_size: "20 People", price: rand(40..80))
+file = URI.open("https://images.unsplash.com/photo-1595846415458-404defd93fb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
+tour_9.photo.attach(io: file, filename: 'photo9.jpg', content_type: 'image/jpg')
+tour_9.tag_list = "Ephesus"
+tour_9.save
+
+tour_10 = Tour.create(title: "Pamukkale", description: "Inc Hierapolis Ancient City", duration: "11 hours", tag_text: "All Day", group_size: "20 People", price: rand(40..80))
+file = URI.open("https://images.unsplash.com/photo-1595846415458-404defd93fb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
+tour_10.photo.attach(io: file, filename: 'photo10.jpg', content_type: 'image/jpg')
+tour_10.tag_list = "Istanbul"
+tour_10.save
+
+tour_11 = Tour.create(title: "Pamukkale", description: "Inc Hierapolis Ancient City", duration: "11 hours", tag_text: "All Day", group_size: "20 People", price: rand(40..80))
+file = URI.open("https://images.unsplash.com/photo-1595846415458-404defd93fb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
+tour_11.photo.attach(io: file, filename: 'photo11.jpg', content_type: 'image/jpg')
+tour_11.tag_list = "Cappadocia"
+tour_11.save
+
+tour_12 = Tour.create(title: "Pamukkale", description: "Inc Hierapolis Ancient City", duration: "11 hours", tag_text: "All Day", group_size: "20 People", price: rand(40..80))
+file = URI.open("https://images.unsplash.com/photo-1595846415458-404defd93fb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
+tour_12.photo.attach(io: file, filename: 'photo12.jpg', content_type: 'image/jpg')
+tour_12.tag_list = "Cappadocia"
+tour_12.save
 puts "#{Tour.count} Tour created..."
 
 puts 'Finished!'
