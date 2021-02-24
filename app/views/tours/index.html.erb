@@ -22,20 +22,33 @@
   </article>
   <section>
     <div class="container">
-      <div class="text-center">
+      <h1 class="text-center mt-5 mb-5">Explore Our Top Destinations</h1>
+      <div class="text-center mb-5">
         <% ActsAsTaggableOn::Tag.all.each do |tag| %>
-          <%= link_to tag, tours_path(tag: tag.name), class: "btn btn-sm btn-success mr-4" %>
+          <%= link_to tag, tours_path(tag: tag.name), class: "btn-taggable mr-3 mb-5" %>
         <% end %>
       </div>
+    </div>
+    <div class="container">
       <div class="row">
         <% @tours.each do |tour| %>
           <div class="card col-lg-3 m-4">
-            <% tour.photo.attached? ? @image = "//res.cloudinary.com/apak/image/upload/#{tour.photo.key}": @image = tour.image_scr %>
-            <%= cl_image_tag tour.photo.key, class: "card-img-top", alt: "#{tour.title} Picture"  %>
-            <div class="card-body">
-              <h5 class="card-title"><%= tour.title %></h5>
-              <p class="card-text"><%= tour.description %></p>
-              <%= link_to "Show Details", tour_path(tour) %>
+            <div class="tour-card">
+              <% tour.photo.attached? ? @image = "//res.cloudinary.com/apak/image/upload/#{tour.photo.key}": @image = tour.image_scr %>       
+              <%= cl_image_tag tour.photo.key, class: "card-img-top", alt: "#{tour.title} Picture"  %>
+              <h6 class="guided"><%= tour.tag_text %></h6>
+              <h2><%= tour.title %></h2>
+              <h5><%= tour.description %></h5>
+              <div class="icon">
+                <i class="far fa-clock"> <span><%= tour.duration %> </span></i><br>
+                <i class="fas fa-running"> <span>Skip the line</span></i><br>
+                <i class="fas fa-user-friends"> <span><%= tour.group_size %> </span></i>
+              </div>
+              <div class="prices">
+                <span class="from">From</span>
+                <span class="price"><i class="fas fa-euro-sign"></i> <%= tour.price %></span>
+                <span class="person">per person</span>
+              </div>
             </div>
           </div>
         <% end %>

@@ -1,14 +1,10 @@
 <div class="navbar-wagon <%= yield(:navbar_class) %>">
-  <div class="covid-container text-center">
-    <p id="covid-text"><%= link_to "Covid-19 Update" %></p>
-  </div>
-
   <nav class="container">
     <div class="logo-container">
-      <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png", class: "logo" %>
     </div>
     <div class="nav-list">
       <ul>
+        <li><%= link_to "Covid-19 Update" %></li>
         <li><%= link_to "Blog" %></li>
         <li><%= link_to "Why Us?" %></li>
         <li><i class="mr-1 fas fa-shopping-cart"></i><%= link_to "Cart" %></li>
