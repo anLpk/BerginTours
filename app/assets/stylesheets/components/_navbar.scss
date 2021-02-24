@@ -1,12 +1,8 @@
 .navbar-wagon {
-  background-color: $white;
-}
-.covid-container {
-  background-color: $black;
-  a {
-    color: $white;
-    font-size: 1.2em;
-  }
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
 }
 
 nav {
@@ -24,7 +20,7 @@ nav {
   }
 
   a {
-    color: $nav-link-color;
+    color: $white;
     font-size: 1.1em;
     &:hover {
       text-decoration: none;

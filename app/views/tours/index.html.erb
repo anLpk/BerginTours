@@ -32,12 +32,12 @@
     <div class="container">
       <div class="row">
         <% @tours.each do |tour| %>
-          <div class="card col-lg-3 m-4">
+          <div class="card col-lg-3">
             <div class="tour-card">
               <% tour.photo.attached? ? @image = "//res.cloudinary.com/apak/image/upload/#{tour.photo.key}": @image = tour.image_scr %>       
-              <%= cl_image_tag tour.photo.key, class: "card-img-top", alt: "#{tour.title} Picture"  %>
+              <%= cl_image_tag tour.photo.key, class: "card-img", alt: "#{tour.title} Picture"  %>
               <h6 class="guided"><%= tour.tag_text %></h6>
-              <h2><%= tour.title %></h2>
+              <h2> <%= link_to tour.title, tour_path(tour) %></h2>
               <h5><%= tour.description %></h5>
               <div class="icon">
                 <i class="far fa-clock"> <span><%= tour.duration %> </span></i><br>
