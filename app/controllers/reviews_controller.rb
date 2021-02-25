@@ -18,7 +18,7 @@ class ReviewsController < ApplicationController
     if @review.save
       redirect_to tour_path(@tour)
     else
-      render :new
+      render 'tours/show'
     end
   end
 
