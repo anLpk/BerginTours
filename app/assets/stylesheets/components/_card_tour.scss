@@ -1,117 +1,102 @@
-// * {
-//   box-sizing: border-box;
-// }
+.card {
+  padding-left: -15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  height: 28rem;
+  width: 20rem;
+  margin-left: 3.5rem;
+  margin-bottom: 2rem;
+  .card-img {
+    height: 12rem;
+    width: 20rem;
+    object-fit: cover;
+  }
 
-// body {
-//   margin: 0;
-// }
-// .card {
-//   overflow: hidden;
-//   background: white;
-//   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-//   height: 25rem;
-//   width: 24rem;
-//   margin: 3rem;
-//   .card-img {
-//     height: 12rem;
-//     width: 20rem;
-//     object-fit: cover;
-//   }
+  /* tittle style */
+  h2,
+  h5,
+  h6 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
-//   /* tittle style */
-//   h2,
-//   h5,
-//   h6 {
-//     margin-left: 1rem;
-//   }
+  h2 {
+    font-weight: 600;
+    margin-top: 0.8em;
+  }
 
-//   h2 {
-//     font-weight: 600;
-//   }
+  h5 {
+    font-weight: 500;
+    opacity: 0.9;
+  }
 
-//   h5 {
-//     font-weight: 500;
-//     opacity: 0.9;
-//   }
+  /* h2 style */
+  h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+  }
 
-//   /* h2 style */
-//   h2 {
-//     position: relative;
-//     top: -1em;
-//     font-size: 25px;
-//     font-weight: 700;
-//     letter-spacing: 1.1px;
-//   }
+  h5 {
+    font-size: 0.9em;
+    font-weight: 500;
+    opacity: 0.9;
+  }
 
-//   h5 {
-//     position: relative;
-//     top: -2.7em;
-//     font-size: 16px;
-//     font-weight: 500;
-//     opacity: 0.8;
-//   }
+  .guided {
+    position: relative;
+    z-index: 1000;
+    margin-top: -1em;
+    width: max-content;
+    padding: 0.2em;
+    border: 1px solid $orange;
+    background-color: $orange;
+    color: $white;
+    border-radius: 0.25em;
+  }
 
-//   /* h6 style */
-//   h6 {
-//     position: relative;
-//     display: inline;
-//     top: -1em;
-//     font-size: 15px;
-//     border-radius: 0.25em;
-//     padding: 0.2rem;
-//     color: white;
-//     font-weight: 500;
-//   }
+  /* Icon Style */
+  .icon {
+    position: relative;
+    right: -1em;
+    vertical-align: middle;
+  }
 
-//   .guided {
-//     border: 1px solid $orange;
-//     background-color: $orange;
-//   }
+  .fa-clock,
+  .fa-running,
+  .fa-user-friends {
+    padding: 0.3rem;
+    font-size: 1rem;
+  }
 
-//   /* Icon Style */
-//   .icon {
-//     position: relative;
-//     top: -2.5em;
-//     right: -1em;
-//     vertical-align: middle;
-//   }
-
-//   .fa-clock,
-//   .fa-running,
-//   .fa-user-friends {
-//     padding: 0.3rem;
-//     font-size: 1rem;
-//   }
-
-//   span {
-//     font-weight: 500;
-//     font-size: 0.9rem;
-//     line-height: 1.2;
-//     opacity: 0.8;
-//   }
-// }
-
-// /* Price Style */
-// .prices > .from {
-//   position: relative;
-//   top: -7em;
-//   right: -11.5em;
-//   font-size: 20px;
-//   opacity: 0.7;
-// }
-
-// .prices > .price {
-//   position: relative;
-//   top: -3.2em;
-//   right: -5.2em;
-//   font-size: 32px;
-//   opacity: 0.9;
-// }
-
-// .prices > .person {
-//   position: relative;
-//   top: -4.5em;
-//   right: -5.5em;
-//   font-size: 16px;
-//   opacity: 0.5;
-// }
+  span {
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    opacity: 0.8;
+  }
+  /* Price Style */
+  .prices {
+    .from {
+      position: relative;
+      top: -3.8em;
+      right: -10em;
+      font-size: 1.4em;
+      opacity: 0.7;
+    }
+    .price {
+      position: relative;
+      top: -1.4em;
+      right: -5em;
+      font-size: 1.8em;
+      opacity: 0.9;
+    }
+    .person {
+      position: relative;
+      top: -0.5em;
+      right: -3em;
+      font-size: 1.1em;
+      opacity: 0.7;
+    }
+  }
+}

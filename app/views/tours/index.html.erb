@@ -22,17 +22,17 @@
   </article>
   <section>
     <div class="container">
-      <h1 class="text-center mt-5 mb-5">Explore Our Top Destinations</h1>
+      <h1 id="anchor-tag" class="text-center mt-5 mb-5">Explore Our Top Destinations</h1>
       <div class="text-center mb-5">
         <% ActsAsTaggableOn::Tag.all.each do |tag| %>
-          <%= link_to tag, tours_path(tag: tag.name), class: "btn-taggable mr-3 mb-5" %>
+          <%= link_to tag, tours_path(tag: tag.name, anchor: "anchor-tag" ), class: "btn-taggable mr-3 mb-5" %>
         <% end %>
       </div>
     </div>
     <div class="container">
       <div class="row">
         <% @tours.each do |tour| %>
-          <div class="card col-lg-3">
+          <div class="card px-0 py-0">
             <div class="tour-card">
               <% tour.photo.attached? ? @image = "//res.cloudinary.com/apak/image/upload/#{tour.photo.key}": @image = tour.image_scr %>       
               <%= cl_image_tag tour.photo.key, class: "card-img", alt: "#{tour.title} Picture"  %>
@@ -46,7 +46,7 @@
               </div>
               <div class="prices">
                 <span class="from">From</span>
-                <span class="price"><i class="fas fa-euro-sign"></i> <%= tour.price %></span>
+                <span class="price"><i class="fas fa-dollar-sign"></i> <%= tour.price %></span>
                 <span class="person">per person</span>
               </div>
             </div>
