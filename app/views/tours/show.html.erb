@@ -21,6 +21,7 @@
         Be the first to leave a review for <%= @tour.title %>
       <% else %>
         <% @tour.reviews.each do |review| %>
+          <p id="review-<%= review.id %>"><%= review.rating %><%= review.title %></p>
           <p id="review-<%= review.id %>"><%= review.content %></p>
         <% end %>
       <% end %>
