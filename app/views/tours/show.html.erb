@@ -1,28 +1,38 @@
 <main>
   <section>
     <div class="container">
+    <%= link_to "Back to Main Page", tours_path, class: "btn btn-success" %>
       <%= cl_image_tag @tour.photo.key, class: "card-img-top", alt: "#{@tour.title} Picture"  %>
       <%= @tour.title %>
       <%= @tour.description %>
     </div>
-    <%= link_to "Back to Main Page", tours_path, class: "btn btn-success" %>
-    <%= link_to "Make a Booking", new_tour_booking_path(@tour), class: "btn btn-success" %>
   </section>
-<div class="container" >
-  <div>
-    <h1><%= @tour.title %> </h1>
-    <%= render 'bookings/form', tour: @tour %>
+
+  <div class="container" >
+    <div>
+      <h1><%= @tour.title %> </h1>
+      <%= render 'bookings/form', tour: @tour %>
+    </div>
   </div>
-</div>
 
   <div class="container">
-    <% if @booking %>
-      <%= simple_form_for ([@booking, @review], remote: true) do |f| %>
-        <%= f.input :title, placeholder: 'Highlight the experience' %>
-        <%= f.input :content, placeholder: 'Rate your experience' %>
-        <%= f.input :rating, collection: (0..5) %>
-        <%= f.submit "Submit", class: "btn btn-sm btn-success" %>
+    <div id="reviews">
+      <% if @tour.reviews.blank? %>
+        Be the first to leave a review for <%= @tour.title %>
+      <% else %>
+        <% @tour.reviews.each do |review| %>
+          <p id="review-<%= review.id %>"><%= review.content %></p>
+        <% end %>
       <% end %>
-    <% end %>
+
+      <% if @booking %>
+        <%= simple_form_for([@booking, @review], remote: true) do |f| %>
+          <%= f.input :title, placeholder: 'Highlight the experience' %>
+          <%= f.input :content, placeholder: 'Rate your experience' %>
+          <%= f.input :rating, collection: (0..5) %>
+          <%= f.submit "Submit", class: "btn btn-sm btn-success" %>
+        <% end %>
+      <% end %>
+    </div>
   </div>
 </main>

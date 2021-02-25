@@ -16,7 +16,7 @@ class ReviewsController < ApplicationController
     @review.user = current_user
     # authorize @tour
     if @review.save
-      redirect_to tour_path(@tour)
+      redirect_to tour_path(@tour, anchor: "review-#{@review.id}")
     else
       render 'tours/show'
     end
