@@ -8,4 +8,21 @@
     <%= link_to "Back to Main Page", tours_path, class: "btn btn-success" %>
     <%= link_to "Make a Booking", new_tour_booking_path(@tour), class: "btn btn-success" %>
   </section>
+<div class="container" >
+  <div>
+    <h1><%= @tour.title %> </h1>
+    <%= render 'bookings/form', tour: @tour %>
+  </div>
+</div>
+
+  <div class="container">
+    <% if @booking %>
+      <%= simple_form_for [@booking, @review] do |f| %>
+        <%= f.input :title, placeholder: 'Highlight the experience' %>
+        <%= f.input :content, placeholder: 'Rate your experience' %>
+        <%= f.input :rating, collection: (0..5) %>
+        <%= f.submit "Submit", class: "btn btn-sm btn-success" %>
+      <% end %>
+    <% end %>
+  </div>
 </main>

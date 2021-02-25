@@ -1,7 +1,7 @@
 <main>
   <section>
     <div class="container">
-      <%= simple_form_for [@tour, @booking] do |t| %>
+      <%= simple_form_for [@tour, Booking.new] do |t| %>
         <%= t.input :start_date, required: :true, label: 'Select your tour start date' %>
         <%= t.input :first_name, required: :true, label: 'First Name' %>
         <%= t.input :last_name, required: :true, label: 'Last Name' %>

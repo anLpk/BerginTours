@@ -1,7 +1,7 @@
 <main>
   <section class="banner">
   </section>
-  <article class="container">
+  <article class="container mb-5 mt-2">
     <div class="row">
       <div class="col-lg-4 text-center">
         <i class="far fa-thumbs-up"></i>
@@ -22,14 +22,12 @@
   </article>
   <section>
     <div class="container">
-      <div class="row">
         <h1 id="anchor-tag" class="text-center mt-5 mb-5">Explore Our Top Destinations</h1>
         <div class="text-center mb-5">
           <% ActsAsTaggableOn::Tag.all.each do |tag| %>
             <%= link_to tag, tours_path(tag: tag.name, anchor: "anchor-tag" ), class: "btn-taggable" %>
           <% end %>
         </div>
-      </div>
     </div>
     <div class="container">
       <div class="row">
