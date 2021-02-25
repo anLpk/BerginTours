@@ -1,5 +1,3 @@
-import { covidUpdate } from "./plugins/covid";
-
 require("@rails/ujs").start();
 require("turbolinks").start();
 require("@rails/activestorage").start();
@@ -23,6 +21,4 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
-document.addEventListener("turbolinks:load", () => {
-  covidUpdate();
-});
+document.addEventListener("turbolinks:load", () => {});
