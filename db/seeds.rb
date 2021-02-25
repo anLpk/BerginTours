@@ -3,7 +3,7 @@ require "open-uri"
 puts "cleaning up database"
 
 Tour.destroy_all
-
+ActsAsTaggableOn::Tag.destroy_all
 puts "database is clean"
 
 tour_1 = Tour.create(title: "Istanbul Full Day Classic Old City Tour", description: "Inc Hippodrome, Haghia Sophia, Blue Mosque, Topkapi Palace", duration: "8 hours", tag_text: "Guided", group_size: "6-8 People", price: 75)
