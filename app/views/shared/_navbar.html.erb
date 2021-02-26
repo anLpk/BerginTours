@@ -1,25 +1,7 @@
-<div class="navbar-wagon">
-  <div class="contact-bar">
-    <div class="whatsapp">
-      <p>WhatsApp +90 535 826 43 92</p>
-    </div>
-    <div class="social-icons">
-      <p><a href=""><i class="icon fab fa-instagram"></i></a></p>
-      <p><a href=""><i class="icon fab fa-tripadvisor"></i></a></p>
-      <p><a href=""><i class="icon fas fa-envelope-open-text"></i></a></p>
-    </div>
-  </div>
-  <nav>
-    <div class="logo-container">
-    </div>
-    <div class="nav-list">
-      <ul>
-        <li><%= link_to "Covid-19 Update" %></li>
-        <li><%= link_to "Blog" %></li>
-        <li><%= link_to "Why Us?" %></li>
-        <li><i class="mr-1 fas fa-shopping-cart"></i><%= link_to "Cart" %></li>
-        <li><%= link_to "Log In" %></li>
-      </ul>
-    </div>
-  </nav>
-</div>
+<nav>
+  <ul class="d-flex">
+    <li class="pr-5"><%= link_to "Dashboard", dashboard_path %></li>
+    <li class="pr-5"><%= link_to "Log In" %></li>
+    <li class="pr-5"><%= link_to "Blog", blog_path %></li>
+  </ul>
+</nav>
