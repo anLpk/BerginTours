@@ -12,7 +12,8 @@ class ToursController < ApplicationController
   def show
     @tour = Tour.find(params[:id])
     @review = Review.new
-    @booking = Booking.where('id NOT IN (SELECT DISTINCT(booking_id) FROM reviews)').where(tour: @tour).find_by(user: current_user)
+    # @booking = Booking.where('id NOT IN (SELECT DISTINCT(booking_id) FROM reviews)').where(tour: @tour).find_by(user: current_user)
+    # Booking.joins(:cart, :review).find_by(carts: {user: current_user}, reviews: {id: nil})
     # raise
     @related_tours = @tour.find_related_tags
   end

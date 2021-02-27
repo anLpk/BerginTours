@@ -11,7 +11,7 @@ class BookingsController < ApplicationController
     @tour = Tour.find(params[:tour_id])
     @booking = Booking.new(booking_params)
     @booking.tour = @tour
-    @booking.user = current_user
+    @booking.cart = @user_cart
     # authorize @booking
     if @booking.save
       # redirect_to tour_booking_path(@tour, @booking)
