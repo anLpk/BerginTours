@@ -1,1 +1,6 @@
-<h1>It is working</h1>
+<div class="container">
+  <h1><%= @article.title %></h1>
+  <p><%= @article.content %></p>
+</div>
+
+<%= link_to "Back to Main Page", tours_path, class: "btn btn-success" %>

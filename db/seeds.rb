@@ -3,7 +3,10 @@ require "open-uri"
 puts "cleaning up database"
 
 Tour.destroy_all
+Article.destroy_all
+
 ActsAsTaggableOn::Tag.destroy_all
+
 puts "database is clean"
 
 tour_1 = Tour.create(title: "Istanbul Full Day Classic Old City Tour", description: "Inc Hippodrome, Haghia Sophia, Blue Mosque, Topkapi Palace", duration: "8 hours", tag_text: "Guided", group_size: "6-8 People", price: 75)
@@ -193,6 +196,11 @@ tour_31.tag_list = "Turkey Tours"
 tour_31.save
 
 
-puts "#{Tour.count} Tour created..."
+article_1 = Article.create(title: "Beatiful Istanbul", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum ultricies mauris et cursus. Etiam metus arcu, cursus ac orci a, auctor consectetur lorem. Nam ex tellus, fermentum quis libero at, accumsan bibendum arcu. Sed molestie purus in diam hendrerit, id suscipit quam hendrerit. Donec ac blandit arcu. Fusce efficitur augue ac quam varius suscipit. Mauris luctus vestibulum lectus id pretium. Praesent pellentesque dignissim elit quis tincidunt. Donec fermentum, felis et sodales eleifend, massa eros venenatis sapien, et euismod nulla nulla quis dolor. Ut vehicula pellentesque imperdiet. Etiam euismod efficitur porta. Nullam elementum mauris ex.Curabitur at ante elementum, laoreet nibh ac, tincidunt justo. Nunc ante turpis, varius nec ornare quis, interdum a tellus. Nunc vel eros lobortis, mattis quam id, facilisis dolor. Nulla facilisi. Fusce sodales euismod maximus. Cras vulputate erat eget pretium semper. Praesent odio lacus, accumsan eu consequat non, venenatis vitae risus. Fusce vehicula consectetur molestie. Donec ultricies suscipit ornare. Aliquam euismod sed leo in imperdiet. Maecenas tempor mi sed fringilla pharetra. Sed dignissim libero ut nisi convallis pellentesque.Aliquam nec tincidunt lorem. Nullam a eleifend risus. In placerat vulputate est, in egestas nibh faucibus nec. Integer ligula dui, bibendum eu eros ac, ornare auctor magna. Vestibulum semper vulputate justo, eu semper ante auctor sit amet. Donec posuere hendrerit elementum. Nunc sit amet tempus nisl. Vestibulum ultricies purus pulvinar rhoncus ornare. Quisque vitae ligula eu tortor porttitor posuere nec non magna. Ut convallis rhoncus ante vitae facilisis. Donec sit amet metus dictum, bibendum lectus vel, laoreet diam.")
+article_2 = Article.create(title: "Beatiful Istanbul", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum ultricies mauris et cursus. Etiam metus arcu, cursus ac orci a, auctor consectetur lorem. Nam ex tellus, fermentum quis libero at, accumsan bibendum arcu. Sed molestie purus in diam hendrerit, id suscipit quam hendrerit. Donec ac blandit arcu. Fusce efficitur augue ac quam varius suscipit. Mauris luctus vestibulum lectus id pretium. Praesent pellentesque dignissim elit quis tincidunt. Donec fermentum, felis et sodales eleifend, massa eros venenatis sapien, et euismod nulla nulla quis dolor. Ut vehicula pellentesque imperdiet. Etiam euismod efficitur porta. Nullam elementum mauris ex.Curabitur at ante elementum, laoreet nibh ac, tincidunt justo. Nunc ante turpis, varius nec ornare quis, interdum a tellus. Nunc vel eros lobortis, mattis quam id, facilisis dolor. Nulla facilisi. Fusce sodales euismod maximus. Cras vulputate erat eget pretium semper. Praesent odio lacus, accumsan eu consequat non, venenatis vitae risus. Fusce vehicula consectetur molestie. Donec ultricies suscipit ornare. Aliquam euismod sed leo in imperdiet. Maecenas tempor mi sed fringilla pharetra. Sed dignissim libero ut nisi convallis pellentesque.Aliquam nec tincidunt lorem. Nullam a eleifend risus. In placerat vulputate est, in egestas nibh faucibus nec. Integer ligula dui, bibendum eu eros ac, ornare auctor magna. Vestibulum semper vulputate justo, eu semper ante auctor sit amet. Donec posuere hendrerit elementum. Nunc sit amet tempus nisl. Vestibulum ultricies purus pulvinar rhoncus ornare. Quisque vitae ligula eu tortor porttitor posuere nec non magna. Ut convallis rhoncus ante vitae facilisis. Donec sit amet metus dictum, bibendum lectus vel, laoreet diam.")
+puts "database is clean"
 
-puts 'Finished!'
+puts "#{Tour.count} Tour created..."
+puts "#{Article.count} Tour created..."
+
+puts "Finished mate..."
