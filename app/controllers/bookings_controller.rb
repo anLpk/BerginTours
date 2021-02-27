@@ -4,7 +4,6 @@ class BookingsController < ApplicationController
   def new
     @tour = Tour.find(params[:tour_id])
     @booking = Booking.new
-    # authorize @booking
   end
 
   def create
@@ -12,17 +11,12 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.tour = @tour
     @booking.cart = @user_cart
-    # authorize @booking
     if @booking.save
       # redirect_to tour_booking_path(@tour, @booking)
     else
       render :new
     end
   end
-
-  # def show
-  #   @tour = @booking.tour
-  # end
 
   def edit
     @tour = Tour.find(params[:tour_id])
