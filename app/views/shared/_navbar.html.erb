@@ -1,7 +1,99 @@
-<nav>
-  <ul class="d-flex">
-    <li class="pr-5"><%= link_to "Dashboard", dashboard_path %></li>
-    <li class="pr-5"><%= link_to "Log In", new_user_session_path %></li>
-    <li class="pr-5"><%= link_to "Blog", articles_path %></li>
-  </ul>
-</nav>
+<%# <%= link_to "Dashboard", dashboard_path %>
+<section>
+  <div class="navbar navbar-expand-sm navbar-dark navbar-custom">
+    <%= link_to "LOGO", tours_path %>
+    <%= link_to "Cart(#{})", cart_path(@user_cart), class: "dropdown-item" %>
+    <ul>
+      <li>          
+        <% if current_user == nil %>
+          <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+        <% end %>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </li>
+   </ul>
+
+  </div>
+</section>
+<section class="navigation">
+  <div class="nav-container">
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <%= link_to "Blog", articles_path %>
+        </li>
+        <li>
+          <a href="#!">Istanbul</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Tour 1</a>
+            </li>
+            <li>
+              <a href="#!">Tour 2</a>
+            </li>
+            <li>
+              <a href="#!">Tour 3</a>
+            </li>
+            <li>
+              <a href="#!">Tour 4</a>
+            </li>
+            <li>
+              <a href="#!">Tour 5</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Cappadocia</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Tour 1</a>
+            </li>
+            <li>
+              <a href="#!">Tour 2</a>
+            </li>
+            <li>
+              <a href="#!">Tour 3</a>
+            </li>
+            <li>
+              <a href="#!">Tour 4</a>
+            </li>
+            <li>
+              <a href="#!">Tour 5</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Turkey Tours</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Tour 1</a>
+            </li>
+            <li>
+              <a href="#!">Tour 2</a>
+            </li>
+            <li>
+              <a href="#!">Tour 3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Contact</a>
+            <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Whatsapp</a>
+            </li>
+            <li>
+              <a href="#!">Tripadvisor</a>
+            </li>
+            <li>
+              <a href="#!">Instagram</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>

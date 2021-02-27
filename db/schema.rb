@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_20_032909) do
+ActiveRecord::Schema.define(version: 2021_02_27_013232) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,12 +56,21 @@ ActiveRecord::Schema.define(version: 2021_02_20_032909) do
     t.string "mobile_number"
     t.string "language"
     t.integer "total_price"
-    t.bigint "user_id", null: false
     t.bigint "tour_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "cart_id", null: false
+    t.index ["cart_id"], name: "index_bookings_on_cart_id"
     t.index ["tour_id"], name: "index_bookings_on_tour_id"
-    t.index ["user_id"], name: "index_bookings_on_user_id"
+  end
+
+  create_table "carts", force: :cascade do |t|
+    t.integer "total_price"
+    t.integer "state", default: 0
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -127,8 +136,9 @@ ActiveRecord::Schema.define(version: 2021_02_20_032909) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "bookings", "carts"
   add_foreign_key "bookings", "tours"
-  add_foreign_key "bookings", "users"
+  add_foreign_key "carts", "users"
   add_foreign_key "reviews", "bookings"
   add_foreign_key "reviews", "users"
   add_foreign_key "taggings", "tags"

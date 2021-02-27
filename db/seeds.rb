@@ -201,6 +201,6 @@ article_2 = Article.create(title: "Beatiful Istanbul", content: "Lorem ipsum dol
 puts "database is clean"
 
 puts "#{Tour.count} Tour created..."
-puts "#{Article.count} Tour created..."
+puts "#{Article.count} Article created..."
 
 puts "Finished mate..."

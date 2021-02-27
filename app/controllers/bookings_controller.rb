@@ -4,25 +4,19 @@ class BookingsController < ApplicationController
   def new
     @tour = Tour.find(params[:tour_id])
     @booking = Booking.new
-    # authorize @booking
   end
 
   def create
     @tour = Tour.find(params[:tour_id])
     @booking = Booking.new(booking_params)
     @booking.tour = @tour
-    @booking.user = current_user
-    # authorize @booking
+    @booking.cart = @user_cart
     if @booking.save
-      # redirect_to tour_booking_path(@tour, @booking)
+      redirect_to root_path
     else
       render :new
     end
   end
-
-  # def show
-  #   @tour = @booking.tour
-  # end
 
   def edit
     @tour = Tour.find(params[:tour_id])
@@ -41,7 +35,6 @@ class BookingsController < ApplicationController
 
   def make_booking
     @booking = Booking.find(params[:id])
-    # authorize @booking
   end
 
   def booking_params
