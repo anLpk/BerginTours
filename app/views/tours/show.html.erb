@@ -1,18 +1,35 @@
 <main>
   <section>
-    <div class="container">
-    <%= link_to "Back to Main Page", tours_path, class: "btn btn-success" %>
-      <%= cl_image_tag @tour.photo.key, class: "card-img-top", alt: "#{@tour.title} Picture"  %>
-      <%= @tour.title %>
-      <%= @tour.description %>
+    <div class="container d-lg-flex">
+      <div class=" mt-5">
+        <h1><%= @tour.title %></h1>
+        <%= cl_image_tag @tour.photo.key, class: "card-img-top", alt: "#{@tour.title} Picture"  %>
+      </div>
+      <div class=" mt-5 ml-5">
+        <h2 class="mb-3">About this tour</h2>
+
+        <div>
+          <p><i class="far fa-credit-card"></i> Free Cancellation <br> <span>Cancel anytime for a full refund</span></p>
+        </div>
+
+        <div>
+          <p><i class="fas fa-virus"></i> COVID-19 Precautions <br> <span>Special healt and safety measures apply.</span></p>
+        </div>
+
+        <div>
+          <p><i class="fas fa-skiing"></i> Skip the line <br> <span>Skip the line through separate entrance.</span></p>     
+        </div>
+
+        <div>
+          <p><i class="fas fa-headphones"></i> Audio Guide | Headphones <br> <span>Spanish, Korean, Chinese, Italian, Russian, German, Hindi, Arabic</span></p> 
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="container" >
-    <div>
-      <h1><%= @tour.title %> </h1>
-      <%= render 'bookings/form', tour: @tour %>
-    </div>
+  <div class="container d-flex">
+    <%= link_to "Back to Main Page", tours_path, class: "btn btn-warning mr-4" %>
+    <%= link_to "Add to the Cart", tours_path, class: "btn btn-success" %>
   </div>
 
   <div class="container">
