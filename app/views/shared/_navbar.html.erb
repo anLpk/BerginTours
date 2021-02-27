@@ -9,12 +9,14 @@
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
-        <li>
-          <a href="#!">Home</a>
+        <li>          
+          <% if user_signed_in? %>
+            <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+          <% else %>
+            <%= link_to "Log In", new_user_session_path %>
+          <% end %>
         </li>
-        <li>
-          <a href="#!">About</a>
-        </li>
+       
         <li>
           <a href="#!">Istanbul</a>
           <ul class="nav-dropdown">
@@ -71,6 +73,17 @@
         </li>
         <li>
           <a href="#!">Contact</a>
+            <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Whatsapp</a>
+            </li>
+            <li>
+              <a href="#!">Tripadvisor</a>
+            </li>
+            <li>
+              <a href="#!">Instagram</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
