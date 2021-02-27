@@ -29,7 +29,7 @@
 
   <div class="container d-flex">
     <%= link_to "Back to Main Page", tours_path, class: "btn btn-warning mr-4" %>
-    <%= link_to "Add to the Cart", tours_path, class: "btn btn-success" %>
+    <%= link_to "Make a booking", new_tour_booking_path(@tour), class: "btn btn-success" %>
   </div>
 
   <div class="container">
@@ -42,7 +42,7 @@
           <p id="review-<%= review.id %>"><%= review.content %></p>
         <% end %>
       <% end %>
-
+      
       <% if @booking %>
         <%= simple_form_for([@booking, @review], remote: true) do |f| %>
           <%= f.input :title, placeholder: 'Highlight the experience' %>

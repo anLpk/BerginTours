@@ -12,7 +12,7 @@ class BookingsController < ApplicationController
     @booking.tour = @tour
     @booking.cart = @user_cart
     if @booking.save
-      # redirect_to tour_booking_path(@tour, @booking)
+      redirect_to root_path
     else
       render :new
     end
