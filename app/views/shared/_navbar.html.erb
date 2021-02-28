@@ -12,6 +12,7 @@
           <% if current_user.nil? %>
             <li class="nav-item">
               <%= link_to "Log In", new_user_session_path %>
+              <%= link_to "Sign Up", new_user_registration_path %>
             </li>
           <% else %>
             <li class="d-flex justify-content-between nav-item active">
@@ -19,8 +20,8 @@
               <%= link_to "Profile", dashboard_path, class: "nav-link effect-underline" %>
               <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "nav-link" %>
             </li>
+          <% end %>
         </ul>
-        <% end %>
       </div>
     </div>
   </nav>
