@@ -1,12 +1,25 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.profile-container {
+  ul {
+    li {
+      list-style: none;
+    }
+  }
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.dropdown-submenu {
+  position: relative;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: 0.8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
 }
