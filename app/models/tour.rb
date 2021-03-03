@@ -4,5 +4,5 @@ class Tour < ApplicationRecord
   
   acts_as_taggable_on :tags
 
-  has_many_attached :images
+  has_one_attached :photo
 end

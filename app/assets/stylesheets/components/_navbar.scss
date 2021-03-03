@@ -2,24 +2,39 @@
   ul {
     li {
       list-style: none;
+      font-size: 1.1em;
+      font-weight: bolder;
     }
   }
 }
 
-.dropdown-submenu {
-  position: relative;
+.fa-instagram,
+.fa-tripadvisor,
+.fa-user-plus {
+  font-size: 1.5em;
 }
 
-.dropdown-submenu a::after {
-  transform: rotate(-90deg);
-  position: absolute;
-  right: 6px;
-  top: 0.8em;
+.fa-tripadvisor {
+  color: $trip-advsior;
+}
+.fa-instagram {
+  color: $instagram;
 }
 
-.dropdown-submenu .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-left: 0.1rem;
-  margin-right: 0.1rem;
+.first-nav {
+  background-color: $white;
+}
+
+.btn-signup {
+  background-color: $logIn-btn-color;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: $nav-link-color;
+  }
 }
