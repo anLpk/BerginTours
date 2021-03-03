@@ -9,6 +9,11 @@
         <i class="fab fa-tripadvisor pl-4"></i>
       <% end %>
     </div>
+    <div class="brand text-center">
+      <%= link_to root_path do %>
+        <%= image_tag "logo.png", class: "logo" %>
+      <% end %>
+    </div>
     
     <div class="profile-container d-flex mt-3 mr-3">
       <ul>
@@ -21,81 +26,14 @@
           </li>
         <% else %>
           <li>
-            <%= link_to "Cart (#{@user_cart.bookings.size})", cart_path(@user_cart), class: "pr-2" %>
-       
-            <%= link_to dashboard_path, class: "pr-2" do %>
+            <%= link_to dashboard_path, class: "pr-2 mr-2" do %>
               <i class="far fa-user-circle"></i>
             <% end %>
+            <%= link_to "Cart (#{@user_cart.bookings.size})", cart_path(@user_cart), class: "pr-2" %>
             <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "pr-2" %>
           </li>
         <% end %>
       </ul>
     </div>
   </section>
-  <section class="d-flex justify-content-center">
-  <nav class="navbar navbar-expand-lg navbar-light justify">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Ephesus
-          </a>
-          <div class="dropdown-menu pl-3" aria-labelledby="navbarDropdownMenuLink">
-            <%= link_to "Ephesus & Sirince Tour", class: "dropdown-item" %><br>
-            <%= link_to "Ephesus Full Day Tour", class: "dropdown-item" %><br>
-            <%= link_to "Ephesus Half Day Tour", class: "dropdown-item" %><br>
-            <%= link_to "Highlights of Ephesus", class: "dropdown-item" %><br>
-            <%= link_to "Biblical Ephesus Tour", class: "dropdown-item" %><br>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Istanbul
-          </a>
-          <div class="dropdown-menu pl-3" aria-labelledby="navbarDropdownMenuLink">
-            <%= link_to "Istanbul Jewish Heritage", class: "dropdown-item" %><br>
-            <%= link_to "City Break Istanbul Tour", class: "dropdown-item" %><br>
-            <%= link_to "Istanbul Full Day Classic", class: "dropdown-item" %><br>
-            <%= link_to "Istanbul Princes' Island", class: "dropdown-item" %><br>
-            <%= link_to "Istanbul Two Continents", class: "dropdown-item" %><br>
-            <%= link_to "Dolmabahce Palace", class: "dropdown-item" %><br>
-          </div>
-        </li>
-        <div class="logo-container m-3">
-          <%= link_to "LOGO", root_path %>
-        </div>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Turkey Tours
-          </a>
-          <div class="dropdown-menu pl-3" aria-labelledby="navbarDropdownMenuLink">
-            <%= link_to "Best of Turkey", class: "dropdown-item" %><br>
-            <%= link_to "Western Treasure", class: "dropdown-item" %><br>
-            <%= link_to "Mount Nemrut & Gobeklite", class: "dropdown-item" %><br>
-            <%= link_to "Seven Churches Biblical", class: "dropdown-item" %><br>
-            <%= link_to "Colors of Turkey", class: "dropdown-item" %><br>
-            <%= link_to "Classic Turkey Package", class: "dropdown-item" %><br>
-            <%= link_to "Luxury Turkey Tours", class: "dropdown-item" %><br>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Cappadocia
-          </a>
-          <div class="dropdown-menu pl-3" aria-labelledby="navbarDropdownMenuLink">
-            <%= link_to "Cappadocia Hot Air Balloon", class: "dropdown-item" %><br>
-            <%= link_to "Cappadocia Green Tour", class: "dropdown-item" %><br>
-            <%= link_to "Cappadocia Turkish Night", class: "dropdown-item" %><br>
-            <%= link_to "3 Days Cappadocia Tour", class: "dropdown-item" %><br>
-            <%= link_to "Cappadocia Red Tour", class: "dropdown-item" %><br>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  </section>
-  
 </header>

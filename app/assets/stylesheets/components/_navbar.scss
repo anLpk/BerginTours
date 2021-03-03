@@ -42,3 +42,18 @@
 .dropdown-menu {
   min-width: 16rem !important;
 }
+
+.navigation {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  a {
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.logo {
+  width: 5em;
+}
