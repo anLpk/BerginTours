@@ -1,10 +1,6 @@
 // Import Google fonts
 // @import url("https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap");
 
-// Define fonts for body and headers
-$body-font: $my-font;
-$headers-font: $my-font;
-
 // To use a font file (.woff) uncomment following lines
 @font-face {
   font-family: "Avenir";
@@ -15,3 +11,7 @@ $headers-font: $my-font;
 }
 
 $my-font: "Avenir";
+
+// Define fonts for body and headers
+$body-font: $my-font;
+$headers-font: $my-font;

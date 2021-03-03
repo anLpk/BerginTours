@@ -23,14 +23,15 @@
         <div>
           <p><i class="fas fa-headphones"></i> Audio Guide | Headphones <br> <span>Spanish, Korean, Chinese, Italian, Russian, German, Hindi, Arabic</span></p> 
         </div>
+
+        <div>
+          <%= link_to "Back to Main Page", tours_path, class: "btn btn-warning mr-4" %>
+          <%= link_to "Make a booking", new_tour_booking_path(@tour), class: "btn btn-success" %> 
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="container d-flex">
-    <%= link_to "Back to Main Page", tours_path, class: "btn btn-warning mr-4" %>
-    <%= link_to "Make a booking", new_tour_booking_path(@tour), class: "btn btn-success" %>
-  </div>
 
   <div class="container">
     <div id="reviews">
