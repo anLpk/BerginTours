@@ -9,9 +9,8 @@
 }
 
 .fa-instagram,
-.fa-tripadvisor,
-.fa-user-plus {
-  font-size: 1.5em;
+.fa-tripadvisor {
+  font-size: 1.8em;
 }
 
 .fa-tripadvisor {
@@ -23,20 +22,6 @@
 
 .first-nav {
   background-color: $white;
-}
-
-.btn-signup {
-  background-color: $logIn-btn-color;
-  border: none;
-  border-radius: 20px;
-  padding: 8px 16px;
-  a {
-    color: $white;
-    text-decoration: none;
-  }
-  &:hover {
-    background-color: $nav-link-color;
-  }
 }
 
 .dropdown-menu {
@@ -52,8 +37,4 @@
     color: white;
     font-weight: bold;
   }
-}
-
-.logo {
-  width: 5em;
 }
