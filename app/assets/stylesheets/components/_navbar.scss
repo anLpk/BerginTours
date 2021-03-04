@@ -38,3 +38,19 @@
     font-weight: bold;
   }
 }
+
+.btn-signup {
+  a {
+    color: $white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  background-color: $logIn-btn-color;
+  &:hover {
+    background-color: $nav-link-color;
+  }
+}
