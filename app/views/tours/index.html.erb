@@ -20,6 +20,53 @@
       </div>
     </div>
   </article>
+
+    <section>
+    <div class="container">
+        <h1 id="anchor-tag" class="text-center mt-5 mb-5">Explore Our Hot Deals</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <% @tours[5..6].each do |tour| %>
+          <div class="card col-lg-5 px-0 py-0">
+            <div class="tour-card">
+              <% tour.photo.attached? ? @image = "//res.cloudinary.com/apak/image/upload/#{tour.photo.key}": @image = tour.image_scr %>       
+              <%= cl_image_tag tour.photo.key, class: "card-img-hot", alt: "#{tour.title} Picture"  %>
+              <h6 class="guided"><%= tour.tag_text %></h6>
+              <h2> <%= link_to tour.title, tour_path(tour) %></h2>
+              <h5><%= tour.description %></h5>
+              <div class="d-flex justify-content-between">
+                <div class="icon">
+                  <i class="far fa-clock"> <span><strong><%= tour.duration %></strong> </span></i><br>
+                  <i class="fas fa-running"> <span><strong>Skip the line</strong></span></i><br>
+                  <i class="fas fa-user-friends"> <span><strong><%= tour.group_size %></strong></span></i>
+                </div>
+                <div class="prices mr-4 mt-3">
+                  <button class="btn btn-warning btn-lg">Save 190$</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container trusted-by">
+      <div class="d-flex">
+        <div>
+          <h1 class="trusted-text text-left mt-5">Trusted By:</h1>
+        </div>
+        <div class="d-flex">
+          <div><i class="fab fa-cc-paypal m-4 pl-4"></i></div>
+          <div><i class="fab fa-tripadvisor m-4 pl-4"></i></div>
+          <div><i class="fab fa-cc-stripe m-4 pl-4"></i></div>
+          <div><i class="fab fa-google-pay m-4 pl-4"></i></div>
+          <div><i class="fab fa-mailchimp m-4 pl-4"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section>
     <div class="container">
         <h1 id="anchor-tag" class="text-center mt-5 mb-5">Explore Our Top Destinations</h1>
