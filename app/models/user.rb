@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   has_many :tours
   has_many :carts
+  has_many :bookings, through: :carts
 end
