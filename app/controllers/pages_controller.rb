@@ -13,7 +13,7 @@ class PagesController < ApplicationController
 
     # My bookings in progress && My past bookings
     @user_bookings.each do | booking |
-      if booking.start_date < Time.now + 15.day
+      if booking.start_date < Time.now - 1.day
         @user_past_bookings << booking
         @user_past_bookings_hash["#{booking.id}"] = Tour.where(id: booking.tour_id)
       else
