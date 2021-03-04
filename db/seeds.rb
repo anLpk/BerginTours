@@ -87,23 +87,44 @@ tour_6.photos.attach(io: file_4, filename: 'photo24.jpg', content_type: 'image/j
 tour_6.tag_list = "Istanbul Tours"
 tour_6.save
 
-# tour_7 = Tour.create(title: "Istanbul Jewish Heritage Tour", description: "Inc Neve Shalom, Ahrida, Ashkenaz Synagogues", duration: "8 hours", tag_text: "Guided", group_size: "Private", price: 260)
-# file = URI.open("https://images.unsplash.com/photo-1582576234380-af3fdf52a24f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
-# tour_7.photo.attach(io: file, filename: 'photo7.jpg', content_type: 'image/jpg')
-# tour_7.tag_list = "Istanbul Tours"
-# tour_7.save
+tour_7 = Tour.create(title: "Istanbul Jewish Heritage Tour", description: "Inc Neve Shalom, Ahrida, Ashkenaz Synagogues", duration: "8 hours", tag_text: "Guided", group_size: "Private", price: 260)
+file = URI.open("https://images.unsplash.com/photo-1582576234380-af3fdf52a24f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
+file_2 = URI.open("https://images.unsplash.com/photo-1582576234380-af3fdf52a24f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
+file_3 = URI.open("https://images.unsplash.com/photo-1582576234380-af3fdf52a24f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
+file_4 = URI.open("https://images.unsplash.com/photo-1582576234380-af3fdf52a24f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
 
-# tour_8 = Tour.create(title: "City Break Istanbul Tour", description: "Inc Blue Mosque, Haghia Sophia, Topkapi Palace, Bosphorus", duration: "10 hours", tag_text: "Small Group", group_size: "8 People", price: 499)
-# file = URI.open("https://images.unsplash.com/photo-1611755997792-4109556f35c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80")
-# tour_8.photo.attach(io: file, filename: 'photo8.jpg', content_type: 'image/jpg')
-# tour_8.tag_list = "Istanbul Tours"
-# tour_8.save
+tour_7.photos.attach(io: file, filename: 'photo25.jpg', content_type: 'image/jpg')
+tour_7.photos.attach(io: file_2, filename: 'photo26.jpg', content_type: 'image/jpg')
+tour_7.photos.attach(io: file_3, filename: 'photo27.jpg', content_type: 'image/jpg')
+tour_7.photos.attach(io: file_4, filename: 'photo28.jpg', content_type: 'image/jpg')
+tour_7.tag_list = "Istanbul Tours"
+tour_7.save
 
-# tour_9 = Tour.create(title: "Dinner Cruise | Turkish Night in Istanbul", description: "Belly Dancer, Traditional Turkish Dances", duration: "5 hours", tag_text: "Food", group_size: "Big Group", price: 50)
-# file = URI.open("https://images.unsplash.com/photo-1589458372086-7375299f81b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
-# tour_9.photo.attach(io: file, filename: 'photo9.jpg', content_type: 'image/jpg')
-# tour_9.tag_list = " Istanbul Tours"
-# tour_9.save
+tour_8 = Tour.create(title: "City Break Istanbul Tour", description: "Inc Blue Mosque, Haghia Sophia, Topkapi Palace, Bosphorus", duration: "10 hours", tag_text: "Small Group", group_size: "8 People", price: 499)
+file = URI.open("https://images.unsplash.com/photo-1611755997792-4109556f35c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80")
+file_2 = URI.open("https://images.unsplash.com/photo-1611755997792-4109556f35c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80")
+file_3 = URI.open("https://images.unsplash.com/photo-1611755997792-4109556f35c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80")
+file_4 = URI.open("https://images.unsplash.com/photo-1611755997792-4109556f35c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80")
+
+tour_8.photos.attach(io: file, filename: 'photo29.jpg', content_type: 'image/jpg')
+tour_8.photos.attach(io: file_2, filename: 'photo30.jpg', content_type: 'image/jpg')
+tour_8.photos.attach(io: file_3, filename: 'photo31.jpg', content_type: 'image/jpg')
+tour_8.photos.attach(io: file_4, filename: 'photo32.jpg', content_type: 'image/jpg')
+tour_8.tag_list = "Istanbul Tours"
+tour_8.save
+
+tour_9 = Tour.create(title: "Dinner Cruise | Turkish Night in Istanbul", description: "Belly Dancer, Traditional Turkish Dances", duration: "5 hours", tag_text: "Food", group_size: "Big Group", price: 50)
+file = URI.open("https://images.unsplash.com/photo-1589458372086-7375299f81b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
+file_2 = URI.open("https://images.unsplash.com/photo-1589458372086-7375299f81b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
+file_3 = URI.open("https://images.unsplash.com/photo-1589458372086-7375299f81b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
+file_4 = URI.open("https://images.unsplash.com/photo-1589458372086-7375299f81b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
+
+tour_9.photos.attach(io: file, filename: 'photo33.jpg', content_type: 'image/jpg')
+tour_9.photos.attach(io: file_2, filename: 'photo34.jpg', content_type: 'image/jpg')
+tour_9.photos.attach(io: file_3, filename: 'photo35.jpg', content_type: 'image/jpg')
+tour_9.photos.attach(io: file_4, filename: 'photo36.jpg', content_type: 'image/jpg')
+tour_9.tag_list = " Istanbul Tours"
+tour_9.save
 
 # tour_10 = Tour.create(title: "Cappadocia Hot Air Balloon Ride", description: "Inc Hot Air Balloon Ride", duration: "4 hours", tag_text: "Balloon", group_size: "8 People", price: 200)
 # file = URI.open("https://images.unsplash.com/photo-1607414575003-54a8539f964c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80")

@@ -1,59 +1,78 @@
 <main>
   <section>
-    <div class="container d-lg-flex">
-      <div class=" mt-5">
-        <h1><%= @tour.title %></h1>
-        <% @tour.photos.each do |photo| %>
-          <%= cl_image_tag photo.key, class: "card-img-top", alt: "#{@tour.title} Picture"  %>
-        <% end %>
-      </div>
-      <div class=" mt-5 ml-5">
-        <h2 class="mb-3">About this tour</h2>
-
-        <div>
-          <p><i class="far fa-credit-card"></i> Free Cancellation <br> <span>Cancel anytime for a full refund</span></p>
+    <div class="container">
+      <h1><%= @tour.title %></h1>
+      <div class="row">
+        <div class="col-lg-7">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <% @tour.photos.each.with_index(0) do |post, index| %>
+                <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" class="<%= index.zero? ? 'active' : '' %>"></li>
+              <% end %>
+            </ol>
+            <div class="carousel-inner">
+              <% @tour.photos.each.with_index(0) do |photo, index| %>
+                <div class="carousel-item <%= index.zero? ? 'active' : '' %>">
+                  <%= cl_image_tag photo.key, class: "card-img-top", alt: "#{@tour.title} Picture"  %>
+                </div>
+              <% end %>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
+        <div class="col-lg-5">
+          <h2 class="mb-3">About this tour</h2>
 
-        <div>
-          <p><i class="fas fa-virus"></i> COVID-19 Precautions <br> <span>Special healt and safety measures apply.</span></p>
-        </div>
-
-        <div>
-          <p><i class="fas fa-skiing"></i> Skip the line <br> <span>Skip the line through separate entrance.</span></p>     
-        </div>
-
-        <div>
-          <p><i class="fas fa-headphones"></i> Audio Guide | Headphones <br> <span>Spanish, Korean, Chinese, Italian, Russian, German, Hindi, Arabic</span></p> 
-        </div>
-
-        <div>
-          <%= link_to "Back to Main Page", tours_path, class: "btn btn-warning mr-4" %>
-          <%= link_to "Make a booking", new_tour_booking_path(@tour), class: "btn btn-success" %> 
+          <div>
+            <p><i class="far fa-credit-card"></i> Free Cancellation <br> <span>Cancel anytime for a full refund</span></p>
+          </div>
+          <div>
+            <p><i class="fas fa-virus"></i> COVID-19 Precautions <br> <span>Special healt and safety measures apply.</span></p>
+          </div>
+          <div>
+            <p><i class="fas fa-skiing"></i> Skip the line <br> <span>Skip the line through separate entrance.</span></p>     
+          </div>
+          <div>
+            <p><i class="fas fa-headphones"></i> Audio Guide | Headphones <br> <span>Spanish, Korean, Chinese, Italian, Russian, German, Hindi, Arabic</span></p> 
+          </div>
+          <div>
+            <%= link_to "Back to Main Page", tours_path, class: "btn btn-warning mr-4" %>
+            <%= link_to "Make a booking", new_tour_booking_path(@tour), class: "btn btn-success" %> 
+          </div>
+        </div>      
         </div>
       </div>
     </div>
   </section>
 
-
-  <div class="container">
-    <div id="reviews">
-      <% if @tour.reviews.blank? %>
-        Be the first to leave a review for <%= @tour.title %>
-      <% else %>
-        <% @tour.reviews.each do |review| %>
-          <p id="review-<%= review.id %>"><%= review.rating %><%= review.title %></p>
-          <p id="review-<%= review.id %>"><%= review.content %></p>
+  <section>
+    <div class="container">
+      <div id="reviews">
+        <% if @tour.reviews.blank? %>
+          Be the first to leave a review for <%= @tour.title %>
+        <% else %>
+          <% @tour.reviews.each do |review| %>
+            <p id="review-<%= review.id %>"><%= review.rating %><%= review.title %></p>
+            <p id="review-<%= review.id %>"><%= review.content %></p>
+          <% end %>
         <% end %>
-      <% end %>
       
-      <% if @booking %>
-        <%= simple_form_for([@booking, @review], remote: true) do |f| %>
-          <%= f.input :title, placeholder: 'Highlight the experience' %>
-          <%= f.input :content, placeholder: 'Rate your experience' %>
-          <%= f.input :rating, collection: (0..5) %>
-          <%= f.submit "Submit", class: "btn btn-sm btn-success" %>
+        <% if @booking %>
+          <%= simple_form_for([@booking, @review], remote: true) do |f| %>
+            <%= f.input :title, placeholder: 'Highlight the experience' %>
+            <%= f.input :content, placeholder: 'Rate your experience' %>
+            <%= f.input :rating, collection: (0..5) %>
+            <%= f.submit "Submit", class: "btn btn-sm btn-success" %>
+          <% end %>
         <% end %>
-      <% end %>
+      </div>
     </div>
-  </div>
+  </section>
 </main>
