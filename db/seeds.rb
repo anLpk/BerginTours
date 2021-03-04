@@ -11,6 +11,7 @@ puts "database is clean"
 
 tour_1 = Tour.create(title: "Istanbul Full Day Classic Old City Tour", description: "Inc Hippodrome, Haghia Sophia, Blue Mosque, Topkapi Palace", duration: "8 hours", tag_text: "Guided", group_size: "6-8 People", price: 75)
 file = URI.open("https://images.unsplash.com/photo-1466442929976-97f336a657be?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
+
 tour_1.photo.attach(io: file, filename: 'photo1.jpg', content_type: 'image/jpg')
 tour_1.tag_list = "Istanbul Tours"
 tour_1.save
