@@ -13,12 +13,12 @@ tour_1 = Tour.create(title: "Istanbul Full Day Classic Old City Tour", descripti
 file = URI.open("https://images.unsplash.com/photo-1466442929976-97f336a657be?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80")
 file_2 = URI.open("https://images.unsplash.com/photo-1565738156138-fb6feacc32f4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80")
 file_3 = URI.open("https://images.unsplash.com/photo-1558180077-09f158c76707?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1900&q=80")
-file_4 = URI.open("https://images.unsplash.com/photo-1560322527-80ee440caec4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80")
+file_4 = File.open("./db/img/ephesus_2.jpg")
 
 tour_1.photos.attach(io: file, filename: 'photo1.jpg', content_type: 'image/jpg')
 tour_1.photos.attach(io: file_2, filename: 'photo2.jpg', content_type: 'image/jpg')
 tour_1.photos.attach(io: file_3, filename: 'photo3.jpg', content_type: 'image/jpg')
-tour_1.photos.attach(io: file_4, filename: 'photo4.jpg', content_type: 'image/jpg')
+tour_1.photos.attach(io: file_4, filename: 'ephesus_2.jpg', content_type: 'image/jpg')
 tour_1.tag_list = "Istanbul Tours"
 tour_1.save
 
