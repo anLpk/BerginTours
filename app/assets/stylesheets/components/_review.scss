@@ -1,3 +1,13 @@
 .fa-star {
-  color: gold;
+  color: $orange;
+}
+
+.review-title {
+  width: max-content;
+}
+
+.review-content,
+.review-title {
+  background-color: $white;
+  border-radius: 8px;
 }

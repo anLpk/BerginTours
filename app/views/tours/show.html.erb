@@ -1,7 +1,7 @@
 <main>
   <section>
     <div class="container">
-      <h1><%= @tour.title %></h1>
+      <h1 class="pt-4 pb-4"><%= @tour.title %></h1>
       <div class="row">
         <div class="col-lg-7">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -13,7 +13,7 @@
             <div class="carousel-inner">
               <% @tour.photos.each.with_index(0) do |photo, index| %>
                 <div class="carousel-item <%= index.zero? ? 'active' : '' %>">
-                  <%= cl_image_tag photo.key, class: "", alt: "#{@tour.title} Picture"  %>
+                  <%= cl_image_tag photo.key, class: "show-page-img", alt: "#{@tour.title} Picture"  %>
                 </div>
               <% end %>
             </div>
@@ -27,7 +27,7 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 pl-4 pt-3">
           <h2 class="mb-3">About this tour</h2>
 
           <div>
@@ -53,27 +53,27 @@
   </section>
 
   <section>
-    <div class="container">
+    <div class="container mt-3 mb-3">
       <div id="reviews">
         <% if @tour.reviews.blank? %>
-          Be the first to leave a review for <%= @tour.title %>
+          <p class="mb-3">Be the first to leave a review for <strong><%= @tour.title %></strong></p>
         <% else %>
           <% @tour.reviews.each do |review| %>
-            <p id="review-<%= review.id %>"><%= review.rating.times do %>
+            <p class="review-title p-3" id="review-<%= review.id %>"> <%= review.user.email %> <br> <%= review.rating.times do %>
               <i class="fas fa-star"></i>
-            <%end%><%= review.title %></p>
-            <p id="review-<%= review.id %>"><%= review.content %></p>
+            <%end%> <br><%= review.title %></p>
+            <p class="review-content p-3" id="review-<%= review.id %>"><%= review.content %></p>
           <% end %>
         <% end %>
-                              
+
         <% if @booking %>
         <div class="container">
           <div class="row">
-            <div class="xs-4">
+            <div class="col-lg-6">
               <%= simple_form_for([@booking, @review], remote: true) do |f| %>
-                <%= f.input :title, label: 'Highlight the experience' %>
-                <%= f.input :content, label: 'Content' %>
-                <%= f.input :rating, collection: (1..5).to_a, label: "Rate your experience" %>
+                <strong><%= f.input :title, label: 'Highlight the experience' %></strong>
+                <strong><%= f.input :content, label: 'Content' %></strong>
+                <strong><%= f.input :rating, collection: (1..5).to_a, label: "Rate your experience" %></strong>
                 <%= f.submit "Send Your Review", class: "btn btn-success" %>
               <% end %>
             </div>
