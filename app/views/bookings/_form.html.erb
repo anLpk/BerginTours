@@ -3,12 +3,15 @@
     <div class="container booking-form">
       <%= simple_form_for [@tour, Booking.new] do |t| %>
         <%= t.input :start_date, as: :date, required: :true, label: 'Select your tour start date' %>
-        <%= t.input :first_name, required: :true, error: 'Name is mandatory, please specify one', label: 'First Name' %>
-        <%= t.input :last_name, required: :true, label: 'Last Name' %>
-        <%= t.input :number_of_adult, required: :true %>
-        <%= t.input :number_of_children, required: :true %>
-        <%= t.input :number_of_infant, required: :true %>
-        <%= t.input :language, required: :true, label: 'Prefered Language' %>
+          <%= t.input :first_name, required: :true, error: 'Name is mandatory, please specify one', label: 'First Name' %>
+          <%= t.input :last_name, required: :true, label: 'Last Name' %>
+        <div class="d-flex justify-content-between">
+          <%= t.input :number_of_adult,:collection => %w[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15], required: :true %>
+          <%= t.input :number_of_children, :collection => %w[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15], required: :true %>
+          <%= t.input :number_of_infant,:collection => %w[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15], required: :true %>
+                <%= t.input :language,:collection => %w[English French German Spanish], required: :true, label: 'Prefered Language' %>
+
+        </div>
         <%= t.input :mobile_number, as: :tel, required: :true, label: 'Contact Number' %>
         <%# <%= t.input :total_price %>
         <%= t.submit "Confirm Your Booking", class: "btn btn-outline-success btn-sm mb-3" %>

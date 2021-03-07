@@ -1,6 +1,6 @@
 <header>
   <section class="d-flex justify-content-between first-nav">
-    <div class="social-icons d-flex mt-4 ml-3">
+    <div class="social-icons d-flex mt-3 ml-3">
       <%= link_to "https://www.instagram.com/anlpak/", :target => "_blank" do %>
         <i class="fab fa-instagram pl-2"></i>
       <% end %>
@@ -19,7 +19,7 @@
         <% else %>
           <li>
             <%= link_to dashboard_path, class: "pr-2 mr-2" do %>
-              <i class="far fa-user-circle"></i>
+              <i class="far fa-user-circle h4"></i>
             <% end %>
             <%= link_to "Cart (#{@user_cart.bookings.size})", cart_path(@user_cart), class: "pr-2" %>
             <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "pr-2" %>

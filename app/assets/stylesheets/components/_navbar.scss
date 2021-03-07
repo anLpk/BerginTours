@@ -54,3 +54,7 @@
     background-color: $nav-link-color;
   }
 }
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}

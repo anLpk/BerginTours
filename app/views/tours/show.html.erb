@@ -13,7 +13,7 @@
             <div class="carousel-inner">
               <% @tour.photos.each.with_index(0) do |photo, index| %>
                 <div class="carousel-item <%= index.zero? ? 'active' : '' %>">
-                  <%= cl_image_tag photo.key, class: "", alt: "#{@tour.title} Picture"  %>
+                  <%= cl_image_tag photo.key, class: "show-tour-img", alt: "#{@tour.title} Picture"  %>
                 </div>
               <% end %>
             </div>
