@@ -1,8 +1,12 @@
 <div class="container">
-  <%= simple_form_for [@booking, @review] do |f| %>
-    <%= f.input :title, placeholder: 'Highlight the experience' %>
-    <%= f.input :content, placeholder: 'Rate your experience' %>
-    <%= f.input :rating, collection: (0..5) %>
-    <%= f.submit "Submit", class: "btn btn-sm btn-success" %>
-  <% end %>
+  <div class="row">
+    <div class="xs-4">
+      <%= simple_form_for [@booking, @review] do |f| %>
+        <%= f.input :title, label: 'Highlight the experience' %>
+        <%= f.input :content, label: 'Content' %>
+        <%= f.input :rating, , collection: (1..5).to_a, label: "Rate your experience" %>
+        <%= f.submit "Send Your Review", class: "btn btn-success" %>
+      <% end %>
+    </div>
+  </div>
 </div>

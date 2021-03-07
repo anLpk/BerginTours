@@ -14,6 +14,7 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to root_path
     else
+      flash[:alert] = "Something went wrong."
       render :new
     end
   end
@@ -27,6 +28,7 @@ class BookingsController < ApplicationController
     if @booking.update(booking_params)
     redirect_to tour_booking_path
     else
+      flash[:alert] = "Something went wrong."
       render :edit
     end
   end

@@ -18,6 +18,7 @@ class ReviewsController < ApplicationController
     if @review.save
       redirect_to tour_path(@tour, anchor: "review-#{@review.id}")
     else
+      flash[:alert] = "Something went wrong."
       render 'tours/show'
     end
   end
