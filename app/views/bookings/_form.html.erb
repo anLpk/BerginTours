@@ -2,7 +2,7 @@
   <section>
     <div class="container booking-form">
       <%= simple_form_for [@tour, Booking.new] do |t| %>
-        <%= t.input :start_date, as: :date, required: :true, label: 'Select your tour start date' %>
+        <%= t.input :start_date, as: :string, required: :true, input_html: { id: "booking_start_date" } %>
           <%= t.input :first_name, required: :true, error: 'Name is mandatory, please specify one', label: 'First Name' %>
           <%= t.input :last_name, required: :true, label: 'Last Name' %>
         <div class="d-flex justify-content-between">
