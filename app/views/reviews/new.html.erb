@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="xs-4">
-      <%= simple_form_for [@booking, @review] do |f| %>
+      <%= simple_form_for ([@booking, @review], remote: true) do |f| %>
         <%= f.input :title, label: 'Highlight the experience' %>
         <%= f.input :content, label: 'Content' %>
         <%= f.input :rating, , collection: (1..5).to_a, label: "Rate your experience" %>

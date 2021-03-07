@@ -13,7 +13,7 @@
             <div class="carousel-inner">
               <% @tour.photos.each.with_index(0) do |photo, index| %>
                 <div class="carousel-item <%= index.zero? ? 'active' : '' %>">
-                  <%= cl_image_tag photo.key, class: "show-tour-img", alt: "#{@tour.title} Picture"  %>
+                  <%= cl_image_tag photo.key, class: "", alt: "#{@tour.title} Picture"  %>
                 </div>
               <% end %>
             </div>
@@ -59,18 +59,26 @@
           Be the first to leave a review for <%= @tour.title %>
         <% else %>
           <% @tour.reviews.each do |review| %>
-            <p id="review-<%= review.id %>"><%= review.rating %><%= review.title %></p>
+            <p id="review-<%= review.id %>"><%= review.rating.times do %>
+              <i class="fas fa-star"></i>
+            <%end%><%= review.title %></p>
             <p id="review-<%= review.id %>"><%= review.content %></p>
           <% end %>
         <% end %>
-      
+                              
         <% if @booking %>
-          <%= simple_form_for([@booking, @review], remote: true) do |f| %>
-            <%= f.input :title, placeholder: 'Highlight the experience' %>
-            <%= f.input :content, placeholder: 'Rate your experience' %>
-            <%= f.input :rating, collection: (0..5) %>
-            <%= f.submit "Submit", class: "btn btn-sm btn-success" %>
-          <% end %>
+        <div class="container">
+          <div class="row">
+            <div class="xs-4">
+              <%= simple_form_for([@booking, @review], remote: true) do |f| %>
+                <%= f.input :title, label: 'Highlight the experience' %>
+                <%= f.input :content, label: 'Content' %>
+                <%= f.input :rating, collection: (1..5).to_a, label: "Rate your experience" %>
+                <%= f.submit "Send Your Review", class: "btn btn-success" %>
+              <% end %>
+            </div>
+          </div>
+        </div>
         <% end %>
       </div>
     </div>
