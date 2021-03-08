@@ -44,3 +44,9 @@
   background-color: $white;
   box-shadow: 5px -1px 12px -5px $light-gray;
 }
+
+@media (max-width: 992px) {
+  .nav-scroll {
+    background-color: $white;
+  }
+}
