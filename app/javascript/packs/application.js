@@ -17,8 +17,10 @@ import "bootstrap";
 // Internal imports, e.g:
 import { initFlatpickr } from "./plugins/flatpickr";
 import { initStarRating } from "./plugins/init_star_rating";
+import { scrollDownNavBar } from "./plugins/scroll_navbar";
 
 document.addEventListener("turbolinks:load", () => {
   initFlatpickr();
   initStarRating();
+  scrollDownNavBar();
 });

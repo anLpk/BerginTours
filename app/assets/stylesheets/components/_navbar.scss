@@ -20,25 +20,6 @@
   color: $instagram;
 }
 
-.first-nav {
-  background-color: $white;
-}
-
-.dropdown-menu {
-  min-width: 16rem !important;
-}
-
-.navigation {
-  position: absolute;
-  width: 100%;
-  background: transparent;
-  box-shadow: none;
-  a {
-    color: white;
-    font-weight: bold;
-  }
-}
-
 .btn-signup {
   a {
     color: $white;
@@ -55,6 +36,11 @@
   }
 }
 
-.dropdown:hover > .dropdown-menu {
-  display: block;
+.nav-scroll {
+  transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+  background-color: $white;
+  box-shadow: 5px -1px 12px -5px $light-gray;
 }
