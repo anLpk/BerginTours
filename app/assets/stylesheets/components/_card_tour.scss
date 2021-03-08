@@ -1,110 +1,15 @@
-.card {
-  padding-left: -15px;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  height: 28rem;
-  width: 20rem;
-  margin-left: 3.5rem;
-  margin-bottom: 2rem;
-  .card-img {
-    max-height: 12rem;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  /* tittle style */
-  h2,
-  h5,
-  h6 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  h2 {
-    font-weight: 600;
-    margin-top: 0.8em;
-  }
-
-  h5 {
-    font-weight: 500;
-    opacity: 0.9;
-  }
-
-  /* h2 style */
-  h2 {
-    font-size: 1.4em;
-    font-weight: 700;
-  }
-
-  h5 {
-    font-size: 0.9em;
-    font-weight: 500;
-    opacity: 0.9;
-  }
-
-  .guided {
-    position: relative;
-    z-index: 1000;
-    margin-top: -1em;
-    width: max-content;
-    padding: 0.2em;
-    border: 1px solid $orange;
-    background-color: $orange;
-    color: $white;
-    border-radius: 0.25em;
-  }
-
-  /* Icon Style */
-  .icon {
-    position: relative;
-    right: -1em;
-    vertical-align: middle;
-  }
-
-  .fa-clock,
-  .fa-running,
-  .fa-user-friends {
-    padding: 0.3rem;
-    font-size: 1rem;
-  }
-
-  span {
-    font-weight: 500;
-    font-size: 0.9rem;
-    line-height: 1.2;
-    opacity: 0.8;
-  }
-  /* Price Style */
-  .prices {
-    .from {
-      position: relative;
-      top: -3.8em;
-      right: -10em;
-      font-size: 1.4em;
-      opacity: 0.7;
-    }
-    .price {
-      position: relative;
-      top: -1.4em;
-      right: -5em;
-      font-size: 1.8em;
-      opacity: 0.9;
-    }
-    .person {
-      position: relative;
-      top: -0.5em;
-      right: -3em;
-      font-size: 1.1em;
-      opacity: 0.7;
-    }
-  }
+/* Icon Style */
+.icon {
+  position: relative;
+  right: -1em;
+  vertical-align: middle;
 }
 
-.card-img-hot {
-  height: 30%;
-  width: 100%;
-  object-fit: cover;
+.fa-clock,
+.fa-running,
+.fa-user-friends {
+  padding: 0.3rem;
+  font-size: 1rem;
 }
 
 .trusted-by {
@@ -121,3 +26,67 @@
     opacity: 0.5;
   }
 }
+
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+// <div class="container">
+// <div class="row">
+//   <% @tours[5..6].each do |tour| %>
+//     <div class="card col-lg-5 px-0 py-0">
+//       <div class="tour-card">
+//         <%= cl_image_tag tour.photos[0].key, class: "card-img-hot", alt: "#{tour.title} Picture"  %>
+//         <h6 class="guided"><%= tour.tag_text %></h6>
+//         <h2> <%= link_to tour.title, tour_path(tour) %></h2>
+//         <h5><%= tour.description %></h5>
+//         <div class="d-flex justify-content-between">
+//           <div class="icon">
+//             <i class="far fa-clock"> <span><strong><%= tour.duration %></strong> </span></i><br>
+//             <i class="fas fa-running"> <span><strong>Skip the line</strong></span></i><br>
+//             <i class="fas fa-user-friends"> <span><strong><%= tour.group_size %></strong></span></i>
+//           </div>
+//           <div class="prices mr-4 mt-3">
+//             <button class="btn btn-warning btn-lg">Save 190$</button>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   <% end %>
+// </div>
+// </div>
