@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar fixed-top nav-scroll navbar-expand-lg navbar-light">
-    <%= link_to "TTC LOGO", root_path, class: "navbar-brand" %>
+    <%= link_to "TTC LOGO", root_path, class: "navbar-brand text-white" %>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,27 +8,27 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <%= link_to "Blog", articles_path, class: "nav-link text-primary font-weight-bold" %>
+          <%= link_to "Blog", articles_path, class: "nav-link text-white font-weight-bold" %>
         </li>
         <li class="nav-item">
-          <%= link_to "About Us", articles_path, class: "nav-link text-primary font-weight-bold" %>
+          <%= link_to "About Us", articles_path, class: "nav-link text-white font-weight-bold" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Services", articles_path, class: "nav-link text-primary font-weight-bold" %>
+          <%= link_to "Services", articles_path, class: "nav-link text-white font-weight-bold" %>
         </li>
       </ul>
       <div class="profile-container">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <% if current_user.nil? %>
             <li>
-              <%= link_to "Log In", new_user_session_path, class: "pr-4" %>
+              <%= link_to "Log In", new_user_session_path, class: "pr-4 text-white" %>
               <button class="btn-signup mr-4"><%= link_to "Sign Up", new_user_registration_path %></button>
             </li>
           <% else %>
             <li>
               <button class="btn-signup mr-4"><%= link_to "Cart (#{@user_cart.bookings.size})", cart_path(@user_cart), class: "pr-2" %></button>
-              <%= link_to "Profile", dashboard_path, class: "mr-4" %>
-              <%= link_to "Log Out", destroy_user_session_path,method: :delete, class: "mr-4" %>
+              <%= link_to "Profile", dashboard_path, class: "mr-4 text-white" %>
+              <%= link_to "Log Out", destroy_user_session_path,method: :delete, class: "mr-4 text-white" %>
             </li>
           <% end %>
         </ul>
