@@ -12,9 +12,9 @@ class BookingsController < ApplicationController
     @booking.tour = @tour
     @booking.cart = @user_cart
     if @booking.save
-      redirect_to root_path
+      redirect_to cart_path(@user_cart)
     else
-      flash[:alert] = "Something went wrong."
+
       render :new
     end
   end
@@ -28,7 +28,6 @@ class BookingsController < ApplicationController
     if @booking.update(booking_params)
     redirect_to tour_booking_path
     else
-      flash[:alert] = "Something went wrong."
       render :edit
     end
   end

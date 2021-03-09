@@ -1,6 +1,5 @@
 <main>
   <section>
-    <form>
         <%= simple_form_for [@tour, Booking.new] do |t| %>
           <div class="form-row">
             <div class="form-group col-md-12">
@@ -28,7 +27,7 @@
 
           <div class="form-row">
             <div class="form-group col-md-4">
-              <%= t.input :language,:collection => %w[English French German Spanish Russian Italian], required: :true, label: 'Prefered Language' %>
+              <%= t.input :language, :collection => %w[English French German Spanish Russian Italian], required: :true, label: 'Prefered Language' %>
             </div>
 
             <div class="form-group col-md-8">
@@ -42,6 +41,5 @@
           <%= link_to "Back to Main Page", tours_path, class: "btn btn-outline-warning btn-sm mb-3" %>
         </div>
       <% end %>   
-    </form>
   </section>
 </main>

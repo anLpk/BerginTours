@@ -1,1 +1,6 @@
 <h1>It is working!!!</h1>
+
+<% @cart.bookings.each do |booking| %>
+  <%= booking.tour.title %><%= booking.calculate_total_price %>
+  <%= booking.start_date %>
+<% end %>
