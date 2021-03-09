@@ -59,7 +59,7 @@
           <p class="mb-3">Be the first to leave a review for <strong><%= @tour.title %></strong></p>
         <% else %>
           <% @tour.reviews.each do |review| %>
-            <p class="review-title p-3" id="review-<%= review.id %>"> <%= review.user.email %> <br> <%= review.rating.times do %>
+            <p class="review-title p-3" id="review-<%= review.id %>"> <%= review.user.email %> <br> <% review.rating.times do %>
               <i class="fas fa-star"></i>
             <%end%> <br><%= review.title %></p>
             <p class="review-content p-3" id="review-<%= review.id %>"><%= review.content %></p>
