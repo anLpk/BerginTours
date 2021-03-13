@@ -1,6 +1,67 @@
-<h1>It is working!!!</h1>
-
-<% @cart.bookings.each do |booking| %>
-  <%= booking.tour.title %><%= booking.calculate_total_price %>
-  <%= booking.start_date %>
-<% end %>
+<main class="cart-main-container">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="card mt-5 col-lg-10 mb-3" style="min-width: 14rem;">
+          <div class="card-header d-flex justify-content-between">
+            <h1>Shopping Cart: Tours I booked</h1>
+          </div>
+          <div class="promotion-code my-5">
+            <div><label class="h4" for="promo-code">Enter a promotional code</label></div>
+            <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+            <button class="ml-3 btn btn-success">Apply</button>
+          </div>
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Booking ID#</th>
+                  <th scope="col">Tour Name</th>
+                  <th scope="col">Pax</th>
+                  <th scope="col">Start date</th>
+                  <th scope="col">Total Price</th>  
+                </tr>
+              </thead>
+              <tbody>
+                <% @cart.bookings.each do |booking| %>
+                  <tr>
+                    <th scope="row"><%= booking.id %></th>
+                    <%= cl_image_tag booking.tour.photos[0].key, class: "show-page-img", alt: "#{booking.tour.title} Picture"  %>
+                    <td><%= booking.tour.title %></td>
+                    <td><%= booking.number_of_adult %></td>
+                    <td><%= booking.start_date %></td>
+                    <td><%= booking.calculate_total_price %> USD</td>
+                    <%= link_to "Remove", booking_path(booking), method: :delete, class: "btn btn-sm btn-danger" %>
+                  </tr>
+                <%end%>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <aside>
+    <div class="summary">
+      <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal"><%= @cart.calculate_total_price %></div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total"><%= @cart.calculate_total_price %></div>
+        </div>
+        <div class="summary-checkout">
+          <button class="checkout-cta">Go to Secure Checkout</button>
+        </div>
+    </div>
+  </aside>
+</main>
+  <div class="text-center">
+    <%= link_to "Book for another tour", tours_path, class: "btn btn-lg btn-warning" %>
+  </div>

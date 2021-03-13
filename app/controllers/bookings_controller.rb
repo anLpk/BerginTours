@@ -32,6 +32,11 @@ class BookingsController < ApplicationController
     end
   end
 
+  def destroy
+    @booking.destroy
+    redirect_to @booking.cart
+  end
+
   private
 
   def make_booking
