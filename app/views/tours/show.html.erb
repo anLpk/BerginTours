@@ -3,7 +3,7 @@
     <div class="container">
       <h1 class="pt-4 pb-4"><%= @tour.title %></h1>
       <div class="row">
-        <div class="col-lg-7">
+        <div class="col-lg-6">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <% @tour.photos.each.with_index(0) do |post, index| %>
@@ -27,27 +27,30 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-5 pl-4 pt-3">
-          <h2 class="mb-3">About this tour</h2>
-
-          <div>
-            <p><i class="far fa-credit-card"></i> Free Cancellation <br> <span>Cancel anytime for a full refund</span></p>
-          </div>
-          <div>
-            <p><i class="fas fa-virus"></i> COVID-19 Precautions <br> <span>Special healt and safety measures apply.</span></p>
-          </div>
-          <div>
-            <p><i class="fas fa-skiing"></i> Skip the line <br> <span>Skip the line through separate entrance.</span></p>     
-          </div>
-          <div>
-            <p><i class="fas fa-headphones"></i> Audio Guide | Headphones <br> <span>Spanish, Korean, Chinese, Italian, Russian, German, Hindi, Arabic</span></p> 
-          </div>
-          <div>
-            <%= link_to "Back to Main Page", tours_path, class: "btn btn-warning mr-4" %>
-            <%= link_to "Make a booking", new_tour_booking_path(@tour), class: "btn btn-success" %> 
-          </div>
+        <div class="col-lg-6">
+        <div id="form-total-price" data-price="<%= @tour.price %>">
+          <p>Start From: <span id="display-total-price"></span></p>
+        </div>
+          <%= render 'bookings/form', tour: @tour %>
         </div>      
         </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2 class="mb-3">About this tour</h2>
+      <div>
+        <p><i class="far fa-credit-card"></i> Free Cancellation <br> <span>Cancel anytime for a full refund</span></p>
+      </div>
+      <div>
+        <p><i class="fas fa-virus"></i> COVID-19 Precautions <br> <span>Special healt and safety measures apply.</span></p>
+      </div>
+      <div>
+        <p><i class="fas fa-skiing"></i> Skip the line <br> <span>Skip the line through separate entrance.</span></p>     
+      </div>
+      <div>
+        <p><i class="fas fa-headphones"></i> Audio Guide | Headphones <br> <span>Spanish, Korean, Chinese, Italian, Russian, German, Hindi, Arabic</span></p> 
       </div>
     </div>
   </section>
