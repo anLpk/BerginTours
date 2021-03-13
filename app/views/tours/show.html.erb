@@ -27,10 +27,10 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-6">
-        <div id="form-total-price" data-price="<%= @tour.price %>">
-          <p>Start From: <span id="display-total-price"></span></p>
-        </div>
+        <div class="col-lg-6 form-container">
+          <div class="my-3 text-center" id="form-total-price" data-price="<%= @tour.price %>">
+            <h3>Total Price: <span id="display-total-price"><%= @tour.price %> USD</span></h3>
+          </div>
           <%= render 'bookings/form', tour: @tour %>
         </div>      
         </div>

@@ -10,10 +10,11 @@ const formTotalPriceCalculation = () => {
   let infantTarget = 0;
 
   const insertTotalPrice = () => {
-    displayPrice.innerText =
+    displayPrice.innerText = `${
       adultTarget * parseInt(dataSetPrice) +
       childrenTarget * parseInt(dataSetPrice) * 0.5 +
-      infantTarget * parseInt(dataSetPrice) * 0;
+      infantTarget * parseInt(dataSetPrice) * 0
+    } USD`;
   };
 
   adult.addEventListener("change", (e) => {
