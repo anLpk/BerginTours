@@ -18,9 +18,11 @@ import "bootstrap";
 import { initFlatpickr } from "./plugins/flatpickr";
 import { initStarRating } from "./plugins/init_star_rating";
 import { scrollDownNavBar } from "./plugins/scroll_navbar";
+import { formTotalPriceCalculation } from "./plugins/form_total_price";
 
 document.addEventListener("turbolinks:load", () => {
   initFlatpickr();
   initStarRating();
   scrollDownNavBar();
+  formTotalPriceCalculation();
 });
