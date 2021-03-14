@@ -1,31 +1,34 @@
 <main>
   <section>
-    <div class="container">    
+    <div class="container mb-5">    
       <h1 class="pt-4 pb-4 text-center"><%= @tour.title %></h1>
-      <%= render 'large_screen_img' %>
       <div class="row">
-        <%= render 'show_carousel' %>
-     
+        <div class="col-md-8">
+          <%= render 'show_carousel' %>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div>
+            <p><i class="far fa-credit-card"></i> Free Cancellation <br> <span>Cancel anytime for a full refund</span></p>
+          </div>
+          <div>
+            <p><i class="fas fa-virus"></i> COVID-19 Precautions <br> <span>Special healt and safety measures apply.</span></p>
+          </div>
+          <div>
+            <p><i class="fas fa-skiing"></i> Skip the line <br> <span>Skip the line through separate entrance.</span></p>     
+          </div>
+          <div>
+            <p><i class="fas fa-headphones"></i> Audio Guide | Headphones <br> <span>Spanish, Korean, Chinese, Italian, Russian, German, Hindi, Arabic</span></p> 
+          </div>
+        </div>
+        
         </div>
       </div>
     </div>
   </section>
   <section class="container">
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-6">
         <h2 class="mb-3">About this tour</h2>
-        <div>
-          <p><i class="far fa-credit-card"></i> Free Cancellation <br> <span>Cancel anytime for a full refund</span></p>
-        </div>
-        <div>
-          <p><i class="fas fa-virus"></i> COVID-19 Precautions <br> <span>Special healt and safety measures apply.</span></p>
-        </div>
-        <div>
-          <p><i class="fas fa-skiing"></i> Skip the line <br> <span>Skip the line through separate entrance.</span></p>     
-        </div>
-        <div>
-          <p><i class="fas fa-headphones"></i> Audio Guide | Headphones <br> <span>Spanish, Korean, Chinese, Italian, Russian, German, Hindi, Arabic</span></p> 
-        </div>
         <div class="content">
           <h3>Daily Ephesus Tour from Istanbul</h3>
           <p>Early in the morning, you will be picked up from your hotel and you go to the airport. 
@@ -39,7 +42,7 @@
         </div>
         <%= render 'accordion' %>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-6">
         <div class="form-container p-4">
           <div class="my-3 text-center" id="form-total-price" data-price="<%= @tour.price %>">
             <h3>Total Price: <span id="display-total-price"><%= @tour.price %> USD</span></h3>

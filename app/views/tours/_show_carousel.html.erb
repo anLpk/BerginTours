@@ -1,5 +1,5 @@
-<div class="col-sm-12">
-<div id="carouselExampleIndicators" class="carousel slide d-lg-none" data-ride="carousel">
+<div class="col-md-12">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <% @tour.photos.each.with_index(0) do |post, index| %>
       <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" class="<%= index.zero? ? 'active' : '' %>"></li>

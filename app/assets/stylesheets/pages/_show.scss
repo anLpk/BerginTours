@@ -1,6 +1,6 @@
 .show-page-img {
-  width: 600px;
-  height: 400px;
+  width: 700px;
+  height: 450px;
 }
 
 .large-screen-img {
@@ -21,4 +21,24 @@
   .large-screen-img-layout {
     display: block;
   }
+}
+
+.fa-credit-card {
+  color: $red;
+  font-weight: bolder;
+}
+
+.fa-virus {
+  color: $green;
+  font-weight: bolder;
+}
+
+.fa-skiing {
+  color: $orange;
+  font-weight: bolder;
+}
+
+.fa-headphones {
+  color: $instagram;
+  font-weight: bolder;
 }
