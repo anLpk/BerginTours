@@ -1,17 +1,42 @@
 <div class="container">
-  <div class="row">
+  <header class="blog-header py-3">
+      <div class="text-center">
+        <%= link_to "Bergin Tours Travel Articles", articles_path, class: "blog-header-logo text-dark h3" %>
+      </div>
+  </header>
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+    </nav>
+  </div>
+</div>
+<section class="blog-banner">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1605213605677-861baf60c228?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);">
+    <div class="container">
+      <h1>Lorem <strong>ipsum</strong> dolor <strong>sit amet consectetur</strong>!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa tempore sint ipsum itaque, doloribus cupiditate? Laboriosam error quis nam maxime.</p>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+  <div class="row mt-3 mb-3">
     <% @articles.each do |article| %>
-      <div class="card-trip col-lg-4 px-0 py-0 mt-5">
-        <%= cl_image_tag article.photos[0].key, class: "article-img", alt: "#{article.title} Picture"  %>
-          <div class="card-trip-infos">
-            <div>
-              <h3 class="card-title"> <%= link_to article.title, article_path(article) %></h3>
-              <p>Written by <%= article.author %></p>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0"><%= article.title %></h3>
+            <div class="mb-1 text-muted"><%= article.created_at.strftime('%a, %d %b %Y') %></div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="mt-1 mb-1 text-muted">Written by <strong><%= article.author %></strong></p>
+              <%= link_to "Continue reading...", article_path(article), class: "stretched-link" %>
             </div>
-            <h2 class="card-trip-pricing">#History #MiddleEast</h2>
-            <%= cl_image_tag article.photos[1].key, class: "card-trip-user avatar-bordered", alt: "#{article.author} Image"  %>
+            <div class="col-auto d-none d-lg-block py-0 px-0">
+              <%= cl_image_tag article.photos[0].key, width: 200, heigth: 250, class: "bd-placeholder-img", alt: "#{article.title} Picture"  %>
+            </div>
           </div>
+        </div>
       </div>
     <% end %>
   </div>
-</div>
+</main>
