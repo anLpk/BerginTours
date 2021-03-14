@@ -276,6 +276,7 @@ file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?
 
 article_1.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
 article_1.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
+article_1.tag_list = "Middle East"
 article_1.save
 
 puts "database is clean"

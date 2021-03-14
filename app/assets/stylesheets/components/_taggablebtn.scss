@@ -12,3 +12,9 @@
     background-color: $nav-link-color;
   }
 }
+
+.article-btn {
+  &:hover {
+    background-color: $orange !important;
+  }
+}
