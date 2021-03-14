@@ -10,6 +10,7 @@ class ToursController < ApplicationController
   end
 
   def show
+    @tours = Tour.all
     @tour = Tour.find(params[:id])
     @review = Review.new
     # @booking = Booking.where('id NOT IN (SELECT DISTINCT(booking_id) FROM reviews)').where(tour: @tour).find_by(user: current_user)
