@@ -1,56 +1,51 @@
 <main>
   <section>
-    <div class="container">
-      <h1 class="pt-4 pb-4"><%= @tour.title %></h1>
+    <div class="container">    
+      <h1 class="pt-4 pb-4 text-center"><%= @tour.title %></h1>
+      <%= render 'large_screen_img' %>
       <div class="row">
-        <div class="col-lg-6">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <% @tour.photos.each.with_index(0) do |post, index| %>
-                <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" class="<%= index.zero? ? 'active' : '' %>"></li>
-              <% end %>
-            </ol>
-            <div class="carousel-inner">
-              <% @tour.photos.each.with_index(0) do |photo, index| %>
-                <div class="carousel-item <%= index.zero? ? 'active' : '' %>">
-                  <%= cl_image_tag photo.key, class: "show-page-img", alt: "#{@tour.title} Picture"  %>
-                </div>
-              <% end %>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-6 form-container">
-          <div class="my-3 text-center" id="form-total-price" data-price="<%= @tour.price %>">
-            <h3>Total Price: <span id="display-total-price"><%= @tour.price %> USD</span></h3>
-          </div>
-          <%= render 'bookings/form', tour: @tour %>
-        </div>      
+        <%= render 'show_carousel' %>
+     
         </div>
       </div>
     </div>
   </section>
-  <section>
-    <div class="container">
-      <h2 class="mb-3">About this tour</h2>
-      <div>
-        <p><i class="far fa-credit-card"></i> Free Cancellation <br> <span>Cancel anytime for a full refund</span></p>
+  <section class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h2 class="mb-3">About this tour</h2>
+        <div>
+          <p><i class="far fa-credit-card"></i> Free Cancellation <br> <span>Cancel anytime for a full refund</span></p>
+        </div>
+        <div>
+          <p><i class="fas fa-virus"></i> COVID-19 Precautions <br> <span>Special healt and safety measures apply.</span></p>
+        </div>
+        <div>
+          <p><i class="fas fa-skiing"></i> Skip the line <br> <span>Skip the line through separate entrance.</span></p>     
+        </div>
+        <div>
+          <p><i class="fas fa-headphones"></i> Audio Guide | Headphones <br> <span>Spanish, Korean, Chinese, Italian, Russian, German, Hindi, Arabic</span></p> 
+        </div>
+        <div class="content">
+          <h3>Daily Ephesus Tour from Istanbul</h3>
+          <p>Early in the morning, you will be picked up from your hotel and you go to the airport. 
+          And you fly to Izmir, meet with our tour guide when you land to the Izmir Airport. Ephesus, 
+          was the second largest city in the Roman Empire over 250.000 people in the 1st BC. Ranking 
+          only behind Rome it was the second largest city in the world? Ephesus was also a harbour city. 
+          And, this giant city was built only with marbel. Did you know Ephesus had a largest amphitheater 
+          in the ancient world over 25.000 seats. Also see Goddess Nike, Local pharmacy, Hadrian Gate, Library of Celcius 
+          (the third largest library), Marbel Street and Harbour Street. Temple of Artemis or Artemision, also known as the 
+          Temple of Diana, was a Greek Temple dedicated to the goddess Artemis. It was located in Ephesus and it was one of the seven wonders of the world. The House of Virgin Mary, is a place where according to the beliefs of many people Mary, the mother of Jesus, spent her last years of her life. She was supposed to arrive at Ephesus together with St. John and lived there in the years 37-45 CE until her Assumption or Dormition. After the tour, you will be transfered to the Izmir Airport. Fly back to Istanbul. When you arrive to Istanbul you will transfer back to your hotel.</p>
+        </div>
+        <%= render 'accordion' %>
       </div>
-      <div>
-        <p><i class="fas fa-virus"></i> COVID-19 Precautions <br> <span>Special healt and safety measures apply.</span></p>
-      </div>
-      <div>
-        <p><i class="fas fa-skiing"></i> Skip the line <br> <span>Skip the line through separate entrance.</span></p>     
-      </div>
-      <div>
-        <p><i class="fas fa-headphones"></i> Audio Guide | Headphones <br> <span>Spanish, Korean, Chinese, Italian, Russian, German, Hindi, Arabic</span></p> 
+      <div class="col-md-5">
+        <div class="form-container p-4">
+          <div class="my-3 text-center" id="form-total-price" data-price="<%= @tour.price %>">
+            <h3>Total Price: <span id="display-total-price"><%= @tour.price %> USD</span></h3>
+          </div>
+          <%= render 'bookings/form', tour: @tour %>
+        </div> 
       </div>
     </div>
   </section>

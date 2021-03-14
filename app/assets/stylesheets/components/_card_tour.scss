@@ -18,76 +18,35 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  .card-tour-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+  p {
+    font-size: 14px;
+    opacity: 0.7;
+    margin: 0;
+  }
+  .card-trip-infos {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    .card-trip-user {
+      position: absolute;
+      right: 16px;
+      top: -20px;
+      width: 40px;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
+  }
 }
-
-.card-trip > img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.card-trip h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card-trip p {
-  font-size: 12px;
-  opacity: 0.7;
-  margin: 0;
-}
-
-.card-trip .card-trip-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-}
-
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
-}
-
-// <div class="container">
-// <div class="row">
-//   <% @tours[5..6].each do |tour| %>
-//     <div class="card col-lg-5 px-0 py-0">
-//       <div class="tour-card">
-//         <%= cl_image_tag tour.photos[0].key, class: "card-img-hot", alt: "#{tour.title} Picture"  %>
-//         <h6 class="guided"><%= tour.tag_text %></h6>
-//         <h2> <%= link_to tour.title, tour_path(tour) %></h2>
-//         <h5><%= tour.description %></h5>
-//         <div class="d-flex justify-content-between">
-//           <div class="icon">
-//             <i class="far fa-clock"> <span><strong><%= tour.duration %></strong> </span></i><br>
-//             <i class="fas fa-running"> <span><strong>Skip the line</strong></span></i><br>
-//             <i class="fas fa-user-friends"> <span><strong><%= tour.group_size %></strong></span></i>
-//           </div>
-//           <div class="prices mr-4 mt-3">
-//             <button class="btn btn-warning btn-lg">Save 190$</button>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   <% end %>
-// </div>
-// </div>
-// <%# <div class="carousel-caption">
-// <div class="carousel-text-container">
-//   <div class="info">
-//     <div class="inner">
-//       <h5>Lorem Ipsum Title</h5>
-//       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-//         Modi, odio. Veritatis, tempora. Sapiente placeat, provident inventore
-//         porro modi voluptatibus molestias excepturi commodi fugit nobis corrupti
-//         error et totam! Nihil, delectus.
-//       </p>
-//     </div>
-//   </div>
-// </div>
-// </div> %>

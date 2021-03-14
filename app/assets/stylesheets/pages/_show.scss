@@ -2,3 +2,23 @@
   width: 600px;
   height: 400px;
 }
+
+.large-screen-img {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+// when the browser window is 960px wide or less:
+@media only screen and (max-width: 960px) {
+  .large-screen-img-layout {
+    display: none;
+  }
+}
+
+// when the browser window is 961px wide or more:
+@media only screen and (min-width: 961px) {
+  .large-screen-img-layout {
+    display: block;
+  }
+}
