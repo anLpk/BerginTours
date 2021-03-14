@@ -1,0 +1,27 @@
+.trusted-by {
+  .trusted-text {
+    opacity: 0.7;
+  }
+  .trusted-icons {
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+// when the browser window is 960px wide or less:
+@media only screen and (max-width: 960px) {
+  .trusted-text {
+    display: none;
+  }
+  .trusted-icons {
+    font-size: 2.5em;
+  }
+}
+
+// when the browser window is 961px wide or more:
+@media only screen and (min-width: 961px) {
+  .trusted-icons {
+    font-size: 4.5em;
+  }
+}
