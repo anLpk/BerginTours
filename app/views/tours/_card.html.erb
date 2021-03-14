@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <% @tours.each do |tour| %>
+      <div class="card-trip col-lg-5 m-4 px-0 py-0">
+        <%= cl_image_tag tour.photos[0].key, class: "card-tour-img", alt: "#{tour.title} Picture"  %>
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= link_to tour.title, tour_path(tour) %></h2>
+            <p><%= tour.description %></p>
+            <div class="d-flex icon">
+              <i class="far fa-clock mt-2 mr-3"> <span><%= tour.duration %></span></i><br>
+              <i class="fas fa-running mt-2 mr-3"> <span>Skip the line</span></i><br>
+              <i class="fas fa-user-friends mt-2 mr-3"> <span><%= tour.group_size %></span></i>
+            </div>
+          </div>
+          <h2 class="card-trip-pricing">$ <%= tour.price %></h2>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

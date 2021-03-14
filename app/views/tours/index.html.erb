@@ -13,29 +13,9 @@
   </section>
   
   <section>
-    <div class="container">
-        <h1 id="anchor-tag" class="text-center mt-5 mb-5">Explore Our Top Destinations</h1>
-        <div class="text-center mb-5">
-          <% ActsAsTaggableOn::Tag.all.each do |tag| %>
-            <%= link_to tag, tours_path(tag: tag.name, anchor: "anchor-tag" ), class: "btn-taggable d-inline-block mb-3" %>
-          <% end %>
-        </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <% @tours.each do |tour| %>
-        <div class="card-trip col-lg-5 m-4 px-0 py-0">
-          <%= cl_image_tag tour.photos[0].key, class: "card-tour-img", alt: "#{tour.title} Picture"  %>
-          <div class="card-trip-infos">
-            <div>
-              <h2><%= link_to tour.title, tour_path(tour) %></h2>
-              <p><%= tour.description %></p>
-            </div>
-            <h2 class="card-trip-pricing">£<%= tour.price %></h2>
-          </div>
-        </div>
-        <% end %>
-      </div>
-    </div>
+    <%= render 'taggable' %>
+
+    <%= render 'card' %>
+
   </section>
 </main>

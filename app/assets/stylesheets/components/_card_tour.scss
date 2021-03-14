@@ -1,15 +1,17 @@
 /* Icon Style */
 .icon {
-  position: relative;
-  right: -1em;
   vertical-align: middle;
 }
 
-.fa-clock,
-.fa-running,
+.fa-clock {
+  color: $orange;
+  font-weight: bolder;
+}
+.fa-running {
+  color: $trip-advsior;
+}
 .fa-user-friends {
-  padding: 0.3rem;
-  font-size: 1rem;
+  color: $nav-link-color;
 }
 
 .card-trip {
