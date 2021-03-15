@@ -3,10 +3,13 @@
     <div class="container mb-5">    
       <h1 class="pt-4 pb-4 text-center"><%= @tour.title %></h1>
       <div class="row">
-        <div class="col-md-8">
+      
+        <div class="col-md-12">
           <%= render 'show_carousel' %>
+          <%= render 'large_screen_img' %>
+          
         </div>
-        <div class="col-md-4 mt-5">
+        <div class="col-md-12 mt-5">
           <div>
             <p><i class="far fa-credit-card"></i> Free Cancellation <br> <span>Cancel anytime for a full refund</span></p>
           </div>
@@ -80,6 +83,7 @@
 
   <section>
     <div class="container mt-3 mb-3">
+      <h3>Reviews from our clients</h3>
       <div id="reviews">
         <% if @tour.reviews.blank? %>
           <p class="mb-3">Be the first to leave a review for <strong><%= @tour.title %></strong></p>

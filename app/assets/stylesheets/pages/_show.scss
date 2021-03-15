@@ -9,17 +9,17 @@
   padding: 0 2rem 2rem;
 }
 
-// when the browser window is 960px wide or less:
-@media only screen and (max-width: 960px) {
-  .large-screen-img-layout {
-    display: none;
+// when the browser window is 720px wide or less:
+@media only screen and (max-width: 720px) {
+  .carousel-display {
+    display: block;
   }
 }
 
-// when the browser window is 961px wide or more:
-@media only screen and (min-width: 961px) {
-  .large-screen-img-layout {
-    display: block;
+// when the browser window is 721px wide or more:
+@media only screen and (min-width: 721px) {
+  .carousel-display {
+    display: none;
   }
 }
 
@@ -41,4 +41,61 @@
 .fa-headphones {
   color: $instagram;
   font-weight: bolder;
+}
+
+.large {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 1%;
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  .container__item {
+    height: auto;
+    margin-top: 1vw;
+    width: 98vw;
+  }
+  .container__item:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container__item:first-child {
+    width: 100%;
+  }
+  .container__item:nth-child(n + 2) {
+    flex: 1;
+    margin-right: 1%;
+  }
+  .container__item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .container__item:nth-child(-n + 2) {
+    flex: none;
+    margin: 0;
+    width: 49.5%;
+  }
+  .container__item:first-child {
+    margin-right: 1%;
+  }
+  .container__item:nth-child(n + 3) {
+    flex: 1;
+    margin-right: 1%;
+  }
+  .container__item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .lg-img-container {
+    display: none;
+  }
 }

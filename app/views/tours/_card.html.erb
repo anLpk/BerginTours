@@ -8,12 +8,12 @@
             <h2><%= link_to tour.title, tour_path(tour) %></h2>
             <p><%= tour.description %></p>
             <div class="d-flex icon">
-              <i class="far fa-clock mt-2 mr-3"> <span><%= tour.duration %></span></i><br>
-              <i class="fas fa-running mt-2 mr-3"> <span>Skip the line</span></i><br>
-              <i class="fas fa-user-friends mt-2 mr-3"> <span><%= tour.group_size %></span></i>
+              <i class="far fa-clock mt-2 mr-1"> <span><%= tour.duration %></span></i><br>
+              <i class="fas fa-running mt-2 mr-1"> <span>Skip the line</span></i><br>
+              <i class="fas fa-user-friends mt-2 mr-1"> <span><%= tour.group_size %></span></i>
             </div>
           </div>
-          <h2>$ <%= tour.price %></h2>
+          <h3><i class="fas fa-dollar-sign"></i><%= tour.price %></h3>
         </div>
       </div>
     <% end %>
