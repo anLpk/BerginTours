@@ -57,7 +57,7 @@
             <p>Total: <%= @cart.calculate_total_price %></p>
           </div>
           <div class="summary-checkout">
-            <button class="btn btn-lg btn-primary my-3">Go to Secure Checkout</button>
+            <%= link_to "Go to Secure Checkout",  , class: "btn btn-lg btn-primary my-3"%>
           </div>
         </div>
       </div>
