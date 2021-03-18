@@ -1,5 +1,6 @@
 class BookingsController < ApplicationController
   before_action :make_booking, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!, only: [:create]
 
   def new
     @tour = Tour.find(params[:tour_id])
@@ -11,10 +12,15 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.tour = @tour
     @booking.cart = @user_cart
+
+    session[:booking] = @booking
+    if (!user_signed_in?)
+      return redirect_to new_user_session_path
+    end
     if @booking.save
+      session[:booking] = nil
       redirect_to cart_path(@user_cart)
     else
-
       render :new
     end
   end
