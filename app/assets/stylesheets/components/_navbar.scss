@@ -57,3 +57,13 @@
 .nav-bar-blue {
   background-color: $nav-link-color !important;
 }
+
+.logo-container {
+  font-weight: 700;
+  text-shadow: 0.5px 0.5px 0px $green, 1px 1px 0px $green, 1.5px 1.5px 0px $blue,
+    2px 2px 0px $blue, 2.5px 2.5px 0px $yellow, 3px 3px 0px $yellow,
+    3.5px 3.5px 0px $orange, 4px 4px 0px $orange, 4.5px 4.5px 0px $orange;
+  .navbar-brand {
+    font-size: 2em;
+  }
+}
