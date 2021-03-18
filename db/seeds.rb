@@ -384,6 +384,66 @@ tour_25.photos.attach(io: file_5, filename: 'fromistanbul_3.jpg', content_type: 
 tour_25.tag_list = "Ephesus"
 tour_25.save
 
+tour_26 = Tour.create(title: "Pamukkale Tour from Kusadasi", description: "Visits Pamukkale, Hierapolis, and inc Hot Air Balloon", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 269)
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_5.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_1.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_2.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_3.jpg'))
+
+tour_26.photos.attach(io: file_1, filename: 'private_5.jpg', content_type: 'image/jpg')
+tour_26.photos.attach(io: file_2, filename: 'private_1.jpg', content_type: 'image/jpg')
+tour_26.photos.attach(io: file_3, filename: 'private_2.jpg', content_type: 'image/jpg')
+tour_26.photos.attach(io: file_4, filename: 'private_4.jpg', content_type: 'image/jpg')
+tour_26.photos.attach(io: file_5, filename: 'private_3.jpg', content_type: 'image/jpg')
+tour_26.tag_list = "Pamukkale"
+tour_26.save
+
+tour_27 = Tour.create(title: "Pamukkale & Aphrodisias Tour From Kusadasi", description: "Visits Pamukkale, Hierapolis, and Aphrodisias", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 169)
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_2.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_1.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_5.jpg'))
+
+tour_27.photos.attach(io: file_1, filename: 'afro_2.jpg', content_type: 'image/jpg')
+tour_27.photos.attach(io: file_2, filename: 'afro_1.jpg', content_type: 'image/jpg')
+tour_27.photos.attach(io: file_3, filename: 'afro_3.jpg', content_type: 'image/jpg')
+tour_27.photos.attach(io: file_4, filename: 'afro_4.jpg', content_type: 'image/jpg')
+tour_27.photos.attach(io: file_5, filename: 'afro_5.jpg', content_type: 'image/jpg')
+tour_27.tag_list = "Pamukkale"
+tour_27.save
+
+tour_28 = Tour.create(title: "Pamukkale & Laodicea Tour From Kusadasi", description: "Visits Pamukkale, Hierapolis, and Laodicea", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 149)
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/laodi_1.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/laodi_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/laodi_3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/laodi_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/laodi_5.jpg'))
+
+tour_28.photos.attach(io: file_1, filename: 'laodi_1.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_2, filename: 'laodi_2.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_3, filename: 'laodi_3.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_4, filename: 'laodi_4.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_5, filename: 'laodi_5.jpg', content_type: 'image/jpg')
+tour_28.tag_list = "Pamukkale"
+tour_28.save
+
+tour_29 = Tour.create(title: "Pamukkale Tour From Istanbul", description: "Visits Pamukkale,and Hierapolis", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 249)
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_4.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_1.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_2.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_3.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_5.jpg'))
+
+tour_29.photos.attach(io: file_1, filename: 'from_ist_4.jpg', content_type: 'image/jpg')
+tour_29.photos.attach(io: file_2, filename: 'from_ist_1.jpg', content_type: 'image/jpg')
+tour_29.photos.attach(io: file_3, filename: 'from_ist_2.jpg', content_type: 'image/jpg')
+tour_29.photos.attach(io: file_4, filename: 'from_ist_3.jpg', content_type: 'image/jpg')
+tour_29.photos.attach(io: file_5, filename: 'from_ist_5.jpg', content_type: 'image/jpg')
+tour_29.tag_list = "Pamukkale"
+tour_29.save
+
 # article_1 = Article.create(title: "Mesopotamia", author: "Lara Payne",
 # content: "Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
 # civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
