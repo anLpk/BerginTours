@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     resources :reviews, only: [:new, :create]
   end
 
-  resources :carts, only: [:show]
+  resources :carts, only: [:show, :update]
 
   resources :articles, only: [:index, :show]
 
