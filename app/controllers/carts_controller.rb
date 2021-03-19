@@ -23,4 +23,12 @@ class CartsController < ApplicationController
     @cart.update(checkout_session_id: session.id)
     end
   end
+
+  def discount 
+    @cart = Cart.find(params[:id])
+    @cart.bookings { |booking| booking.update(calculate_total_price: booking.calculate_total_price * 0.75) }
+    flash[:notice] = "You're discount code has been accepted"
+    session[:discount] = true
+    redirect_to @cart
+  end
 end

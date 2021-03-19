@@ -9,8 +9,8 @@
           </div>
           <div class="promotion-code my-1">
             <div><label class="h4" for="promo-code">Enter a promotional code</label></div>
-            <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
-            <button class="ml-3 btn btn-success">Apply</button>
+            <input id="promo-code" type="text" name="promo-code" maxlength="8" class="promo-code-field">
+            <%= link_to "Apply", discount_path(@cart), class: "ml-3 btn btn-success", method: :patch %>
           </div>
           <div class="card-body">
             <table class="table">
@@ -39,7 +39,8 @@
                         <% end %>
                         </td>
                     <td><%= booking.start_date.strftime('%a, %d %b %Y') %></td>
-                    <td><%= booking.calculate_total_price %> USD</td>
+                    <td><%= session[:discount] ? booking.calculate_total_price * 0.75 : booking.calculate_total_price %> USD</td>
+                        <% session[:discount] = nil  %>
                     <td><%= link_to "Remove", booking_path(booking), method: :delete, class: "btn btn-sm btn-danger" %></td>
                   </tr>
                 <%end%>
