@@ -64,40 +64,17 @@
     <div class="row">
       <div class="col-md-12">
         <h3 class="pt-2 pb-2 tour-title-show"><%= @tour.title %></h3>
+        <%# <%= @tour.schedule.html_safe %>
         <%= @tour.schedule.html_safe %>
-        <div>
-          <p>Fly over the fairy chimneys and tuff valleys of Cappadocia on hot air balloon 
-          flight and get fascinating views of the unique landscape. You can see the sun rise 
-          on fairy chimneys and enjoy a Champagne celebration upon your landing.</p>
-          <p>2 hours before the sunrise we will pick you up from your hotel then drive to area.</p>
-          <ul>
-            <li>Admire Cappadocia's magical fairy chimneys from above</li>
-            <li>Get a breakfast with hot coffee and tea before the flight</li>
-            <li>Marvel at breathtaking panoramic views of Cappadocia</li>
-            <li>Receive a flight certificate and a glass of champagne after landing to celebrate</li>
-          </ul>
-          <p>After the flight we will drop you off to your hotel.</p>
-        </div>
         <%#= render 'tours/partials/accordion' %>
         <hr>
         <div class="inc-container d-flex">
           <div class="mr-5"><p>Included</p></div>
-          <div>
-            <ul class="list-inline mr-5">
-              <li><i class="fas fa-check mr-2"></i>Guide</li>
-              <li><i class="fas fa-check mr-2"></i>Hotel Pick Up & Drop Off</li>
-              <li><i class="fas fa-check mr-2"></i>Champaigne Celebration</li>
-            </ul>
-          </div>
+            <%= @tour.include.html_safe %>
         </div>
         <div class="exc-container d-flex">
           <div class="mr-5"><p>Excluded</p></div>
-          <div>
-            <ul class="list-inline">
-              <li><i class="fas fa-exclamation mr-2"></i></i>Drinks</li>
-              <li><i class="fas fa-exclamation mr-2"></i></i>Personal Expenses</li>
-            </ul>
-          </div>
+            <%= @tour.exclude.html_safe %>
         </div>
         <hr>
       </div>
