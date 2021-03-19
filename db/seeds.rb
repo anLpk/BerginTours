@@ -415,17 +415,17 @@ tour_27.tag_list = "Pamukkale"
 tour_27.save
 
 tour_28 = Tour.create(title: "Pamukkale & Laodicea Tour From Kusadasi", description: "Visits Pamukkale, Hierapolis, and Laodicea", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 149)
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/laodi_1.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/laodi_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/laodi_3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/laodi_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/laodi_5.jpg'))
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_1.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_5.jpg'))
 
-tour_28.photos.attach(io: file_1, filename: 'laodi_1.jpg', content_type: 'image/jpg')
-tour_28.photos.attach(io: file_2, filename: 'laodi_2.jpg', content_type: 'image/jpg')
-tour_28.photos.attach(io: file_3, filename: 'laodi_3.jpg', content_type: 'image/jpg')
-tour_28.photos.attach(io: file_4, filename: 'laodi_4.jpg', content_type: 'image/jpg')
-tour_28.photos.attach(io: file_5, filename: 'laodi_5.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_1, filename: 'lao_1.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_2, filename: 'lao_2.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_3, filename: 'lao_3.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_4, filename: 'lao_4.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_5, filename: 'lao_5.jpg', content_type: 'image/jpg')
 tour_28.tag_list = "Pamukkale"
 tour_28.save
 

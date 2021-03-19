@@ -1,7 +1,6 @@
 <div class="container">
   <div class="row">
     <% @tours.each do |tour| %>
-    <%= link_to tour_path(tour) do %>
       <div class="card-trip col-lg-5 m-4 px-0 py-0">
         <%= cl_image_tag tour.photos[0].key, class: "card-tour-img", alt: "#{tour.title} Picture"  %>
         <div class="card-trip-infos">
@@ -18,6 +17,5 @@
         </div>
       </div>
       <% end %>
-    <% end %>
   </div>
 </div>
