@@ -5,40 +5,40 @@
             <div class="form-group col-md-12">
               <%= t.input :start_date, label: "Tour Date", as: :string, required: :true, input_html: { id: "booking_start_date", value: session[:booking].try(:[], "start_date") } %>
             </div>
-            <div class="form-group col-md-12">
+            <div class="form-group col-md-6">
               <%= t.input :first_name, required: :true, error: 'Name is mandatory, please specify one', label: 'First Name', placeholder: "Your Name", input_html: { value: session[:booking].try(:[], "first_name") } %>
             </div>
-            <div class="form-group col-md-12">
+            <div class="form-group col-md-6">
               <%= t.input :last_name, required: :true, label: 'Last Name', placeholder: "Your Last Name", input_html: { value: session[:booking].try(:[], "last_name") } %>
             </div>
           </div>
 
           <div class="form-row">
-            <div class="form-group col-md-12">
-              <%= t.input :number_of_adult, label: "Adult (Age +9)",:collection => %w[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15], required: :true %>
+            <div class="form-group col-md-4">
+              <%= t.input :number_of_adult, label: "Adult (Age +9)",:collection => %w[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15], required: :true, input_html: { value: session[:booking].try(:[], "number_of_adult") } %>
             </div>
-            <div class="form-group col-md-12">
-              <%= t.input :number_of_children, label: "Child (Age 4 to 8)", :collection => %w[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15], required: :true %>
+            <div class="form-group col-md-4">
+              <%= t.input :number_of_children, label: "Child (Age 4 to 9)", :collection => %w[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15], required: :true, input_html: { value: session[:booking].try(:[], "number_of_children") } %>
             </div>
-            <div class="form-group col-md-12">
-              <%= t.input :number_of_infant, label: "Infant (Age 0 to 3)", :collection => %w[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15], required: :true %>
+            <div class="form-group col-md-4">
+              <%= t.input :number_of_infant, label: "Infant (Age 0 to 3)", :collection => %w[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15], required: :true, input_html: { value: session[:booking].try(:[], "number_of_infant") } %>
             </div>
           </div>
 
           <div class="form-row">
-            <div class="form-group col-md-12">
+            <div class="form-group col-md-6">
               <%= t.input :language, :collection => %w[English French German Spanish Russian Italian], required: :true, label: 'Prefered Language' %>
             </div>
 
-            <div class="form-group col-md-12">
-              <%= t.input :mobile_number, as: :tel, required: :true, label: 'Contact Number' %>
+            <div class="form-group col-md-6">
+              <%= t.input :mobile_number, as: :tel, required: :true, label: 'Contact Number', input_html: { value: session[:booking].try(:[], "mobile_number") } %>
             </div>
           </div>
 
         <%# <%= t.input :total_price %>
         <div class="text-center">
-          <%= t.submit "Confirm Your Booking", class: "btn btn-outline-success btn-sm mb-3 mr-4" %>
-          <%= link_to "Back to Main Page", tours_path, class: "btn btn-outline-warning btn-sm mb-3" %>
+          <%= t.submit "Confirm Your Booking", class: "btn btn-success mb-3 mr-4" %>
+          <%= link_to "Back to Main Page", tours_path, class: "btn btn-warning mb-3" %>
         </div>
       <% end %>   
   </section>

@@ -3,8 +3,25 @@
 }
 
 .form-container {
-  background-color: $white;
+  background-color: $nav-link-color;
+  color: $white;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  textarea:focus,
+  input:focus {
+    color: $orange;
+    font-weight: bolder;
+  }
+
+  input,
+  select,
+  textarea {
+    color: $orange;
+    font-weight: bolder;
+  }
+
+  .btn {
+    color: $white !important;
+  }
 }
