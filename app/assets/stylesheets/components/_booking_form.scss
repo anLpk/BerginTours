@@ -20,6 +20,14 @@
     color: $orange;
     font-weight: bolder;
   }
+  ::-webkit-input-placeholder {
+    /* Edge */
+    color: $orange;
+  }
+
+  ::placeholder {
+    color: $orange;
+  }
 
   .btn {
     color: $white !important;

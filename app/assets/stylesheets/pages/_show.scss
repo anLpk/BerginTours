@@ -116,9 +116,25 @@
   line-height: 0.5em !important;
 }
 
+.icon-line-height-alternative {
+  line-height: 1.5em !important;
+}
+
 hr {
   border-radius: 0;
   border-bottom: 1px solid $nav-link-color;
   background-color: $white;
   box-shadow: none;
+}
+
+.fa-bolt {
+  color: #ff8c00;
+}
+
+.fa-shuttle-van {
+  color: $instagram;
+}
+
+.minus-mr {
+  margin-top: -10em !important;
 }
