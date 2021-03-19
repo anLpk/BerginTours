@@ -58,7 +58,7 @@
           </div>
           <div class="summary-checkout">
           <% if (@cart.checkout_session_id) %>
-            <button id="pay" class="btn btn-lg btn-primary my-3">Go to Secure Checkout</button>
+            <button id="pay" class="btn btn-lg btn-warning my-3">Go to Secure Checkout</button>
             <script src="https://js.stripe.com/v3/"></script>
             <script>
               var paymentButton = document.getElementById('pay');
@@ -70,8 +70,8 @@
               });
             </script>
           <% else %>
-            <button disabled id="pay" class="btn btn-lg btn-primary my-3">Go to Secure Checkout</button>
-          <% end %>      
+            <button disabled id="pay" class="btn btn-lg btn-warning my-3">Go to Secure Checkout</button>
+          <% end %> 
           </div>
         </div>
       </div>
@@ -80,6 +80,6 @@
 </main>
 <div>
   <div class="text-center mb-3">
-    <%= link_to "Continue Shopping", tours_path, class: "btn btn-lg btn-warning" %>
+    <%= link_to "Book Another Tour", tours_path, class: "btn btn-primary" %>
   </div>
 </div>
