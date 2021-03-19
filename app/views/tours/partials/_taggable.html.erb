@@ -1,7 +1,7 @@
 <div class="container">
   <h1 id="anchor-tag" class="text-center mt-5 mb-5">Explore Our Top Destinations</h1>
   <div class="text-center mb-5">
-    <% ActsAsTaggableOn::Tag.all[0..4].each do |tag| %>
+    <% ActsAsTaggableOn::Tag.all[0..7].each do |tag| %>
       <%= link_to tag, tours_path(tag: tag.name, anchor: "anchor-tag" ), class: "btn-taggable d-inline-block mb-3" %>
     <% end %>
   </div>
