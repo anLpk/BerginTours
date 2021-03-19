@@ -1,6 +1,5 @@
 <main class="show-tour-container">
   <section>
-  <%#= @tour.content.html_safe %>
     <div class="container mb-5">
       <h1 class="pt-4 pb-4 text-center"><%= @tour.title %></h1>
       <nav aria-label="breadcrumb">
@@ -64,22 +63,46 @@
   <section class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="content">
-          <h3 class="pt-2 pb-2 tour-title-show"><%= @tour.title %></h3>
-          <p>Early in the morning, you will be picked up from your hotel and you go to the airport. 
-          And you fly to Izmir, meet with our tour guide when you land to the Izmir Airport. Ephesus, 
-          was the second largest city in the Roman Empire over 250.000 people in the 1st BC. Ranking 
-          only behind Rome it was the second largest city in the world? Ephesus was also a harbour city. 
-          And, this giant city was built only with marbel. Did you know Ephesus had a largest amphitheater 
-          in the ancient world over 25.000 seats. Also see Goddess Nike, Local pharmacy, Hadrian Gate, Library of Celcius 
-          (the third largest library), Marbel Street and Harbour Street. Temple of Artemis or Artemision, also known as the 
-          Temple of Diana, was a Greek Temple dedicated to the goddess Artemis. It was located in Ephesus and it was one of the seven wonders of the world. The House of Virgin Mary, is a place where according to the beliefs of many people Mary, the mother of Jesus, spent her last years of her life. She was supposed to arrive at Ephesus together with St. John and lived there in the years 37-45 CE until her Assumption or Dormition. After the tour, you will be transfered to the Izmir Airport. Fly back to Istanbul. When you arrive to Istanbul you will transfer back to your hotel.</p>
+        <h3 class="pt-2 pb-2 tour-title-show"><%= @tour.title %></h3>
+        <%= @tour.schedule.html_safe %>
+        <div>
+          <p>Fly over the fairy chimneys and tuff valleys of Cappadocia on hot air balloon 
+          flight and get fascinating views of the unique landscape. You can see the sun rise 
+          on fairy chimneys and enjoy a Champagne celebration upon your landing.</p>
+          <p>2 hours before the sunrise we will pick you up from your hotel then drive to area.</p>
+          <ul>
+            <li>Admire Cappadocia's magical fairy chimneys from above</li>
+            <li>Get a breakfast with hot coffee and tea before the flight</li>
+            <li>Marvel at breathtaking panoramic views of Cappadocia</li>
+            <li>Receive a flight certificate and a glass of champagne after landing to celebrate</li>
+          </ul>
+          <p>After the flight we will drop you off to your hotel.</p>
         </div>
-        <%= render 'tours/partials/accordion' %>
+        <%#= render 'tours/partials/accordion' %>
+        <hr>
+        <div class="inc-container d-flex">
+          <div class="mr-5"><p>Included</p></div>
+          <div>
+            <ul class="list-inline mr-5">
+              <li><i class="fas fa-check mr-2"></i>Guide</li>
+              <li><i class="fas fa-check mr-2"></i>Hotel Pick Up & Drop Off</li>
+              <li><i class="fas fa-check mr-2"></i>Champaigne Celebration</li>
+            </ul>
+          </div>
+        </div>
+        <div class="exc-container d-flex">
+          <div class="mr-5"><p>Excluded</p></div>
+          <div>
+            <ul class="list-inline">
+              <li><i class="fas fa-exclamation mr-2"></i></i>Drinks</li>
+              <li><i class="fas fa-exclamation mr-2"></i></i>Personal Expenses</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
       </div>
     </div>
   </section>
-
   <section>
 <div class="container mt-4">
 <h1>You may also like</h1>
