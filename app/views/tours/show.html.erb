@@ -1,8 +1,14 @@
 <main class="show-tour-container">
   <section>
   <%#= @tour.content.html_safe %>
-    <div class="container mb-5">    
+    <div class="container mb-5">
       <h1 class="pt-4 pb-4 text-center"><%= @tour.title %></h1>
+      <nav aria-label="breadcrumb">
+        <ol class="d-flex list-inline">
+          <li class="breadcrumb-item"><%= link_to "Home Page", root_path %></li>
+          <li class="breadcrumb-item active" aria-current="page"><%= @tour.title %></li>
+        </ol>
+      </nav>
       <div class="row">
         <div class="col-md-12">
           <%= render 'tours/partials/show_carousel' %>
@@ -30,6 +36,7 @@
             <div class="ml-2"><p>Audio Guide | Headphones</p><span class="text-muted">Spanish, Korean, Chinese, Italian, Russian, German, Hindi, Arabic.</span></div>
           </div>
         </div>
+        <hr>
       </div>
     </div>
   </section>

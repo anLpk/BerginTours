@@ -115,3 +115,10 @@
 .icon-line-height {
   line-height: 0.5em !important;
 }
+
+hr {
+  border-radius: 0;
+  border-bottom: 1px solid $nav-link-color;
+  background-color: $white;
+  box-shadow: none;
+}
