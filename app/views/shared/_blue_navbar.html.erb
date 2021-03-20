@@ -28,7 +28,8 @@
             </li>
           <% else %>
             <li>
-              <button class="btn-signup mr-4"><%= link_to "Cart (#{@user_cart.bookings.size})", cart_path(@user_cart), class: "pr-2" %></button>
+                            <button class="btn-signup mr-4 pr-4 pl-4"><%= link_to(cart_path(@user_cart)) do %>
+              <i class="fas fa-shopping-cart">   (<%= @user_cart.bookings.size %>)</i><% end %></button>
               <%= link_to "Profile", dashboard_path, class: "mr-4 text-white" %>
               <%= link_to "Log Out", destroy_user_session_path,method: :delete, class: "mr-4 text-white" %>
             </li>
