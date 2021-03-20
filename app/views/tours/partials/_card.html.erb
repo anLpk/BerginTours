@@ -1,23 +1,23 @@
-<div class="container">
-  <div class="row">
-    <% @tours.each do |tour| %>
-      <div class="card-trip card-links col-lg-5 m-4 px-0 py-0">
+<div class="d-flex justify-content-center flex-wrap">
+  <% @tours.each do |tour| %>
+    <div class="card-trip card-links m-4 mb-4 px-0 py-0">
       <%= link_to tour_path(tour) do  %>
         <%= cl_image_tag tour.photos[0].key, class: "card-tour-img", alt: "#{tour.title} Picture"  %>
         <div class="card-trip-infos">
-          <div>
-            <h2><%= tour.title %></h2>
-            <p><%= tour.description %></p>
-            <div class="d-flex icon">
-              <i class="far fa-clock mt-2 mr-4"> <span><%= tour.duration %></span></i><br>
-              <i class="fas fa-running mt-2 mr-4"> <span>Skip the line</span></i><br>
-              <i class="fas fa-user-friends mt-2 mr-4"> <span><%= tour.group_size %></span></i>
+          <h2 class="mb-2"><%= tour.title %></h2>
+          <p class="mb-2"><%= tour.description %></p>
+          <div class="d-flex justify-content-between icon">
+            <div class="mt-2">
+              <i class="far fa-clock mr-3"><span> <%= tour.duration %></span></i>
+              <i class="fas fa-bolt mr-3"><span> <%= tour.tag_text %></span></i>
+              <i class="fas fa-user mr-2"><span> <%= tour.group_size %></span></i>
+            </div>
+            <div>
+              <h5 class="mt-2 font-weight-bold"><%= humanized_money_with_symbol(tour.price) %></h5>
             </div>
           </div>
-          <h5 class="font-weight-bold"><%= humanized_money_with_symbol(tour.price) %></h5>
         </div>
-        <% end %>
-      </div>
       <% end %>
-  </div>
+    </div>
+  <% end %>
 </div>
