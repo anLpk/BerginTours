@@ -61,7 +61,15 @@
             <p>Total: <%= humanized_money_with_symbol(@cart.calculate_total_price) %></p>
           </div>
           <div class="summary-checkout">
-          <% if (@cart.checkout_session_id) %>
+          <% if params[:pay] %>
+            <h2>Paid</h2>
+              <div class="alert alert-info alert-dismissible fade show m-1" role="alert">
+                We have received your payment
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <% elsif (@cart.checkout_session_id) %>
             <button id="pay" class="btn btn-lg btn-warning my-3">Go to Secure Checkout</button>
             <script src="https://js.stripe.com/v3/"></script>
             <script>

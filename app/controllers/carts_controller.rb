@@ -17,7 +17,7 @@ class CartsController < ApplicationController
         currency: 'usd',
         quantity: 1
       }],
-      success_url: root_url,
+      success_url: cart_url(@cart, pay: "true"),
       cancel_url: cart_url(@cart)
     )
     @cart.update(checkout_session_id: session.id)
