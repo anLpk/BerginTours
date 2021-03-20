@@ -27,7 +27,8 @@ footer {
     margin-bottom: 2px;
   }
   .cta-text span {
-    color: #757575;
+    color: $white;
+    opacity: 0.8;
     font-size: 15px;
   }
   .footer-content {
@@ -51,11 +52,13 @@ footer {
   .footer-text p {
     margin-bottom: 14px;
     font-size: 14px;
-    color: #7e7e7e;
+    color: $white;
     line-height: 28px;
+    opacity: 0.8;
   }
   .footer-social-icon span {
     color: $white;
+    opacity: 0.8;
     display: block;
     font-size: 20px;
     font-weight: 700;
@@ -96,7 +99,7 @@ footer {
     bottom: -15px;
     height: 2px;
     width: 50px;
-    background: #ff5e14;
+    background: $orange;
   }
   .footer-widget ul li {
     display: inline-block;
@@ -105,10 +108,11 @@ footer {
     margin-bottom: 12px;
   }
   .footer-widget ul li a:hover {
-    color: #ff5e14;
+    color: $orange;
   }
   .footer-widget ul li a {
-    color: #878787;
+    color: $white;
+    opacity: 0.8;
     text-transform: capitalize;
   }
   .subscribe-form {
@@ -118,16 +122,17 @@ footer {
   .subscribe-form input {
     width: 100%;
     padding: 14px 28px;
-    background: #2e2e2e;
-    border: 1px solid #2e2e2e;
+    background: #f4f4f4;
+    border: 1px solid #f4f4f4;
     color: $white;
+    opacity: 0.8;
   }
   .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #ff5e14;
+    background: $orange;
     padding: 13px 20px;
-    border: 1px solid #ff5e14;
+    border: 1px solid $orange;
     top: 0;
   }
   .subscribe-form button i {
@@ -142,20 +147,22 @@ footer {
   .copyright-text p {
     margin: 0;
     font-size: 14px;
-    color: #878787;
+    color: $white;
+    opacity: 0.8;
   }
   .copyright-text p a {
-    color: #ff5e14;
+    color: $orange;
   }
   .footer-menu li {
     display: inline-block;
     margin-left: 20px;
   }
   .footer-menu li:hover a {
-    color: #ff5e14;
+    color: $orange;
   }
   .footer-menu li a {
     font-size: 14px;
-    color: #878787;
+    color: $white;
+    opacity: 0.8;
   }
 }
