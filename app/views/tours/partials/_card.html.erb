@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-center flex-wrap">
-  <% @tours.each do |tour| %>
+  <% @tours.shuffle.each do |tour| %>
     <div class="card-trip card-links m-4 mb-4 px-0 py-0">
       <%= link_to tour_path(tour) do  %>
         <%= cl_image_tag tour.photos[0].key, class: "card-tour-img", alt: "#{tour.title} Picture"  %>

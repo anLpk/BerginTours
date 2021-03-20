@@ -81,28 +81,32 @@
     </div>
   </section>
   <section>
-<div class="container mt-4">
-<h1>You may also like</h1>
-  <div class="row">
-    <% @tours.shuffle[0..1].each do |tour| %>
-      <div class="card-trip col-lg-5 m-4 px-0 py-0">
-        <%= cl_image_tag tour.photos[0].key, class: "card-tour-img", alt: "#{tour.title} Picture"  %>
-        <div class="card-trip-infos">
-          <div>
-            <h2><%= link_to tour.title, tour_path(tour) %></h2>
-            <p><%= tour.description %></p>
-            <div class="d-flex icon">
-              <i class="far fa-clock mt-2 mr-4"> <span><%= tour.duration %></span></i><br>
-              <i class="fas fa-running mt-2 mr-4"> <span>Skip the line</span></i><br>
-              <i class="fas fa-user-friends mt-2 mr-4"> <span><%= tour.group_size %></span></i>
+  <div class="mt-3 mb-3">
+    <h1 class="text-center">You may also like</h1>
+    <div class="d-flex justify-content-center flex-wrap">
+      <% @tours.shuffle[0..2].each do |tour| %>
+        <div class="card-trip card-links m-4 mb-4 px-0 py-0">
+          <%= link_to tour_path(tour) do  %>
+            <%= cl_image_tag tour.photos[0].key, class: "card-tour-img", alt: "#{tour.title} Picture"  %>
+            <div class="card-trip-infos">
+              <h2 class="mb-2"><%= tour.title %></h2>
+              <p class="mb-2"><%= tour.description %></p>
+              <div class="d-flex justify-content-between icon">
+                <div class="mt-2">
+                  <i class="far fa-clock mr-3"><span> <%= tour.duration %></span></i>
+                  <i class="fas fa-bolt mr-3"><span> <%= tour.tag_text %></span></i>
+                  <i class="fas fa-user mr-2"><span> <%= tour.group_size %></span></i>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold"><%= humanized_money_with_symbol(tour.price) %></h5>
+                </div>
+              </div>
             </div>
-          </div>
-          <h5 class="font-weight-bold"><%= humanized_money_with_symbol(tour.price) %></h5>
+          <% end %>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
-</div>
   </section>
 
   <section>
@@ -115,8 +119,7 @@
           <% @tour.reviews.each do |review| %>
             <p class="review-title p-3" id="review-<%= review.id %>"> <%= review.user.email %> <br> <% review.rating.times do %>
               <i class="fas fa-star"></i>
-            <%end%> <br><%= review.title %></p>
-            <p class="review-content p-3" id="review-<%= review.id %>"><%= review.content %></p>
+            <%end%> <br><%= review.title %> <br> <%= review.content %></p>
           <% end %>
         <% end %>
 
