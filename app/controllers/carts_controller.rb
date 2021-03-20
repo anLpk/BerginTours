@@ -9,7 +9,7 @@ class CartsController < ApplicationController
     session = Stripe::Checkout::Session.create(
       payment_method_types: ['card'],
       line_items: [{
-        name: "Thanks for booking #{ @cart.id}",
+        name: "Thanks for booking #{ @cart.bookings[0].tour.title}",
         images: @cart.bookings.map do |booking|
           Cloudinary::Utils.cloudinary_url(booking.tour.photos[0].key)
         end,
