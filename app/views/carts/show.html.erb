@@ -4,13 +4,14 @@
       <div class="row">
         <div class="card mt-5 col-lg-8 mb-3" style="min-width: 14rem;">
           <div class="my-4">
-            <h1>Your Shopping Cart</h1>
+            <h1>Your Travel Destinations</h1>
             <p>Thanks for your booking <strong><%= current_user.email %></strong></p>
           </div>
           <div class="promotion-code my-1">
             <div><label class="h4" for="promo-code">Enter a promotional code</label></div>
             <input id="promo-code" type="text" name="promo-code" maxlength="8" class="promo-code-field">
-            <%= link_to "Apply", discount_path(@cart), class: "ml-3 btn btn-success", method: :patch %>
+            <button class="btn btn-success ml-4">Apply</button>
+            <%#= link_to "Apply", discount_path(@cart), class: "ml-3 btn btn-success", method: :patch %>
           </div>
           <div class="card-body">
             <table class="table">
@@ -39,23 +40,25 @@
                         <% end %>
                         </td>
                     <td><%= booking.start_date.strftime('%a, %d %b %Y') %></td>
-                    <td><%= session[:discount] ? booking.calculate_total_price * 0.75 : booking.calculate_total_price %> USD</td>
-                        <% session[:discount] = nil  %>
+                    <td><%= humanized_money_with_symbol(booking.calculate_total_price) %></td>
+                    <%#= session[:discount] ? booking.calculate_total_price * 0.75 : booking.calculate_total_price %> 
+                        <%#= session[:discount] = nil  %>
                     <td><%= link_to "Remove", booking_path(booking), method: :delete, class: "btn btn-sm btn-danger" %></td>
                   </tr>
                 <%end%>
               </tbody>
             </table>
           </div>
+
         </div>
         <div class="card col-lg-3 mt-5 mb-3 ml-2 h-75 d-inline-block">
-          <p class="text-center my-3">Your Shopping Bag</p>
+          <h5 class="text-center my-3"><u>Your Shopping Bag</u></h5>
           <div class="summary-subtotal">
-            <p>Subtotal: <%= @cart.calculate_total_price %></p>
+            <p>Subtotal: <%= humanized_money_with_symbol(@cart.calculate_total_price) %></p>
             <p class="promo-title">Promotion:</p>
           </div>
           <div class="summary-total">
-            <p>Total: <%= @cart.calculate_total_price %></p>
+            <p>Total: <%= humanized_money_with_symbol(@cart.calculate_total_price) %></p>
           </div>
           <div class="summary-checkout">
           <% if (@cart.checkout_session_id) %>

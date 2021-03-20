@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   resources :articles, only: [:index, :show]
 
-  patch 'carts/:id/discount', to: 'carts#discount', as: :discount
+  # patch 'carts/:id/discount', to: 'carts#discount', as: :discount
 
   get '/dashboard', to: 'pages#dashboard'
 end
