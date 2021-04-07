@@ -35,6 +35,7 @@ gem 'acts-as-taggable-on', '~> 7.0'
 gem 'devise'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
+gem 'letter_opener', group: :development
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
