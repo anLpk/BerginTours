@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  def welcome(user)
+  def welcome
     @user = params[:user] 
     # Instance variable => available in view
     
