@@ -19,33 +19,7 @@
       <div class="container"> 
       <hr class="mb-5">   
         <div class="row">
-          <div class="col-md-5">
-            <h3 class="font-weight-bold mb-4">About this tour</h3>
-            <div class="d-flex icon-line-height mb-4">
-              <div class="mr-2"><i class="h3 far fa-credit-card"></i></div>
-              <div class="ml-2"><p>Free Cancellation</p><span class="text-muted">Cancel anytime for a full refund</span></div>
-            </div>
-            <div class="d-flex icon-line-height mb-4">
-              <div class="mr-2"><i class="h3 fas fa-virus"></i></div>
-              <div class="ml-2"><p>COVID-19 Precautions</p><span class="text-muted">Special healt and safety measures apply.</span></div>
-            </div>
-            <div class="d-flex icon-line-height mb-4">
-              <div class="mr-2"><i class="h3 fas fa-skiing"></i></div>
-              <div class="ml-2"><p>Skip the line</p><span class="text-muted">Skip the line through separate entrance.</span></div>
-            </div>
-            <div class="d-flex icon-line-height-alternative mb-4">
-              <div class="mr-2"><i class="h3 fas fa-headphones"></i></div>
-              <div class="d-block ml-2"><p>Audio Guide | Headphones</p><span class="text-muted">Spanish, Dutch, English, French, German, Italian, Japanese, Russian, Turkish, Chinese, Croatian, Czech, Hindi, Indonesian, Arabic, Korean, Polish, Portuguese, Swedish, Thai.</span></div>
-            </div>
-            <div class="d-flex icon-line-height-alternative mb-4">
-              <div class="mr-2"><i class="h3 fas fa-bolt"></i></div>
-              <div class="ml-2"><p>Instant confirmation</p><span class="text-muted">You will recieve an email after your booking and our experienced travel agent will contact with you.</span></div>
-            </div>
-            <div class="d-flex icon-line-height mb-4">
-              <div class="mr-2"><i class="h3 fas fa-shuttle-van"></i></div>
-              <div class="ml-2"><p>Pickup offered</p><span class="text-muted">Will pick you up from your accommodation.</span></div>
-            </div>
-          </div>
+          <%= render 'tours/partials/aboutThisTour' %>
           <div class="col-md-7">
             <div class="form-container p-4">
               <div class="my-3 text-center" id="form-total-price" data-price="<%= @tour.price %>">
@@ -64,9 +38,10 @@
     <div class="row">
       <div class="col-md-12">
         <h3 class="pt-2 pb-2 tour-title-show"><%= @tour.title %></h3>
+        <%= render 'tours/partials/accordion' %>
+        <br>
         <%# <%= @tour.schedule.html_safe %>
         <%= @tour.schedule.html_safe %>
-        <%#= render 'tours/partials/accordion' %>
         <hr>
         <div class="inc-container d-flex">
           <div class="mr-5"><p>Included</p></div>
