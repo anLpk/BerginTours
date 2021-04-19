@@ -9,7 +9,8 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def show 
+  def show
+    @articles = Article.all
     @article = Article.find(params[:id])
     @related_articles = @article.find_related_tags
   end

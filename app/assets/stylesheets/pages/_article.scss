@@ -18,3 +18,97 @@
   opacity: 0.7;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
+
+.card-img {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.card-title {
+  margin-bottom: 0.3rem;
+}
+
+.fa-users {
+  margin-left: 1rem;
+}
+
+.card-footer {
+  font-size: 0.8rem;
+}
+
+.blog-btn {
+  display: inline-block;
+  padding: 0.4em 1.5em;
+  border: 0.1em solid $nav-link-color;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.12em;
+  font-weight: 300;
+  color: $white;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: $orange;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+.tag-btn {
+  display: inline-block;
+  padding: 0.2em 0.8em;
+  border: 0.1em solid $orange;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.16em;
+  font-weight: 300;
+  color: $nav-link-color;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: $white;
+  text-align: center;
+  transition: all 0.15s;
+  &:hover {
+    color: $white;
+    background-color: $nav-link-color;
+    border: none;
+  }
+}
+
+#span-logo {
+  color: $orange;
+}
+
+.span-logo-container {
+  font-weight: 700;
+  text-shadow: 0.3px 0.3px 0px $orange, 1px 1px 0px $orange,
+    1.5px 1.5px 0px $nav-link-color, 2px 2px 0px $nav-link-color,
+    2.5px 2.5px 0px $white, 3px 3px 0px $white, 3.5px 3.5px 0px $green,
+    4px 4px 0px $green, 5px 5px 0px $green;
+}
+
+.btn-blog-page {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.4em 1.5em;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.12em;
+  color: $white;
+  background-color: $orange;
+  text-align: center;
+  &:hover {
+    text-decoration: none;
+    color: $white;
+    font-weight: 600;
+  }
+}
+
+.btn-blog-home-page {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.4em 1.5em;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.12em;
+  color: $white;
+  background-color: $nav-link-color;
+  text-align: center;
+  &:hover {
+    text-decoration: none;
+    color: $white;
+    font-weight: 600;
+  }
+}
