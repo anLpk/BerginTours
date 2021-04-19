@@ -1,14 +1,15 @@
 <div class="container">
-  <div class="text-center">
-    <h1 class="mt-4 mb-3"><%= @article.title %></h1>
+  <div class="row">
+    <div>
+      <div class="text-center">
+        <h1 class="mt-4 mb-3"><%= @article.title %></h1>
+      </div>
+      <%= @article.content.html_safe %>
+    </div>
   </div>
 
-  <div>
-    <%= @article.content.html_safe %>
-  </div>
-
   <div class="text-center">
-    <%= link_to "Back to Blog Page", articles_path, class: "btn btn-info mr-3" %>
-    <%= link_to "Back to Home Page", tours_path, class: "btn btn-success" %>
+    <%= link_to "Back to Blog Page", articles_path, class: "btn-blog-page mr-3" %>
+    <%= link_to "Back to Home Page", tours_path, class: "btn-blog-home-page" %>
   </div>
 </div>
