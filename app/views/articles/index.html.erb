@@ -8,7 +8,7 @@
 </section>
 
 <main class="container">
-  <h1 id="anchor-tag" class="text-center mt-5 mb-5">Read <span id="span-logo" class="span-logo-container">BERGIN</span> 's Unique Blog Posts</h1>
+  <h1 id="anchor-tag" class="text-center mt-5 mb-5">Read <span class="span-logo span-logo-container">BERGIN</span> 's Unique Blog Posts</h1>
   <div class="text-center mb-5">
     <% ActsAsTaggableOn::Tag.all[0..10].each do |tag| %>
       <%= link_to tag, articles_path(tag: tag.name, anchor: "anchor-tag" ), class: "btn-taggable article-btn d-inline-block mb-3" %>
