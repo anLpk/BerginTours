@@ -47,10 +47,21 @@
             </div>
             <div class="footer-social-icon">
               <span>Follow us</span>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-tripadvisor"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <%= link_to("https://www.instagram.com/gototravelturkey/", target: "_blank") do %>
+                  <i class="fab fa-instagram"></i>
+                <% end %>
+
+                <%= link_to("https://www.tripadvisor.com/Attraction_Review-g297972-d19259003-Reviews-Turkey_Tours_Company-Kusadasi_Turkish_Aegean_Coast.html", target: "_blank") do %>
+                  <i class="fab fa-tripadvisor"></i>
+                <% end %>
+
+                <%= link_to("https://www.facebook.com/turkeytourscompany", target: "_blank") do %>
+                  <i class="fab fa-facebook-f"></i>
+                <% end %>
+
+                <%= link_to("https://www.linkedin.com/in/anil-pak/", target: "_blank") do %>
+                  <i class="fab fa-linkedin-in"></i>
+                <% end %>
             </div>
           </div>
         </div>
