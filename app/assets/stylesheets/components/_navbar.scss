@@ -12,13 +12,24 @@
 }
 
 .fa-instagram,
-.fa-tripadvisor {
+.fa-tripadvisor,
+.fa-facebook-f,
+.fa-linkedin-in {
   font-size: 1.8em;
+}
+
+.fa-linkedin-in {
+  color: $white;
+}
+
+.fa-facebook-f {
+  color: $logIn-btn-color;
 }
 
 .fa-tripadvisor {
   color: $trip-advsior;
 }
+
 .fa-instagram {
   color: $instagram;
 }
