@@ -23,4 +23,8 @@ Rails.application.routes.draw do
   # patch 'carts/:id/discount', to: 'carts#discount', as: :discount
 
   get '/dashboard', to: 'pages#dashboard'
+  get '/about_us', to: 'pages#about_us'
+  get '/terms_and_conditions', to: 'pages#terms_and_conditions'
+  get '/faq', to: 'pages#faq'
+  get '/cancellation_and_refund', to: 'pages#cancellation_and_refund'
 end

@@ -47,9 +47,21 @@
             </div>
             <div class="footer-social-icon">
               <span>Follow us</span>
-                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                <%= link_to("https://www.instagram.com/gototravelturkey/", target: "_blank") do %>
+                  <i class="fab fa-instagram"></i>
+                <% end %>
+
+                <%= link_to("https://www.tripadvisor.com/Attraction_Review-g297972-d19259003-Reviews-Turkey_Tours_Company-Kusadasi_Turkish_Aegean_Coast.html", target: "_blank") do %>
+                  <i class="fab fa-tripadvisor"></i>
+                <% end %>
+
+                <%= link_to("https://www.facebook.com/turkeytourscompany", target: "_blank") do %>
+                  <i class="fab fa-facebook-f"></i>
+                <% end %>
+
+                <%= link_to("https://www.linkedin.com/in/anil-pak/", target: "_blank") do %>
+                  <i class="fab fa-linkedin-in"></i>
+                <% end %>
             </div>
           </div>
         </div>
@@ -59,13 +71,11 @@
               <h3>Useful Links</h3>
             </div>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Expert Team</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Latest News</a></li>
+              <li><%= link_to "Home", root_path %></li>
+              <li><%= link_to "About Us", about_us_path %></li>
+              <li><%= link_to "Expert Team" %></li>
+              <li><%= link_to "Contact Us" %></li>
+              <li><%= link_to "Latest News" %></li>
             </ul>
           </div>
         </div>
@@ -93,16 +103,14 @@
       <div class="row">
         <div class="col-xl-6 col-lg-6 text-center text-lg-left">
           <div class="copyright-text">
-            <p>Copyright &copy; 2021, All Right Reserved <a href="https://anilpak.com/">Anil Pak</a></p>
+            <p>Copyright &copy; 2021, All Right Reserved <%= link_to "Anıl Pak", "https://anilpak.com/", target: "_blank" %></p>
           </div>
         </div>
         <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
           <div class="footer-menu">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Policy</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><%= link_to "Terms" %></li>
+              <li><%= link_to "Policy" %></li>
             </ul>
           </div>
         </div>
