@@ -1195,8 +1195,8 @@ tour_33.photos.attach(io: file_5, filename: 'galli_5.jpg', content_type: 'image/
 tour_33.tag_list = "Gallipoli"
 tour_33.save
 
-article_1 = Article.create(title: "Mesopotamia", author: "Lara Pak",
-content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
+article_1 = Article.create(title: "Mesopotamia", author: "Lara Pak", author_img: "Middle East",
+content: "<p>Mesopotamia which draws people with its fertile land from past to today is the place wherehistory of 
 civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
 villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
 of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
@@ -1213,10 +1213,9 @@ file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?
 
 article_1.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
 article_1.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_1.tag_list = "Middle East"
 article_1.save
 
-article_2 = Article.create(title: "Mesopotamia", author: "Anil Pak",
+article_2 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "Food",
 content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
 civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
 villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
@@ -1234,10 +1233,9 @@ file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?
 
 article_2.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
 article_2.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_2.tag_list = "Food"
 article_2.save
 
-article_3 = Article.create(title: "Mesopotamia", author: "Serkan Demircan",
+article_3 = Article.create(title: "Mesopotamia", author: "Serkan Demircan", author_img: "Fun",
 content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
 civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
 villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
@@ -1255,10 +1253,9 @@ file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?
 
 article_3.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
 article_3.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_3.tag_list = "Fun"
 article_3.save
 
-article_4 = Article.create(title: "Mesopotamia", author: "Anil Pak",
+article_4 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "East",
 content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
 civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
 villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
@@ -1276,10 +1273,9 @@ file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?
 
 article_4.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
 article_4.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_4.tag_list = "East"
 article_4.save
 
-article_5 = Article.create(title: "Mesopotamia", author: "Anil Pak",
+article_5 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "West",
 content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
 civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
 villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
@@ -1297,10 +1293,9 @@ file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?
 
 article_5.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
 article_5.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_5.tag_list = "West"
 article_5.save
 
-article_6 = Article.create(title: "Mesopotamia", author: "Anil Pak",
+article_6 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "History",
 content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
 civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
 villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
@@ -1318,10 +1313,9 @@ file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?
 
 article_6.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
 article_6.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_6.tag_list = "History"
 article_6.save
 
-article_7 = Article.create(title: "Mesopotamia", author: "Lara Pak",
+article_7 = Article.create(title: "Mesopotamia", author: "Lara Pak", author_img: "History",
 content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
 civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
 villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
@@ -1339,10 +1333,9 @@ file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?
 
 article_7.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
 article_7.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_7.tag_list = "History"
 article_7.save
 
-article_8 = Article.create(title: "Mesopotamia", author: "Anil Pak",
+article_8 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "History",
 content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
 civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
 villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
@@ -1360,7 +1353,6 @@ file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?
 
 article_8.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
 article_8.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_8.tag_list = "History"
 article_8.save
 
 puts "database is clean"

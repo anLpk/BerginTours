@@ -1,8 +1,8 @@
-<div class="container">
+<main class="container">
   <div class="row">
-    <div class="card mt-5 col-lg-10 mb-3" style="min-width: 14rem;">
-      <div class="card-header d-flex justify-content-between">
-        <h1>Current bookings: Tours I booked</h1>
+    <div class="card mt-5 col-lg-12 mb-3" style="min-width: 14rem;">
+      <div class="card-header">
+        <h1 class="text-center">Current bookings: Tours I booked</h1>
       </div>
       <div class="card-body">
         <% if @user_current_bookings.present? %>
@@ -27,11 +27,14 @@
             </tbody>
           </table>
         <% else %>
-          <p>You do not have any current bookings</p>
+          <p class="text-center">You do not have any current bookings</p>
         <% end %>
     </div>
   </div>
-</div>
-<div class="text-center">
-  <%= link_to "Book for another tour", tours_path, class: "btn btn-lg btn-warning" %>
-</div>
+</main>
+<section>
+  <div class="text-center">
+    <%= link_to "Home Page", tours_path, class: "btn btn-lg btn-info mr-3" %>
+    <%= link_to "Book for another tour", root_path, class: "btn btn-lg btn-warning" %>
+  </div>
+</section>
