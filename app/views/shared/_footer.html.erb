@@ -71,13 +71,11 @@
               <h3>Useful Links</h3>
             </div>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Expert Team</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Latest News</a></li>
+              <li><%= link_to "Home", root_path %></li>
+              <li><%= link_to "About Us", about_us_path %></li>
+              <li><%= link_to "Expert Team" %></li>
+              <li><%= link_to "Contact Us" %></li>
+              <li><%= link_to "Latest News" %></li>
             </ul>
           </div>
         </div>
@@ -105,16 +103,14 @@
       <div class="row">
         <div class="col-xl-6 col-lg-6 text-center text-lg-left">
           <div class="copyright-text">
-            <p>Copyright &copy; 2021, All Right Reserved <a href="https://anilpak.com/">Anil Pak</a></p>
+            <p>Copyright &copy; 2021, All Right Reserved <%= link_to "Anıl Pak", "https://anilpak.com/", target: "_blank" %></p>
           </div>
         </div>
         <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
           <div class="footer-menu">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Policy</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><%= link_to "Terms" %></li>
+              <li><%= link_to "Policy" %></li>
             </ul>
           </div>
         </div>
