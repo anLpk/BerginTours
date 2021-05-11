@@ -7,13 +7,9 @@
     </div>
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#myAccordion">
       <div class="card-body">
-        <p><i class="fas fa-check"></i> Istanbul – Izmir – Istanbul Domestic Flight Ticket</p>
-        <p><i class="fas fa-check"></i> Airport Transportation</p>
-        <p><i class="fas fa-check"></i> Entrance Fees</p>
-        <p><i class="fas fa-check"></i> Professional Licensed Tour Guide</p>
-        <p><i class="fas fa-check"></i> Lunch</p>
-        <p><i class="fas fa-check"></i> Hotel Pick Up & Drop Off</p>
-        <p><i class="fas fa-check"></i> All Local Taxes</p>
+        <% if (@tour.history.html_safe?) %>
+        <%= @tour.history.html_safe %>
+        <% end %>
       </div>
     </div>
   </div>

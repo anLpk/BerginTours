@@ -3,7 +3,7 @@ require "open-uri"
 puts "cleaning up database"
 
 Tour.destroy_all
-Article.destroy_all
+# Article.destroy_all
 
 ActsAsTaggableOn::Tag.destroy_all
 
@@ -22,17 +22,15 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
 </ul>
 </div>", schedule: "<div>
-<p>Fly over the fairy chimneys and tuff valleys of Cappadocia on hot air balloon 
-flight and get fascinating views of the unique landscape. You can see the sun rise 
-on fairy chimneys and enjoy a Champagne celebration upon your landing.</p>
-<p>2 hours before the sunrise we will pick you up from your hotel then drive to area.</p>
+<p>Fly over the fairy chimneys and tuff valleys of Cappadocia on a hot air balloon flight and be amazed by fascinating views of this unique landscape. Enjoy the sun rise over the fairy chimneys and celebrate with a glass of champagne upon landing.</p>
+<p>You will be picked up from your hotel two hours before sunrise and driven to the  pick up point. </p>
 <ul>
-  <li>Admire Cappadocia's magical fairy chimneys from above</li>
-  <li>Get a breakfast with hot coffee and tea before the flight</li>
-  <li>Marvel at breathtaking panoramic views of Cappadocia</li>
-  <li>Receive a flight certificate and a glass of champagne after landing to celebrate</li>
+  <li>Admire Cappadocia's magical fairy chimneys from above.</li>
+  <li>Enjoy breakfast with coffee and tea before the flight.</li>
+  <li>Marvel at the breath-taking panoramic views of Cappadocia</li>
+  <li>Upon landing celebrate with a glass of champagne and receive a commemorative flight certificate </li>
 </ul>
-<p>After the flight we will drop you off to your hotel.</p>
+<p>After the flight you will be transferred back to your hotel.</p>
 </div>")
 
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/balloon_ride/Balloon_3.jpg'))
@@ -63,17 +61,16 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
 </ul>
 </div>", schedule: "<div>
-<p>Explore the amazing rock formations and underground houses of Cappadocia on this tour. Also discover rock-cut dwellings and churches. Take in northern Cappadocia's best attractions. Experience the highlights of Cappadocia in a single day.</p>
-<p>Early in the morning, we will pick you up from your hotel in Cappadocia.</p>
+<p>Take in northern Cappadocia's best attractions and experience the highlights of Cappadocia in a single day. Explore the amazing rock formations and underground houses of Cappadocia and wander through the rock-cut dwellings and churches that make this region so unique.</p>
+<p>You will be picked up from your hotel in Cappadocia in the early morning and the tour will commence.</p>
 <ul>
-  <li>Marvel at fairy chimney formations in the Devrent and Pasabag valleys</li>
-  <li>Get a breakfast with hot coffee and tea before the flight</li>
-  <li>See the rock-cut churches at the Göreme Open-Air Museum</li>
-  <li>Enjoy an authentic Turkish lunch at a traditional restaurant</li>
-  <li>See how carpets are wovening the carpet factory.</li>
-  <li>Uchisar Castle and Pigeon Valley, two of the best spots for photoshoot in the world.</li>
+  <li>Marvel at fairy chimney formations in the Devrent and Pasabag valleys.</li>
+  <li>Discover the rock-cut churches at the Göreme Open-Air Museum.</li>
+  <li>Enjoy an authentic Turkish lunch at a traditional restaurant.</li>
+  <li>See how carpets are woven at a carpet factory.</li>
+  <li>Visit Uchisar Castle and Pigeon Valley, two of the best locations for photo-shoots in the world.</li>
 </ul>
-<p>In the end of the tour, we will drop off you to your hotel.</p>
+<p>At the end of the tour you will be transferred back to your hotel.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/red_tour/Red_4.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/red_tour/Red_1.jpg'))
@@ -103,16 +100,16 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
 </ul>
 </div>", schedule: "<div>
-<p>Enjoy the Kaymakli Underground City which is one of the UNESCO sites of Cappadocia. This tour is full of nature, history and beyond your expectation. Trek in the Ihlara Valley and more.</p>
-<p>Early in the morning, we will pick you up from your hotel in Cappadocia.</p>
+<p>This tour is perfect for those seeking to explore nature, history and all that Cappadocia has to offer. Tour the Kaymakli Underground City a UNESCO protected heritage site in Cappadocia, trek in the Ihlara Valley and more.</p>
+<p>You will be picked up from your hotel in Cappadocia in the early morning and the tour will commence.</p>
 <ul>
-  <li>Pottery Workshop</li>
-  <li>Discover the highlights of this UNESCO World Heritage Site.</li>
-  <li>Enjoy an authentic Turkish lunch at a traditional restaurant.</li>
-  <li>Visit typical Anatolian villages and their rock-cut churches.</li>
-  <li>Enjoy a trekking in the Ihlara Valley.</li>
+  <li>Discover the highlights of this UNESCO World Heritage Site</li>
+  <li>Visit some typical Anatolian villages and explore their rock-cut churches</li>
+  <li>Enjoy a trek in the Ihlara Valley</li>
+  <li>Relax with an authentic Turkish lunch at a traditional restaurant</li>
+  <li>Visit a Pottery Workshop</li>
 </ul>
-<p>In the end of the tour, we will drop off you to your hotel.</p>
+<p>An the end of the tour, you will be transferred back to your hotel.</p>
 </div>")
 
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_4.jpg'))
@@ -143,15 +140,15 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
 </ul>
 </div>", schedule: "<div>
-<p>Enjoy the trekking on Ihlara Valley which is the biggest canyon of Turkey. Visit Sarihan Caravansarai the 13th century residence for the merchants and their camels. Take a break for photoshooting on Nar Lake. Witness some of the natural wonders it is famous for.</p>
-<p>Early in the morning, we will pick you up from your hotel in Cappadocia.</p>
+<p>Enjoy trekking in Ihlara Valley one of the largest canyons in Turkey. Visit Sarihan Caravansarai the 13th century residence of merchants and their camels. Take a break to enjoy the scenic Nar Lake perfect for photography enthusiasts and witness some of the natural wonders this region is famous for.</p>
+<p>You will be picked up from your hotel in Cappadocia in the early morning and the tour will commence.</p>
 <ul>
-  <li>Get lunch in a famous local restaurant</li>
-  <li>See the breathtaking Sarihan Caravansarai.</li>
-  <li>Witness the stunning Ihlara Valley.</li>
-  <li>Taste a beauty of Nar Lake</li>
+  <li>See the breath-taking Sarihan Caravansarai residence</li>
+  <li>Witness the stunning Ihlara Valley</li>
+  <li>Explore the beauty of Nar Lake</li>
+  <li>Relax with lunch at a special local restaurant</li>
 </ul>
-<p>In the end of the tour, we will drop off you to your hotel.</p>
+<p>At the end of the tour you will be transferred back to your hotel.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_4.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_5.jpg'))
@@ -184,15 +181,15 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
 </ul>
 </div>", schedule: "<div>
-<p>Even though your vacation in Turkey is a short, you can experience the Magical Cappadocia on this one day journey from Istanbul by plane. You will see the magical region on a trip including stunning views, extraordinary nature, and the unique landscapes.</p>
-<p>Early in the morning, we will pick you up from your hotel in Istanbul and drive to Istanbul Airport. Flight to Cappadocia. Our expert guide will meet with you at Cappadocia Airport upon landing. Then tour will start.</p>
+<p>Even on a short vacation in Turkey you can experience the magical Cappadocia on this one day tour from Istanbul by plane. You will experience majestic sites, unique landscapes and all the highlights this region has to offer. </p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and driven to Istanbul Airport. Flying direct to Cappadocia. Upon arrival at Cappadocia Airport you will be greeted by our expert guide and the tour will commence.</p>
 <ul>
   <li>Admire the magical fairy chimneys</li>
   <li>Marvel at the pottery of Avanos</li>
-  <li>Discover the rock-cut churches of the Goreme Open Air Museum</li>
+  <li>Discover the rock-cut churches  at Göreme Open Air Museum</li>
   <li>Explore the beautiful valleys of Cappadocia</li>
 </ul>
-<p>In the end of tour, driver drop you off to Cappadocia Airport. Then return to Istanbul Airport by flight. Transfer back to hotel in Istanbul.</p>
+<p>At the end of the tour, your will be transported back to Cappadocia Airport to take a return flight to Istanbul. Upon landing you will be transferred back to your hotel. </p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_1.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_5.jpg'))
@@ -208,49 +205,49 @@ tour_5.photos.attach(io: file_5, filename: 'daily_4.jpg', content_type: 'image/j
 tour_5.tag_list = "Cappadocia"
 tour_5.save
 
-tour_6 = Tour.create(title: "Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Kaymakli Underground City, Hot Air Balloon", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 699, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-</ul>
-</div>", schedule: "<div>
-<p>Fly from Istanbul to Cappadocia and visit all the dream region has to offer in just two days, featuring unique fairy chimneys, fascinating underground cities, exceptional castles and magical valleys.</p>
-<p>Early in the morning, we will pick you up from your hotel in Istanbul and drive to Istanbul Airport. Flight to Cappadocia. Our expert guide will meet with you at Cappadocia Airport upon landing. Then tour will start.</p>
-<ul>
-  <li>See all the sights of Cappadocia</li>
-  <li>Visit a UNESCO World Heritage Site</li>
-  <li>Explore an Ancient Underground City</li>
-  <li>Marvel at fairy chimney formations</li>
-  <li>See how carpets are wovening the carpet factory</li>
-  <li>Accommodate in one of the unique cave hotel.</li>
-  <li>Marvel at breathtaking panoramic views of Cappadocia on Spectacular Hot Air Ballon Flight (Optional)</li>
-</ul>
-<p>In the end of tour, driver drop you off to Cappadocia Airport. Then return to Istanbul Airport by flight. Transfer back to hotel in Istanbul.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_3.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_1.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_5.jpg'))
+# tour_6 = Tour.create(title: "Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Kaymakli Underground City, Hot Air Balloon", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 699, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Fly from Istanbul to Cappadocia and visit all the dream region has to offer in just two days, featuring unique fairy chimneys, fascinating underground cities, exceptional castles and magical valleys.</p>
+# <p>Early in the morning, we will pick you up from your hotel in Istanbul and drive to Istanbul Airport. Flight to Cappadocia. Our expert guide will meet with you at Cappadocia Airport upon landing. Then tour will start.</p>
+# <ul>
+#   <li>See all the sights of Cappadocia</li>
+#   <li>Visit a UNESCO World Heritage Site</li>
+#   <li>Explore an Ancient Underground City</li>
+#   <li>Marvel at fairy chimney formations</li>
+#   <li>See how carpets are wovening the carpet factory</li>
+#   <li>Accommodate in one of the unique cave hotel.</li>
+#   <li>Marvel at breathtaking panoramic views of Cappadocia on Spectacular Hot Air Ballon Flight (Optional)</li>
+# </ul>
+# <p>In the end of tour, driver drop you off to Cappadocia Airport. Then return to Istanbul Airport by flight. Transfer back to hotel in Istanbul.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_3.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_2.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_1.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_4.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_5.jpg'))
 
-tour_6.photos.attach(io: file_1, filename: 'two_days_3.jpg', content_type: 'image/jpg')
-tour_6.photos.attach(io: file_2, filename: 'two_days_2.jpg', content_type: 'image/jpg')
-tour_6.photos.attach(io: file_3, filename: 'two_days_1.jpg', content_type: 'image/jpg')
-tour_6.photos.attach(io: file_4, filename: 'two_days_4.jpg', content_type: 'image/jpg')
-tour_6.photos.attach(io: file_5, filename: 'two_days_5.jpg', content_type: 'image/jpg')
-tour_6.tag_list = "Cappadocia"
-tour_6.save
+# tour_6.photos.attach(io: file_1, filename: 'two_days_3.jpg', content_type: 'image/jpg')
+# tour_6.photos.attach(io: file_2, filename: 'two_days_2.jpg', content_type: 'image/jpg')
+# tour_6.photos.attach(io: file_3, filename: 'two_days_1.jpg', content_type: 'image/jpg')
+# tour_6.photos.attach(io: file_4, filename: 'two_days_4.jpg', content_type: 'image/jpg')
+# tour_6.photos.attach(io: file_5, filename: 'two_days_5.jpg', content_type: 'image/jpg')
+# tour_6.tag_list = "Cappadocia"
+# tour_6.save
 
 tour_7 = Tour.create(title: "2 Days Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Ortahisar Castle, Pigeon Valley, Kaymakli Underground City, Hot Air Balloon", duration: "2 Days", tag_text: "Guided", group_size: "Private", price: 699, 
 include: "<div>
@@ -270,18 +267,18 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
 </ul>
 </div>", schedule: "<div>
-<p>Fly from Istanbul to Cappadocia and visit all the dream region has to offer in just two days, featuring unique fairy chimneys, fascinating underground cities, exceptional castles and magical valleys.</p>
-<p>Early in the morning, we will pick you up from your hotel in Istanbul and drive to Istanbul Airport. Flight to Cappadocia. Our expert guide will meet with you at Cappadocia Airport upon landing. Then tour will start.</p>
+<p>Fly from Istanbul to Cappadocia and visit all that this majestic region has to offer over two days. Explore the unique fairy chimneys, fascinating underground cities, exceptional castles and magical valleys that make this region so unique. </p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and driven to Istanbul Airport. Flying direct to Cappadocia. Upon arrival at Cappadocia Airport you will be greeted by our expert guide and the tour will commence.</p>
 <ul>
-  <li>See all the sights of Cappadocia</li>
+  <li>Explore all the sights of Cappadocia</li>
   <li>Visit a UNESCO World Heritage Site</li>
   <li>Explore an Ancient Underground City</li>
-  <li>Marvel at fairy chimney formations</li>
-  <li>See how carpets are wovening the carpet factory</li>
-  <li>Accommodate in one of the unique cave hotel.</li>
-  <li>Marvel at breathtaking panoramic views of Cappadocia on Spectacular Hot Air Ballon Flight (Optional)</li>
+  <li>Marvel at fairy chimney formations famous to the region</li>
+  <li>See how carpets are woven at a carpet factory.</li>
+  <li>Stay overnight and relax in one of Cappadocia’s unique cave hotels. </li>
+  <li>Marvel at the breath-taking landscapes over Cappadocia on a spectacular Hot Air Balloon Flight (Optional)</li>
 </ul>
-<p>In the end of tour, driver drop you off to Cappadocia Airport. Then return to Istanbul Airport by flight. Transfer back to hotel in Istanbul.</p>
+<p>At the end of the tour, your will be transported back to Cappadocia Airport to take a return flight to Istanbul. Upon landing you will be transferred back to your hotel. </p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_3.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_2.jpg'))
@@ -308,14 +305,14 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
 </ul>
 </div>", schedule: "<div>
-<p>Savor a fascinating Turkish Night Show on Cappadocia. Unlimited soft drinks and alcoholic beverages are served with snacks, then enjoy the lamb dinner. Watch a traditional folk dance performances with your meal.</p>
-<p>We will pick you up from your hotel in the afternoon then drive to Restaurant where is Turkish Night.</p>
+<p>Delight yourself with a fascinating night of entertainment at a Turkish Night Show in Cappadocia. Including unlimited soft drink and alcoholic beverages with appetizers, followed by a delicious lamb dinner. While dining, enjoy traditional folk dance performances and experience first hand the beauty of Turkish culture and traditions. </p>
+<p>In the afternoon you will be picked up from your hotel in Cappadocia and driven to the restaurant where Turkish Night will commence.</p>
 <ul>
   <li>Experience culture and tradition at a Turkish Night Show</li>
-  <li>Enjoy unlimited soft and alcoholic beverages and snacks followed by dinner</li>
   <li>See whirling dervishes, belly dancers, and traditional folk dancers</li>
+  <li>Enjoy unlimited soft drinks, alcoholic beverages and snacks followed by dinner</li>
 </ul>
-<p>In the end of show, we will drop you off to your hotel.</p>
+<p>At the end of the evening you will be transported back to your hotel.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_2.jpg'))
@@ -347,16 +344,16 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Discover the historical sites of Sultanahmet “Istanbul Old City” area. Visit Hagia Sophia which is one of the 7 Wonders of the Medieval World, Topkapi Palace which is the residence of Ottoman sultans, the spectacular Blue Mosque, and more with an expert guide on this tour.</p>
-<p>Early in the morning, we will pick you up from your hotel in Istanbul and tour will begin.</p>
+<p>Discover the historical sites of Sultanahmet “Istanbul Old City” area. Visit Hagia Sophia, which is one of the ‘7 Wonders of the Medieval World’, Topkapi Palace the residence of Ottoman sultans for over 400 years, the spectacular Blue Mosque, and more with an expert guide on this tour.</p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
 <ul>
-  <li>Amaze on the Hagia Sophia</li>
+  <li>Be amazed by the beauty of Hagia Sophia</li>
   <li>Admire to the splendid Blue Mosque</li>
-  <li>Visit to the Hippodrome and follow in the footsteps of chariot races</li>
-  <li>Stroll through the Grand Bazaar</li>
-  <li>Marvel at the art architecture of Topkapi Palace</li>
+  <li>Visit to the Hippodrome and follow in the footsteps of chariot races and the entertainment hub of the city for many years.</li>
+  <li>Stroll through the Grand Bazaar </li>
+  <li>Marvel at the art and architecture of Topkapi Palace</li>
 </ul>
-<p>In the end of tour, we will drop off you to your hotel.</p>
+<p>At the end of this tour, we will drop you off at your hotel.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_1.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_4.jpg'))
@@ -386,15 +383,15 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Travel with cruise along the river which separates Asia and Europe, passing various highlights along the way. Admire to the palaces, wooden villas, bridges and all of the unique maritime landscapes.</p>
-<p>After breakfast, we will pick you up from your hotel and Bosphorus Cruise tour will start.</p>
+<p>Cruise along the Bosphorus on this guided boat tour, which separates Asia and Europe. By boat you can admire many of the stunning sites, which make Istanbul one of the most vibrant cities in the world. Admire the palaces, wooden villas, bridges and unique maritime landscapes.</p>
+<p>You will be picked up from your hotel in Istanbul after breakfast and the Bosphorus Cruise tour will commence.</p>
 <ul>
-  <li>Admire sights like the Ciragan Palace, Spicy Bazaar and Rumeli Fortress</li>
-  <li>Enjoy the highlights between Europe and Asia</li>
-  <li>See historical sights and the Bosphorus Bridge</li>
-  <li>Shootout amazing pictures through your journey</li>
+  <li>Admire sights like the Ciragan Palace, Spice Bazaar and Rumeli Fortress</li>
+  <li>See first hand the unique location of Istanbul as the bridge between Europe and Asia</li>
+  <li>See historical sights and the Bosphorus Bridge by boat</li>
+  <li>Enjoy the beauty Istanbul from a different perspective and take unique pictures, which can only be captured, by boat.</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel.</p>
+<p>At the end of tour, we will drop you off at your hotel.</p>
 </div>")
 
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_5.jpg'))
@@ -425,15 +422,15 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Cruise along the waters of the Bosphorus on this guided boat tour which separates Asia and Europe passing the stunning highlights along the way.</p>
-<p>Aftenoon, we will pick you up from your hotel and Bosphorus Cruise tour will start.</p>
+<p>Cruise along the Bosphorus on this guided boat tour, which separates Asia and Europe. By boat you can admire many of the stunning sites, which make Istanbul one of the most vibrant cities in the world.</p>
+<p>You will be picked up from your hotel in Istanbul in the afternoon and the Bosphorus Cruise tour will commence.</p>
 <ul>
-  <li>Admire sights like the Dolmabahce Palace, Beylerbeyi Palace, Golden Horn</li>
-  <li>Enjoy the highlights between Europe and Asia</li>
-  <li>See historical sights and the Bosphorus Bridge</li>
-  <li>Shootout amazing pictures through your journey</li>
+  <li>Admire sights including Dolmabahce Palace, Beylerbeyi Palace, Golden Horn</li>
+  <li>See first hand the unique location of Istanbul as the bridge between Europe and Asia</li>
+  <li>View historical sights and the Bosphorus Bridge by boat</li>
+  <li>Enjoy the beauty of Istanbul from a different perspective and take unique pictures, which can only be captured, by boat.</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel.</p>
+<p>At the end of tour, we will drop you off at your hotel.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_9.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_2.jpg'))
@@ -463,15 +460,15 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Stroll through the extravagant rooms and backyards of the Dolmabahçe Palace. Lead by an expert guide and in small groups, get the stories behind this  architectural splendids in the heart of Istanbul.</p>
-<p>Early in the morning, we will pick you up from your hotel in Istanbul and tour will begin.</p>
+<p>Explore the extravagant rooms and grounds of the Dolmabahçe Palace. Led by an expert guide and in small groups. Learn about the stories behind this architectural masterpiece located in the heart of Istanbul.</p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
 <ul>
   <li>Marvel at the extravagant decor of Dolmabahce Palace</li>
   <li>Experience amazing views over the Bosphorus</li>
   <li>Visit the highest peak in Istanbul at Camlıca Hill</li>
   <li>Drive from Europe to Asia on the first bridge between Europe and Asia</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel.</p>
+<p>At the end of tour, we will drop you off at your hotel.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_2.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_4.jpg'))
@@ -502,15 +499,15 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Explore both the European and Asian side of amazing Istanbul on this relaxing and remarkable tour. Experience Istanbul’s famous spicy bazaar and the Camlica Hill. Visit the late Ottoman Palace of Beylerbeyi.</p>
-<p>Early in the morning, we will pick you up from your hotel in Istanbul and tour will begin.</p>
+<p>Explore both the European and Asian sides of Istanbul on this relaxing and remarkable tour. Explore Istanbul’s famous Spice Bazaar and Camlica Hill, as well as the late Ottoman Palace of Beylerbeyi.</p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
 <ul>
   <li>Visit both the European and Asian sides of Istanbul</li>
-  <li>Enjoy the spectacular panoramic views of the city and the Camlıca Hill</li>
+  <li>Enjoy the spectacular panoramic views of the city at Çamlıca Hill</li>
   <li>Marvel at the stunning Beylerbeyi Palace</li>
-  <li>Discover the fascinating Spicy Bazaar</li>
+  <li>Discover the fascinating Spice Bazaar</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel.</p>
+<p>At the end of tour, we will drop you off at your hotel.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_3.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_5.jpg'))
@@ -541,15 +538,15 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Travel by cruise from Istanbul to Buyukada and discover the biggest of the Princes islands. Visit Buyukada to see popular summer houses with beaches and pinewood scenery. Explore Ottoman-era mansions, enjoy a lunch at a seafood restaurant and eventually take some time at your leisure to explore the island.</p>
-<p>Early in the morning, we will pick you up from your hotel in Istanbul and tour will begin.</p>
+<p>Travel by cruise from Istanbul to Buyukada and discover the largest of the Princes islands. In Buyukada visit popular summer houses, tour the beaches and pinewood filled landscape; once a popular destination for Ottoman princes and relax away from the hustle and bustle of the mainland. Explore Ottoman-era mansions, enjoy a leisurely lunch at a seafood restaurant and explore this tranquil island at your own pace.</p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
 <ul>
-  <li>Spend time at your leisure on the largest of the Princes islands</li>
+  <li>Spend a leisurely day exploring the largest of the Princes islands</li>
   <li>Marvel at the island’s Ottoman-era mansions</li>
   <li>Enjoy lunch at a seafood restaurant</li>
-  <li>Explore the main square of Buyukada and Marvel at the Victorian buildings</li>
+  <li>Tour the main square of Buyukada and enjoy the Victorian buildings </li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel.</p>
+<p>At the end of tour, we will drop you off at your hotel.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_1.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_4.jpg'))
@@ -579,15 +576,15 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Discover the streets of Galata on this tour of Istanbul Jewish Quarter and get about the Jewish community. Visit the Jewish Museum, Ashkenazi Synagogue, Neve Shalom, Ahrida Synagogue and more.</p>
-<p>Early in the morning, we will pick you up from your hotel in Istanbul and tour will begin.</p>
+<p>Explore the streets of Galata on this tour of Istanbul’s Jewish Quarter and learn more about the thriving Jewish community of Istanbul. Visit the Jewish Museum, Ashkenazi Synagogue, Neve Shalom, Ahrida Synagogue and more.</p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
 <ul>
-  <li>Admire to old photographs and documents that chronicle Jewish life in Istanbul at the Jewish Museum</li>
-  <li>Get about the Jewish financier Abraham Camondo</li>
-  <li>Stroll the colorful streets of Galata</li>
+  <li>Admire old photographs and documents that chronicle Jewish life in Istanbul at the Jewish Museum</li>
+  <li>Learn about Jewish financier Count Abraham Camondo and his role in  Ottoman history and the Jewish community</li>
+  <li>Explore the colourful streets and sites of Galata</li>
   <li>Visit the Jewish Synagogues</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel.</p>
+<p>At the end of tour, we will drop you off to your hotel.</p>
 </div>")
 
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_1.jpg'))
@@ -604,35 +601,35 @@ tour_15.photos.attach(io: file_5, filename: 'jew_5.jpg', content_type: 'image/jp
 tour_15.tag_list = "Istanbul"
 tour_15.save
 
-tour_16 = Tour.create(title: "City Break Tour", description: "Blue Mosque, Haghia Sophia, Topkapi Palace, Bosphorus", duration: "3 Days", tag_text: "Skip the line", group_size: "Small Group", price: 599)
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/break/break_3.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/break/break_1.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/break/break_5.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/break/break_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/break/break_2.jpg'))
+# tour_16 = Tour.create(title: "City Break Tour", description: "Blue Mosque, Haghia Sophia, Topkapi Palace, Bosphorus", duration: "3 Days", tag_text: "Skip the line", group_size: "Small Group", price: 599)
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/break/break_3.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/break/break_1.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/break/break_5.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/break/break_4.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/break/break_2.jpg'))
 
-tour_16.photos.attach(io: file_1, filename: 'break_3.jpg', content_type: 'image/jpg')
-tour_16.photos.attach(io: file_2, filename: 'break_1.jpg', content_type: 'image/jpg')
-tour_16.photos.attach(io: file_3, filename: 'break_5.jpg', content_type: 'image/jpg')
-tour_16.photos.attach(io: file_4, filename: 'break_4.jpg', content_type: 'image/jpg')
-tour_16.photos.attach(io: file_5, filename: 'break_2.jpg', content_type: 'image/jpg')
-tour_16.tag_list = "Istanbul"
-tour_16.save
+# tour_16.photos.attach(io: file_1, filename: 'break_3.jpg', content_type: 'image/jpg')
+# tour_16.photos.attach(io: file_2, filename: 'break_1.jpg', content_type: 'image/jpg')
+# tour_16.photos.attach(io: file_3, filename: 'break_5.jpg', content_type: 'image/jpg')
+# tour_16.photos.attach(io: file_4, filename: 'break_4.jpg', content_type: 'image/jpg')
+# tour_16.photos.attach(io: file_5, filename: 'break_2.jpg', content_type: 'image/jpg')
+# tour_16.tag_list = "Istanbul"
+# tour_16.save
 
-tour_17 = Tour.create(title: "Private Classic Old City", description: "Hippodrome, Haghia Sophia, Blue Mosque, Topkapi Palace", duration: "Full Day", tag_text: "Skip the line", group_size: "Private", price: 199)
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/clas/classic_3.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/clas/classic_5.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/clas/classic_2.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/clas/classic_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/clas/classic_1.jpg'))
+# tour_17 = Tour.create(title: "Private Classic Old City", description: "Hippodrome, Haghia Sophia, Blue Mosque, Topkapi Palace", duration: "Full Day", tag_text: "Skip the line", group_size: "Private", price: 199)
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/clas/classic_3.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/clas/classic_5.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/clas/classic_2.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/clas/classic_4.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/clas/classic_1.jpg'))
 
-tour_17.photos.attach(io: file_1, filename: 'classic_3.jpg', content_type: 'image/jpg')
-tour_17.photos.attach(io: file_2, filename: 'classic_5.jpg', content_type: 'image/jpg')
-tour_17.photos.attach(io: file_3, filename: 'classic_2.jpg', content_type: 'image/jpg')
-tour_17.photos.attach(io: file_4, filename: 'classic_4.jpg', content_type: 'image/jpg')
-tour_17.photos.attach(io: file_5, filename: 'classic_1.jpg', content_type: 'image/jpg')
-tour_17.tag_list = "Istanbul"
-tour_17.save
+# tour_17.photos.attach(io: file_1, filename: 'classic_3.jpg', content_type: 'image/jpg')
+# tour_17.photos.attach(io: file_2, filename: 'classic_5.jpg', content_type: 'image/jpg')
+# tour_17.photos.attach(io: file_3, filename: 'classic_2.jpg', content_type: 'image/jpg')
+# tour_17.photos.attach(io: file_4, filename: 'classic_4.jpg', content_type: 'image/jpg')
+# tour_17.photos.attach(io: file_5, filename: 'classic_1.jpg', content_type: 'image/jpg')
+# tour_17.tag_list = "Istanbul"
+# tour_17.save
 
 tour_18 = Tour.create(title: "Ephesus Classic Full Day", description: "Ephesus Ancient City, The House of Virgin Mary, Temple of Artemis, Isabey Mosque", duration: "8 hours", tag_text: "Skip the line", group_size: "8-12 People", price: 39, 
 include: "<div>
@@ -649,15 +646,15 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Visit the most well-known sights of Ephesus in guided tour by a van. Explore the Greco-Roman times of Ephesus, visit the temple of artemis which is the one of the old seven wonders of the world and see the house where Virgin Mary spent the last days of her life.</p>
-<p>Early in the morning we will pick you up from your hotel on Kusadasi or Selcuk and drive to Ephesus.</p>
+<p>Visit the most well-known sights of Ephesus in this guided tour by van. Explore the Greco-Roman times of Ephesus, visit the Temple of Artemis one of the ‘old seven wonders of the world’ and see the House of Virgin Mary where Mary spent her final days.</p>
+<p>You will be picked up from your hotel in the early morning and driven to Ephesus.</p>
 <ul>
   <li>Visit the well-preserved Ancient City of Ephesus</li>
   <li>Admire the stunning Temple Of Artemis</li>
-  <li>Take a trip outside of Ephesus to the House of the Virgin Mary</li>
-  <li>Visit the Isa Bey Mosque which is remaining from Anatolian Beyliks</li>
+  <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
+  <li>Visit the Isa Bey Mosque, important as one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel.</p>
+<p>At the end of the tour, we will transfer you back to your hotel.</p>
 </div>")
 
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_1.jpg'))
@@ -689,13 +686,13 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Explore the man-made UNESCO sights of Aegean on this customized half-day Ephesus tour with an unforgettable experience. </p>
-<p>Early in the morning we will pick you up from your hotel on Kusadasi or Selcuk and drive to Ephesus.</p>
+<p>Explore the man-made UNESCO sights of the Aegean on this customized half-day Ephesus tour, which will be an unforgettable experience. </p>
+<p>You will be picked up from your hotel in the early morning and driven to Ephesus.</p>
 <ul>
   <li>Visit the well-preserved Ancient City of Ephesus</li>
-  <li>Admire the stunning Temple Of Artemis</li>
+  <li>Admire the fascinating Temple Of Artemis</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel.</p>
+<p>At the end of the tour, we will transfer you back to your hotel.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_4.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_2.jpg'))
@@ -726,16 +723,16 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Guided through the wealthy history of this region, guests have a chance to visit the Ancient City of Ephesus, Archaeological Museum of Ephesus, Temple of Artemis, House of the Mother Mary and Seven Sleepers Cave. Taste a traditional local lunch. An afternoon of legendary sightseeing in a bible sense.</p>
-<p>Early in the morning we will pick you up from your hotel on Kusadasi or Selcuk and drive to Ephesus.</p>
+<p>Be guided through the wealth of history in this region, guests have a chance to visit the Ancient City of Ephesus, Archaeological Museum of Ephesus, Temple of Artemis, House of the Mother Mary and Seven Sleepers Cave. Taste a traditional local lunch. An afternoon of legendary sightseeing of biblical proportion.</p>
+<p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
 <ul>
   <li>Visit the well-preserved Ancient City of Ephesus</li>
-  <li>Admire the stunning Temple Of Artemis</li>
-  <li>Take a trip outside of Ephesus to the House of the Virgin Mary</li>
-  <li>Enjoy the all artifacts in the Ephesus Archaeological Museum</li>
+  <li>Admire the remarkable Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
+  <li>Be mesmerised by all the artefacts in the Ephesus Archaeological Museum and learn more about what made Ephesus the thriving metropolis it once was.</li>
   <li>Discover the impressive Seven Sleepers Cave.</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel.</p>
+<p>At the end of the tour, we will transfer you back to your hotel.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_1.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_3.jpg'))
@@ -766,16 +763,16 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Discover the ancient city of Ephesus with this tour and see monuments to the Greek, Roman and Byzantine civilizations.Also you have chance to visit the Temple of Artemis, the House of Virgin Mary, Sirince Village and more. Taste turkish cuisine on traditional restaurant.</p>
-<p>Early in the morning we will pick you up from your hotel on Kusadasi or Selcuk and drive to Ephesus.</p>
+<p>Discover the ancient city of Ephesus with this tour and see monuments from Greek, Roman and Byzantine civilizations. Visit the Temple of Artemis, the House of Virgin Mary, Şirince Village and more. Enjoy the flavours of Turkish cuisine at a traditional Turkish restaurant.</p>
+<p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning and driven to Ephesus.</p>
 <ul>
   <li>Visit the well-preserved Ancient City of Ephesus</li>
-  <li>Admire the stunning Temple Of Artemis</li>
-  <li>Take a trip outside of Ephesus to the House of the Virgin Mary</li>
-  <li>Enjoy the all artifacts in the Ephesus Archaeological Museum</li>
-  <li>Explore the beauty of Sirince Turkish-Orthodox village.</li>
+  <li>Admire the remarkable Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
+  <li>Be mesmerised by all the artefacts in the Ephesus Archaeological Museum and learn more about what made Ephesus the thriving metropolis it once was.</li>
+  <li>Be immersed in the charm and ambience of Sirince a Turkish-Orthodox village.</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel.</p>
+<p>At the end of the tour, we will transfer you back to your hotel.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_1.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_5.jpg'))
@@ -806,16 +803,16 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Inhabit history of Ancient city of Ephesus and get knowledge about Christianity in antiquity on this tour.</p>
-<p>Early in the morning we will pick you up from your hotel on Kusadasi or Selcuk and drive to Ephesus.</p>
+<p>On this tour of the ancient city of Ephesus visit sites of biblical importance and gain greater insights into Christianity in antiquity on this tour.</p>
+<p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
 <ul>
   <li>Visit the well-preserved Ancient City of Ephesus</li>
-  <li>Admire the stunning Temple Of Artemis</li>
-  <li>Take a trip outside of Ephesus to the House of the Virgin Mary</li>
+  <li>Admire the remarkable Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
   <li>Visit the Basilica of St. John and see his burial place</li>
-  <li>Visit the well-preserved terraced houses to taste how elite people lived that time.</li>
+  <li>Visit the well-preserved terraced houses to see how the elite lived in those times</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel.</p>
+<p>At the end of the tour, we will transfer you back to your hotel.</p>
 </div>")
 
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_5.jpg'))
@@ -847,16 +844,16 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>You will discover the Ancient ruins of Ephesus City and visit the the little Turkish-Orthodox village of Sirince.</p>
-<p>Early in the morning we will pick you up from your hotel on Kusadasi or Selcuk and drive to Ephesus.</p>
+<p>Discover the ancient city of Ephesus and visit Şirince, a charming Turkish-Orthodox village located close in the hills above Ephesus.</p>
+<p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
 <ul>
   <li>Visit the well-preserved Ancient City of Ephesus</li>
-  <li>Admire the stunning Temple Of Artemis</li>
-  <li>Take a trip outside of Ephesus to the House of the Virgin Mary</li>
-  <li>Visit the Isa Bey Mosque which is remaining from Anatolian Beyliks</li>
-  <li>Discover the extraordinary of Sirince Turkish-Orthodox village.</li>
+  <li>Admire the remarkable Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus and visit the House of the Virgin Mary, to see her final resting place</li>
+  <li>Visit the Isa Bey Mosque, important as one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
+  <li>Be immersed in the charm and ambience of Şirince a Turkish-Orthodox village.</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel.</p>
+<p>At the end of the tour, we will transfer you back to your hotel.</p>
 </div>")
 
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_2.jpg'))
@@ -873,20 +870,20 @@ tour_23.photos.attach(io: file_5, filename: 'sirince_1.jpg', content_type: 'imag
 tour_23.tag_list = "Ephesus"
 tour_23.save
 
-tour_24 = Tour.create(title: "Ephesus & Pamukkale Tour", description: "Ephesus Ancient City, Pamukkale, Hierapolis", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 249)
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_5.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_4.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_2.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_1.jpg'))
+# tour_24 = Tour.create(title: "Ephesus & Pamukkale Tour", description: "Ephesus Ancient City, Pamukkale, Hierapolis", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 249)
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_5.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_4.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_3.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_2.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_1.jpg'))
 
-tour_24.photos.attach(io: file_1, filename: 'ephesus_pamukkale_5.jpg', content_type: 'image/jpg')
-tour_24.photos.attach(io: file_2, filename: 'ephesus_pamukkale_4.jpg', content_type: 'image/jpg')
-tour_24.photos.attach(io: file_3, filename: 'ephesus_pamukkale_3.jpg', content_type: 'image/jpg')
-tour_24.photos.attach(io: file_4, filename: 'ephesus_pamukkale_2.jpg', content_type: 'image/jpg')
-tour_24.photos.attach(io: file_5, filename: 'ephesus_pamukkale_1.jpg', content_type: 'image/jpg')
-tour_24.tag_list = "Ephesus"
-tour_24.save
+# tour_24.photos.attach(io: file_1, filename: 'ephesus_pamukkale_5.jpg', content_type: 'image/jpg')
+# tour_24.photos.attach(io: file_2, filename: 'ephesus_pamukkale_4.jpg', content_type: 'image/jpg')
+# tour_24.photos.attach(io: file_3, filename: 'ephesus_pamukkale_3.jpg', content_type: 'image/jpg')
+# tour_24.photos.attach(io: file_4, filename: 'ephesus_pamukkale_2.jpg', content_type: 'image/jpg')
+# tour_24.photos.attach(io: file_5, filename: 'ephesus_pamukkale_1.jpg', content_type: 'image/jpg')
+# tour_24.tag_list = "Ephesus"
+# tour_24.save
 
 tour_25 = Tour.create(title: "Ephesus Tour from Istanbul", description: "Ephesus Ancient City, Temple of Artemis, The House of Virgin Mary", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 299, 
 include: "<div>
@@ -905,14 +902,14 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Discover three of Turkey’s most important historical sites on day journey from Istanbul. Explore the ancient city of the man-made UNESCO World Heritage Ephesus, the Temple of Artemis, and the House of the Virgin Mary.</p>
-<p>Early in the morning, we will pick you up from your hotel in Istanbul and drive to Istanbul Airport. Flight to Izmir. Our expert guide will meet with you at Izmir Airport upon landing. Then tour will start.</p>
+<p>Discover three of Turkey’s most important historical sites on a day journey from Istanbul. Explore the ancient city of Ephesus protected under UNESCO World Heritage status, as well as the Temple of Artemis, and the House of the Virgin Mary.</p>
+<p>You will be picked up early in the morning from your hotel in Istanbul and driven to Istanbul Airport. After landing in Izmir you will be greeted by our expert guide upon arrival and the tour will commence. </p>
 <ul>
-  <li>Explore the ruins of Ephesus with an expert guide</li>
+  <li>Explore the well preserved ruins of Ephesus with an expert guide</li>
   <li>Discover the Temple of Artemis, one of the Seven Wonders of the Ancient World</li>
-  <li>Admire to the House of the Virgin Mary where she spent her last days</li>
+  <li>Admire to the House of the Virgin Mary where she spent her final days</li>
 </ul>
-<p>In the end of tour, driver drop you off to Izmir Airport. Then return to Istanbul Airport by flight. Transfer back to hotel in Istanbul.</p>
+<p>At the end of this tour, you will be dropped off at Izmir Airport. From there you will fly direct to  Istanbul and be transferred back to your hotel upon arrival.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_5.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_4.jpg'))
@@ -944,16 +941,16 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Explore the petrified waterfalls of Pamukkale from Kusadasi and visit the exceptional spring water from known as “Cotton Castle” in English. Take a curative plunge in the mineral waters.</p>
-<p>Early in the morning, we will pick you up from your hotel in Kusadasi. Arriving to Pamukkale after 3 hours drive. Let’s begin to adore Pamukkale.</p>
+<p>Travelling from Kusadasi explore the petrified waterfalls, snow white cliffs and travertines of Pamukkale (known as Cotton Palace in Turkish). Tour the ancient city of Hierapolis and unwind in the relaxing mineral waters of Cleopatra’s Ancient thermal pool. </p>
+<p>You will be picked up from your hotel in Kusadasi in the early morning. After a three hour drive we will arrive in Pamukkale. </p>
 <ul>
-  <li>Discover the petrified waterfalls of Pamukkale</li>
-  <li>Explore the ruins of Hierapolis Ancient City</li>
-  <li>Taste a Turkish cuisine buffet lunch on restaurant</li>
-  <li>Take a plunge in the curative hot spring water</li>
+  <li>Explore the petrified waterfalls of Pamukkale</li>
+  <li>Tour the ruins of Hierapolis Ancient City, Apollo Temple, and the largest Necropolis in Anatolia</li>
+  <li>Immerse yourself in the flavours of local Turkish cuisine during a buffet lunch at a local restaurant</li>
+  <li>Take a plunge in Cleopatra’s ancient thermal pool, be transported through time and enjoy the tranquil benefits of these mineral waters.</li>
   <li>Admire the sarcophagi of Hierapolis</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel in Kusadasi.</p>
+<p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_5.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_1.jpg'))
@@ -985,14 +982,15 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>You will be amazed with the superiority of marble sculpting when you visit the museum of it. City of Aphrodisias is highly refined and chic. It will be an excellent tour to enjoy the art, history and nature.</p>
-<p>Early in the morning, we will pick you up from your hotel in Kusadasi. Arriving to Aphrodisias after 90 minutes drive. Let’s begin to adore Aphrodisias. Then admire to beauty of Pamukkale.</p>
+<p>Explore the ancient city of Aphrodisias named after the goddess Aphrodite and referred to as the ‘City of Love’. Marvel at one of the most important sites of  Greek and Roman periods in Turkey. Famous for its craftsmanship and use of quality marble, experience first hand the sculptural superiority of a once bustling metropolis. Finish off the tour with a visit to the white travertines of Pamukkale and the ancient city of Hierapolis.</p>
+<p>This tour is recommended for those with an interest in art, history and nature.</p>
+<p>You will be picked up from your hotel in Kusadasi in the early morning. We will arrive in Aphrodisias after a 1.5 hour drive. The tour will commence in Aphrodisias before we explore Pamukkale.</p>
 <ul>
-  <li>Amazed with the perfection of marble on Aphrodisias City</li>
-  <li>Explore Ancient City of Hierapolis</li>
-  <li>Discover Pamukkale which is known as the white paradise of Turkey.</li>
+  <li>Be amazed by the marble and well preserved Aphrodisias city</li>
+  <li>Explore  the ancient city of Hierapolis, and its many highlights including the largest Necropolis in Anatolia</li>
+  <li>Be mesmerized by the petrified waterfalls and snow white cliffs of Pamukkale</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel in Kusadasi.</p>
+<p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
 </div>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_2.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_1.jpg'))
@@ -1024,15 +1022,15 @@ include: "<div>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
 </ul>
 </div>", schedule: "<div>
-<p>Visit three of Turkey’s most massive historical and natural sites on day journey to Pamukkale, Hierapolis and Laodicea. Soak in the soothing white thermal pools of the Pamukkale. Visit the largest graveyard in antiquity and ramble through an ancient Greek city home to well-preserved churches.</p>
-<p>Early in the morning, we will pick you up from your hotel in Kusadasi and tour will begin.</p>
+<p>Visit three of Turkey’s grandest historical and natural sites on a day journey to Pamukkale, Hierapolis and Laodicea. Soak in the soothing white thermal pools of Pamukkale and be amazed by the white travertines that cover the landscape. Visit the largest graveyard in antiquity and explore an ancient Greek city home to well-preserved sites of biblical significance, as one of the Seven Churches of Revelation.</p>
+<p>You will be picked up from your hotel in Kusadasi in the early morning and the tour will commence.</p>
 <ul>
   <li>A full-day trip to Laodicea, Hierapolis and Pamukkale</li>
-  <li>Taste a turkish cuisine on local restaurant</li>
-  <li>Visit three breathtaking attractions in a one day of sightseeing.</li>
-  <li>Get in-depth background on the early days of Greek and Roman rule in the region</li>
+  <li>Enjoy Turkish cuisine at a local restaurant</li>
+  <li>Visit three breathtaking attractions in  one day of sightseeing</li>
+  <li>Get an in-depth background into the early days of Greek and Roman rule in the region</li>
 </ul>
-<p>In the end of tour, we will drop you off to your hotel in Kusadasi.</p>
+<p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
 </div>")
 
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_1.jpg'))
@@ -1049,315 +1047,315 @@ tour_28.photos.attach(io: file_5, filename: 'lao_5.jpg', content_type: 'image/jp
 tour_28.tag_list = "Pamukkale"
 tour_28.save
 
-tour_29 = Tour.create(title: "Pamukkale Tour From Istanbul", description: "Visits Pamukkale,and Hierapolis", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 249)
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_4.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_1.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_2.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_3.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_5.jpg'))
+# tour_29 = Tour.create(title: "Pamukkale Tour From Istanbul", description: "Visits Pamukkale,and Hierapolis", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 249)
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_4.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_1.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_2.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_3.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_5.jpg'))
 
-tour_29.photos.attach(io: file_1, filename: 'from_ist_4.jpg', content_type: 'image/jpg')
-tour_29.photos.attach(io: file_2, filename: 'from_ist_1.jpg', content_type: 'image/jpg')
-tour_29.photos.attach(io: file_3, filename: 'from_ist_2.jpg', content_type: 'image/jpg')
-tour_29.photos.attach(io: file_4, filename: 'from_ist_3.jpg', content_type: 'image/jpg')
-tour_29.photos.attach(io: file_5, filename: 'from_ist_5.jpg', content_type: 'image/jpg')
-tour_29.tag_list = "Pamukkale"
-tour_29.save
+# tour_29.photos.attach(io: file_1, filename: 'from_ist_4.jpg', content_type: 'image/jpg')
+# tour_29.photos.attach(io: file_2, filename: 'from_ist_1.jpg', content_type: 'image/jpg')
+# tour_29.photos.attach(io: file_3, filename: 'from_ist_2.jpg', content_type: 'image/jpg')
+# tour_29.photos.attach(io: file_4, filename: 'from_ist_3.jpg', content_type: 'image/jpg')
+# tour_29.photos.attach(io: file_5, filename: 'from_ist_5.jpg', content_type: 'image/jpg')
+# tour_29.tag_list = "Pamukkale"
+# tour_29.save
 
-tour_30 = Tour.create(title: "Mount Nemrut & Gobeklitepe", description: "Visits Gobeklitepe, Edessa, Nemrut", duration: "2 Days", tag_text: "Guided", group_size: "Private", price: 399)
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_3.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_1.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_5.jpg'))
+# tour_30 = Tour.create(title: "Mount Nemrut & Gobeklitepe", description: "Visits Gobeklitepe, Edessa, Nemrut", duration: "2 Days", tag_text: "Guided", group_size: "Private", price: 399)
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_3.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_2.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_1.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_4.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_5.jpg'))
 
-tour_30.photos.attach(io: file_1, filename: 'nemrut_3.jpg', content_type: 'image/jpg')
-tour_30.photos.attach(io: file_2, filename: 'nemrut_2.jpg', content_type: 'image/jpg')
-tour_30.photos.attach(io: file_3, filename: 'nemrut_1.jpg', content_type: 'image/jpg')
-tour_30.photos.attach(io: file_4, filename: 'nemrut_4.jpg', content_type: 'image/jpg')
-tour_30.photos.attach(io: file_5, filename: 'nemrut_5.jpg', content_type: 'image/jpg')
-tour_30.tag_list = "Nemrut"
-tour_30.save
+# tour_30.photos.attach(io: file_1, filename: 'nemrut_3.jpg', content_type: 'image/jpg')
+# tour_30.photos.attach(io: file_2, filename: 'nemrut_2.jpg', content_type: 'image/jpg')
+# tour_30.photos.attach(io: file_3, filename: 'nemrut_1.jpg', content_type: 'image/jpg')
+# tour_30.photos.attach(io: file_4, filename: 'nemrut_4.jpg', content_type: 'image/jpg')
+# tour_30.photos.attach(io: file_5, filename: 'nemrut_5.jpg', content_type: 'image/jpg')
+# tour_30.tag_list = "Nemrut"
+# tour_30.save
 
-tour_31 = Tour.create(title: "Gobeklitepe from Istanbul", description: "Visits Edessa, Gobeklitepe, Archeologic Museum", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 349, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Journey back in time to 12,000 BCE on this tour to Gobeklitepe from Istanbul. This tour splendid for history-buffs who want to dip deeper within the ancient history. Assure that your archaeological adventure is comfortable and without stress. Guide also takes you to Sanliurfa Archeological Museum, Pools of Abraham, and local market.</p>
-<p>We will pick you up from your hotel in Istanbul and drive to Istanbul Airport. You will board an early morning flight from Istanbul to Sanliurfa where the tour starts. Guide will meet with you at Sanliurfa Airport upon landing. Then tour will start.</p>
-<ul>
-  <li>Admire to Gobeklitepe where the history start</li>
-  <li>Visit an archaeological site that most tourists miss</li>
-</ul>
-<p>In the end of tour, driver drop you off to Sanliurfa Airport. Then return to Istanbul Airport by flight. Transfer back to hotel in Istanbul.</p>
-</div>")
+# tour_31 = Tour.create(title: "Gobeklitepe from Istanbul", description: "Visits Edessa, Gobeklitepe, Archeologic Museum", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 349, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Journey back in time to 12,000 BCE on this tour to Gobeklitepe from Istanbul. This tour splendid for history-buffs who want to dip deeper within the ancient history. Assure that your archaeological adventure is comfortable and without stress. Guide also takes you to Sanliurfa Archeological Museum, Pools of Abraham, and local market.</p>
+# <p>We will pick you up from your hotel in Istanbul and drive to Istanbul Airport. You will board an early morning flight from Istanbul to Sanliurfa where the tour starts. Guide will meet with you at Sanliurfa Airport upon landing. Then tour will start.</p>
+# <ul>
+#   <li>Admire to Gobeklitepe where the history start</li>
+#   <li>Visit an archaeological site that most tourists miss</li>
+# </ul>
+# <p>In the end of tour, driver drop you off to Sanliurfa Airport. Then return to Istanbul Airport by flight. Transfer back to hotel in Istanbul.</p>
+# </div>")
 
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_2.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_1.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_5.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_3.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_4.jpg'))
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_2.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_1.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_5.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_3.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_4.jpg'))
 
-tour_31.photos.attach(io: file_1, filename: 'gobek_2.jpg', content_type: 'image/jpg')
-tour_31.photos.attach(io: file_2, filename: 'gobek_1.jpg', content_type: 'image/jpg')
-tour_31.photos.attach(io: file_3, filename: 'gobek_5.jpg', content_type: 'image/jpg')
-tour_31.photos.attach(io: file_4, filename: 'gobek_3.jpg', content_type: 'image/jpg')
-tour_31.photos.attach(io: file_5, filename: 'gobek_4.jpg', content_type: 'image/jpg')
-tour_31.tag_list = "Gobeklitepe"
-tour_31.save
+# tour_31.photos.attach(io: file_1, filename: 'gobek_2.jpg', content_type: 'image/jpg')
+# tour_31.photos.attach(io: file_2, filename: 'gobek_1.jpg', content_type: 'image/jpg')
+# tour_31.photos.attach(io: file_3, filename: 'gobek_5.jpg', content_type: 'image/jpg')
+# tour_31.photos.attach(io: file_4, filename: 'gobek_3.jpg', content_type: 'image/jpg')
+# tour_31.photos.attach(io: file_5, filename: 'gobek_4.jpg', content_type: 'image/jpg')
+# tour_31.tag_list = "Gobeklitepe"
+# tour_31.save
 
-tour_32 = Tour.create(title: "Troy Tour from Istanbul", description: "Visits Troy Ancient City, Trojan Horse", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 99, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Discover the legendary Ancient city of Troy on a day trip from Istanbul. Get about Trojan mythology and marvel at the ruins of the UNESCO World Heritage site including the replica of the Trojan Horse, as you walk in the footsteps of Achilles, Hector, Helen, and Paris.</p>
-<p>Start the tour with the pick you up from your hotel in Istanbul, then you will be meet our driver and guide before air-conditioned van.</p>
-<ul>
-  <li>Discover the ruins and temples of the legendary Ancient City of Troy</li>
-  <li>Visit the replica of the Trojan Horse</li>
-  <li>Get the legends of Paris, Achilles and Helen of Troy</li>
-  <li>Enjoy a tasty lunch on restaurant</li>
-  <li>Explore Homer's foundations for European literature</li>
-</ul>
-<p>In the end of tour, journey back to hotel in Istanbul.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_1.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_5.jpg'))
+# tour_32 = Tour.create(title: "Troy Tour from Istanbul", description: "Visits Troy Ancient City, Trojan Horse", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 99, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Discover the legendary Ancient city of Troy on a day trip from Istanbul. Get about Trojan mythology and marvel at the ruins of the UNESCO World Heritage site including the replica of the Trojan Horse, as you walk in the footsteps of Achilles, Hector, Helen, and Paris.</p>
+# <p>Start the tour with the pick you up from your hotel in Istanbul, then you will be meet our driver and guide before air-conditioned van.</p>
+# <ul>
+#   <li>Discover the ruins and temples of the legendary Ancient City of Troy</li>
+#   <li>Visit the replica of the Trojan Horse</li>
+#   <li>Get the legends of Paris, Achilles and Helen of Troy</li>
+#   <li>Enjoy a tasty lunch on restaurant</li>
+#   <li>Explore Homer's foundations for European literature</li>
+# </ul>
+# <p>In the end of tour, journey back to hotel in Istanbul.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_1.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_2.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_3.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_4.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_5.jpg'))
 
-tour_32.photos.attach(io: file_1, filename: 'gobek_1.jpg', content_type: 'image/jpg')
-tour_32.photos.attach(io: file_2, filename: 'gobek_2.jpg', content_type: 'image/jpg')
-tour_32.photos.attach(io: file_3, filename: 'gobek_3.jpg', content_type: 'image/jpg')
-tour_32.photos.attach(io: file_4, filename: 'gobek_4.jpg', content_type: 'image/jpg')
-tour_32.photos.attach(io: file_5, filename: 'gobek_5.jpg', content_type: 'image/jpg')
-tour_32.tag_list = "Troy"
-tour_32.save
+# tour_32.photos.attach(io: file_1, filename: 'gobek_1.jpg', content_type: 'image/jpg')
+# tour_32.photos.attach(io: file_2, filename: 'gobek_2.jpg', content_type: 'image/jpg')
+# tour_32.photos.attach(io: file_3, filename: 'gobek_3.jpg', content_type: 'image/jpg')
+# tour_32.photos.attach(io: file_4, filename: 'gobek_4.jpg', content_type: 'image/jpg')
+# tour_32.photos.attach(io: file_5, filename: 'gobek_5.jpg', content_type: 'image/jpg')
+# tour_32.tag_list = "Troy"
+# tour_32.save
 
-tour_33 = Tour.create(title: "Gallipoli Tour", description: "Anzac Cove, Turkish Memorial, Australian Memorial", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 299, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Back in time and visit the site of ANZAC landings on WWI on this tour of the Gallipoli Peninsula from Istanbul. Visit to the battlefields of the allied forces, and see the war memorials that memorialize the dead soldiers.</p>
-<p>We will pick you up from your hotel in Istanbul and trip by air-conditioned minibus to the battlegrounds and war memorials of the ANZAC campaign of the Battle of Gallipoli during WWI.</p>
-<ul>
-  <li>Discover the war memorials and battlefields of the Gallipoli</li>
-  <li>Get more about the ANZAC troops</li>
-  <li>Stop for reflect at the Commonwealth cemeteries</li>
-</ul>
-<p>In the end of tour, journey back to hotel in Istanbul.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_4.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_1.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_3.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_5.jpg'))
+# tour_33 = Tour.create(title: "Gallipoli Tour", description: "Anzac Cove, Turkish Memorial, Australian Memorial", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 299, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Back in time and visit the site of ANZAC landings on WWI on this tour of the Gallipoli Peninsula from Istanbul. Visit to the battlefields of the allied forces, and see the war memorials that memorialize the dead soldiers.</p>
+# <p>We will pick you up from your hotel in Istanbul and trip by air-conditioned minibus to the battlegrounds and war memorials of the ANZAC campaign of the Battle of Gallipoli during WWI.</p>
+# <ul>
+#   <li>Discover the war memorials and battlefields of the Gallipoli</li>
+#   <li>Get more about the ANZAC troops</li>
+#   <li>Stop for reflect at the Commonwealth cemeteries</li>
+# </ul>
+# <p>In the end of tour, journey back to hotel in Istanbul.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_4.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_2.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_1.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_3.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_5.jpg'))
 
-tour_33.photos.attach(io: file_1, filename: 'galli_4.jpg', content_type: 'image/jpg')
-tour_33.photos.attach(io: file_2, filename: 'galli_2.jpg', content_type: 'image/jpg')
-tour_33.photos.attach(io: file_3, filename: 'galli_1.jpg', content_type: 'image/jpg')
-tour_33.photos.attach(io: file_4, filename: 'galli_3.jpg', content_type: 'image/jpg')
-tour_33.photos.attach(io: file_5, filename: 'galli_5.jpg', content_type: 'image/jpg')
-tour_33.tag_list = "Gallipoli"
-tour_33.save
+# tour_33.photos.attach(io: file_1, filename: 'galli_4.jpg', content_type: 'image/jpg')
+# tour_33.photos.attach(io: file_2, filename: 'galli_2.jpg', content_type: 'image/jpg')
+# tour_33.photos.attach(io: file_3, filename: 'galli_1.jpg', content_type: 'image/jpg')
+# tour_33.photos.attach(io: file_4, filename: 'galli_3.jpg', content_type: 'image/jpg')
+# tour_33.photos.attach(io: file_5, filename: 'galli_5.jpg', content_type: 'image/jpg')
+# tour_33.tag_list = "Gallipoli"
+# tour_33.save
 
-article_1 = Article.create(title: "Mesopotamia", author: "Lara Pak", author_img: "Middle East",
-content: "<p>Mesopotamia which draws people with its fertile land from past to today is the place wherehistory of 
-civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
-villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
-of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
-Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
-drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
-Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
-folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
-Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
-Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
-When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
-Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
-file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
-file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
+# article_1 = Article.create(title: "Mesopotamia", author: "Lara Pak", author_img: "Middle East",
+# content: "<p>Mesopotamia which draws people with its fertile land from past to today is the place wherehistory of 
+# civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
+# villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
+# of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
+# Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
+# drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
+# Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
+# folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
+# Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
+# Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
+# When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
+# Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
+# file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
+# file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
 
-article_1.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
-article_1.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_1.save
+# article_1.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
+# article_1.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
+# article_1.save
 
-article_2 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "Food",
-content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
-civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
-villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
-of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
-Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
-drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
-Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
-folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
-Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
-Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
-When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
-Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
-file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
-file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
+# article_2 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "Food",
+# content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
+# civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
+# villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
+# of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
+# Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
+# drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
+# Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
+# folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
+# Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
+# Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
+# When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
+# Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
+# file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
+# file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
 
-article_2.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
-article_2.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_2.save
+# article_2.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
+# article_2.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
+# article_2.save
 
-article_3 = Article.create(title: "Mesopotamia", author: "Serkan Demircan", author_img: "Fun",
-content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
-civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
-villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
-of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
-Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
-drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
-Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
-folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
-Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
-Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
-When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
-Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
-file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
-file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
+# article_3 = Article.create(title: "Mesopotamia", author: "Serkan Demircan", author_img: "Fun",
+# content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
+# civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
+# villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
+# of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
+# Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
+# drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
+# Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
+# folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
+# Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
+# Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
+# When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
+# Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
+# file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
+# file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
 
-article_3.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
-article_3.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_3.save
+# article_3.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
+# article_3.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
+# article_3.save
 
-article_4 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "East",
-content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
-civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
-villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
-of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
-Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
-drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
-Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
-folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
-Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
-Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
-When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
-Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
-file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
-file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
+# article_4 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "East",
+# content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
+# civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
+# villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
+# of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
+# Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
+# drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
+# Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
+# folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
+# Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
+# Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
+# When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
+# Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
+# file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
+# file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
 
-article_4.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
-article_4.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_4.save
+# article_4.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
+# article_4.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
+# article_4.save
 
-article_5 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "West",
-content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
-civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
-villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
-of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
-Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
-drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
-Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
-folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
-Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
-Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
-When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
-Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
-file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
-file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
+# article_5 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "West",
+# content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
+# civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
+# villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
+# of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
+# Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
+# drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
+# Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
+# folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
+# Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
+# Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
+# When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
+# Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
+# file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
+# file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
 
-article_5.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
-article_5.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_5.save
+# article_5.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
+# article_5.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
+# article_5.save
 
-article_6 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "History",
-content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
-civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
-villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
-of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
-Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
-drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
-Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
-folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
-Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
-Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
-When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
-Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
-file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
-file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
+# article_6 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "History",
+# content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
+# civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
+# villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
+# of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
+# Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
+# drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
+# Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
+# folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
+# Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
+# Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
+# When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
+# Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
+# file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
+# file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
 
-article_6.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
-article_6.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_6.save
+# article_6.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
+# article_6.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
+# article_6.save
 
-article_7 = Article.create(title: "Mesopotamia", author: "Lara Pak", author_img: "History",
-content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
-civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
-villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
-of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
-Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
-drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
-Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
-folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
-Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
-Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
-When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
-Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
-file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
-file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
+# article_7 = Article.create(title: "Mesopotamia", author: "Lara Pak", author_img: "History",
+# content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
+# civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
+# villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
+# of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
+# Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
+# drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
+# Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
+# folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
+# Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
+# Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
+# When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
+# Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
+# file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
+# file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
 
-article_7.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
-article_7.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_7.save
+# article_7.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
+# article_7.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
+# article_7.save
 
-article_8 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "History",
-content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
-civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
-villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
-of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
-Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
-drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
-Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
-folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
-Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
-Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
-When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
-Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
-file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
-file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
+# article_8 = Article.create(title: "Mesopotamia", author: "Anil Pak", author_img: "History",
+# content: "<p>Mesopotamiawhich draws people with its fertile land from past to today is the place wherehistory of 
+# civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
+# villages, cities and empireswere established; writing was invented.</p> <p>History of Göbekli Tepe which causes history 
+# of humanity to be rewritten; Mardin’s lacy narrow streets; matchless sunrises inNemrut, a wonder of the world; 
+# Gaziantep, city of mosaics; unprecedentedhistorical artifacts in modern museums planted in cities like pearl 
+# drops InMesopotamia, the land where thousands of archeological treasures reside, you see history and culture spring everywhere you turn your head. Fertile land between to magnificent rivers.
+# Mesopotamia has turned every seed into abundant crops for thousands of years.</p> <p>Aspectacular gastronomic culture turning these miracles into incredible tastes.Different colors telling the same story in a different manner with lifestyle,
+# folklore and art, nourished by diversity. Since when did we have this faith and the desire tobuild temples? The land which has an answer to this question. 
+# Mosques, tombs,churches, and countless temples of various beliefs… Göbekli Tepe, which unitespeople with their faith in their hearts long before settling and startingfarming. 
+# Sacred places scattered around Şanlıurfa, the city of prophets. Themystical atmosphere, domes in Mardin; a mosaic of religions and cultures.Countless sacred places in Mesopotamia and the state of deep contemplation whichcan only be felt by experience. 
+# When you add hospitable people, a splendid physicalgeography, a matchless ecosystem with distinctive plant and animal kinds tothese, everything is in place. Mesopotamia is a matchless center of attractionwith a capacity to add tens of items to your “Bucket List”.
+# Mesopotamia, the land of firsts, theland of everything unique and as ancient as time itself, awaits you. Discover alegendary history and culture, remarkable nature, and unforgettable tastes inMesopotamia.</p> ")
+# file = URI.open("https://images.unsplash.com/photo-1549664170-8ec5fef5160e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80")
+# file_2 = URI.open("https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80")
 
-article_8.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
-article_8.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
-article_8.save
+# article_8.photos.attach(io: file, filename: 'photo_article_1.jpg', content_type: 'image/jpg')
+# article_8.photos.attach(io: file_2, filename: 'photo_article_2.jpg', content_type: 'image/jpg')
+# article_8.save
 
 puts "database is clean"
 
 puts "#{Tour.count} Tour created..."
-puts "#{Article.count} Article created..."
+# puts "#{Article.count} Article created..."
 
 puts "Finished mate..."
