@@ -3,7 +3,7 @@ require "open-uri"
 puts "cleaning up database"
 
 Tour.destroy_all
-# Article.destroy_all
+Article.destroy_all
 
 ActsAsTaggableOn::Tag.destroy_all
 
@@ -1356,6 +1356,6 @@ tour_28.save
 puts "database is clean"
 
 puts "#{Tour.count} Tour created..."
-# puts "#{Article.count} Article created..."
+puts "#{Article.count} Article created..."
 
 puts "Finished mate..."
