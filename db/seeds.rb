@@ -1178,7 +1178,7 @@ include: "<div>
 <ul class=\"list-inline\">
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
 </ul>
 </div>", schedule: "<div>
 <p>Visit three of Turkey’s grandest historical and natural sites on a day journey to Pamukkale, Hierapolis and Laodicea. Soak in the soothing white thermal pools of Pamukkale and be amazed by the white travertines that cover the landscape. Visit the largest graveyard in antiquity and explore an ancient Greek city home to well-preserved sites of biblical significance, as one of the Seven Churches of Revelation.</p>
@@ -1223,151 +1223,279 @@ tour_28.photos.attach(io: file_5, filename: 'lao_5.jpg', content_type: 'image/jp
 tour_28.tag_list = "Pamukkale"
 tour_28.save
 
-# tour_29 = Tour.create(title: "Pamukkale Tour From Istanbul", description: "Visits Pamukkale,and Hierapolis", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 249)
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_4.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_1.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_2.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_3.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_5.jpg'))
+tour_29 = Tour.create(title: "Pamukkale Tour From Istanbul", description: "Visits Pamukkale,and Hierapolis", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 249,
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Travelling from Istanbul explore the petrified waterfalls, snow white cliffs and travertines of Pamukkale 
+(known as Cotton Palace in Turkish). Tour the ancient city of Hierapolis and unwind in the relaxing mineral waters of 
+Cleopatra’s Ancient thermal pool. </p>
+<p>You will be picked up from your hotel in Istanbul and driven to Istanbul Airport where you will board an early morning 
+flight to Pamukkale. Greeted by your guide upon arrival, where the tour will commence. </p>
+<ul>
+  <li>Explore Pamukkale, one of the most spectacular geological sites in Turkey.</li>
+  <li>Marvel at Pamukkale's basins, and petrified waterfalls</li>
+  <li>Tour the ruins of the Ancient City of Hierapolis, a Greco-Roman City and explore some of the cities highlights including 
+    Apollo’s Temple, and the Roman theatre</li>
+  <li>Take a plunge in Cleopatra’s Ancient thermal pool, be transported through time and  enjoy the tranquil benefits of 
+    these mineral waters. </li>
+</ul>
+<p>At the end of the tour, you will be transported back to Pamukkale Airport where you will fly directly to Istanbul. 
+Upon arrival you will be transferred back to your hotel in Istanbul.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Pamukkale</h4><p>One of Turkey’s most famous sites Pamukkale (Cotton Castle) 
+is a popular attraction on any Turkey Tour. Pamukkale, a UNESCO world heritage site features a unique landscape of white travertines, 
+which hang from the hills as a result of calcium bicarbonate deposits that have petrified and formed for over 400, 000 years. 
+Filled with bright blue water, and considered to have healing powers as a thermal spring, this location has become a unique tourism
+and wellness destination. Located next to the ancient city of Hierapolis, with well preserved Roman ruins and Cleopatra’s pool this 
+is a wonderful destination to visit.</p>
+<h4>Hierapolis Ancient City</h4><p>The ancient city of Hierapolis-Pamukkale is an ancient spa town founded at the end of 2nd century 
+B.C. Under UNESCO world heritage protection, this site is regarded as an important destination for those who wish to visit the ancient 
+city and the white travertines of Pamukkale known as ‘Cotton Castle’. Many ancient remains of Greco-Roman times remain including: 
+The City Walls, Theatre, St. Philip’s Martyrium, Churches, Great Bath Complex, Temple of Apollo, and The Necropolis. With a striking 
+landscape, the opportunity to swim in the therapeutic springs, and the unique panorama, this is a popular destination for many on our 
+tours.</p></div>")
 
-# tour_29.photos.attach(io: file_1, filename: 'from_ist_4.jpg', content_type: 'image/jpg')
-# tour_29.photos.attach(io: file_2, filename: 'from_ist_1.jpg', content_type: 'image/jpg')
-# tour_29.photos.attach(io: file_3, filename: 'from_ist_2.jpg', content_type: 'image/jpg')
-# tour_29.photos.attach(io: file_4, filename: 'from_ist_3.jpg', content_type: 'image/jpg')
-# tour_29.photos.attach(io: file_5, filename: 'from_ist_5.jpg', content_type: 'image/jpg')
-# tour_29.tag_list = "Pamukkale"
-# tour_29.save
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_4.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_1.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_2.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_3.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_5.jpg'))
 
-# tour_30 = Tour.create(title: "Mount Nemrut & Gobeklitepe", description: "Visits Gobeklitepe, Edessa, Nemrut", duration: "2 Days", tag_text: "Guided", group_size: "Private", price: 399)
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_3.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_2.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_1.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_4.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_5.jpg'))
+tour_29.photos.attach(io: file_1, filename: 'from_ist_4.jpg', content_type: 'image/jpg')
+tour_29.photos.attach(io: file_2, filename: 'from_ist_1.jpg', content_type: 'image/jpg')
+tour_29.photos.attach(io: file_3, filename: 'from_ist_2.jpg', content_type: 'image/jpg')
+tour_29.photos.attach(io: file_4, filename: 'from_ist_3.jpg', content_type: 'image/jpg')
+tour_29.photos.attach(io: file_5, filename: 'from_ist_5.jpg', content_type: 'image/jpg')
+tour_29.tag_list = "Pamukkale"
+tour_29.save
 
-# tour_30.photos.attach(io: file_1, filename: 'nemrut_3.jpg', content_type: 'image/jpg')
-# tour_30.photos.attach(io: file_2, filename: 'nemrut_2.jpg', content_type: 'image/jpg')
-# tour_30.photos.attach(io: file_3, filename: 'nemrut_1.jpg', content_type: 'image/jpg')
-# tour_30.photos.attach(io: file_4, filename: 'nemrut_4.jpg', content_type: 'image/jpg')
-# tour_30.photos.attach(io: file_5, filename: 'nemrut_5.jpg', content_type: 'image/jpg')
-# tour_30.tag_list = "Nemrut"
-# tour_30.save
+tour_30 = Tour.create(title: "Mount Nemrut & Gobeklitepe", description: "Visits Gobeklitepe, Edessa, Nemrut", duration: "2 Days", tag_text: "Guided", group_size: "Private", price: 399,
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Accommodations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guid</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Journey back in time to 11,000 BCE on this tour to Gobekli Tepe.</p>
+<p>Splendid for history buffs in particular who want to dig deeper into ancient history and better understand the 
+role Gobekli Tepe played in influencing society. This archaeological adventure will be both comfortable and relaxing, 
+allowing you to fully immerse yourself in the wonder that is Gobekli Tepe. Your expert guide will also take you to Sanliurfa 
+Archaeological Museum, the Pools of Abraham, and a local market.</p>
+<p>This tour will include a visit to Mount Nemrut, which houses some of the most magnificent ruins of the Hellenistic period in Anatolia.</p>
+<p>You will be picked up from your hotel in Istanbul and driven to Istanbul Airport. Boarding an early morning flight from Istanbul 
+to Sanliurfa. You will be greeted by your expert guide upon arrival and your tour will commence. </p>
+<ul>
+  <li>Admire Gobekli Tepe where history and civilisation as we know it started</li>
+  <li>Visit an archaeological site that most tourists miss</li>
+  <li>See the fascinating mosaics of Zeugma museum that will impress you as much as the sweet treat of baklava.</li>
+  <li>Explore the beautiful landscape and statues at Mt. Nemrut's terraces which will take you back in time to 109 BC – 72 AD</li>
+</ul>
+<p>At the end of this tour, your driver will drop you off at Sanliurfa Airport. You will then fly directly to Istanbul Airport. 
+Upon arrival you will be transferred back to your hotel in Istanbul.</p>
 
-# tour_31 = Tour.create(title: "Gobeklitepe from Istanbul", description: "Visits Edessa, Gobeklitepe, Archeologic Museum", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 349, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Journey back in time to 12,000 BCE on this tour to Gobeklitepe from Istanbul. This tour splendid for history-buffs who want to dip deeper within the ancient history. Assure that your archaeological adventure is comfortable and without stress. Guide also takes you to Sanliurfa Archeological Museum, Pools of Abraham, and local market.</p>
-# <p>We will pick you up from your hotel in Istanbul and drive to Istanbul Airport. You will board an early morning flight from Istanbul to Sanliurfa where the tour starts. Guide will meet with you at Sanliurfa Airport upon landing. Then tour will start.</p>
-# <ul>
-#   <li>Admire to Gobeklitepe where the history start</li>
-#   <li>Visit an archaeological site that most tourists miss</li>
-# </ul>
-# <p>In the end of tour, driver drop you off to Sanliurfa Airport. Then return to Istanbul Airport by flight. Transfer back to hotel in Istanbul.</p>
-# </div>")
+</div>", history: "<div class=\"accordion-text\"><h4>Gobeklitepe</h4><p>Göbekli Tepe, the site of the world’s oldest temple, 
+is also known as the first humanities cathedral on a hill. It stands as the most important representative of a belief system, 
+dating to the early days of the Neolithic Period over 11,00 years ago. </p>
+<p>Göbekli Tepe has cultural, religious and historical significance. Through the discovery of Göbekli Tepe archaeologists have 
+uncovered a well-preserved site that highlights that the coordinated effort to build religious monoliths ultimately led to the 
+development of complex and settled societies. This discovery shows us that society and agriculture did not come before 
+religion as was believed by many, but that religion and sites like Göbekli Tepe allowed complex societies to develop.</p>
+<p>The Göbekli Tepe excavation area is over 90,000 square meters (larger than 12 football fields) and the current excavation site 
+viewed by visitors is over 15 metres in depth.From Istanbul, daily private tours are available to Göbekli Tepe.
+Göbekli Tepe, the nomadic people’s spiritual centre is 1.5 km away from the nearest village, Örencik, and 18 km from the nearest city, 
+Urfa, in South-eastern Turkey. </p>
+<h4>Mount Nemrut </h4><p>Mount Nemrut (2150 metres above sea level) is one of Turkey’s most spectacular sites and is a part of 
+Turkey Package tours. Located in the Kahta district between Adiyaman and Malatya, near the Ankar Mountains (Anti Taurus). 
+This site is a visual feast, constructed in 62 BCE by King Antiochus I as a monument to his rule, atop the highest mountain in 
+the region and part of the Kingdom of Commagene. Often referred to as the ‘Throne of Gods’ it is one of the most ambitious sites 
+completed during the Hellenistic period. Today, the sculptural heads sitting atop the mountain, preserved statues and, the beautiful 
+location chosen for a tomb like sanctuary for the king, amazes visitors. </p>
+<p>When you join one of our private tours you will explore many interesting aspects of Mount Nemrut including the burial tumulus 
+(altar) located on the Eastern Terrace. Thought to be the tomb of Antiochus 1. The tumulus formed with crushed piles of limestone, 
+unique to this region, gives the impression of a new mountain at the summit extending to the sky. It’s complex design, grand scale 
+and the surrounding sculptures combine Persian, Hellenistic and Anatolian traditions granting it UNESCO World Heritage Protection 
+due to its cultural and construction significance.</p>
+</div>")
 
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_2.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_1.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_5.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_3.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_4.jpg'))
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_3.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_1.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/nemrut/nemrut_5.jpg'))
 
-# tour_31.photos.attach(io: file_1, filename: 'gobek_2.jpg', content_type: 'image/jpg')
-# tour_31.photos.attach(io: file_2, filename: 'gobek_1.jpg', content_type: 'image/jpg')
-# tour_31.photos.attach(io: file_3, filename: 'gobek_5.jpg', content_type: 'image/jpg')
-# tour_31.photos.attach(io: file_4, filename: 'gobek_3.jpg', content_type: 'image/jpg')
-# tour_31.photos.attach(io: file_5, filename: 'gobek_4.jpg', content_type: 'image/jpg')
-# tour_31.tag_list = "Gobeklitepe"
-# tour_31.save
+tour_30.photos.attach(io: file_1, filename: 'nemrut_3.jpg', content_type: 'image/jpg')
+tour_30.photos.attach(io: file_2, filename: 'nemrut_2.jpg', content_type: 'image/jpg')
+tour_30.photos.attach(io: file_3, filename: 'nemrut_1.jpg', content_type: 'image/jpg')
+tour_30.photos.attach(io: file_4, filename: 'nemrut_4.jpg', content_type: 'image/jpg')
+tour_30.photos.attach(io: file_5, filename: 'nemrut_5.jpg', content_type: 'image/jpg')
+tour_30.tag_list = "Nemrut"
+tour_30.save
 
-# tour_32 = Tour.create(title: "Troy Tour from Istanbul", description: "Visits Troy Ancient City, Trojan Horse", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 99, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Discover the legendary Ancient city of Troy on a day trip from Istanbul. Get about Trojan mythology and marvel at the ruins of the UNESCO World Heritage site including the replica of the Trojan Horse, as you walk in the footsteps of Achilles, Hector, Helen, and Paris.</p>
-# <p>Start the tour with the pick you up from your hotel in Istanbul, then you will be meet our driver and guide before air-conditioned van.</p>
-# <ul>
-#   <li>Discover the ruins and temples of the legendary Ancient City of Troy</li>
-#   <li>Visit the replica of the Trojan Horse</li>
-#   <li>Get the legends of Paris, Achilles and Helen of Troy</li>
-#   <li>Enjoy a tasty lunch on restaurant</li>
-#   <li>Explore Homer's foundations for European literature</li>
-# </ul>
-# <p>In the end of tour, journey back to hotel in Istanbul.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_1.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_2.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_3.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_4.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_5.jpg'))
+tour_31 = Tour.create(title: "Gobeklitepe from Istanbul", description: "Visits Edessa, Gobeklitepe, Archeologic Museum", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 349, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Journey back in time to 11,000 BCE on this tour to Gobekli Tepe from Istanbul. Splendid for history-buffs who want to dig deeper 
+into ancient history and better understand the role Gobekli Tepe played in influencing society. This archaeological adventure will be 
+both comfortable and relaxing allowing you to fully immerse yourself in the wonder that is Gobekli Tepe. Your expert guide will also 
+take you to Sanliurfa Archaeological Museum, the Pools of Abraham, and a local market.</p>
+<p>You will be picked up from your hotel in Istanbul and driven to Istanbul Airport. Boarding an early morning flight from Istanbul 
+to Sanliurfa you will be greeted by your expert guide upon arrival and your tour will commence. </p>
+<ul>
+  <li>Admire to Gobeklitepe where history and civilisation as we know it started</li>
+  <li>Visit an archaeological site that most tourists miss</li>
+</ul>
+<p>At the end of this tour, your driver will drop you off at Sanliurfa Airport where you will then fly directly to Istanbul Airport. 
+Upon arrival you will be transferred back to your hotel in Istanbul.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Gobeklitepe</h4><p>Göbekli Tepe, the site of the world’s oldest temple, 
+is also known as the first humanities cathedral on a hill. It stands as the most important representative of a belief system, 
+dating to the early days of the Neolithic Period over 11,00 years ago. </p>
+<p>Göbekli Tepe has cultural, religious and historical significance. Through the discovery of Göbekli Tepe archaeologists have 
+uncovered a well-preserved site that highlights that the coordinated effort to build religious monoliths ultimately led to the 
+development of complex and settled societies. This discovery shows us that society and agriculture did not come before 
+religion as was believed by many, but that religion and sites like Göbekli Tepe allowed complex societies to develop.</p>
+<p>The Göbekli Tepe excavation area is over 90,000 square meters (larger than 12 football fields) and the current excavation site 
+viewed by visitors is over 15 metres in depth.From Istanbul, daily private tours are available to Göbekli Tepe.
+Göbekli Tepe, the nomadic people’s spiritual centre is 1.5 km away from the nearest village, Örencik, and 18 km from the nearest city, 
+Urfa, in South-eastern Turkey. </p></div>")
 
-# tour_32.photos.attach(io: file_1, filename: 'gobek_1.jpg', content_type: 'image/jpg')
-# tour_32.photos.attach(io: file_2, filename: 'gobek_2.jpg', content_type: 'image/jpg')
-# tour_32.photos.attach(io: file_3, filename: 'gobek_3.jpg', content_type: 'image/jpg')
-# tour_32.photos.attach(io: file_4, filename: 'gobek_4.jpg', content_type: 'image/jpg')
-# tour_32.photos.attach(io: file_5, filename: 'gobek_5.jpg', content_type: 'image/jpg')
-# tour_32.tag_list = "Troy"
-# tour_32.save
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_2.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_1.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_5.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_3.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Gobeklitepe/gobek/gobek_4.jpg'))
 
-# tour_33 = Tour.create(title: "Gallipoli Tour", description: "Anzac Cove, Turkish Memorial, Australian Memorial", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 299, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Back in time and visit the site of ANZAC landings on WWI on this tour of the Gallipoli Peninsula from Istanbul. Visit to the battlefields of the allied forces, and see the war memorials that memorialize the dead soldiers.</p>
-# <p>We will pick you up from your hotel in Istanbul and trip by air-conditioned minibus to the battlegrounds and war memorials of the ANZAC campaign of the Battle of Gallipoli during WWI.</p>
-# <ul>
-#   <li>Discover the war memorials and battlefields of the Gallipoli</li>
-#   <li>Get more about the ANZAC troops</li>
-#   <li>Stop for reflect at the Commonwealth cemeteries</li>
-# </ul>
-# <p>In the end of tour, journey back to hotel in Istanbul.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_4.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_2.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_1.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_3.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_5.jpg'))
+tour_31.photos.attach(io: file_1, filename: 'gobek_2.jpg', content_type: 'image/jpg')
+tour_31.photos.attach(io: file_2, filename: 'gobek_1.jpg', content_type: 'image/jpg')
+tour_31.photos.attach(io: file_3, filename: 'gobek_5.jpg', content_type: 'image/jpg')
+tour_31.photos.attach(io: file_4, filename: 'gobek_3.jpg', content_type: 'image/jpg')
+tour_31.photos.attach(io: file_5, filename: 'gobek_4.jpg', content_type: 'image/jpg')
+tour_31.tag_list = "Gobeklitepe"
+tour_31.save
 
-# tour_33.photos.attach(io: file_1, filename: 'galli_4.jpg', content_type: 'image/jpg')
-# tour_33.photos.attach(io: file_2, filename: 'galli_2.jpg', content_type: 'image/jpg')
-# tour_33.photos.attach(io: file_3, filename: 'galli_1.jpg', content_type: 'image/jpg')
-# tour_33.photos.attach(io: file_4, filename: 'galli_3.jpg', content_type: 'image/jpg')
-# tour_33.photos.attach(io: file_5, filename: 'galli_5.jpg', content_type: 'image/jpg')
-# tour_33.tag_list = "Gallipoli"
-# tour_33.save
+tour_32 = Tour.create(title: "Troy Tour from Istanbul", description: "Visits Troy Ancient City, Trojan Horse", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 99, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Transportation</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Discover the legendary ancient city of Troy on a day trip from Istanbul. Fully immerse yourself in learning about Trojan mythology 
+and marvel at the ruins of the UNESCO World Heritage site. Enjoy inspecting a replica of the Trojan horse, as you walk in the 
+footsteps of Achilles, Hector, Helen, and Paris.
+</p>
+<p>You will be picked up from your hotel in Istanbul, where you will be greeted by your driver and guide in comfort in an 
+air-conditioned van where your journey will commence.</p>
+<ul>
+  <li>Discover the ruins and temples of the legendary Ancient City of Troy</li>
+  <li>Visit the replica of the Trojan Horse</li>
+  <li>Learn about the legends of Paris, Achilles and Helen of Troy</li>
+  <li>Enjoy a delicious lunch at a local restaurant</li>
+  <li>Explore the foundations of European literature though Homer’s Iliad</li>
+</ul>
+<p>At the end of the tour, journey back to your hotel in Istanbul.</p>
+</div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_1.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Troy/troy/troy_5.jpg'))
+
+tour_32.photos.attach(io: file_1, filename: 'gobek_1.jpg', content_type: 'image/jpg')
+tour_32.photos.attach(io: file_2, filename: 'gobek_2.jpg', content_type: 'image/jpg')
+tour_32.photos.attach(io: file_3, filename: 'gobek_3.jpg', content_type: 'image/jpg')
+tour_32.photos.attach(io: file_4, filename: 'gobek_4.jpg', content_type: 'image/jpg')
+tour_32.photos.attach(io: file_5, filename: 'gobek_5.jpg', content_type: 'image/jpg')
+tour_32.tag_list = "Troy"
+tour_32.save
+
+tour_33 = Tour.create(title: "Gallipoli Tour", description: "Anzac Cove, Turkish Memorial, Australian Memorial", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 299, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Transportation</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Go back in time and visit the site of the ANZAC landings from WWI on this tour of the Gallipoli Peninsula from Istanbul. 
+Visit the battlefields of the allied forces, and see the war memorials, which pay respect to the fallen soldiers.</p>
+<p>You will be picked up from your hotel in Istanbul. We will then travel in comfort, by air-conditioned minibus to the battlegrounds 
+and war memorials of the ANZAC campaign, the Battle of Gallipoli.</p>
+<ul>
+  <li>Discover the war memorials and battlefields of the Gallipoli </li>
+  <li>Learn more about the ANZAC troops</li>
+  <li>Stop for reflect at the Commonwealth cemeteries</li>
+</ul>
+<p>At the end of the tour, journey back to your hotel in Istanbul.</p>
+</div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_4.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_1.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_3.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Troy/galli/galli_5.jpg'))
+
+tour_33.photos.attach(io: file_1, filename: 'galli_4.jpg', content_type: 'image/jpg')
+tour_33.photos.attach(io: file_2, filename: 'galli_2.jpg', content_type: 'image/jpg')
+tour_33.photos.attach(io: file_3, filename: 'galli_1.jpg', content_type: 'image/jpg')
+tour_33.photos.attach(io: file_4, filename: 'galli_3.jpg', content_type: 'image/jpg')
+tour_33.photos.attach(io: file_5, filename: 'galli_5.jpg', content_type: 'image/jpg')
+tour_33.tag_list = "Gallipoli"
+tour_33.save
 
 # article_1 = Article.create(title: "Mesopotamia", author: "Lara Pak", author_img: "Middle East",
 # content: "<p>Mesopotamia which draws people with its fertile land from past to today is the place wherehistory of 
