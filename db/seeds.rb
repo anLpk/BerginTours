@@ -1026,167 +1026,202 @@ tour_23.save
 # # tour_24.tag_list = "Ephesus"
 # # tour_24.save
 
-# tour_25 = Tour.create(title: "Ephesus Tour from Istanbul", description: "Ephesus Ancient City, Temple of Artemis, The House of Virgin Mary", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 299, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Istanbul – Izmir – Istanbul Domestic Flight Ticket</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Airport Transportation</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Discover three of Turkey’s most important historical sites on a day journey from Istanbul. Explore the ancient city of Ephesus protected under UNESCO World Heritage status, as well as the Temple of Artemis, and the House of the Virgin Mary.</p>
-# <p>You will be picked up early in the morning from your hotel in Istanbul and driven to Istanbul Airport. After landing in Izmir you will be greeted by our expert guide upon arrival and the tour will commence. </p>
-# <ul>
-#   <li>Explore the well preserved ruins of Ephesus with an expert guide</li>
-#   <li>Discover the Temple of Artemis, one of the Seven Wonders of the Ancient World</li>
-#   <li>Admire to the House of the Virgin Mary where she spent her final days</li>
-# </ul>
-# <p>At the end of this tour, you will be dropped off at Izmir Airport. From there you will fly direct to  Istanbul and be transferred back to your hotel upon arrival.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_5.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_4.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_1.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_2.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_3.jpg'))
+tour_25 = Tour.create(title: "Ephesus Tour from Istanbul", description: "Ephesus Ancient City, Temple of Artemis, The House of Virgin Mary", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 299, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Istanbul – Izmir – Istanbul Domestic Flight Ticket</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportation</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Discover three of Turkey’s most important historical sites on a day journey from Istanbul. Explore the ancient city of Ephesus protected under UNESCO World Heritage status, as well as the Temple of Artemis, and the House of the Virgin Mary.</p>
+<p>You will be picked up early in the morning from your hotel in Istanbul and driven to Istanbul Airport. After landing in Izmir you will be greeted by our expert guide upon arrival and the tour will commence. </p>
+<ul>
+  <li>Explore the well preserved ruins of Ephesus with an expert guide</li>
+  <li>Discover the Temple of Artemis, one of the Seven Wonders of the Ancient World</li>
+  <li>Admire to the House of the Virgin Mary where she spent her final days</li>
+</ul>
+<p>At the end of this tour, you will be dropped off at Izmir Airport. From there you will fly direct to  Istanbul and be transferred back to your hotel upon arrival.</p>
+</div>")
 
-# tour_25.photos.attach(io: file_1, filename: 'fromistanbul_5.jpg', content_type: 'image/jpg')
-# tour_25.photos.attach(io: file_2, filename: 'fromistanbul_4.jpg', content_type: 'image/jpg')
-# tour_25.photos.attach(io: file_3, filename: 'fromistanbul_1.jpg', content_type: 'image/jpg')
-# tour_25.photos.attach(io: file_4, filename: 'fromistanbul_2.jpg', content_type: 'image/jpg')
-# tour_25.photos.attach(io: file_5, filename: 'fromistanbul_3.jpg', content_type: 'image/jpg')
-# tour_25.tag_list = "Ephesus"
-# tour_25.save
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_5.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_4.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_1.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_2.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_3.jpg'))
 
-# tour_26 = Tour.create(title: "Pamukkale Tour from Kusadasi", description: "Visits Pamukkale, Hierapolis, and inc Hot Air Balloon", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 199, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Travelling from Kusadasi explore the petrified waterfalls, snow white cliffs and travertines of Pamukkale (known as Cotton Palace in Turkish). Tour the ancient city of Hierapolis and unwind in the relaxing mineral waters of Cleopatra’s Ancient thermal pool. </p>
-# <p>You will be picked up from your hotel in Kusadasi in the early morning. After a three hour drive we will arrive in Pamukkale. </p>
-# <ul>
-#   <li>Explore the petrified waterfalls of Pamukkale</li>
-#   <li>Tour the ruins of Hierapolis Ancient City, Apollo Temple, and the largest Necropolis in Anatolia</li>
-#   <li>Immerse yourself in the flavours of local Turkish cuisine during a buffet lunch at a local restaurant</li>
-#   <li>Take a plunge in Cleopatra’s ancient thermal pool, be transported through time and enjoy the tranquil benefits of these mineral waters.</li>
-#   <li>Admire the sarcophagi of Hierapolis</li>
-# </ul>
-# <p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_5.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_1.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_2.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_4.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_3.jpg'))
+tour_25.photos.attach(io: file_1, filename: 'fromistanbul_5.jpg', content_type: 'image/jpg')
+tour_25.photos.attach(io: file_2, filename: 'fromistanbul_4.jpg', content_type: 'image/jpg')
+tour_25.photos.attach(io: file_3, filename: 'fromistanbul_1.jpg', content_type: 'image/jpg')
+tour_25.photos.attach(io: file_4, filename: 'fromistanbul_2.jpg', content_type: 'image/jpg')
+tour_25.photos.attach(io: file_5, filename: 'fromistanbul_3.jpg', content_type: 'image/jpg')
+tour_25.tag_list = "Ephesus"
+tour_25.save
 
-# tour_26.photos.attach(io: file_1, filename: 'private_5.jpg', content_type: 'image/jpg')
-# tour_26.photos.attach(io: file_2, filename: 'private_1.jpg', content_type: 'image/jpg')
-# tour_26.photos.attach(io: file_3, filename: 'private_2.jpg', content_type: 'image/jpg')
-# tour_26.photos.attach(io: file_4, filename: 'private_4.jpg', content_type: 'image/jpg')
-# tour_26.photos.attach(io: file_5, filename: 'private_3.jpg', content_type: 'image/jpg')
-# tour_26.tag_list = "Pamukkale"
-# tour_26.save
+tour_26 = Tour.create(title: "Pamukkale Tour from Kusadasi", description: "Visits Pamukkale, Hierapolis, and inc Hot Air Balloon", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 199, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Travelling from Kusadasi explore the petrified waterfalls, snow white cliffs and travertines of Pamukkale (known as Cotton Palace in Turkish). Tour the ancient city of Hierapolis and unwind in the relaxing mineral waters of Cleopatra’s Ancient thermal pool. </p>
+<p>You will be picked up from your hotel in Kusadasi in the early morning. After a three hour drive we will arrive in Pamukkale. </p>
+<ul>
+  <li>Explore the petrified waterfalls of Pamukkale</li>
+  <li>Tour the ruins of Hierapolis Ancient City, Apollo Temple, and the largest Necropolis in Anatolia</li>
+  <li>Immerse yourself in the flavours of local Turkish cuisine during a buffet lunch at a local restaurant</li>
+  <li>Take a plunge in Cleopatra’s ancient thermal pool, be transported through time and enjoy the tranquil benefits of these mineral waters.</li>
+  <li>Admire the sarcophagi of Hierapolis</li>
+</ul>
+<p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Pamukkale</h4><p>One of Turkey’s most famous sites Pamukkale (Cotton Castle) 
+is a popular attraction on any Turkey Tour. Pamukkale, a UNESCO world heritage site features a unique landscape of white travertines, 
+which hang from the hills as a result of calcium bicarbonate deposits that have petrified and formed for over 400, 000 years. 
+Filled with bright blue water, and considered to have healing powers as a thermal spring, this location has become a unique tourism
+and wellness destination. Located next to the ancient city of Hierapolis, with well preserved Roman ruins and Cleopatra’s pool this 
+is a wonderful destination to visit.</p></div>")
 
-# tour_27 = Tour.create(title: "Pamukkale & Aphrodisias Tour From Kusadasi", description: "Visits Pamukkale, Hierapolis, and Aphrodisias", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 169, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Explore the ancient city of Aphrodisias named after the goddess Aphrodite and referred to as the ‘City of Love’. Marvel at one of the most important sites of  Greek and Roman periods in Turkey. Famous for its craftsmanship and use of quality marble, experience first hand the sculptural superiority of a once bustling metropolis. Finish off the tour with a visit to the white travertines of Pamukkale and the ancient city of Hierapolis.</p>
-# <p>This tour is recommended for those with an interest in art, history and nature.</p>
-# <p>You will be picked up from your hotel in Kusadasi in the early morning. We will arrive in Aphrodisias after a 1.5 hour drive. The tour will commence in Aphrodisias before we explore Pamukkale.</p>
-# <ul>
-#   <li>Be amazed by the marble and well preserved Aphrodisias city</li>
-#   <li>Explore  the ancient city of Hierapolis, and its many highlights including the largest Necropolis in Anatolia</li>
-#   <li>Be mesmerized by the petrified waterfalls and snow white cliffs of Pamukkale</li>
-# </ul>
-# <p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_2.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_1.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_3.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_4.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_5.jpg'))
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_5.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_1.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_2.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_3.jpg'))
 
-# tour_27.photos.attach(io: file_1, filename: 'afro_2.jpg', content_type: 'image/jpg')
-# tour_27.photos.attach(io: file_2, filename: 'afro_1.jpg', content_type: 'image/jpg')
-# tour_27.photos.attach(io: file_3, filename: 'afro_3.jpg', content_type: 'image/jpg')
-# tour_27.photos.attach(io: file_4, filename: 'afro_4.jpg', content_type: 'image/jpg')
-# tour_27.photos.attach(io: file_5, filename: 'afro_5.jpg', content_type: 'image/jpg')
-# tour_27.tag_list = "Pamukkale"
-# tour_27.save
+tour_26.photos.attach(io: file_1, filename: 'private_5.jpg', content_type: 'image/jpg')
+tour_26.photos.attach(io: file_2, filename: 'private_1.jpg', content_type: 'image/jpg')
+tour_26.photos.attach(io: file_3, filename: 'private_2.jpg', content_type: 'image/jpg')
+tour_26.photos.attach(io: file_4, filename: 'private_4.jpg', content_type: 'image/jpg')
+tour_26.photos.attach(io: file_5, filename: 'private_3.jpg', content_type: 'image/jpg')
+tour_26.tag_list = "Pamukkale"
+tour_26.save
 
-# tour_28 = Tour.create(title: "Pamukkale & Laodicea Tour From Kusadasi", description: "Visits Pamukkale, Hierapolis, and Laodicea", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 149, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Visit three of Turkey’s grandest historical and natural sites on a day journey to Pamukkale, Hierapolis and Laodicea. Soak in the soothing white thermal pools of Pamukkale and be amazed by the white travertines that cover the landscape. Visit the largest graveyard in antiquity and explore an ancient Greek city home to well-preserved sites of biblical significance, as one of the Seven Churches of Revelation.</p>
-# <p>You will be picked up from your hotel in Kusadasi in the early morning and the tour will commence.</p>
-# <ul>
-#   <li>A full-day trip to Laodicea, Hierapolis and Pamukkale</li>
-#   <li>Enjoy Turkish cuisine at a local restaurant</li>
-#   <li>Visit three breathtaking attractions in  one day of sightseeing</li>
-#   <li>Get an in-depth background into the early days of Greek and Roman rule in the region</li>
-# </ul>
-# <p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
-# </div>")
+tour_27 = Tour.create(title: "Pamukkale & Aphrodisias Tour From Kusadasi", description: "Visits Pamukkale, Hierapolis, and Aphrodisias", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 169, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Explore the ancient city of Aphrodisias named after the goddess Aphrodite and referred to as the ‘City of Love’. Marvel at one of the most important sites of  Greek and Roman periods in Turkey. Famous for its craftsmanship and use of quality marble, experience first hand the sculptural superiority of a once bustling metropolis. Finish off the tour with a visit to the white travertines of Pamukkale and the ancient city of Hierapolis.</p>
+<p>This tour is recommended for those with an interest in art, history and nature.</p>
+<p>You will be picked up from your hotel in Kusadasi in the early morning. We will arrive in Aphrodisias after a 1.5 hour drive. The tour will commence in Aphrodisias before we explore Pamukkale.</p>
+<ul>
+  <li>Be amazed by the marble and well preserved Aphrodisias city</li>
+  <li>Explore  the ancient city of Hierapolis, and its many highlights including the largest Necropolis in Anatolia</li>
+  <li>Be mesmerized by the petrified waterfalls and snow white cliffs of Pamukkale</li>
+</ul>
+<p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Pamukkale</h4><p>One of Turkey’s most famous sites Pamukkale (Cotton Castle) 
+is a popular attraction on any Turkey Tour. Pamukkale, a UNESCO world heritage site features a unique landscape of white travertines, 
+which hang from the hills as a result of calcium bicarbonate deposits that have petrified and formed for over 400, 000 years. 
+Filled with bright blue water, and considered to have healing powers as a thermal spring, this location has become a unique tourism
+and wellness destination. Located next to the ancient city of Hierapolis, with well preserved Roman ruins and Cleopatra’s pool this 
+is a wonderful destination to visit.</p>
+<h4>Aphrodisias</h4><p>Aphrodisias, named after the goddess Aphrodite and referred to as the city of love is known as the centre 
+of sculpture in the Ancient World. Aphrodisias, a remarkably well-preserved Roman-period city, is famous in antiquity for its sanctuary 
+of Aphrodite and its marble sculptors. Known to tourists and travellers since the 18th century, it has been the subject of exploration 
+since the early 20th century.</p>
+</div>")
 
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_1.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_2.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_3.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_4.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_5.jpg'))
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_2.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_1.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_5.jpg'))
 
-# tour_28.photos.attach(io: file_1, filename: 'lao_1.jpg', content_type: 'image/jpg')
-# tour_28.photos.attach(io: file_2, filename: 'lao_2.jpg', content_type: 'image/jpg')
-# tour_28.photos.attach(io: file_3, filename: 'lao_3.jpg', content_type: 'image/jpg')
-# tour_28.photos.attach(io: file_4, filename: 'lao_4.jpg', content_type: 'image/jpg')
-# tour_28.photos.attach(io: file_5, filename: 'lao_5.jpg', content_type: 'image/jpg')
-# tour_28.tag_list = "Pamukkale"
-# tour_28.save
+tour_27.photos.attach(io: file_1, filename: 'afro_2.jpg', content_type: 'image/jpg')
+tour_27.photos.attach(io: file_2, filename: 'afro_1.jpg', content_type: 'image/jpg')
+tour_27.photos.attach(io: file_3, filename: 'afro_3.jpg', content_type: 'image/jpg')
+tour_27.photos.attach(io: file_4, filename: 'afro_4.jpg', content_type: 'image/jpg')
+tour_27.photos.attach(io: file_5, filename: 'afro_5.jpg', content_type: 'image/jpg')
+tour_27.tag_list = "Pamukkale"
+tour_27.save
+
+tour_28 = Tour.create(title: "Pamukkale & Laodicea Tour From Kusadasi", description: "Visits Pamukkale, Hierapolis, and Laodicea", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 149, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Visit three of Turkey’s grandest historical and natural sites on a day journey to Pamukkale, Hierapolis and Laodicea. Soak in the soothing white thermal pools of Pamukkale and be amazed by the white travertines that cover the landscape. Visit the largest graveyard in antiquity and explore an ancient Greek city home to well-preserved sites of biblical significance, as one of the Seven Churches of Revelation.</p>
+<p>You will be picked up from your hotel in Kusadasi in the early morning and the tour will commence.</p>
+<ul>
+  <li>A full-day trip to Laodicea, Hierapolis and Pamukkale</li>
+  <li>Enjoy Turkish cuisine at a local restaurant</li>
+  <li>Visit three breathtaking attractions in  one day of sightseeing</li>
+  <li>Get an in-depth background into the early days of Greek and Roman rule in the region</li>
+</ul>
+<p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Pamukkale</h4><p>One of Turkey’s most famous sites Pamukkale (Cotton Castle) 
+is a popular attraction on any Turkey Tour. Pamukkale, a UNESCO world heritage site features a unique landscape of white travertines, 
+which hang from the hills as a result of calcium bicarbonate deposits that have petrified and formed for over 400, 000 years. 
+Filled with bright blue water, and considered to have healing powers as a thermal spring, this location has become a unique tourism
+and wellness destination. Located next to the ancient city of Hierapolis, with well preserved Roman ruins and Cleopatra’s pool this 
+is a wonderful destination to visit.</p>
+<h4>Hierapolis Ancient City</h4><p>The ancient city of Hierapolis-Pamukkale is an ancient spa town founded at the end of 2nd century 
+B.C. Under UNESCO world heritage protection, this site is regarded as an important destination for those who wish to visit the ancient 
+city and the white travertines of Pamukkale known as ‘Cotton Castle’. Many ancient remains of Greco-Roman times remain including: 
+The City Walls, Theatre, St. Philip’s Martyrium, Churches, Great Bath Complex, Temple of Apollo, and The Necropolis. With a striking 
+landscape, the opportunity to swim in the therapeutic springs, and the unique panorama, this is a popular destination for many on our 
+tours.</p>
+<h4>Laodicea Ancient City</h4><p>Ancient Laodicea, once a thriving city, and an important trade route awaits further excavation to 
+uncover the true depths of its past. Overshadowed by the more spectacular nearby site of Hierapolis (Pamukkale), 
+Laodicea receives the occasional tourist and is known as the last of the ‘Seven Churches’ in the Asia Minor from the Book of Revelation. 
+Founded in the Hellenistic period, Laodicea later prospered in wealth in Roman times with its citizens known for their interest in art 
+and for building grand Roman buildings throughout the city.
+</p></div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_1.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_5.jpg'))
+
+tour_28.photos.attach(io: file_1, filename: 'lao_1.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_2, filename: 'lao_2.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_3, filename: 'lao_3.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_4, filename: 'lao_4.jpg', content_type: 'image/jpg')
+tour_28.photos.attach(io: file_5, filename: 'lao_5.jpg', content_type: 'image/jpg')
+tour_28.tag_list = "Pamukkale"
+tour_28.save
 
 # tour_29 = Tour.create(title: "Pamukkale Tour From Istanbul", description: "Visits Pamukkale,and Hierapolis", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 249)
 # file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_4.jpg'))
