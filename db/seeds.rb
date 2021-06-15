@@ -454,237 +454,291 @@ tour_9.photos.attach(io: file_5, filename: 'old_3.jpg', content_type: 'image/jpg
 tour_9.tag_list = "Istanbul"
 tour_9.save
 
-# tour_10 = Tour.create(title: "Bosphorus Morning Tour", description: "Spicy Bazaar, Bosphorus, Ciragan Palace", duration: "Half Day", tag_text: "Guided", group_size: "Group", price: 37, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Cruise along the Bosphorus on this guided boat tour, which separates Asia and Europe. By boat you can admire many of the stunning sites, which make Istanbul one of the most vibrant cities in the world. Admire the palaces, wooden villas, bridges and unique maritime landscapes.</p>
-# <p>You will be picked up from your hotel in Istanbul after breakfast and the Bosphorus Cruise tour will commence.</p>
-# <ul>
-#   <li>Admire sights like the Ciragan Palace, Spice Bazaar and Rumeli Fortress</li>
-#   <li>See first hand the unique location of Istanbul as the bridge between Europe and Asia</li>
-#   <li>See historical sights and the Bosphorus Bridge by boat</li>
-#   <li>Enjoy the beauty Istanbul from a different perspective and take unique pictures, which can only be captured, by boat.</li>
-# </ul>
-# <p>At the end of tour, we will drop you off at your hotel.</p>
-# </div>", history: "<div class=\"accordion-text\"><h4></h4><p></p><h4></h4><p></p></div>")
+tour_10 = Tour.create(title: "Bosphorus Morning Tour", description: "Spicy Bazaar, Bosphorus, Ciragan Palace", duration: "Half Day", tag_text: "Guided", group_size: "Group", price: 37, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Cruise along the Bosphorus on this guided boat tour, which separates Asia and Europe. By boat you can admire many of the stunning sites, which make Istanbul one of the most vibrant cities in the world. Admire the palaces, wooden villas, bridges and unique maritime landscapes.</p>
+<p>You will be picked up from your hotel in Istanbul after breakfast and the Bosphorus Cruise tour will commence.</p>
+<ul>
+  <li>Admire sights like the Ciragan Palace, Spice Bazaar and Rumeli Fortress</li>
+  <li>See first hand the unique location of Istanbul as the bridge between Europe and Asia</li>
+  <li>See historical sights and the Bosphorus Bridge by boat</li>
+  <li>Enjoy the beauty Istanbul from a different perspective and take unique pictures, which can only be captured, by boat.</li>
+</ul>
+<p>At the end of tour, we will drop you off at your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Ciragan Palace</h4><p>Built by Sultan Abdulaziz, Ciragan Palace was designed by 
+Armenian palace architect Nigoğayos Balyan and constructed by his sons Sarkis and Hagop Balyan between 1863 and 1867. 
+This palace is important as the last example of a tradition in which Ottoman sultans built their own palaces instead of living in those 
+of their ancestors. The palace’s inner walls and roof were made of wood, while the outer walls of colourful marble. 
+A beautiful marble bridge connects the palace to Yıldız Palace on the hill behind.The construction and the interior decoration of the palace continued until 1872. Sultan Abdulaziz did not live long in his palace as he was found dead on 30 May 1876, shortly after being dethroned. His successor, his nephew Sultan Murad V, moved into Çırağan Palace, but reigned for only 93 days. As he was deposed by his brother Abdul Hamid II but remained living in the palace under house arrest until his death on 29 August 1904.
+</p>
+<h4>Egyptian Bazaar (Spice Market)</h4><p>Egyptian Spice Bazaar is housed in a building that was built in 1660 and named after 
+the goods traded from India and the far east, which arrived in Istanbul from Egypt during Ottoman times.
+The Egyptian Spice Bazaar consists of a series of covered streets featuring one hundred shops and two restaurants along its gates. 
+The “Spice market” was given its nickname as the majority of the shops sold herbs and spices.
+</p></div>")
 
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_5.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_4.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_3.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_2.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_1.jpg'))
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_5.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_4.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_2.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_1.jpg'))
 
-# tour_10.photos.attach(io: file_1, filename: 'bosp_5.jpg', content_type: 'image/jpg')
-# tour_10.photos.attach(io: file_2, filename: 'bosp_4.jpg', content_type: 'image/jpg')
-# tour_10.photos.attach(io: file_3, filename: 'bosp_3.jpg', content_type: 'image/jpg')
-# tour_10.photos.attach(io: file_4, filename: 'bosp_2.jpg', content_type: 'image/jpg')
-# tour_10.photos.attach(io: file_5, filename: 'bosp_1.jpg', content_type: 'image/jpg')
-# tour_10.tag_list = "Istanbul"
-# tour_10.save
+tour_10.photos.attach(io: file_1, filename: 'bosp_5.jpg', content_type: 'image/jpg')
+tour_10.photos.attach(io: file_2, filename: 'bosp_4.jpg', content_type: 'image/jpg')
+tour_10.photos.attach(io: file_3, filename: 'bosp_3.jpg', content_type: 'image/jpg')
+tour_10.photos.attach(io: file_4, filename: 'bosp_2.jpg', content_type: 'image/jpg')
+tour_10.photos.attach(io: file_5, filename: 'bosp_1.jpg', content_type: 'image/jpg')
+tour_10.tag_list = "Istanbul"
+tour_10.save
 
-# tour_11 = Tour.create(title: "Bosphorus Afternoon Tour", description: "Dolmabahce Palace, Pierre Loti, Bosphorus", duration: "Half Day", tag_text: "Guided", group_size: "Group", price: 37, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Cruise along the Bosphorus on this guided boat tour, which separates Asia and Europe. By boat you can admire many of the stunning sites, which make Istanbul one of the most vibrant cities in the world.</p>
-# <p>You will be picked up from your hotel in Istanbul in the afternoon and the Bosphorus Cruise tour will commence.</p>
-# <ul>
-#   <li>Admire sights including Dolmabahce Palace, Beylerbeyi Palace, Golden Horn</li>
-#   <li>See first hand the unique location of Istanbul as the bridge between Europe and Asia</li>
-#   <li>View historical sights and the Bosphorus Bridge by boat</li>
-#   <li>Enjoy the beauty of Istanbul from a different perspective and take unique pictures, which can only be captured, by boat.</li>
-# </ul>
-# <p>At the end of tour, we will drop you off at your hotel.</p>
-# </div>", history: "<div class=\"accordion-text\"><h4></h4><p></p><h4></h4><p></p></div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_9.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_2.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_3.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_4.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_5.jpg'))
+tour_11 = Tour.create(title: "Bosphorus Afternoon Tour", description: "Dolmabahce Palace, Pierre Loti, Bosphorus", duration: "Half Day", tag_text: "Guided", group_size: "Group", price: 37, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Cruise along the Bosphorus on this guided boat tour, which separates Asia and Europe. By boat you can admire many of the stunning sites, which make Istanbul one of the most vibrant cities in the world.</p>
+<p>You will be picked up from your hotel in Istanbul in the afternoon and the Bosphorus Cruise tour will commence.</p>
+<ul>
+  <li>Admire sights including Dolmabahce Palace, Beylerbeyi Palace, Golden Horn</li>
+  <li>See first hand the unique location of Istanbul as the bridge between Europe and Asia</li>
+  <li>View historical sights and the Bosphorus Bridge by boat</li>
+  <li>Enjoy the beauty of Istanbul from a different perspective and take unique pictures, which can only be captured, by boat.</li>
+</ul>
+<p>At the end of tour, we will drop you off at your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Dolmabahce Palace</h4><p>Dolmabahce Palace commissioned by Sultan Abdülmecid 
+I was constructed between 1842-56 and is the largest palace in Turkey. After Topkapi Palace, It housed Sultans for the remainder of the 
+Ottoman Empire's rule. Which was built to compete with the grandest palaces of Europe. Located in Besiktas, Dolmabahce palace was originally
+a bay where the Ottoman sea captain pashas (admirals) anchored their ships. It was later converted to Has Bahce 
+(a private garden of the Sultan) before later construction of the site into what is now known as Dolmabahce Palace. Dolmabahce Palace 
+features architectural influences from the Baroque, Rocco and Neoclassical styles, which merge with traditional Ottoman architecture. 
+Visitors will see the extensive use of gold and crystal, which has been used as decoration throughout the palace.</p></div>")
 
-# tour_11.photos.attach(io: file_1, filename: 'afternoon_9.jpg', content_type: 'image/jpg')
-# tour_11.photos.attach(io: file_2, filename: 'afternoon_2.jpg', content_type: 'image/jpg')
-# tour_11.photos.attach(io: file_3, filename: 'afternoon_3.jpg', content_type: 'image/jpg')
-# tour_11.photos.attach(io: file_4, filename: 'afternoon_4.jpg', content_type: 'image/jpg')
-# tour_11.photos.attach(io: file_5, filename: 'afternoon_5.jpg', content_type: 'image/jpg')
-# tour_11.tag_list = "Istanbul"
-# tour_11.save
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_9.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_5.jpg'))
 
-# tour_12 = Tour.create(title: "Istanbul Dolmabahce Palace", description: "Dolmabahce Palace, Bezm-i Alem Valide Sultan", duration: "Half Day", tag_text: "Guided", group_size: "12-16 People", price: 39, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Explore the extravagant rooms and grounds of the Dolmabahçe Palace. Led by an expert guide and in small groups. Learn about the stories behind this architectural masterpiece located in the heart of Istanbul.</p>
-# <p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
-# <ul>
-#   <li>Marvel at the extravagant decor of Dolmabahce Palace</li>
-#   <li>Experience amazing views over the Bosphorus</li>
-#   <li>Visit the highest peak in Istanbul at Camlıca Hill</li>
-#   <li>Drive from Europe to Asia on the first bridge between Europe and Asia</li>
-# </ul>
-# <p>At the end of tour, we will drop you off at your hotel.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_2.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_4.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_5.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_3.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_1.jpg'))
+tour_11.photos.attach(io: file_1, filename: 'afternoon_9.jpg', content_type: 'image/jpg')
+tour_11.photos.attach(io: file_2, filename: 'afternoon_2.jpg', content_type: 'image/jpg')
+tour_11.photos.attach(io: file_3, filename: 'afternoon_3.jpg', content_type: 'image/jpg')
+tour_11.photos.attach(io: file_4, filename: 'afternoon_4.jpg', content_type: 'image/jpg')
+tour_11.photos.attach(io: file_5, filename: 'afternoon_5.jpg', content_type: 'image/jpg')
+tour_11.tag_list = "Istanbul"
+tour_11.save
 
-# tour_12.photos.attach(io: file_1, filename: 'dolma_2.jpg', content_type: 'image/jpg')
-# tour_12.photos.attach(io: file_2, filename: 'dolma_4.jpg', content_type: 'image/jpg')
-# tour_12.photos.attach(io: file_3, filename: 'dolma_5.jpg', content_type: 'image/jpg')
-# tour_12.photos.attach(io: file_4, filename: 'dolma_3.jpg', content_type: 'image/jpg')
-# tour_12.photos.attach(io: file_5, filename: 'dolma_1.jpg', content_type: 'image/jpg')
-# tour_12.tag_list = "Istanbul"
-# tour_12.save
+tour_12 = Tour.create(title: "Istanbul Dolmabahce Palace", description: "Dolmabahce Palace, Bezm-i Alem Valide Sultan", duration: "Half Day", tag_text: "Guided", group_size: "12-16 People", price: 39, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Explore the extravagant rooms and grounds of the Dolmabahçe Palace. Led by an expert guide and in small groups. Learn about the stories behind this architectural masterpiece located in the heart of Istanbul.</p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
+<ul>
+  <li>Marvel at the extravagant decor of Dolmabahce Palace</li>
+  <li>Experience amazing views over the Bosphorus</li>
+  <li>Visit the highest peak in Istanbul at Camlıca Hill</li>
+  <li>Drive from Europe to Asia on the first bridge between Europe and Asia</li>
+</ul>
+<p>At the end of tour, we will drop you off at your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Dolmabahce Palace</h4><p>Dolmabahce Palace commissioned by Sultan Abdülmecid 
+I was constructed between 1842-56 and is the largest palace in Turkey. After Topkapi Palace, It housed Sultans for the remainder of the 
+Ottoman Empire's rule. Which was built to compete with the grandest palaces of Europe. Located in Besiktas, Dolmabahce palace was originally
+a bay where the Ottoman sea captain pashas (admirals) anchored their ships. It was later converted to Has Bahce 
+(a private garden of the Sultan) before later construction of the site into what is now known as Dolmabahce Palace. Dolmabahce Palace 
+features architectural influences from the Baroque, Rocco and Neoclassical styles, which merge with traditional Ottoman architecture. 
+Visitors will see the extensive use of gold and crystal, which has been used as decoration throughout the palace.</p></div>")
 
-# tour_13 = Tour.create(title: "Istanbul Two Continents", description: "Bosphorus, Spicy Bazaar, Beyler Beyi Palace, Camlica Hill", duration: "Full Day", tag_text: "Guided", group_size: "12-16 People", price: 39, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Explore both the European and Asian sides of Istanbul on this relaxing and remarkable tour. Explore Istanbul’s famous Spice Bazaar and Camlica Hill, as well as the late Ottoman Palace of Beylerbeyi.</p>
-# <p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
-# <ul>
-#   <li>Visit both the European and Asian sides of Istanbul</li>
-#   <li>Enjoy the spectacular panoramic views of the city at Çamlıca Hill</li>
-#   <li>Marvel at the stunning Beylerbeyi Palace</li>
-#   <li>Discover the fascinating Spice Bazaar</li>
-# </ul>
-# <p>At the end of tour, we will drop you off at your hotel.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_3.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_5.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_2.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_1.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_4.jpg'))
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_2.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_4.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_5.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_3.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_1.jpg'))
 
-# tour_13.photos.attach(io: file_1, filename: 'two_cont_3.jpg', content_type: 'image/jpg')
-# tour_13.photos.attach(io: file_2, filename: 'two_cont_5.jpg', content_type: 'image/jpg')
-# tour_13.photos.attach(io: file_3, filename: 'two_cont_2.jpg', content_type: 'image/jpg')
-# tour_13.photos.attach(io: file_4, filename: 'two_cont_1.jpg', content_type: 'image/jpg')
-# tour_13.photos.attach(io: file_5, filename: 'two_cont_4.jpg', content_type: 'image/jpg')
-# tour_13.tag_list = "Istanbul"
-# tour_13.save
+tour_12.photos.attach(io: file_1, filename: 'dolma_2.jpg', content_type: 'image/jpg')
+tour_12.photos.attach(io: file_2, filename: 'dolma_4.jpg', content_type: 'image/jpg')
+tour_12.photos.attach(io: file_3, filename: 'dolma_5.jpg', content_type: 'image/jpg')
+tour_12.photos.attach(io: file_4, filename: 'dolma_3.jpg', content_type: 'image/jpg')
+tour_12.photos.attach(io: file_5, filename: 'dolma_1.jpg', content_type: 'image/jpg')
+tour_12.tag_list = "Istanbul"
+tour_12.save
 
-# tour_14 = Tour.create(title: "Istanbul Princes' Island", description: "Buyukada, Princess Island", duration: "Full Day", tag_text: "Guided", group_size: "Group", price: 49, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Travel by cruise from Istanbul to Buyukada and discover the largest of the Princes islands. In Buyukada visit popular summer houses, tour the beaches and pinewood filled landscape; once a popular destination for Ottoman princes and relax away from the hustle and bustle of the mainland. Explore Ottoman-era mansions, enjoy a leisurely lunch at a seafood restaurant and explore this tranquil island at your own pace.</p>
-# <p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
-# <ul>
-#   <li>Spend a leisurely day exploring the largest of the Princes islands</li>
-#   <li>Marvel at the island’s Ottoman-era mansions</li>
-#   <li>Enjoy lunch at a seafood restaurant</li>
-#   <li>Tour the main square of Buyukada and enjoy the Victorian buildings </li>
-# </ul>
-# <p>At the end of tour, we will drop you off at your hotel.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_1.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_4.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_5.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_2.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_3.jpg'))
+tour_13 = Tour.create(title: "Istanbul Two Continents", description: "Bosphorus, Spicy Bazaar, Beyler Beyi Palace, Camlica Hill", duration: "Full Day", tag_text: "Guided", group_size: "12-16 People", price: 39, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Explore both the European and Asian sides of Istanbul on this relaxing and remarkable tour. Explore Istanbul’s famous Spice Bazaar and Camlica Hill, as well as the late Ottoman Palace of Beylerbeyi.</p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
+<ul>
+  <li>Visit both the European and Asian sides of Istanbul</li>
+  <li>Enjoy the spectacular panoramic views of the city at Çamlıca Hill</li>
+  <li>Marvel at the stunning Beylerbeyi Palace</li>
+  <li>Discover the fascinating Spice Bazaar</li>
+</ul>
+<p>At the end of tour, we will drop you off at your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Beylerbeyi Palace</h4><p>The Beylerbeyi Palace located close to the Bosphorus 
+Bridge was commonly used as a summerhouse for the Sultans and a guesthouse for important visitors to the state. Hosting notable guests 
+including Emperors and Kings. Described as a <strong>labor of love</strong>, in this case by the Ottoman Sultan for the Empress Eugenie, wife 
+of Napoleon III of France. The Sultan, Abdülaziz, was the first to travel outside the empire, paying a state visit to France and 
+England in the 1860s and is said to have become infatuated with the Empress. In 1861, anticipating the visit of the French royal couple, 
+Abdülaziz ordered the construction of the marble palace. Construction continued until 1865, and, as planned, the Empress Eugenie, 
+visited as the Sultan’s first guest. Tales of love between the two continue to this day.</p>
+<h4>Camlica Hill</h4><p>Camlica Hill is the highest point in Istanbul at 288 metres above sea level and located on the Asian side of 
+Istanbul. Featuring panoramic views over the Bosphorus and Marmara Sea. On a clear day, visitors can see the Princes Islands and the 
+Uludag Mountains. Enjoyed particularly at sunset, when visitors experience one of the most unique city skylines in the world. There is a 
+park, picnic area, some small trails, and cafes located at the summit, which are surrounded by pine trees and flowers.</p>
+<h4>Egyptian Bazaar (Spice Market)</h4><p>Egyptian Spice Bazaar is housed in a building that was built in 1660 and named after the goods traded from 
+India and the far east, which arrived in Istanbul from Egypt during Ottoman times.The Egyptian Spice Bazaar consists of a series of 
+covered streets featuring one hundred shops and two restaurants along its gates. The “Spice market” was given its nickname as the majority 
+of the shops sold herbs and spices.</p></div>")
 
-# tour_14.photos.attach(io: file_1, filename: 'island_1.jpg', content_type: 'image/jpg')
-# tour_14.photos.attach(io: file_2, filename: 'island_4.jpg', content_type: 'image/jpg')
-# tour_14.photos.attach(io: file_3, filename: 'island_5.jpg', content_type: 'image/jpg')
-# tour_14.photos.attach(io: file_4, filename: 'island_2.jpg', content_type: 'image/jpg')
-# tour_14.photos.attach(io: file_5, filename: 'island_3.jpg', content_type: 'image/jpg')
-# tour_14.tag_list = "Istanbul"
-# tour_14.save
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_3.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_5.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_2.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_1.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_4.jpg'))
 
-# tour_15 = Tour.create(title: "Istanbul Jewish Heritage Tour", description: "Neve Shalom, Ahrida, Ashkenaz Synagogues", duration: "Full Day", tag_text: "Skip the line", group_size: "Small Group", price: 249, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Explore the streets of Galata on this tour of Istanbul’s Jewish Quarter and learn more about the thriving Jewish community of Istanbul. Visit the Jewish Museum, Ashkenazi Synagogue, Neve Shalom, Ahrida Synagogue and more.</p>
-# <p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
-# <ul>
-#   <li>Admire old photographs and documents that chronicle Jewish life in Istanbul at the Jewish Museum</li>
-#   <li>Learn about Jewish financier Count Abraham Camondo and his role in  Ottoman history and the Jewish community</li>
-#   <li>Explore the colourful streets and sites of Galata</li>
-#   <li>Visit the Jewish Synagogues</li>
-# </ul>
-# <p>At the end of tour, we will drop you off to your hotel.</p>
-# </div>")
+tour_13.photos.attach(io: file_1, filename: 'two_cont_3.jpg', content_type: 'image/jpg')
+tour_13.photos.attach(io: file_2, filename: 'two_cont_5.jpg', content_type: 'image/jpg')
+tour_13.photos.attach(io: file_3, filename: 'two_cont_2.jpg', content_type: 'image/jpg')
+tour_13.photos.attach(io: file_4, filename: 'two_cont_1.jpg', content_type: 'image/jpg')
+tour_13.photos.attach(io: file_5, filename: 'two_cont_4.jpg', content_type: 'image/jpg')
+tour_13.tag_list = "Istanbul"
+tour_13.save
 
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_1.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_2.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_3.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_4.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_5.jpg'))
+tour_14 = Tour.create(title: "Istanbul Princes' Island", description: "Buyukada, Princess Island", duration: "Full Day", tag_text: "Guided", group_size: "Group", price: 49, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Travel by cruise from Istanbul to Buyukada and discover the largest of the Princes islands. In Buyukada visit popular summer houses, tour the beaches and pinewood filled landscape; once a popular destination for Ottoman princes and relax away from the hustle and bustle of the mainland. Explore Ottoman-era mansions, enjoy a leisurely lunch at a seafood restaurant and explore this tranquil island at your own pace.</p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
+<ul>
+  <li>Spend a leisurely day exploring the largest of the Princes islands</li>
+  <li>Marvel at the island’s Ottoman-era mansions</li>
+  <li>Enjoy lunch at a seafood restaurant</li>
+  <li>Tour the main square of Buyukada and enjoy the Victorian buildings </li>
+</ul>
+<p>At the end of tour, we will drop you off at your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Princes' Island</h4><p>The charming Princes’ Islands, near Istanbul, are a popular 
+destination for tourists, especially photography enthusiasts, due to its picturesque landscape. Perfect for a day trip, visitors are drawn 
+here to explore the past, swim in the sea and to bask in the tranquil landscape and calming atmosphere.
+Located just 20 kilometres south east of Istanbul, Princes’ Islands were once the place of exile for unruly Byzantine princes. 
+Now a day trip to Princes’ Islands is popular among both locals and tourists looking to escape the hustle and bustle of city life.</p></div>")
 
-# tour_15.photos.attach(io: file_1, filename: 'jew_1.jpg', content_type: 'image/jpg')
-# tour_15.photos.attach(io: file_2, filename: 'jew_2.jpg', content_type: 'image/jpg')
-# tour_15.photos.attach(io: file_3, filename: 'jew_3.jpg', content_type: 'image/jpg')
-# tour_15.photos.attach(io: file_4, filename: 'jew_4.jpg', content_type: 'image/jpg')
-# tour_15.photos.attach(io: file_5, filename: 'jew_5.jpg', content_type: 'image/jpg')
-# tour_15.tag_list = "Istanbul"
-# tour_15.save
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_1.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_4.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_5.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_2.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_3.jpg'))
+
+tour_14.photos.attach(io: file_1, filename: 'island_1.jpg', content_type: 'image/jpg')
+tour_14.photos.attach(io: file_2, filename: 'island_4.jpg', content_type: 'image/jpg')
+tour_14.photos.attach(io: file_3, filename: 'island_5.jpg', content_type: 'image/jpg')
+tour_14.photos.attach(io: file_4, filename: 'island_2.jpg', content_type: 'image/jpg')
+tour_14.photos.attach(io: file_5, filename: 'island_3.jpg', content_type: 'image/jpg')
+tour_14.tag_list = "Istanbul"
+tour_14.save
+
+tour_15 = Tour.create(title: "Istanbul Jewish Heritage Tour", description: "Neve Shalom, Ahrida, Ashkenaz Synagogues", duration: "Full Day", tag_text: "Skip the line", group_size: "Small Group", price: 249, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Explore the streets of Galata on this tour of Istanbul’s Jewish Quarter and learn more about the thriving Jewish community of Istanbul. Visit the Jewish Museum, Ashkenazi Synagogue, Neve Shalom, Ahrida Synagogue and more.</p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
+<ul>
+  <li>Admire old photographs and documents that chronicle Jewish life in Istanbul at the Jewish Museum</li>
+  <li>Learn about Jewish financier Count Abraham Camondo and his role in  Ottoman history and the Jewish community</li>
+  <li>Explore the colourful streets and sites of Galata</li>
+  <li>Visit the Jewish Synagogues</li>
+</ul>
+<p>At the end of tour, we will drop you off to your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Ahrida Synagogue</h4><p>Ahrida Synagogue, one of the oldest synagogues in Istanbul, 
+located in Balat, which was a once thriving Jewish settlement that expanded in the 17th century. Named the Ahrida Synagogue after a town 
+in Macedonia of which many of its congregation travelled from during Byzantine times. A key feature of Ahrida is its Bima (pulpit), 
+which is in the shape of the prow of a ship and is said to symbolise Noah's Ark. The Ahrida was badly damaged by a fire in the late 
+17th century and later rebuilt in the Baroque style of the Tulip Period.</p>
+<h4>Ashkenaz Synagogue</h4><p>Founded by Jews of Austrian descent in 1900, this is the last remaining synagogue from a total of three 
+built by Ashkenazim (the population of Ashkenazi Jews accounts for four per cent of the total Jewish population in Turkey).
+Close to Galata Tower, the synagogue has an imposing facade, with three Oriental arches and octagonal rosette windows. 
+The interior has marble floors, a dome decorated with the Stars of David, and an ark of dark wood, which is a blend of eastern European 
+and Arabesque styles.
+</p></div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_1.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_5.jpg'))
+
+tour_15.photos.attach(io: file_1, filename: 'jew_1.jpg', content_type: 'image/jpg')
+tour_15.photos.attach(io: file_2, filename: 'jew_2.jpg', content_type: 'image/jpg')
+tour_15.photos.attach(io: file_3, filename: 'jew_3.jpg', content_type: 'image/jpg')
+tour_15.photos.attach(io: file_4, filename: 'jew_4.jpg', content_type: 'image/jpg')
+tour_15.photos.attach(io: file_5, filename: 'jew_5.jpg', content_type: 'image/jpg')
+tour_15.tag_list = "Istanbul"
+tour_15.save
 
 # tour_16 = Tour.create(title: "City Break Tour", description: "Blue Mosque, Haghia Sophia, Topkapi Palace, Bosphorus", duration: "3 Days", tag_text: "Skip the line", group_size: "Small Group", price: 599)
 # file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/break/break_3.jpg'))
