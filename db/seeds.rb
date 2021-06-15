@@ -770,244 +770,246 @@ tour_15.save
 # tour_17.tag_list = "Istanbul"
 # tour_17.save
 
-# tour_18 = Tour.create(title: "Ephesus Classic Full Day", description: "Ephesus Ancient City, The House of Virgin Mary, Temple of Artemis, Isabey Mosque", duration: "8 hours", tag_text: "Skip the line", group_size: "8-12 People", price: 39, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Visit the most well-known sights of Ephesus in this guided tour by van. Explore the Greco-Roman times of Ephesus, visit the Temple of Artemis one of the ‘old seven wonders of the world’ and see the House of Virgin Mary where Mary spent her final days.</p>
-# <p>You will be picked up from your hotel in the early morning and driven to Ephesus.</p>
-# <ul>
-#   <li>Visit the well-preserved Ancient City of Ephesus</li>
-#   <li>Admire the stunning Temple Of Artemis</li>
-#   <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
-#   <li>Visit the Isa Bey Mosque, important as one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
-# </ul>
-# <p>At the end of the tour, we will transfer you back to your hotel.</p>
-# </div>")
+tour_18 = Tour.create(title: "Ephesus Classic Full Day", description: "Ephesus Ancient City, The House of Virgin Mary, Temple of Artemis, Isabey Mosque", duration: "8 hours", tag_text: "Skip the line", group_size: "8-12 People", price: 39, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Visit the most well-known sights of Ephesus in this guided tour by van. Explore the Greco-Roman times of Ephesus, visit the Temple of Artemis one of the ‘old seven wonders of the world’ and see the House of Virgin Mary where Mary spent her final days.</p>
+<p>You will be picked up from your hotel in the early morning and driven to Ephesus.</p>
+<ul>
+  <li>Visit the well-preserved Ancient City of Ephesus</li>
+  <li>Admire the stunning Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
+  <li>Visit the Isa Bey Mosque, important as one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
+</ul>
+<p>At the end of the tour, we will transfer you back to your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"></div>")
 
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_1.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_2.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_3.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_6.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_7.jpg'))
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_1.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_6.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_7.jpg'))
 
-# tour_18.photos.attach(io: file_1, filename: 'EphesusFullDay_1.jpg', content_type: 'image/jpg')
-# tour_18.photos.attach(io: file_2, filename: 'EphesusFullDay_2.jpg', content_type: 'image/jpg')
-# tour_18.photos.attach(io: file_3, filename: 'EphesusFullDay_3.jpg', content_type: 'image/jpg')
-# tour_18.photos.attach(io: file_4, filename: 'EphesusFullDay_6.jpg', content_type: 'image/jpg')
-# tour_18.photos.attach(io: file_5, filename: 'EphesusFullDay_7.jpg', content_type: 'image/jpg')
-# tour_18.tag_list = "Ephesus"
-# tour_18.save
+tour_18.photos.attach(io: file_1, filename: 'EphesusFullDay_1.jpg', content_type: 'image/jpg')
+tour_18.photos.attach(io: file_2, filename: 'EphesusFullDay_2.jpg', content_type: 'image/jpg')
+tour_18.photos.attach(io: file_3, filename: 'EphesusFullDay_3.jpg', content_type: 'image/jpg')
+tour_18.photos.attach(io: file_4, filename: 'EphesusFullDay_6.jpg', content_type: 'image/jpg')
+tour_18.photos.attach(io: file_5, filename: 'EphesusFullDay_7.jpg', content_type: 'image/jpg')
+tour_18.tag_list = "Ephesus"
+tour_18.save
 
-# tour_19 = Tour.create(title: "Ephesus Half Day", description: "Ephesus Ancient City, Temple of Artemis", duration: "4 hours", tag_text: "Skip the line", group_size: "8-12 People", price: 30, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Explore the man-made UNESCO sights of the Aegean on this customized half-day Ephesus tour, which will be an unforgettable experience. </p>
-# <p>You will be picked up from your hotel in the early morning and driven to Ephesus.</p>
-# <ul>
-#   <li>Visit the well-preserved Ancient City of Ephesus</li>
-#   <li>Admire the fascinating Temple Of Artemis</li>
-# </ul>
-# <p>At the end of the tour, we will transfer you back to your hotel.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_4.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_2.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_1.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_3.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_5.jpg'))
+tour_19 = Tour.create(title: "Ephesus Half Day", description: "Ephesus Ancient City, Temple of Artemis", duration: "4 hours", tag_text: "Skip the line", group_size: "8-12 People", price: 30, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Explore the man-made UNESCO sights of the Aegean on this customized half-day Ephesus tour, which will be an unforgettable experience. </p>
+<p>You will be picked up from your hotel in the early morning and driven to Ephesus.</p>
+<ul>
+  <li>Visit the well-preserved Ancient City of Ephesus</li>
+  <li>Admire the fascinating Temple Of Artemis</li>
+</ul>
+<p>At the end of the tour, we will transfer you back to your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"></div>")
 
-# tour_19.photos.attach(io: file_1, filename: 'EphesusHalfDay_1.jpg', content_type: 'image/jpg')
-# tour_19.photos.attach(io: file_2, filename: 'EphesusHalfDay_2.jpg', content_type: 'image/jpg')
-# tour_19.photos.attach(io: file_3, filename: 'EphesusHalfDay_3.jpg', content_type: 'image/jpg')
-# tour_19.photos.attach(io: file_4, filename: 'EphesusHalfDay_6.jpg', content_type: 'image/jpg')
-# tour_19.photos.attach(io: file_5, filename: 'EphesusHalfDay_7.jpg', content_type: 'image/jpg')
-# tour_19.tag_list = "Ephesus"
-# tour_19.save
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_4.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_1.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_3.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_5.jpg'))
 
-# tour_20 = Tour.create(title: "Highlights of Ephesus Tour", description: "Ephesus Ancient City, The House of Virgin Mary, Ephesus Museum, Seven Sleepers", duration: "Full Day", tag_text: "Skip the line", group_size: "Private", price: 169, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Be guided through the wealth of history in this region, guests have a chance to visit the Ancient City of Ephesus, Archaeological Museum of Ephesus, Temple of Artemis, House of the Mother Mary and Seven Sleepers Cave. Taste a traditional local lunch. An afternoon of legendary sightseeing of biblical proportion.</p>
-# <p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
-# <ul>
-#   <li>Visit the well-preserved Ancient City of Ephesus</li>
-#   <li>Admire the remarkable Temple Of Artemis</li>
-#   <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
-#   <li>Be mesmerised by all the artefacts in the Ephesus Archaeological Museum and learn more about what made Ephesus the thriving metropolis it once was.</li>
-#   <li>Discover the impressive Seven Sleepers Cave.</li>
-# </ul>
-# <p>At the end of the tour, we will transfer you back to your hotel.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_1.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_3.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_4.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_5.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_2.jpg'))
+tour_19.photos.attach(io: file_1, filename: 'EphesusHalfDay_1.jpg', content_type: 'image/jpg')
+tour_19.photos.attach(io: file_2, filename: 'EphesusHalfDay_2.jpg', content_type: 'image/jpg')
+tour_19.photos.attach(io: file_3, filename: 'EphesusHalfDay_3.jpg', content_type: 'image/jpg')
+tour_19.photos.attach(io: file_4, filename: 'EphesusHalfDay_6.jpg', content_type: 'image/jpg')
+tour_19.photos.attach(io: file_5, filename: 'EphesusHalfDay_7.jpg', content_type: 'image/jpg')
+tour_19.tag_list = "Ephesus"
+tour_19.save
 
-# tour_20.photos.attach(io: file_1, filename: 'highlights_1.jpg', content_type: 'image/jpg')
-# tour_20.photos.attach(io: file_2, filename: 'highlights_3.jpg', content_type: 'image/jpg')
-# tour_20.photos.attach(io: file_3, filename: 'highlights_4.jpg', content_type: 'image/jpg')
-# tour_20.photos.attach(io: file_4, filename: 'highlights_5.jpg', content_type: 'image/jpg')
-# tour_20.photos.attach(io: file_5, filename: 'highlights_2.jpg', content_type: 'image/jpg')
-# tour_20.tag_list = "Ephesus"
-# tour_20.save
+tour_20 = Tour.create(title: "Highlights of Ephesus Tour", description: "Ephesus Ancient City, The House of Virgin Mary, Ephesus Museum, Seven Sleepers", duration: "Full Day", tag_text: "Skip the line", group_size: "Private", price: 169, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Be guided through the wealth of history in this region, guests have a chance to visit the Ancient City of Ephesus, Archaeological Museum of Ephesus, Temple of Artemis, House of the Mother Mary and Seven Sleepers Cave. Taste a traditional local lunch. An afternoon of legendary sightseeing of biblical proportion.</p>
+<p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
+<ul>
+  <li>Visit the well-preserved Ancient City of Ephesus</li>
+  <li>Admire the remarkable Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
+  <li>Be mesmerised by all the artefacts in the Ephesus Archaeological Museum and learn more about what made Ephesus the thriving metropolis it once was.</li>
+  <li>Discover the impressive Seven Sleepers Cave.</li>
+</ul>
+<p>At the end of the tour, we will transfer you back to your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"></div>")
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_1.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_3.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_4.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_5.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_2.jpg'))
 
-# tour_21 = Tour.create(title: "Diamond of Ephesus", description: " Ephesus Ancient City, The House of Virgin Mary, Sirince Village, Ephesus Museum, Temple of Artemis", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 189, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Discover the ancient city of Ephesus with this tour and see monuments from Greek, Roman and Byzantine civilizations. Visit the Temple of Artemis, the House of Virgin Mary, Şirince Village and more. Enjoy the flavours of Turkish cuisine at a traditional Turkish restaurant.</p>
-# <p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning and driven to Ephesus.</p>
-# <ul>
-#   <li>Visit the well-preserved Ancient City of Ephesus</li>
-#   <li>Admire the remarkable Temple Of Artemis</li>
-#   <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
-#   <li>Be mesmerised by all the artefacts in the Ephesus Archaeological Museum and learn more about what made Ephesus the thriving metropolis it once was.</li>
-#   <li>Be immersed in the charm and ambience of Sirince a Turkish-Orthodox village.</li>
-# </ul>
-# <p>At the end of the tour, we will transfer you back to your hotel.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_1.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_5.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_3.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_2.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_4.jpg'))
+tour_20.photos.attach(io: file_1, filename: 'highlights_1.jpg', content_type: 'image/jpg')
+tour_20.photos.attach(io: file_2, filename: 'highlights_3.jpg', content_type: 'image/jpg')
+tour_20.photos.attach(io: file_3, filename: 'highlights_4.jpg', content_type: 'image/jpg')
+tour_20.photos.attach(io: file_4, filename: 'highlights_5.jpg', content_type: 'image/jpg')
+tour_20.photos.attach(io: file_5, filename: 'highlights_2.jpg', content_type: 'image/jpg')
+tour_20.tag_list = "Ephesus"
+tour_20.save
 
-# tour_21.photos.attach(io: file_1, filename: 'diamond_1.jpg', content_type: 'image/jpg')
-# tour_21.photos.attach(io: file_2, filename: 'diamond_5.jpg', content_type: 'image/jpg')
-# tour_21.photos.attach(io: file_3, filename: 'diamond_3.jpg', content_type: 'image/jpg')
-# tour_21.photos.attach(io: file_4, filename: 'diamond_2.jpg', content_type: 'image/jpg')
-# tour_21.photos.attach(io: file_5, filename: 'diamond_4.jpg', content_type: 'image/jpg')
-# tour_21.tag_list = "Ephesus"
-# tour_21.save
+tour_21 = Tour.create(title: "Diamond of Ephesus", description: " Ephesus Ancient City, The House of Virgin Mary, Sirince Village, Ephesus Museum, Temple of Artemis", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 189, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Discover the ancient city of Ephesus with this tour and see monuments from Greek, Roman and Byzantine civilizations. Visit the Temple of Artemis, the House of Virgin Mary, Şirince Village and more. Enjoy the flavours of Turkish cuisine at a traditional Turkish restaurant.</p>
+<p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning and driven to Ephesus.</p>
+<ul>
+  <li>Visit the well-preserved Ancient City of Ephesus</li>
+  <li>Admire the remarkable Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
+  <li>Be mesmerised by all the artefacts in the Ephesus Archaeological Museum and learn more about what made Ephesus the thriving metropolis it once was.</li>
+  <li>Be immersed in the charm and ambience of Sirince a Turkish-Orthodox village.</li>
+</ul>
+<p>At the end of the tour, we will transfer you back to your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"></div>")
 
-# tour_22 = Tour.create(title: "Biblical Ephesus Tour", description: "Ephesus Ancient City, The House of Virgin Mary, Terraced Houses, St. John Basilica", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 199, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>On this tour of the ancient city of Ephesus visit sites of biblical importance and gain greater insights into Christianity in antiquity on this tour.</p>
-# <p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
-# <ul>
-#   <li>Visit the well-preserved Ancient City of Ephesus</li>
-#   <li>Admire the remarkable Temple Of Artemis</li>
-#   <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
-#   <li>Visit the Basilica of St. John and see his burial place</li>
-#   <li>Visit the well-preserved terraced houses to see how the elite lived in those times</li>
-# </ul>
-# <p>At the end of the tour, we will transfer you back to your hotel.</p>
-# </div>")
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_1.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_5.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_2.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_4.jpg'))
 
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_5.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_4.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_3.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_2.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_1.jpg'))
+tour_21.photos.attach(io: file_1, filename: 'diamond_1.jpg', content_type: 'image/jpg')
+tour_21.photos.attach(io: file_2, filename: 'diamond_5.jpg', content_type: 'image/jpg')
+tour_21.photos.attach(io: file_3, filename: 'diamond_3.jpg', content_type: 'image/jpg')
+tour_21.photos.attach(io: file_4, filename: 'diamond_2.jpg', content_type: 'image/jpg')
+tour_21.photos.attach(io: file_5, filename: 'diamond_4.jpg', content_type: 'image/jpg')
+tour_21.tag_list = "Ephesus"
+tour_21.save
 
-# tour_22.photos.attach(io: file_1, filename: 'biblical_5.jpg', content_type: 'image/jpg')
-# tour_22.photos.attach(io: file_2, filename: 'biblical_4.jpg', content_type: 'image/jpg')
-# tour_22.photos.attach(io: file_3, filename: 'biblical_3.jpg', content_type: 'image/jpg')
-# tour_22.photos.attach(io: file_4, filename: 'biblical_2.jpg', content_type: 'image/jpg')
-# tour_22.photos.attach(io: file_5, filename: 'biblical_1.jpg', content_type: 'image/jpg')
-# tour_22.tag_list = "Ephesus"
-# tour_22.save
+tour_22 = Tour.create(title: "Biblical Ephesus Tour", description: "Ephesus Ancient City, The House of Virgin Mary, Terraced Houses, St. John Basilica", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 199, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>On this tour of the ancient city of Ephesus visit sites of biblical importance and gain greater insights into Christianity in antiquity on this tour.</p>
+<p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
+<ul>
+  <li>Visit the well-preserved Ancient City of Ephesus</li>
+  <li>Admire the remarkable Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
+  <li>Visit the Basilica of St. John and see his burial place</li>
+  <li>Visit the well-preserved terraced houses to see how the elite lived in those times</li>
+</ul>
+<p>At the end of the tour, we will transfer you back to your hotel.</p>
+</div>")
 
-# tour_23 = Tour.create(title: "Ephesus & Sirince Village Tour", description: "Ephesus Ancient City, The House of Virgin Mary, Sirince Village, Temple of Artemis", duration: "Full Day", tag_text: "Unique", group_size: "Private", price: 179, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Discover the ancient city of Ephesus and visit Şirince, a charming Turkish-Orthodox village located close in the hills above Ephesus.</p>
-# <p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
-# <ul>
-#   <li>Visit the well-preserved Ancient City of Ephesus</li>
-#   <li>Admire the remarkable Temple Of Artemis</li>
-#   <li>Take a trip outside of Ephesus and visit the House of the Virgin Mary, to see her final resting place</li>
-#   <li>Visit the Isa Bey Mosque, important as one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
-#   <li>Be immersed in the charm and ambience of Şirince a Turkish-Orthodox village.</li>
-# </ul>
-# <p>At the end of the tour, we will transfer you back to your hotel.</p>
-# </div>")
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_5.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_4.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_2.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_1.jpg'))
 
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_2.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_3.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_4.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_5.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_1.jpg'))
+tour_22.photos.attach(io: file_1, filename: 'biblical_5.jpg', content_type: 'image/jpg')
+tour_22.photos.attach(io: file_2, filename: 'biblical_4.jpg', content_type: 'image/jpg')
+tour_22.photos.attach(io: file_3, filename: 'biblical_3.jpg', content_type: 'image/jpg')
+tour_22.photos.attach(io: file_4, filename: 'biblical_2.jpg', content_type: 'image/jpg')
+tour_22.photos.attach(io: file_5, filename: 'biblical_1.jpg', content_type: 'image/jpg')
+tour_22.tag_list = "Ephesus"
+tour_22.save
 
-# tour_23.photos.attach(io: file_1, filename: 'sirince_2.jpg', content_type: 'image/jpg')
-# tour_23.photos.attach(io: file_2, filename: 'sirince_3.jpg', content_type: 'image/jpg')
-# tour_23.photos.attach(io: file_3, filename: 'sirince_4.jpg', content_type: 'image/jpg')
-# tour_23.photos.attach(io: file_4, filename: 'sirince_5.jpg', content_type: 'image/jpg')
-# tour_23.photos.attach(io: file_5, filename: 'sirince_1.jpg', content_type: 'image/jpg')
-# tour_23.tag_list = "Ephesus"
-# tour_23.save
+tour_23 = Tour.create(title: "Ephesus & Sirince Village Tour", description: "Ephesus Ancient City, The House of Virgin Mary, Sirince Village, Temple of Artemis", duration: "Full Day", tag_text: "Unique", group_size: "Private", price: 179, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Discover the ancient city of Ephesus and visit Şirince, a charming Turkish-Orthodox village located close in the hills above Ephesus.</p>
+<p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
+<ul>
+  <li>Visit the well-preserved Ancient City of Ephesus</li>
+  <li>Admire the remarkable Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus and visit the House of the Virgin Mary, to see her final resting place</li>
+  <li>Visit the Isa Bey Mosque, important as one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
+  <li>Be immersed in the charm and ambience of Şirince a Turkish-Orthodox village.</li>
+</ul>
+<p>At the end of the tour, we will transfer you back to your hotel.</p>
+</div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_2.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_3.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_4.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_5.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_1.jpg'))
+
+tour_23.photos.attach(io: file_1, filename: 'sirince_2.jpg', content_type: 'image/jpg')
+tour_23.photos.attach(io: file_2, filename: 'sirince_3.jpg', content_type: 'image/jpg')
+tour_23.photos.attach(io: file_3, filename: 'sirince_4.jpg', content_type: 'image/jpg')
+tour_23.photos.attach(io: file_4, filename: 'sirince_5.jpg', content_type: 'image/jpg')
+tour_23.photos.attach(io: file_5, filename: 'sirince_1.jpg', content_type: 'image/jpg')
+tour_23.tag_list = "Ephesus"
+tour_23.save
 
 # # tour_24 = Tour.create(title: "Ephesus & Pamukkale Tour", description: "Ephesus Ancient City, Pamukkale, Hierapolis", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 249)
 # # file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_5.jpg'))
