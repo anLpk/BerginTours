@@ -373,7 +373,7 @@ include: "<div>
   <li>Enjoy unlimited soft drinks, alcoholic beverages and snacks followed by dinner</li>
 </ul>
 <p>At the end of the evening you will be transported back to your hotel.</p>
-</div>", hitory: "<div class=\"accordion-text\"></div>")
+</div>", history: "<div class=\"accordion-text\"></div>")
 
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_2.jpg'))
