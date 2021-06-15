@@ -31,11 +31,7 @@ include: "<div>
   <li>Upon landing celebrate with a glass of champagne and receive a commemorative flight certificate </li>
 </ul>
 <p>After the flight you will be transferred back to your hotel.</p>
-</div>", history: "<p class=\"accordion-text\">The first human settlement in Goreme open air museum dated to the first and second century AD. 
-That the Christian communities escaped from Roman soldiers. In Goreme people started to live in caves until Christianity was declared 
-as the official religion of Rome. But people continued to live in caves after Rome became Christian because they think as a 
-philosophy living in hard conditions and suffering is a way to reach God. During a Cappadocia tour you will learn more about these 
-beauties in Cappadocia.</p>")
+</div>", history: "<div class=\"accordion-text\"></div>")
 
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/balloon_ride/Balloon_3.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/balloon_ride/Balloon_4.jpg'))
@@ -75,7 +71,17 @@ include: "<div>
   <li>Visit Uchisar Castle and Pigeon Valley, two of the best locations for photo-shoots in the world.</li>
 </ul>
 <p>At the end of the tour you will be transferred back to your hotel.</p>
-</div>", history: "<p class=\"accordion-text\"></p>")
+</div>", history: "<div class=\"accordion-text\"><h5>Goreme</h5><p>The first human settlement in Goreme open-air museum dates 
+back to the first and second century AD. Christian communities lived in caves to escape persecution until Christianity was declared 
+the official religion of Rome. Once Rome became Christian these communities continued to live in caves, accepting of the difficulties 
+of this environment, as it brought them closer to God. During a Cappadocia tour you will learn more about the beautiful region of 
+Cappadocia as well as its cultural and historical significance.</p>
+<h5>Avanos</h5><p>Avanos town located by the Red river (kizilirmak) dates back to Hittites period (2000 BC) and was ruled by many 
+civilisations throughout history (Frigians, Persians, Assyrians, Cappadocian Kingdom etc.) The old town originally named Vanessa 
+overlooks the longest river in Turkey and has a long and famous history of pottery production.  Using red clay from the river, the 
+township has produced pottery in the region dating back to the Hittites period. Known as a family tradition, with the pottery painted 
+in earthy hues and turquoise distinct to the region. Avanos may be visited on a private Cappadocia tour. </p></div>")
+
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/red_tour/Red_4.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/red_tour/Red_1.jpg'))
 file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/red_tour/Red_3.jpg'))
@@ -90,288 +96,363 @@ tour_2.photos.attach(io: file_5, filename: 'Red_5.jpg', content_type: 'image/jpg
 tour_2.tag_list = "Cappadocia"
 tour_2.save
 
-# tour_3 = Tour.create(title: "Cappadocia Green Tour", description: "Cavusin Village, Ortahisar Castle, Kaymakli Underground City, Pigeon Valley", duration: "8 Hours", tag_text: "Guided", group_size: "10-16 People", price: 45, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>This tour is perfect for those seeking to explore nature, history and all that Cappadocia has to offer. Tour the Kaymakli Underground City a UNESCO protected heritage site in Cappadocia, trek in the Ihlara Valley and more.</p>
-# <p>You will be picked up from your hotel in Cappadocia in the early morning and the tour will commence.</p>
-# <ul>
-#   <li>Discover the highlights of this UNESCO World Heritage Site</li>
-#   <li>Visit some typical Anatolian villages and explore their rock-cut churches</li>
-#   <li>Enjoy a trek in the Ihlara Valley</li>
-#   <li>Relax with an authentic Turkish lunch at a traditional restaurant</li>
-#   <li>Visit a Pottery Workshop</li>
-# </ul>
-# <p>An the end of the tour, you will be transferred back to your hotel.</p>
-# </div>")
+tour_3 = Tour.create(title: "Cappadocia Green Tour", description: "Cavusin Village, Ortahisar Castle, Kaymakli Underground City, Pigeon Valley", duration: "8 Hours", tag_text: "Guided", group_size: "10-16 People", price: 45, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+</ul>
+</div>", schedule: "<div>
+<p>This tour is perfect for those seeking to explore nature, history and all that Cappadocia has to offer. Tour the Kaymakli Underground City a UNESCO protected heritage site in Cappadocia, trek in the Ihlara Valley and more.</p>
+<p>You will be picked up from your hotel in Cappadocia in the early morning and the tour will commence.</p>
+<ul>
+  <li>Discover the highlights of this UNESCO World Heritage Site</li>
+  <li>Visit some typical Anatolian villages and explore their rock-cut churches</li>
+  <li>Enjoy a trek in the Ihlara Valley</li>
+  <li>Relax with an authentic Turkish lunch at a traditional restaurant</li>
+  <li>Visit a Pottery Workshop</li>
+</ul>
+<p>An the end of the tour, you will be transferred back to your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Kaymakli Underground City</h4><p>Kaymaklı city dates back to the Hittite and 
+Phrygian period and is the widest and second largest underground city in Cappadocia. Originally carved during the 7th and 8th, 
+over eight levels, with four currently open to visitors. It is a wonderful stop for any on a Cappadocia tour. Previously used by 
+Christians to protect themselves from invaders coming to Central Anatolia and later by local farmers to store crops and animals. 
+Today, the city is still used by locals to store wine and food.</p>
+<h4>Cavusin Village</h4><p>Çavuşin is an old Greek village, included in Cappadocia Turkey Tours. The village, which was active until 1924, 
+housed many Christian Orthodox families. In 1924 an obligatory population exchange between both countries led to ethnic Turks and Greeks 
+returning to their ethnic homelands. Çavuşin has two churches, the upper church; the great basilica dedicated to St. John the Baptist 
+(located on the cliff above the village) and the lower church, Çavuşin Church (Nicephorus Phocas), commemorating a visit from the famous 
+Cappadocian emperor Nicephorus Phocas.</p></div>")
 
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_4.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_1.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_5.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_3.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_2.jpg'))
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_4.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_1.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_5.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_3.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_2.jpg'))
 
-# tour_3.photos.attach(io: file_1, filename: 'Green_4.jpg', content_type: 'image/jpg')
-# tour_3.photos.attach(io: file_2, filename: 'Green_1.jpg', content_type: 'image/jpg')
-# tour_3.photos.attach(io: file_3, filename: 'Green_3.jpg', content_type: 'image/jpg')
-# tour_3.photos.attach(io: file_4, filename: 'Green_2.jpg', content_type: 'image/jpg')
-# tour_3.photos.attach(io: file_5, filename: 'Green_5.jpg', content_type: 'image/jpg')
-# tour_3.tag_list = "Cappadocia"
-# tour_3.save
+tour_3.photos.attach(io: file_1, filename: 'Green_4.jpg', content_type: 'image/jpg')
+tour_3.photos.attach(io: file_2, filename: 'Green_1.jpg', content_type: 'image/jpg')
+tour_3.photos.attach(io: file_3, filename: 'Green_3.jpg', content_type: 'image/jpg')
+tour_3.photos.attach(io: file_4, filename: 'Green_2.jpg', content_type: 'image/jpg')
+tour_3.photos.attach(io: file_5, filename: 'Green_5.jpg', content_type: 'image/jpg')
+tour_3.tag_list = "Cappadocia"
+tour_3.save
 
-# tour_4 = Tour.create(title: "Daily Private Cappadocia Tour", description: "Goreme Open Air Museum, Pasabagi, Kaymakli Underground City", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 145, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Enjoy trekking in Ihlara Valley one of the largest canyons in Turkey. Visit Sarihan Caravansarai the 13th century residence of merchants and their camels. Take a break to enjoy the scenic Nar Lake perfect for photography enthusiasts and witness some of the natural wonders this region is famous for.</p>
-# <p>You will be picked up from your hotel in Cappadocia in the early morning and the tour will commence.</p>
-# <ul>
-#   <li>See the breath-taking Sarihan Caravansarai residence</li>
-#   <li>Witness the stunning Ihlara Valley</li>
-#   <li>Explore the beauty of Nar Lake</li>
-#   <li>Relax with lunch at a special local restaurant</li>
-# </ul>
-# <p>At the end of the tour you will be transferred back to your hotel.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_4.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_5.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_2.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_3.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_1.jpg'))
+tour_4 = Tour.create(title: "Daily Private Cappadocia Tour", description: "Goreme Open Air Museum, Pasabagi, Kaymakli Underground City", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 145, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+</ul>
+</div>", schedule: "<div>
+<p>Enjoy trekking in Ihlara Valley one of the largest canyons in Turkey. Visit Sarihan Caravansarai the 13th century residence of merchants and their camels. Take a break to enjoy the scenic Nar Lake perfect for photography enthusiasts and witness some of the natural wonders this region is famous for.</p>
+<p>You will be picked up from your hotel in Cappadocia in the early morning and the tour will commence.</p>
+<ul>
+  <li>See the breath-taking Sarihan Caravansarai residence</li>
+  <li>Witness the stunning Ihlara Valley</li>
+  <li>Explore the beauty of Nar Lake</li>
+  <li>Relax with lunch at a special local restaurant</li>
+</ul>
+<p>At the end of the tour you will be transferred back to your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Goreme</h4><p>The first human settlement in Goreme open-air museum dates back 
+to the first and second century AD. Christian communities lived in caves to escape persecution until Christianity was declared the 
+official religion of Rome. Once Rome became Christian these communities continued to live in caves, accepting of the difficulties of 
+this environment, as it brought them closer to God. During a Cappadocia tour you will learn more about the beautiful region of Cappadocia 
+as well as its cultural and historical significance.</p>
+<h4>Kaymakli Underground City</h4><p>Kaymaklı city dates back to the Hittite and Phrygian period and is the widest and second largest 
+underground city in Cappadocia. Originally carved during the 7th and 8th, over eight levels, with four currently open to visitors. 
+It is a wonderful stop for any on a Cappadocia tour. Previously used by Christians to protect themselves from invaders coming to Central 
+Anatolia and later by local farmers to store crops and animals. Today, the city is still used by locals to store wine and food.</p></div>")
 
-# tour_4.photos.attach(io: file_1, filename: 'Private_4.jpg', content_type: 'image/jpg')
-# tour_4.photos.attach(io: file_2, filename: 'Private_5.jpg', content_type: 'image/jpg')
-# tour_4.photos.attach(io: file_3, filename: 'Private_2.jpg', content_type: 'image/jpg')
-# tour_4.photos.attach(io: file_4, filename: 'Private_3.jpg', content_type: 'image/jpg')
-# tour_4.photos.attach(io: file_5, filename: 'Private_1.jpg', content_type: 'image/jpg')
-# tour_4.tag_list = "Cappadocia"
-# tour_4.save
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_4.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_5.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_2.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_3.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_1.jpg'))
 
-# tour_5 = Tour.create(title: "Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Kaymakli Underground City", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 319, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Even on a short vacation in Turkey you can experience the magical Cappadocia on this one day tour from Istanbul by plane. You will experience majestic sites, unique landscapes and all the highlights this region has to offer. </p>
-# <p>You will be picked up from your hotel in Istanbul in the early morning and driven to Istanbul Airport. Flying direct to Cappadocia. Upon arrival at Cappadocia Airport you will be greeted by our expert guide and the tour will commence.</p>
-# <ul>
-#   <li>Admire the magical fairy chimneys</li>
-#   <li>Marvel at the pottery of Avanos</li>
-#   <li>Discover the rock-cut churches  at Göreme Open Air Museum</li>
-#   <li>Explore the beautiful valleys of Cappadocia</li>
-# </ul>
-# <p>At the end of the tour, your will be transported back to Cappadocia Airport to take a return flight to Istanbul. Upon landing you will be transferred back to your hotel. </p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_1.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_5.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_2.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_3.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_4.jpg'))
+tour_4.photos.attach(io: file_1, filename: 'Private_4.jpg', content_type: 'image/jpg')
+tour_4.photos.attach(io: file_2, filename: 'Private_5.jpg', content_type: 'image/jpg')
+tour_4.photos.attach(io: file_3, filename: 'Private_2.jpg', content_type: 'image/jpg')
+tour_4.photos.attach(io: file_4, filename: 'Private_3.jpg', content_type: 'image/jpg')
+tour_4.photos.attach(io: file_5, filename: 'Private_1.jpg', content_type: 'image/jpg')
+tour_4.tag_list = "Cappadocia"
+tour_4.save
 
-# tour_5.photos.attach(io: file_1, filename: 'daily_1.jpg', content_type: 'image/jpg')
-# tour_5.photos.attach(io: file_2, filename: 'daily_5.jpg', content_type: 'image/jpg')
-# tour_5.photos.attach(io: file_3, filename: 'daily_2.jpg', content_type: 'image/jpg')
-# tour_5.photos.attach(io: file_4, filename: 'daily_3.jpg', content_type: 'image/jpg')
-# tour_5.photos.attach(io: file_5, filename: 'daily_4.jpg', content_type: 'image/jpg')
-# tour_5.tag_list = "Cappadocia"
-# tour_5.save
+tour_5 = Tour.create(title: "Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Kaymakli Underground City", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 319, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+</ul>
+</div>", schedule: "<div>
+<p>Even on a short vacation in Turkey you can experience the magical Cappadocia on this one day tour from Istanbul by plane. You will experience majestic sites, unique landscapes and all the highlights this region has to offer. </p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and driven to Istanbul Airport. Flying direct to Cappadocia. Upon arrival at Cappadocia Airport you will be greeted by our expert guide and the tour will commence.</p>
+<ul>
+  <li>Admire the magical fairy chimneys</li>
+  <li>Marvel at the pottery of Avanos</li>
+  <li>Discover the rock-cut churches  at Göreme Open Air Museum</li>
+  <li>Explore the beautiful valleys of Cappadocia</li>
+</ul>
+<p>At the end of the tour, your will be transported back to Cappadocia Airport to take a return flight to Istanbul. Upon landing you will be transferred back to your hotel. </p>
+</div>", history: "<div class=\"accordion-text\"><h4>Goreme</h4><p>The first human settlement in Goreme open-air museum dates back 
+to the first and second century AD. Christian communities lived in caves to escape persecution until Christianity was declared the 
+official religion of Rome. Once Rome became Christian these communities continued to live in caves, accepting of the difficulties of 
+this environment, as it brought them closer to God. During a Cappadocia tour you will learn more about the beautiful region of 
+Cappadocia as well as its cultural and historical significance.</p>
+<h4>Kaymakli Underground City</h4><p>Kaymaklı city dates back to the Hittite and Phrygian period and is the widest and second 
+largest underground city in Cappadocia. Originally carved during the 7th and 8th, over eight levels, with four currently open to visitors. 
+It is a wonderful stop for any on a Cappadocia tour. Previously used by Christians to protect themselves from invaders coming to Central 
+Anatolia and later by local farmers to store crops and animals. Today, the city is still used by locals to store wine and food.</p></div>")
 
-# tour_6 = Tour.create(title: "Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Kaymakli Underground City, Hot Air Balloon", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 699, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Fly from Istanbul to Cappadocia and visit all the dream region has to offer in just two days, featuring unique fairy chimneys, fascinating underground cities, exceptional castles and magical valleys.</p>
-# <p>Early in the morning, we will pick you up from your hotel in Istanbul and drive to Istanbul Airport. Flight to Cappadocia. Our expert guide will meet with you at Cappadocia Airport upon landing. Then tour will start.</p>
-# <ul>
-#   <li>See all the sights of Cappadocia</li>
-#   <li>Visit a UNESCO World Heritage Site</li>
-#   <li>Explore an Ancient Underground City</li>
-#   <li>Marvel at fairy chimney formations</li>
-#   <li>See how carpets are wovening the carpet factory</li>
-#   <li>Accommodate in one of the unique cave hotel.</li>
-#   <li>Marvel at breathtaking panoramic views of Cappadocia on Spectacular Hot Air Ballon Flight (Optional)</li>
-# </ul>
-# <p>In the end of tour, driver drop you off to Cappadocia Airport. Then return to Istanbul Airport by flight. Transfer back to hotel in Istanbul.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_3.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_2.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_1.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_4.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_5.jpg'))
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_1.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_5.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_2.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_3.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_4.jpg'))
 
-# tour_6.photos.attach(io: file_1, filename: 'two_days_3.jpg', content_type: 'image/jpg')
-# tour_6.photos.attach(io: file_2, filename: 'two_days_2.jpg', content_type: 'image/jpg')
-# tour_6.photos.attach(io: file_3, filename: 'two_days_1.jpg', content_type: 'image/jpg')
-# tour_6.photos.attach(io: file_4, filename: 'two_days_4.jpg', content_type: 'image/jpg')
-# tour_6.photos.attach(io: file_5, filename: 'two_days_5.jpg', content_type: 'image/jpg')
-# tour_6.tag_list = "Cappadocia"
-# tour_6.save
+tour_5.photos.attach(io: file_1, filename: 'daily_1.jpg', content_type: 'image/jpg')
+tour_5.photos.attach(io: file_2, filename: 'daily_5.jpg', content_type: 'image/jpg')
+tour_5.photos.attach(io: file_3, filename: 'daily_2.jpg', content_type: 'image/jpg')
+tour_5.photos.attach(io: file_4, filename: 'daily_3.jpg', content_type: 'image/jpg')
+tour_5.photos.attach(io: file_5, filename: 'daily_4.jpg', content_type: 'image/jpg')
+tour_5.tag_list = "Cappadocia"
+tour_5.save
 
-# tour_7 = Tour.create(title: "2 Days Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Ortahisar Castle, Pigeon Valley, Kaymakli Underground City, Hot Air Balloon", duration: "2 Days", tag_text: "Guided", group_size: "Private", price: 699, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Accommodations (B&B)</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Fly from Istanbul to Cappadocia and visit all that this majestic region has to offer over two days. Explore the unique fairy chimneys, fascinating underground cities, exceptional castles and magical valleys that make this region so unique. </p>
-# <p>You will be picked up from your hotel in Istanbul in the early morning and driven to Istanbul Airport. Flying direct to Cappadocia. Upon arrival at Cappadocia Airport you will be greeted by our expert guide and the tour will commence.</p>
-# <ul>
-#   <li>Explore all the sights of Cappadocia</li>
-#   <li>Visit a UNESCO World Heritage Site</li>
-#   <li>Explore an Ancient Underground City</li>
-#   <li>Marvel at fairy chimney formations famous to the region</li>
-#   <li>See how carpets are woven at a carpet factory.</li>
-#   <li>Stay overnight and relax in one of Cappadocia’s unique cave hotels. </li>
-#   <li>Marvel at the breath-taking landscapes over Cappadocia on a spectacular Hot Air Balloon Flight (Optional)</li>
-# </ul>
-# <p>At the end of the tour, your will be transported back to Cappadocia Airport to take a return flight to Istanbul. Upon landing you will be transferred back to your hotel. </p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_3.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_2.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_5.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_4.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_1.jpg'))
+tour_6 = Tour.create(title: "Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Kaymakli Underground City, Hot Air Balloon", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 699, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+</ul>
+</div>", schedule: "<div>
+<p>Fly from Istanbul to Cappadocia and visit all the dream region has to offer in just two days, featuring unique fairy chimneys, fascinating underground cities, exceptional castles and magical valleys.</p>
+<p>Early in the morning, we will pick you up from your hotel in Istanbul and drive to Istanbul Airport. Flight to Cappadocia. Our expert guide will meet with you at Cappadocia Airport upon landing. Then tour will start.</p>
+<ul>
+  <li>See all the sights of Cappadocia</li>
+  <li>Visit a UNESCO World Heritage Site</li>
+  <li>Explore an Ancient Underground City</li>
+  <li>Marvel at fairy chimney formations</li>
+  <li>See how carpets are wovening the carpet factory</li>
+  <li>Accommodate in one of the unique cave hotel.</li>
+  <li>Marvel at breathtaking panoramic views of Cappadocia on Spectacular Hot Air Ballon Flight (Optional)</li>
+</ul>
+<p>In the end of tour, driver drop you off to Cappadocia Airport. Then return to Istanbul Airport by flight. Transfer back to hotel in Istanbul.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Goreme</h4><p>The first human settlement in Goreme open-air museum dates back to 
+the first and second century AD. Christian communities lived in caves to escape persecution until Christianity was declared the official 
+religion of Rome. Once Rome became Christian these communities continued to live in caves, accepting of the difficulties of this environment,
+as it brought them closer to God. During a Cappadocia tour you will learn more about the beautiful region of Cappadocia as well as its 
+cultural and historical significance.</p>
+<h4>Kaymakli Underground City</h4><p>Kaymaklı city dates back to the Hittite and Phrygian period and is the widest and second largest 
+underground city in Cappadocia. Originally carved during the 7th and 8th, over eight levels, with four currently open to visitors. 
+It is a wonderful stop for any on a Cappadocia tour. Previously used by Christians to protect themselves from invaders coming to Central 
+Anatolia and later by local farmers to store crops and animals. Today, the city is still used by locals to store wine and food.</p></div>")
 
-# tour_7.photos.attach(io: file_1, filename: 'three_days_3.jpg', content_type: 'image/jpg')
-# tour_7.photos.attach(io: file_2, filename: 'three_days_2.jpg', content_type: 'image/jpg')
-# tour_7.photos.attach(io: file_3, filename: 'three_days_5.jpg', content_type: 'image/jpg')
-# tour_7.photos.attach(io: file_4, filename: 'three_days_4.jpg', content_type: 'image/jpg')
-# tour_7.photos.attach(io: file_5, filename: 'three_days_1.jpg', content_type: 'image/jpg')
-# tour_7.tag_list = "Cappadocia"
-# tour_7.save
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_3.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_1.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/two_days/two_days_5.jpg'))
 
-# tour_8 = Tour.create(title: "Cappadocia Turkish Night", description: " Belly Dancer, Turkish Night", duration: "4 Hours", tag_text: "Inc Dinner", group_size: "Big Group", price: 45, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Dinner & Drinks</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Delight yourself with a fascinating night of entertainment at a Turkish Night Show in Cappadocia. Including unlimited soft drink and alcoholic beverages with appetizers, followed by a delicious lamb dinner. While dining, enjoy traditional folk dance performances and experience first hand the beauty of Turkish culture and traditions. </p>
-# <p>In the afternoon you will be picked up from your hotel in Cappadocia and driven to the restaurant where Turkish Night will commence.</p>
-# <ul>
-#   <li>Experience culture and tradition at a Turkish Night Show</li>
-#   <li>See whirling dervishes, belly dancers, and traditional folk dancers</li>
-#   <li>Enjoy unlimited soft drinks, alcoholic beverages and snacks followed by dinner</li>
-# </ul>
-# <p>At the end of the evening you will be transported back to your hotel.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_2.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_1.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
+tour_6.photos.attach(io: file_1, filename: 'two_days_3.jpg', content_type: 'image/jpg')
+tour_6.photos.attach(io: file_2, filename: 'two_days_2.jpg', content_type: 'image/jpg')
+tour_6.photos.attach(io: file_3, filename: 'two_days_1.jpg', content_type: 'image/jpg')
+tour_6.photos.attach(io: file_4, filename: 'two_days_4.jpg', content_type: 'image/jpg')
+tour_6.photos.attach(io: file_5, filename: 'two_days_5.jpg', content_type: 'image/jpg')
+tour_6.tag_list = "Cappadocia"
+tour_6.save
 
-# tour_8.photos.attach(io: file_1, filename: 'night_3.jpg', content_type: 'image/jpg')
-# tour_8.photos.attach(io: file_2, filename: 'night_2.jpg', content_type: 'image/jpg')
-# tour_8.photos.attach(io: file_3, filename: 'night_1.jpg', content_type: 'image/jpg')
-# tour_8.photos.attach(io: file_4, filename: 'night_3.jpg', content_type: 'image/jpg')
-# tour_8.photos.attach(io: file_5, filename: 'night_3.jpg', content_type: 'image/jpg')
-# tour_8.tag_list = "Cappadocia"
-# tour_8.save
+tour_7 = Tour.create(title: "2 Days Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Ortahisar Castle, Pigeon Valley, Kaymakli Underground City, Hot Air Balloon", duration: "2 Days", tag_text: "Guided", group_size: "Private", price: 699, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Accommodations (B&B)</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+</ul>
+</div>", schedule: "<div>
+<p>Fly from Istanbul to Cappadocia and visit all that this majestic region has to offer over two days. Explore the unique fairy chimneys, fascinating underground cities, exceptional castles and magical valleys that make this region so unique. </p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and driven to Istanbul Airport. Flying direct to Cappadocia. Upon arrival at Cappadocia Airport you will be greeted by our expert guide and the tour will commence.</p>
+<ul>
+  <li>Explore all the sights of Cappadocia</li>
+  <li>Visit a UNESCO World Heritage Site</li>
+  <li>Explore an Ancient Underground City</li>
+  <li>Marvel at fairy chimney formations famous to the region</li>
+  <li>See how carpets are woven at a carpet factory.</li>
+  <li>Stay overnight and relax in one of Cappadocia’s unique cave hotels. </li>
+  <li>Marvel at the breath-taking landscapes over Cappadocia on a spectacular Hot Air Balloon Flight (Optional)</li>
+</ul>
+<p>At the end of the tour, your will be transported back to Cappadocia Airport to take a return flight to Istanbul. Upon landing you will be transferred back to your hotel. </p>
+</div>", history: "<div class=\"accordion-text\"><h4>Goreme</h4><p>The first human settlement in Goreme open-air museum dates back to 
+the first and second century AD. Christian communities lived in caves to escape persecution until Christianity was declared the official 
+religion of Rome. Once Rome became Christian these communities continued to live in caves, accepting of the difficulties of this environment, 
+as it brought them closer to God. During a Cappadocia tour you will learn more about the beautiful region of Cappadocia as well as its 
+cultural and historical significance.</p>
+<h4>Kaymakli Underground City</h4><p>Kaymaklı city dates back to the Hittite and Phrygian period and is the widest and second largest 
+underground city in Cappadocia. Originally carved during the 7th and 8th, over eight levels, with four currently open to visitors. 
+It is a wonderful stop for any on a Cappadocia tour. Previously used by Christians to protect themselves from invaders coming to Central 
+Anatolia and later by local farmers to store crops and animals. Today, the city is still used by locals to store wine and food.</p>
+<h4>Ortahisar Town</h4><p>Ortahisar town is located between Urgup and Nevsehir. Located in the centre of the town is Ortahisar Castle, 
+the second peak of Cappadocia. Views across the town feature impressive scenery with two valleys encircling the castle of Ortahisar. 
+Pancarlik Church, (dating back to the 11th century AD) is a hidden gem in the town, and located inside Pancarlik Valley. 
+The small monastery at the end of the valley hides beautifully painted intact frescoes, which can be visited during a private tour of 
+Cappadocia.</p></div>")
 
-# tour_9 = Tour.create(title: "Istanbul Classic Old City Tour", description: "Hippodrome, Haghia Sophia, Blue Mosque, Topkapi Palace", duration: "Full Day", tag_text: "Skip the line", group_size: "10-16 People", price: 69, 
-# include: "<div>
-# <ul class=\"list-inline mr-5\">
-#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-# </ul>
-# </div>", exclude: "<div>
-# <ul class=\"list-inline\">
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Topkapi Palace Harem Entrance Fee</li>
-#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
-# </ul>
-# </div>", schedule: "<div>
-# <p>Discover the historical sites of Sultanahmet “Istanbul Old City” area. Visit Hagia Sophia, which is one of the ‘7 Wonders of the Medieval World’, Topkapi Palace the residence of Ottoman sultans for over 400 years, the spectacular Blue Mosque, and more with an expert guide on this tour.</p>
-# <p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
-# <ul>
-#   <li>Be amazed by the beauty of Hagia Sophia</li>
-#   <li>Admire to the splendid Blue Mosque</li>
-#   <li>Visit to the Hippodrome and follow in the footsteps of chariot races and the entertainment hub of the city for many years.</li>
-#   <li>Stroll through the Grand Bazaar </li>
-#   <li>Marvel at the art and architecture of Topkapi Palace</li>
-# </ul>
-# <p>At the end of this tour, we will drop you off at your hotel.</p>
-# </div>")
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_1.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_4.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_5.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_2.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_3.jpg'))
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_3.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_5.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_1.jpg'))
 
-# tour_9.photos.attach(io: file_1, filename: 'old_1.jpg', content_type: 'image/jpg')
-# tour_9.photos.attach(io: file_2, filename: 'old_4.jpg', content_type: 'image/jpg')
-# tour_9.photos.attach(io: file_3, filename: 'old_5.jpg', content_type: 'image/jpg')
-# tour_9.photos.attach(io: file_4, filename: 'old_2.jpg', content_type: 'image/jpg')
-# tour_9.photos.attach(io: file_5, filename: 'old_3.jpg', content_type: 'image/jpg')
-# tour_9.tag_list = "Istanbul"
-# tour_9.save
+tour_7.photos.attach(io: file_1, filename: 'three_days_3.jpg', content_type: 'image/jpg')
+tour_7.photos.attach(io: file_2, filename: 'three_days_2.jpg', content_type: 'image/jpg')
+tour_7.photos.attach(io: file_3, filename: 'three_days_5.jpg', content_type: 'image/jpg')
+tour_7.photos.attach(io: file_4, filename: 'three_days_4.jpg', content_type: 'image/jpg')
+tour_7.photos.attach(io: file_5, filename: 'three_days_1.jpg', content_type: 'image/jpg')
+tour_7.tag_list = "Cappadocia"
+tour_7.save
+
+tour_8 = Tour.create(title: "Cappadocia Turkish Night", description: " Belly Dancer, Turkish Night", duration: "4 Hours", tag_text: "Inc Dinner", group_size: "Big Group", price: 45, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Dinner & Drinks</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+</ul>
+</div>", schedule: "<div>
+<p>Delight yourself with a fascinating night of entertainment at a Turkish Night Show in Cappadocia. Including unlimited soft drink and alcoholic beverages with appetizers, followed by a delicious lamb dinner. While dining, enjoy traditional folk dance performances and experience first hand the beauty of Turkish culture and traditions. </p>
+<p>In the afternoon you will be picked up from your hotel in Cappadocia and driven to the restaurant where Turkish Night will commence.</p>
+<ul>
+  <li>Experience culture and tradition at a Turkish Night Show</li>
+  <li>See whirling dervishes, belly dancers, and traditional folk dancers</li>
+  <li>Enjoy unlimited soft drinks, alcoholic beverages and snacks followed by dinner</li>
+</ul>
+<p>At the end of the evening you will be transported back to your hotel.</p>
+</div>", hitory: "<div class=\"accordion-text\"></div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_1.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
+
+tour_8.photos.attach(io: file_1, filename: 'night_3.jpg', content_type: 'image/jpg')
+tour_8.photos.attach(io: file_2, filename: 'night_2.jpg', content_type: 'image/jpg')
+tour_8.photos.attach(io: file_3, filename: 'night_1.jpg', content_type: 'image/jpg')
+tour_8.photos.attach(io: file_4, filename: 'night_3.jpg', content_type: 'image/jpg')
+tour_8.photos.attach(io: file_5, filename: 'night_3.jpg', content_type: 'image/jpg')
+tour_8.tag_list = "Cappadocia"
+tour_8.save
+
+tour_9 = Tour.create(title: "Istanbul Classic Old City Tour", description: "Hippodrome, Haghia Sophia, Blue Mosque, Topkapi Palace", duration: "Full Day", tag_text: "Skip the line", group_size: "10-16 People", price: 69, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Topkapi Palace Harem Entrance Fee</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Discover the historical sites of Sultanahmet “Istanbul Old City” area. Visit Hagia Sophia, which is one of the ‘7 Wonders of the Medieval World’, Topkapi Palace the residence of Ottoman sultans for over 400 years, the spectacular Blue Mosque, and more with an expert guide on this tour.</p>
+<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
+<ul>
+  <li>Be amazed by the beauty of Hagia Sophia</li>
+  <li>Admire to the splendid Blue Mosque</li>
+  <li>Visit to the Hippodrome and follow in the footsteps of chariot races and the entertainment hub of the city for many years.</li>
+  <li>Stroll through the Grand Bazaar </li>
+  <li>Marvel at the art and architecture of Topkapi Palace</li>
+</ul>
+<p>At the end of this tour, we will drop you off at your hotel.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Blue Mosque</h4><p>One of the most important aspects of any Istanbul City tour; 
+is a visit to the Blue Mosque. The Blue Mosque built by Ahmed I between 1609-1616 is an Ottoman era mosque famously known as Blue 
+Mosque due to the blue Iznik tiles, which decorate the interior walls of the mosque. The Blue Mosque is also unique as it is the only 
+mosque in Istanbul with six minarets (towers) and is considered to be one of the last great mosques of the classical period. 
+Mixing Byzantine elements with traditional Islamic architecture. Visitors are amazed by 21,000 Iznik tiles in the mosque, which feature 
+imagery of cypress trees, flowers and fruits.</p>
+<h4>Hagia Sophia</h4><p>In the year of 532 AD the construction of the biggest church in the world commenced. The architects of Hagia Sophia
+came from the lands of Ionia; Antemius from Tralleis and Isidoros from the city of Miletus. The church, completed after five years of 
+construction, opened on the 27th December 532 and was the largest Christian church of the Byzantine Empire (Eastern Roman Empire). 
+The church was dedicated to the Holy Wisdom, the Logos, and the second person of the Trinity. After the Fall of Constantinople to the 
+Ottoman Empire in 1453 it was converted to a mosque by Mehmed the Conqueror. Hagia Sophia remained a mosque until 1931 before re-opening 
+years later as a museum to be preserved and shared as a historical meeting point for two religions. In 2020 Hagia Sophia once again 
+was used as a mosque but remains open to the public as an important and protected site for all. This beautiful monument, and one of the 
+city's most popular and inspiring attractions can be seen by booking a tour of Istanbul.</p>
+<h4>Topkapi Palace</h4><p>As a part of a Guided Istanbul tour Topkapı Palace is one of the most important examples of Ottoman rule and 
+influence during the Ottoman reign. Commissioned by Mehmed II after conquering Constantinople, the capital of the Byzantine Empire in 1453. 
+Members of the Ottoman Court resided in Topkapi Palace from 1478 to 1856, which housed 30 sultans for over 400 years during the empire's 
+600 year reign. Acting as the centre of power, this palace is a physical example of the changing architecture of the period and interests 
+of each sultan, with visitors to Topkapi seeing first hand various additions to the palace as a result of each new Sultan adding their 
+influences to the space. This includes architectural styles including: Islamic, Ottoman and European architecture and decor. 
+The palace, the royal residence of the sultan and the centre of social issues and government is a complex structure featuring four main 
+courtyards. Each courtyard symbolises the relationship between the administrative, residential and auxiliary and each courtyard was designed
+to be more restricted than the previous; symbolising the importance of the inner sanctum. The palace housed over 1000-4000 people 
+including 300 in the harem and is a pivotal stop on any Istanbul tour.</p></div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_1.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_4.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_5.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_2.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_3.jpg'))
+
+tour_9.photos.attach(io: file_1, filename: 'old_1.jpg', content_type: 'image/jpg')
+tour_9.photos.attach(io: file_2, filename: 'old_4.jpg', content_type: 'image/jpg')
+tour_9.photos.attach(io: file_3, filename: 'old_5.jpg', content_type: 'image/jpg')
+tour_9.photos.attach(io: file_4, filename: 'old_2.jpg', content_type: 'image/jpg')
+tour_9.photos.attach(io: file_5, filename: 'old_3.jpg', content_type: 'image/jpg')
+tour_9.tag_list = "Istanbul"
+tour_9.save
 
 # tour_10 = Tour.create(title: "Bosphorus Morning Tour", description: "Spicy Bazaar, Bosphorus, Ciragan Palace", duration: "Half Day", tag_text: "Guided", group_size: "Group", price: 37, 
 # include: "<div>
@@ -396,7 +477,7 @@ tour_2.save
 #   <li>Enjoy the beauty Istanbul from a different perspective and take unique pictures, which can only be captured, by boat.</li>
 # </ul>
 # <p>At the end of tour, we will drop you off at your hotel.</p>
-# </div>")
+# </div>", history: "<div class=\"accordion-text\"><h4></h4><p></p><h4></h4><p></p></div>")
 
 # file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_5.jpg'))
 # file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_4.jpg'))
@@ -435,7 +516,7 @@ tour_2.save
 #   <li>Enjoy the beauty of Istanbul from a different perspective and take unique pictures, which can only be captured, by boat.</li>
 # </ul>
 # <p>At the end of tour, we will drop you off at your hotel.</p>
-# </div>")
+# </div>", history: "<div class=\"accordion-text\"><h4></h4><p></p><h4></h4><p></p></div>")
 # file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_9.jpg'))
 # file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_2.jpg'))
 # file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_3.jpg'))
