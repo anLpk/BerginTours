@@ -20,6 +20,7 @@ import { initStarRating } from "./plugins/init_star_rating";
 import { scrollDownNavBar } from "./plugins/scroll_navbar";
 import { formTotalPriceCalculation } from "./plugins/form_total_price";
 import { accordionTour } from "./plugins/accordion";
+import { historyDisplay } from "./plugins/history_display";
 
 document.addEventListener("turbolinks:load", () => {
   initFlatpickr();
@@ -27,4 +28,5 @@ document.addEventListener("turbolinks:load", () => {
   scrollDownNavBar();
   formTotalPriceCalculation();
   accordionTour();
+  historyDisplay();
 });

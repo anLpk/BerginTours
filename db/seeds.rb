@@ -31,7 +31,11 @@ include: "<div>
   <li>Upon landing celebrate with a glass of champagne and receive a commemorative flight certificate </li>
 </ul>
 <p>After the flight you will be transferred back to your hotel.</p>
-</div>")
+</div>", history: "<p class=\"accordion-text\">The first human settlement in Goreme open air museum dated to the first and second century AD. 
+That the Christian communities escaped from Roman soldiers. In Goreme people started to live in caves until Christianity was declared 
+as the official religion of Rome. But people continued to live in caves after Rome became Christian because they think as a 
+philosophy living in hard conditions and suffering is a way to reach God. During a Cappadocia tour you will learn more about these 
+beauties in Cappadocia.</p>")
 
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/balloon_ride/Balloon_3.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/balloon_ride/Balloon_4.jpg'))
@@ -71,7 +75,7 @@ include: "<div>
   <li>Visit Uchisar Castle and Pigeon Valley, two of the best locations for photo-shoots in the world.</li>
 </ul>
 <p>At the end of the tour you will be transferred back to your hotel.</p>
-</div>")
+</div>", history: "<p class=\"accordion-text\"></p>")
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/red_tour/Red_4.jpg'))
 file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/red_tour/Red_1.jpg'))
 file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/red_tour/Red_3.jpg'))
@@ -86,124 +90,124 @@ tour_2.photos.attach(io: file_5, filename: 'Red_5.jpg', content_type: 'image/jpg
 tour_2.tag_list = "Cappadocia"
 tour_2.save
 
-tour_3 = Tour.create(title: "Cappadocia Green Tour", description: "Cavusin Village, Ortahisar Castle, Kaymakli Underground City, Pigeon Valley", duration: "8 Hours", tag_text: "Guided", group_size: "10-16 People", price: 45, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-</ul>
-</div>", schedule: "<div>
-<p>This tour is perfect for those seeking to explore nature, history and all that Cappadocia has to offer. Tour the Kaymakli Underground City a UNESCO protected heritage site in Cappadocia, trek in the Ihlara Valley and more.</p>
-<p>You will be picked up from your hotel in Cappadocia in the early morning and the tour will commence.</p>
-<ul>
-  <li>Discover the highlights of this UNESCO World Heritage Site</li>
-  <li>Visit some typical Anatolian villages and explore their rock-cut churches</li>
-  <li>Enjoy a trek in the Ihlara Valley</li>
-  <li>Relax with an authentic Turkish lunch at a traditional restaurant</li>
-  <li>Visit a Pottery Workshop</li>
-</ul>
-<p>An the end of the tour, you will be transferred back to your hotel.</p>
-</div>")
+# tour_3 = Tour.create(title: "Cappadocia Green Tour", description: "Cavusin Village, Ortahisar Castle, Kaymakli Underground City, Pigeon Valley", duration: "8 Hours", tag_text: "Guided", group_size: "10-16 People", price: 45, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>This tour is perfect for those seeking to explore nature, history and all that Cappadocia has to offer. Tour the Kaymakli Underground City a UNESCO protected heritage site in Cappadocia, trek in the Ihlara Valley and more.</p>
+# <p>You will be picked up from your hotel in Cappadocia in the early morning and the tour will commence.</p>
+# <ul>
+#   <li>Discover the highlights of this UNESCO World Heritage Site</li>
+#   <li>Visit some typical Anatolian villages and explore their rock-cut churches</li>
+#   <li>Enjoy a trek in the Ihlara Valley</li>
+#   <li>Relax with an authentic Turkish lunch at a traditional restaurant</li>
+#   <li>Visit a Pottery Workshop</li>
+# </ul>
+# <p>An the end of the tour, you will be transferred back to your hotel.</p>
+# </div>")
 
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_4.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_1.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_5.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_3.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_2.jpg'))
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_4.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_1.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_5.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_3.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/green_tour/Green_2.jpg'))
 
-tour_3.photos.attach(io: file_1, filename: 'Green_4.jpg', content_type: 'image/jpg')
-tour_3.photos.attach(io: file_2, filename: 'Green_1.jpg', content_type: 'image/jpg')
-tour_3.photos.attach(io: file_3, filename: 'Green_3.jpg', content_type: 'image/jpg')
-tour_3.photos.attach(io: file_4, filename: 'Green_2.jpg', content_type: 'image/jpg')
-tour_3.photos.attach(io: file_5, filename: 'Green_5.jpg', content_type: 'image/jpg')
-tour_3.tag_list = "Cappadocia"
-tour_3.save
+# tour_3.photos.attach(io: file_1, filename: 'Green_4.jpg', content_type: 'image/jpg')
+# tour_3.photos.attach(io: file_2, filename: 'Green_1.jpg', content_type: 'image/jpg')
+# tour_3.photos.attach(io: file_3, filename: 'Green_3.jpg', content_type: 'image/jpg')
+# tour_3.photos.attach(io: file_4, filename: 'Green_2.jpg', content_type: 'image/jpg')
+# tour_3.photos.attach(io: file_5, filename: 'Green_5.jpg', content_type: 'image/jpg')
+# tour_3.tag_list = "Cappadocia"
+# tour_3.save
 
-tour_4 = Tour.create(title: "Daily Private Cappadocia Tour", description: "Goreme Open Air Museum, Pasabagi, Kaymakli Underground City", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 145, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-</ul>
-</div>", schedule: "<div>
-<p>Enjoy trekking in Ihlara Valley one of the largest canyons in Turkey. Visit Sarihan Caravansarai the 13th century residence of merchants and their camels. Take a break to enjoy the scenic Nar Lake perfect for photography enthusiasts and witness some of the natural wonders this region is famous for.</p>
-<p>You will be picked up from your hotel in Cappadocia in the early morning and the tour will commence.</p>
-<ul>
-  <li>See the breath-taking Sarihan Caravansarai residence</li>
-  <li>Witness the stunning Ihlara Valley</li>
-  <li>Explore the beauty of Nar Lake</li>
-  <li>Relax with lunch at a special local restaurant</li>
-</ul>
-<p>At the end of the tour you will be transferred back to your hotel.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_4.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_5.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_2.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_3.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_1.jpg'))
+# tour_4 = Tour.create(title: "Daily Private Cappadocia Tour", description: "Goreme Open Air Museum, Pasabagi, Kaymakli Underground City", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 145, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Enjoy trekking in Ihlara Valley one of the largest canyons in Turkey. Visit Sarihan Caravansarai the 13th century residence of merchants and their camels. Take a break to enjoy the scenic Nar Lake perfect for photography enthusiasts and witness some of the natural wonders this region is famous for.</p>
+# <p>You will be picked up from your hotel in Cappadocia in the early morning and the tour will commence.</p>
+# <ul>
+#   <li>See the breath-taking Sarihan Caravansarai residence</li>
+#   <li>Witness the stunning Ihlara Valley</li>
+#   <li>Explore the beauty of Nar Lake</li>
+#   <li>Relax with lunch at a special local restaurant</li>
+# </ul>
+# <p>At the end of the tour you will be transferred back to your hotel.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_4.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_5.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_2.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_3.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/daily_private/Private_1.jpg'))
 
-tour_4.photos.attach(io: file_1, filename: 'Private_4.jpg', content_type: 'image/jpg')
-tour_4.photos.attach(io: file_2, filename: 'Private_5.jpg', content_type: 'image/jpg')
-tour_4.photos.attach(io: file_3, filename: 'Private_2.jpg', content_type: 'image/jpg')
-tour_4.photos.attach(io: file_4, filename: 'Private_3.jpg', content_type: 'image/jpg')
-tour_4.photos.attach(io: file_5, filename: 'Private_1.jpg', content_type: 'image/jpg')
-tour_4.tag_list = "Cappadocia"
-tour_4.save
+# tour_4.photos.attach(io: file_1, filename: 'Private_4.jpg', content_type: 'image/jpg')
+# tour_4.photos.attach(io: file_2, filename: 'Private_5.jpg', content_type: 'image/jpg')
+# tour_4.photos.attach(io: file_3, filename: 'Private_2.jpg', content_type: 'image/jpg')
+# tour_4.photos.attach(io: file_4, filename: 'Private_3.jpg', content_type: 'image/jpg')
+# tour_4.photos.attach(io: file_5, filename: 'Private_1.jpg', content_type: 'image/jpg')
+# tour_4.tag_list = "Cappadocia"
+# tour_4.save
 
-tour_5 = Tour.create(title: "Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Kaymakli Underground City", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 319, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-</ul>
-</div>", schedule: "<div>
-<p>Even on a short vacation in Turkey you can experience the magical Cappadocia on this one day tour from Istanbul by plane. You will experience majestic sites, unique landscapes and all the highlights this region has to offer. </p>
-<p>You will be picked up from your hotel in Istanbul in the early morning and driven to Istanbul Airport. Flying direct to Cappadocia. Upon arrival at Cappadocia Airport you will be greeted by our expert guide and the tour will commence.</p>
-<ul>
-  <li>Admire the magical fairy chimneys</li>
-  <li>Marvel at the pottery of Avanos</li>
-  <li>Discover the rock-cut churches  at Göreme Open Air Museum</li>
-  <li>Explore the beautiful valleys of Cappadocia</li>
-</ul>
-<p>At the end of the tour, your will be transported back to Cappadocia Airport to take a return flight to Istanbul. Upon landing you will be transferred back to your hotel. </p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_1.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_5.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_2.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_3.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_4.jpg'))
+# tour_5 = Tour.create(title: "Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Kaymakli Underground City", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 319, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Even on a short vacation in Turkey you can experience the magical Cappadocia on this one day tour from Istanbul by plane. You will experience majestic sites, unique landscapes and all the highlights this region has to offer. </p>
+# <p>You will be picked up from your hotel in Istanbul in the early morning and driven to Istanbul Airport. Flying direct to Cappadocia. Upon arrival at Cappadocia Airport you will be greeted by our expert guide and the tour will commence.</p>
+# <ul>
+#   <li>Admire the magical fairy chimneys</li>
+#   <li>Marvel at the pottery of Avanos</li>
+#   <li>Discover the rock-cut churches  at Göreme Open Air Museum</li>
+#   <li>Explore the beautiful valleys of Cappadocia</li>
+# </ul>
+# <p>At the end of the tour, your will be transported back to Cappadocia Airport to take a return flight to Istanbul. Upon landing you will be transferred back to your hotel. </p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_1.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_5.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_2.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_3.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/from_istanbul/daily_4.jpg'))
 
-tour_5.photos.attach(io: file_1, filename: 'daily_1.jpg', content_type: 'image/jpg')
-tour_5.photos.attach(io: file_2, filename: 'daily_5.jpg', content_type: 'image/jpg')
-tour_5.photos.attach(io: file_3, filename: 'daily_2.jpg', content_type: 'image/jpg')
-tour_5.photos.attach(io: file_4, filename: 'daily_3.jpg', content_type: 'image/jpg')
-tour_5.photos.attach(io: file_5, filename: 'daily_4.jpg', content_type: 'image/jpg')
-tour_5.tag_list = "Cappadocia"
-tour_5.save
+# tour_5.photos.attach(io: file_1, filename: 'daily_1.jpg', content_type: 'image/jpg')
+# tour_5.photos.attach(io: file_2, filename: 'daily_5.jpg', content_type: 'image/jpg')
+# tour_5.photos.attach(io: file_3, filename: 'daily_2.jpg', content_type: 'image/jpg')
+# tour_5.photos.attach(io: file_4, filename: 'daily_3.jpg', content_type: 'image/jpg')
+# tour_5.photos.attach(io: file_5, filename: 'daily_4.jpg', content_type: 'image/jpg')
+# tour_5.tag_list = "Cappadocia"
+# tour_5.save
 
 # tour_6 = Tour.create(title: "Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Kaymakli Underground City, Hot Air Balloon", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 699, 
 # include: "<div>
@@ -249,357 +253,357 @@ tour_5.save
 # tour_6.tag_list = "Cappadocia"
 # tour_6.save
 
-tour_7 = Tour.create(title: "2 Days Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Ortahisar Castle, Pigeon Valley, Kaymakli Underground City, Hot Air Balloon", duration: "2 Days", tag_text: "Guided", group_size: "Private", price: 699, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Accommodations (B&B)</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-</ul>
-</div>", schedule: "<div>
-<p>Fly from Istanbul to Cappadocia and visit all that this majestic region has to offer over two days. Explore the unique fairy chimneys, fascinating underground cities, exceptional castles and magical valleys that make this region so unique. </p>
-<p>You will be picked up from your hotel in Istanbul in the early morning and driven to Istanbul Airport. Flying direct to Cappadocia. Upon arrival at Cappadocia Airport you will be greeted by our expert guide and the tour will commence.</p>
-<ul>
-  <li>Explore all the sights of Cappadocia</li>
-  <li>Visit a UNESCO World Heritage Site</li>
-  <li>Explore an Ancient Underground City</li>
-  <li>Marvel at fairy chimney formations famous to the region</li>
-  <li>See how carpets are woven at a carpet factory.</li>
-  <li>Stay overnight and relax in one of Cappadocia’s unique cave hotels. </li>
-  <li>Marvel at the breath-taking landscapes over Cappadocia on a spectacular Hot Air Balloon Flight (Optional)</li>
-</ul>
-<p>At the end of the tour, your will be transported back to Cappadocia Airport to take a return flight to Istanbul. Upon landing you will be transferred back to your hotel. </p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_3.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_5.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_1.jpg'))
+# tour_7 = Tour.create(title: "2 Days Cappadocia Tour from Istanbul", description: "Goreme Open Air Museum, Fairy Chimneys, Ortahisar Castle, Pigeon Valley, Kaymakli Underground City, Hot Air Balloon", duration: "2 Days", tag_text: "Guided", group_size: "Private", price: 699, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Accommodations (B&B)</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Fly from Istanbul to Cappadocia and visit all that this majestic region has to offer over two days. Explore the unique fairy chimneys, fascinating underground cities, exceptional castles and magical valleys that make this region so unique. </p>
+# <p>You will be picked up from your hotel in Istanbul in the early morning and driven to Istanbul Airport. Flying direct to Cappadocia. Upon arrival at Cappadocia Airport you will be greeted by our expert guide and the tour will commence.</p>
+# <ul>
+#   <li>Explore all the sights of Cappadocia</li>
+#   <li>Visit a UNESCO World Heritage Site</li>
+#   <li>Explore an Ancient Underground City</li>
+#   <li>Marvel at fairy chimney formations famous to the region</li>
+#   <li>See how carpets are woven at a carpet factory.</li>
+#   <li>Stay overnight and relax in one of Cappadocia’s unique cave hotels. </li>
+#   <li>Marvel at the breath-taking landscapes over Cappadocia on a spectacular Hot Air Balloon Flight (Optional)</li>
+# </ul>
+# <p>At the end of the tour, your will be transported back to Cappadocia Airport to take a return flight to Istanbul. Upon landing you will be transferred back to your hotel. </p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_3.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_2.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_5.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_4.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/three_days/three_days_1.jpg'))
 
-tour_7.photos.attach(io: file_1, filename: 'three_days_3.jpg', content_type: 'image/jpg')
-tour_7.photos.attach(io: file_2, filename: 'three_days_2.jpg', content_type: 'image/jpg')
-tour_7.photos.attach(io: file_3, filename: 'three_days_5.jpg', content_type: 'image/jpg')
-tour_7.photos.attach(io: file_4, filename: 'three_days_4.jpg', content_type: 'image/jpg')
-tour_7.photos.attach(io: file_5, filename: 'three_days_1.jpg', content_type: 'image/jpg')
-tour_7.tag_list = "Cappadocia"
-tour_7.save
+# tour_7.photos.attach(io: file_1, filename: 'three_days_3.jpg', content_type: 'image/jpg')
+# tour_7.photos.attach(io: file_2, filename: 'three_days_2.jpg', content_type: 'image/jpg')
+# tour_7.photos.attach(io: file_3, filename: 'three_days_5.jpg', content_type: 'image/jpg')
+# tour_7.photos.attach(io: file_4, filename: 'three_days_4.jpg', content_type: 'image/jpg')
+# tour_7.photos.attach(io: file_5, filename: 'three_days_1.jpg', content_type: 'image/jpg')
+# tour_7.tag_list = "Cappadocia"
+# tour_7.save
 
-tour_8 = Tour.create(title: "Cappadocia Turkish Night", description: " Belly Dancer, Turkish Night", duration: "4 Hours", tag_text: "Inc Dinner", group_size: "Big Group", price: 45, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Dinner & Drinks</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-</ul>
-</div>", schedule: "<div>
-<p>Delight yourself with a fascinating night of entertainment at a Turkish Night Show in Cappadocia. Including unlimited soft drink and alcoholic beverages with appetizers, followed by a delicious lamb dinner. While dining, enjoy traditional folk dance performances and experience first hand the beauty of Turkish culture and traditions. </p>
-<p>In the afternoon you will be picked up from your hotel in Cappadocia and driven to the restaurant where Turkish Night will commence.</p>
-<ul>
-  <li>Experience culture and tradition at a Turkish Night Show</li>
-  <li>See whirling dervishes, belly dancers, and traditional folk dancers</li>
-  <li>Enjoy unlimited soft drinks, alcoholic beverages and snacks followed by dinner</li>
-</ul>
-<p>At the end of the evening you will be transported back to your hotel.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_1.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
+# tour_8 = Tour.create(title: "Cappadocia Turkish Night", description: " Belly Dancer, Turkish Night", duration: "4 Hours", tag_text: "Inc Dinner", group_size: "Big Group", price: 45, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Dinner & Drinks</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Delight yourself with a fascinating night of entertainment at a Turkish Night Show in Cappadocia. Including unlimited soft drink and alcoholic beverages with appetizers, followed by a delicious lamb dinner. While dining, enjoy traditional folk dance performances and experience first hand the beauty of Turkish culture and traditions. </p>
+# <p>In the afternoon you will be picked up from your hotel in Cappadocia and driven to the restaurant where Turkish Night will commence.</p>
+# <ul>
+#   <li>Experience culture and tradition at a Turkish Night Show</li>
+#   <li>See whirling dervishes, belly dancers, and traditional folk dancers</li>
+#   <li>Enjoy unlimited soft drinks, alcoholic beverages and snacks followed by dinner</li>
+# </ul>
+# <p>At the end of the evening you will be transported back to your hotel.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_2.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_1.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Cappadocia/turkish_night/night_3.jpg'))
 
-tour_8.photos.attach(io: file_1, filename: 'night_3.jpg', content_type: 'image/jpg')
-tour_8.photos.attach(io: file_2, filename: 'night_2.jpg', content_type: 'image/jpg')
-tour_8.photos.attach(io: file_3, filename: 'night_1.jpg', content_type: 'image/jpg')
-tour_8.photos.attach(io: file_4, filename: 'night_3.jpg', content_type: 'image/jpg')
-tour_8.photos.attach(io: file_5, filename: 'night_3.jpg', content_type: 'image/jpg')
-tour_8.tag_list = "Cappadocia"
-tour_8.save
+# tour_8.photos.attach(io: file_1, filename: 'night_3.jpg', content_type: 'image/jpg')
+# tour_8.photos.attach(io: file_2, filename: 'night_2.jpg', content_type: 'image/jpg')
+# tour_8.photos.attach(io: file_3, filename: 'night_1.jpg', content_type: 'image/jpg')
+# tour_8.photos.attach(io: file_4, filename: 'night_3.jpg', content_type: 'image/jpg')
+# tour_8.photos.attach(io: file_5, filename: 'night_3.jpg', content_type: 'image/jpg')
+# tour_8.tag_list = "Cappadocia"
+# tour_8.save
 
-tour_9 = Tour.create(title: "Istanbul Classic Old City Tour", description: "Hippodrome, Haghia Sophia, Blue Mosque, Topkapi Palace", duration: "Full Day", tag_text: "Skip the line", group_size: "10-16 People", price: 69, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Topkapi Palace Harem Entrance Fee</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Discover the historical sites of Sultanahmet “Istanbul Old City” area. Visit Hagia Sophia, which is one of the ‘7 Wonders of the Medieval World’, Topkapi Palace the residence of Ottoman sultans for over 400 years, the spectacular Blue Mosque, and more with an expert guide on this tour.</p>
-<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
-<ul>
-  <li>Be amazed by the beauty of Hagia Sophia</li>
-  <li>Admire to the splendid Blue Mosque</li>
-  <li>Visit to the Hippodrome and follow in the footsteps of chariot races and the entertainment hub of the city for many years.</li>
-  <li>Stroll through the Grand Bazaar </li>
-  <li>Marvel at the art and architecture of Topkapi Palace</li>
-</ul>
-<p>At the end of this tour, we will drop you off at your hotel.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_1.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_4.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_5.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_2.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_3.jpg'))
+# tour_9 = Tour.create(title: "Istanbul Classic Old City Tour", description: "Hippodrome, Haghia Sophia, Blue Mosque, Topkapi Palace", duration: "Full Day", tag_text: "Skip the line", group_size: "10-16 People", price: 69, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Topkapi Palace Harem Entrance Fee</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Discover the historical sites of Sultanahmet “Istanbul Old City” area. Visit Hagia Sophia, which is one of the ‘7 Wonders of the Medieval World’, Topkapi Palace the residence of Ottoman sultans for over 400 years, the spectacular Blue Mosque, and more with an expert guide on this tour.</p>
+# <p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
+# <ul>
+#   <li>Be amazed by the beauty of Hagia Sophia</li>
+#   <li>Admire to the splendid Blue Mosque</li>
+#   <li>Visit to the Hippodrome and follow in the footsteps of chariot races and the entertainment hub of the city for many years.</li>
+#   <li>Stroll through the Grand Bazaar </li>
+#   <li>Marvel at the art and architecture of Topkapi Palace</li>
+# </ul>
+# <p>At the end of this tour, we will drop you off at your hotel.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_1.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_4.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_5.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_2.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/old_city/old_3.jpg'))
 
-tour_9.photos.attach(io: file_1, filename: 'old_1.jpg', content_type: 'image/jpg')
-tour_9.photos.attach(io: file_2, filename: 'old_4.jpg', content_type: 'image/jpg')
-tour_9.photos.attach(io: file_3, filename: 'old_5.jpg', content_type: 'image/jpg')
-tour_9.photos.attach(io: file_4, filename: 'old_2.jpg', content_type: 'image/jpg')
-tour_9.photos.attach(io: file_5, filename: 'old_3.jpg', content_type: 'image/jpg')
-tour_9.tag_list = "Istanbul"
-tour_9.save
+# tour_9.photos.attach(io: file_1, filename: 'old_1.jpg', content_type: 'image/jpg')
+# tour_9.photos.attach(io: file_2, filename: 'old_4.jpg', content_type: 'image/jpg')
+# tour_9.photos.attach(io: file_3, filename: 'old_5.jpg', content_type: 'image/jpg')
+# tour_9.photos.attach(io: file_4, filename: 'old_2.jpg', content_type: 'image/jpg')
+# tour_9.photos.attach(io: file_5, filename: 'old_3.jpg', content_type: 'image/jpg')
+# tour_9.tag_list = "Istanbul"
+# tour_9.save
 
-tour_10 = Tour.create(title: "Bosphorus Morning Tour", description: "Spicy Bazaar, Bosphorus, Ciragan Palace", duration: "Half Day", tag_text: "Guided", group_size: "Group", price: 37, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Cruise along the Bosphorus on this guided boat tour, which separates Asia and Europe. By boat you can admire many of the stunning sites, which make Istanbul one of the most vibrant cities in the world. Admire the palaces, wooden villas, bridges and unique maritime landscapes.</p>
-<p>You will be picked up from your hotel in Istanbul after breakfast and the Bosphorus Cruise tour will commence.</p>
-<ul>
-  <li>Admire sights like the Ciragan Palace, Spice Bazaar and Rumeli Fortress</li>
-  <li>See first hand the unique location of Istanbul as the bridge between Europe and Asia</li>
-  <li>See historical sights and the Bosphorus Bridge by boat</li>
-  <li>Enjoy the beauty Istanbul from a different perspective and take unique pictures, which can only be captured, by boat.</li>
-</ul>
-<p>At the end of tour, we will drop you off at your hotel.</p>
-</div>")
+# tour_10 = Tour.create(title: "Bosphorus Morning Tour", description: "Spicy Bazaar, Bosphorus, Ciragan Palace", duration: "Half Day", tag_text: "Guided", group_size: "Group", price: 37, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Cruise along the Bosphorus on this guided boat tour, which separates Asia and Europe. By boat you can admire many of the stunning sites, which make Istanbul one of the most vibrant cities in the world. Admire the palaces, wooden villas, bridges and unique maritime landscapes.</p>
+# <p>You will be picked up from your hotel in Istanbul after breakfast and the Bosphorus Cruise tour will commence.</p>
+# <ul>
+#   <li>Admire sights like the Ciragan Palace, Spice Bazaar and Rumeli Fortress</li>
+#   <li>See first hand the unique location of Istanbul as the bridge between Europe and Asia</li>
+#   <li>See historical sights and the Bosphorus Bridge by boat</li>
+#   <li>Enjoy the beauty Istanbul from a different perspective and take unique pictures, which can only be captured, by boat.</li>
+# </ul>
+# <p>At the end of tour, we will drop you off at your hotel.</p>
+# </div>")
 
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_5.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_4.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_2.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_1.jpg'))
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_5.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_4.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_3.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_2.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/half_morning/bosp_1.jpg'))
 
-tour_10.photos.attach(io: file_1, filename: 'bosp_5.jpg', content_type: 'image/jpg')
-tour_10.photos.attach(io: file_2, filename: 'bosp_4.jpg', content_type: 'image/jpg')
-tour_10.photos.attach(io: file_3, filename: 'bosp_3.jpg', content_type: 'image/jpg')
-tour_10.photos.attach(io: file_4, filename: 'bosp_2.jpg', content_type: 'image/jpg')
-tour_10.photos.attach(io: file_5, filename: 'bosp_1.jpg', content_type: 'image/jpg')
-tour_10.tag_list = "Istanbul"
-tour_10.save
+# tour_10.photos.attach(io: file_1, filename: 'bosp_5.jpg', content_type: 'image/jpg')
+# tour_10.photos.attach(io: file_2, filename: 'bosp_4.jpg', content_type: 'image/jpg')
+# tour_10.photos.attach(io: file_3, filename: 'bosp_3.jpg', content_type: 'image/jpg')
+# tour_10.photos.attach(io: file_4, filename: 'bosp_2.jpg', content_type: 'image/jpg')
+# tour_10.photos.attach(io: file_5, filename: 'bosp_1.jpg', content_type: 'image/jpg')
+# tour_10.tag_list = "Istanbul"
+# tour_10.save
 
-tour_11 = Tour.create(title: "Bosphorus Afternoon Tour", description: "Dolmabahce Palace, Pierre Loti, Bosphorus", duration: "Half Day", tag_text: "Guided", group_size: "Group", price: 37, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Cruise along the Bosphorus on this guided boat tour, which separates Asia and Europe. By boat you can admire many of the stunning sites, which make Istanbul one of the most vibrant cities in the world.</p>
-<p>You will be picked up from your hotel in Istanbul in the afternoon and the Bosphorus Cruise tour will commence.</p>
-<ul>
-  <li>Admire sights including Dolmabahce Palace, Beylerbeyi Palace, Golden Horn</li>
-  <li>See first hand the unique location of Istanbul as the bridge between Europe and Asia</li>
-  <li>View historical sights and the Bosphorus Bridge by boat</li>
-  <li>Enjoy the beauty of Istanbul from a different perspective and take unique pictures, which can only be captured, by boat.</li>
-</ul>
-<p>At the end of tour, we will drop you off at your hotel.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_9.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_5.jpg'))
+# tour_11 = Tour.create(title: "Bosphorus Afternoon Tour", description: "Dolmabahce Palace, Pierre Loti, Bosphorus", duration: "Half Day", tag_text: "Guided", group_size: "Group", price: 37, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Cruise along the Bosphorus on this guided boat tour, which separates Asia and Europe. By boat you can admire many of the stunning sites, which make Istanbul one of the most vibrant cities in the world.</p>
+# <p>You will be picked up from your hotel in Istanbul in the afternoon and the Bosphorus Cruise tour will commence.</p>
+# <ul>
+#   <li>Admire sights including Dolmabahce Palace, Beylerbeyi Palace, Golden Horn</li>
+#   <li>See first hand the unique location of Istanbul as the bridge between Europe and Asia</li>
+#   <li>View historical sights and the Bosphorus Bridge by boat</li>
+#   <li>Enjoy the beauty of Istanbul from a different perspective and take unique pictures, which can only be captured, by boat.</li>
+# </ul>
+# <p>At the end of tour, we will drop you off at your hotel.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_9.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_2.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_3.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_4.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_5.jpg'))
 
-tour_11.photos.attach(io: file_1, filename: 'afternoon_9.jpg', content_type: 'image/jpg')
-tour_11.photos.attach(io: file_2, filename: 'afternoon_2.jpg', content_type: 'image/jpg')
-tour_11.photos.attach(io: file_3, filename: 'afternoon_3.jpg', content_type: 'image/jpg')
-tour_11.photos.attach(io: file_4, filename: 'afternoon_4.jpg', content_type: 'image/jpg')
-tour_11.photos.attach(io: file_5, filename: 'afternoon_5.jpg', content_type: 'image/jpg')
-tour_11.tag_list = "Istanbul"
-tour_11.save
+# tour_11.photos.attach(io: file_1, filename: 'afternoon_9.jpg', content_type: 'image/jpg')
+# tour_11.photos.attach(io: file_2, filename: 'afternoon_2.jpg', content_type: 'image/jpg')
+# tour_11.photos.attach(io: file_3, filename: 'afternoon_3.jpg', content_type: 'image/jpg')
+# tour_11.photos.attach(io: file_4, filename: 'afternoon_4.jpg', content_type: 'image/jpg')
+# tour_11.photos.attach(io: file_5, filename: 'afternoon_5.jpg', content_type: 'image/jpg')
+# tour_11.tag_list = "Istanbul"
+# tour_11.save
 
-tour_12 = Tour.create(title: "Istanbul Dolmabahce Palace", description: "Dolmabahce Palace, Bezm-i Alem Valide Sultan", duration: "Half Day", tag_text: "Guided", group_size: "12-16 People", price: 39, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Explore the extravagant rooms and grounds of the Dolmabahçe Palace. Led by an expert guide and in small groups. Learn about the stories behind this architectural masterpiece located in the heart of Istanbul.</p>
-<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
-<ul>
-  <li>Marvel at the extravagant decor of Dolmabahce Palace</li>
-  <li>Experience amazing views over the Bosphorus</li>
-  <li>Visit the highest peak in Istanbul at Camlıca Hill</li>
-  <li>Drive from Europe to Asia on the first bridge between Europe and Asia</li>
-</ul>
-<p>At the end of tour, we will drop you off at your hotel.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_2.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_4.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_5.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_3.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_1.jpg'))
+# tour_12 = Tour.create(title: "Istanbul Dolmabahce Palace", description: "Dolmabahce Palace, Bezm-i Alem Valide Sultan", duration: "Half Day", tag_text: "Guided", group_size: "12-16 People", price: 39, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Explore the extravagant rooms and grounds of the Dolmabahçe Palace. Led by an expert guide and in small groups. Learn about the stories behind this architectural masterpiece located in the heart of Istanbul.</p>
+# <p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
+# <ul>
+#   <li>Marvel at the extravagant decor of Dolmabahce Palace</li>
+#   <li>Experience amazing views over the Bosphorus</li>
+#   <li>Visit the highest peak in Istanbul at Camlıca Hill</li>
+#   <li>Drive from Europe to Asia on the first bridge between Europe and Asia</li>
+# </ul>
+# <p>At the end of tour, we will drop you off at your hotel.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_2.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_4.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_5.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_3.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/dolma/dolma_1.jpg'))
 
-tour_12.photos.attach(io: file_1, filename: 'dolma_2.jpg', content_type: 'image/jpg')
-tour_12.photos.attach(io: file_2, filename: 'dolma_4.jpg', content_type: 'image/jpg')
-tour_12.photos.attach(io: file_3, filename: 'dolma_5.jpg', content_type: 'image/jpg')
-tour_12.photos.attach(io: file_4, filename: 'dolma_3.jpg', content_type: 'image/jpg')
-tour_12.photos.attach(io: file_5, filename: 'dolma_1.jpg', content_type: 'image/jpg')
-tour_12.tag_list = "Istanbul"
-tour_12.save
+# tour_12.photos.attach(io: file_1, filename: 'dolma_2.jpg', content_type: 'image/jpg')
+# tour_12.photos.attach(io: file_2, filename: 'dolma_4.jpg', content_type: 'image/jpg')
+# tour_12.photos.attach(io: file_3, filename: 'dolma_5.jpg', content_type: 'image/jpg')
+# tour_12.photos.attach(io: file_4, filename: 'dolma_3.jpg', content_type: 'image/jpg')
+# tour_12.photos.attach(io: file_5, filename: 'dolma_1.jpg', content_type: 'image/jpg')
+# tour_12.tag_list = "Istanbul"
+# tour_12.save
 
-tour_13 = Tour.create(title: "Istanbul Two Continents", description: "Bosphorus, Spicy Bazaar, Beyler Beyi Palace, Camlica Hill", duration: "Full Day", tag_text: "Guided", group_size: "12-16 People", price: 39, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Explore both the European and Asian sides of Istanbul on this relaxing and remarkable tour. Explore Istanbul’s famous Spice Bazaar and Camlica Hill, as well as the late Ottoman Palace of Beylerbeyi.</p>
-<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
-<ul>
-  <li>Visit both the European and Asian sides of Istanbul</li>
-  <li>Enjoy the spectacular panoramic views of the city at Çamlıca Hill</li>
-  <li>Marvel at the stunning Beylerbeyi Palace</li>
-  <li>Discover the fascinating Spice Bazaar</li>
-</ul>
-<p>At the end of tour, we will drop you off at your hotel.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_3.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_5.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_2.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_1.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_4.jpg'))
+# tour_13 = Tour.create(title: "Istanbul Two Continents", description: "Bosphorus, Spicy Bazaar, Beyler Beyi Palace, Camlica Hill", duration: "Full Day", tag_text: "Guided", group_size: "12-16 People", price: 39, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Explore both the European and Asian sides of Istanbul on this relaxing and remarkable tour. Explore Istanbul’s famous Spice Bazaar and Camlica Hill, as well as the late Ottoman Palace of Beylerbeyi.</p>
+# <p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
+# <ul>
+#   <li>Visit both the European and Asian sides of Istanbul</li>
+#   <li>Enjoy the spectacular panoramic views of the city at Çamlıca Hill</li>
+#   <li>Marvel at the stunning Beylerbeyi Palace</li>
+#   <li>Discover the fascinating Spice Bazaar</li>
+# </ul>
+# <p>At the end of tour, we will drop you off at your hotel.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_3.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_5.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_2.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_1.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/two_cont/two_cont_4.jpg'))
 
-tour_13.photos.attach(io: file_1, filename: 'two_cont_3.jpg', content_type: 'image/jpg')
-tour_13.photos.attach(io: file_2, filename: 'two_cont_5.jpg', content_type: 'image/jpg')
-tour_13.photos.attach(io: file_3, filename: 'two_cont_2.jpg', content_type: 'image/jpg')
-tour_13.photos.attach(io: file_4, filename: 'two_cont_1.jpg', content_type: 'image/jpg')
-tour_13.photos.attach(io: file_5, filename: 'two_cont_4.jpg', content_type: 'image/jpg')
-tour_13.tag_list = "Istanbul"
-tour_13.save
+# tour_13.photos.attach(io: file_1, filename: 'two_cont_3.jpg', content_type: 'image/jpg')
+# tour_13.photos.attach(io: file_2, filename: 'two_cont_5.jpg', content_type: 'image/jpg')
+# tour_13.photos.attach(io: file_3, filename: 'two_cont_2.jpg', content_type: 'image/jpg')
+# tour_13.photos.attach(io: file_4, filename: 'two_cont_1.jpg', content_type: 'image/jpg')
+# tour_13.photos.attach(io: file_5, filename: 'two_cont_4.jpg', content_type: 'image/jpg')
+# tour_13.tag_list = "Istanbul"
+# tour_13.save
 
-tour_14 = Tour.create(title: "Istanbul Princes' Island", description: "Buyukada, Princess Island", duration: "Full Day", tag_text: "Guided", group_size: "Group", price: 49, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Travel by cruise from Istanbul to Buyukada and discover the largest of the Princes islands. In Buyukada visit popular summer houses, tour the beaches and pinewood filled landscape; once a popular destination for Ottoman princes and relax away from the hustle and bustle of the mainland. Explore Ottoman-era mansions, enjoy a leisurely lunch at a seafood restaurant and explore this tranquil island at your own pace.</p>
-<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
-<ul>
-  <li>Spend a leisurely day exploring the largest of the Princes islands</li>
-  <li>Marvel at the island’s Ottoman-era mansions</li>
-  <li>Enjoy lunch at a seafood restaurant</li>
-  <li>Tour the main square of Buyukada and enjoy the Victorian buildings </li>
-</ul>
-<p>At the end of tour, we will drop you off at your hotel.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_1.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_4.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_5.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_2.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_3.jpg'))
+# tour_14 = Tour.create(title: "Istanbul Princes' Island", description: "Buyukada, Princess Island", duration: "Full Day", tag_text: "Guided", group_size: "Group", price: 49, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Travel by cruise from Istanbul to Buyukada and discover the largest of the Princes islands. In Buyukada visit popular summer houses, tour the beaches and pinewood filled landscape; once a popular destination for Ottoman princes and relax away from the hustle and bustle of the mainland. Explore Ottoman-era mansions, enjoy a leisurely lunch at a seafood restaurant and explore this tranquil island at your own pace.</p>
+# <p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
+# <ul>
+#   <li>Spend a leisurely day exploring the largest of the Princes islands</li>
+#   <li>Marvel at the island’s Ottoman-era mansions</li>
+#   <li>Enjoy lunch at a seafood restaurant</li>
+#   <li>Tour the main square of Buyukada and enjoy the Victorian buildings </li>
+# </ul>
+# <p>At the end of tour, we will drop you off at your hotel.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_1.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_4.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_5.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_2.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/island/island_3.jpg'))
 
-tour_14.photos.attach(io: file_1, filename: 'island_1.jpg', content_type: 'image/jpg')
-tour_14.photos.attach(io: file_2, filename: 'island_4.jpg', content_type: 'image/jpg')
-tour_14.photos.attach(io: file_3, filename: 'island_5.jpg', content_type: 'image/jpg')
-tour_14.photos.attach(io: file_4, filename: 'island_2.jpg', content_type: 'image/jpg')
-tour_14.photos.attach(io: file_5, filename: 'island_3.jpg', content_type: 'image/jpg')
-tour_14.tag_list = "Istanbul"
-tour_14.save
+# tour_14.photos.attach(io: file_1, filename: 'island_1.jpg', content_type: 'image/jpg')
+# tour_14.photos.attach(io: file_2, filename: 'island_4.jpg', content_type: 'image/jpg')
+# tour_14.photos.attach(io: file_3, filename: 'island_5.jpg', content_type: 'image/jpg')
+# tour_14.photos.attach(io: file_4, filename: 'island_2.jpg', content_type: 'image/jpg')
+# tour_14.photos.attach(io: file_5, filename: 'island_3.jpg', content_type: 'image/jpg')
+# tour_14.tag_list = "Istanbul"
+# tour_14.save
 
-tour_15 = Tour.create(title: "Istanbul Jewish Heritage Tour", description: "Neve Shalom, Ahrida, Ashkenaz Synagogues", duration: "Full Day", tag_text: "Skip the line", group_size: "Small Group", price: 249, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Explore the streets of Galata on this tour of Istanbul’s Jewish Quarter and learn more about the thriving Jewish community of Istanbul. Visit the Jewish Museum, Ashkenazi Synagogue, Neve Shalom, Ahrida Synagogue and more.</p>
-<p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
-<ul>
-  <li>Admire old photographs and documents that chronicle Jewish life in Istanbul at the Jewish Museum</li>
-  <li>Learn about Jewish financier Count Abraham Camondo and his role in  Ottoman history and the Jewish community</li>
-  <li>Explore the colourful streets and sites of Galata</li>
-  <li>Visit the Jewish Synagogues</li>
-</ul>
-<p>At the end of tour, we will drop you off to your hotel.</p>
-</div>")
+# tour_15 = Tour.create(title: "Istanbul Jewish Heritage Tour", description: "Neve Shalom, Ahrida, Ashkenaz Synagogues", duration: "Full Day", tag_text: "Skip the line", group_size: "Small Group", price: 249, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Explore the streets of Galata on this tour of Istanbul’s Jewish Quarter and learn more about the thriving Jewish community of Istanbul. Visit the Jewish Museum, Ashkenazi Synagogue, Neve Shalom, Ahrida Synagogue and more.</p>
+# <p>You will be picked up from your hotel in Istanbul in the early morning and the tour will commence.</p>
+# <ul>
+#   <li>Admire old photographs and documents that chronicle Jewish life in Istanbul at the Jewish Museum</li>
+#   <li>Learn about Jewish financier Count Abraham Camondo and his role in  Ottoman history and the Jewish community</li>
+#   <li>Explore the colourful streets and sites of Galata</li>
+#   <li>Visit the Jewish Synagogues</li>
+# </ul>
+# <p>At the end of tour, we will drop you off to your hotel.</p>
+# </div>")
 
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_1.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_5.jpg'))
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_1.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_2.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_3.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_4.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/jew/jew_5.jpg'))
 
-tour_15.photos.attach(io: file_1, filename: 'jew_1.jpg', content_type: 'image/jpg')
-tour_15.photos.attach(io: file_2, filename: 'jew_2.jpg', content_type: 'image/jpg')
-tour_15.photos.attach(io: file_3, filename: 'jew_3.jpg', content_type: 'image/jpg')
-tour_15.photos.attach(io: file_4, filename: 'jew_4.jpg', content_type: 'image/jpg')
-tour_15.photos.attach(io: file_5, filename: 'jew_5.jpg', content_type: 'image/jpg')
-tour_15.tag_list = "Istanbul"
-tour_15.save
+# tour_15.photos.attach(io: file_1, filename: 'jew_1.jpg', content_type: 'image/jpg')
+# tour_15.photos.attach(io: file_2, filename: 'jew_2.jpg', content_type: 'image/jpg')
+# tour_15.photos.attach(io: file_3, filename: 'jew_3.jpg', content_type: 'image/jpg')
+# tour_15.photos.attach(io: file_4, filename: 'jew_4.jpg', content_type: 'image/jpg')
+# tour_15.photos.attach(io: file_5, filename: 'jew_5.jpg', content_type: 'image/jpg')
+# tour_15.tag_list = "Istanbul"
+# tour_15.save
 
 # tour_16 = Tour.create(title: "City Break Tour", description: "Blue Mosque, Haghia Sophia, Topkapi Palace, Bosphorus", duration: "3 Days", tag_text: "Skip the line", group_size: "Small Group", price: 599)
 # file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/break/break_3.jpg'))
@@ -631,421 +635,421 @@ tour_15.save
 # tour_17.tag_list = "Istanbul"
 # tour_17.save
 
-tour_18 = Tour.create(title: "Ephesus Classic Full Day", description: "Ephesus Ancient City, The House of Virgin Mary, Temple of Artemis, Isabey Mosque", duration: "8 hours", tag_text: "Skip the line", group_size: "8-12 People", price: 39, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Visit the most well-known sights of Ephesus in this guided tour by van. Explore the Greco-Roman times of Ephesus, visit the Temple of Artemis one of the ‘old seven wonders of the world’ and see the House of Virgin Mary where Mary spent her final days.</p>
-<p>You will be picked up from your hotel in the early morning and driven to Ephesus.</p>
-<ul>
-  <li>Visit the well-preserved Ancient City of Ephesus</li>
-  <li>Admire the stunning Temple Of Artemis</li>
-  <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
-  <li>Visit the Isa Bey Mosque, important as one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
-</ul>
-<p>At the end of the tour, we will transfer you back to your hotel.</p>
-</div>")
+# tour_18 = Tour.create(title: "Ephesus Classic Full Day", description: "Ephesus Ancient City, The House of Virgin Mary, Temple of Artemis, Isabey Mosque", duration: "8 hours", tag_text: "Skip the line", group_size: "8-12 People", price: 39, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Visit the most well-known sights of Ephesus in this guided tour by van. Explore the Greco-Roman times of Ephesus, visit the Temple of Artemis one of the ‘old seven wonders of the world’ and see the House of Virgin Mary where Mary spent her final days.</p>
+# <p>You will be picked up from your hotel in the early morning and driven to Ephesus.</p>
+# <ul>
+#   <li>Visit the well-preserved Ancient City of Ephesus</li>
+#   <li>Admire the stunning Temple Of Artemis</li>
+#   <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
+#   <li>Visit the Isa Bey Mosque, important as one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
+# </ul>
+# <p>At the end of the tour, we will transfer you back to your hotel.</p>
+# </div>")
 
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_1.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_6.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_7.jpg'))
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_1.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_2.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_3.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_6.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/classic/EphesusFullDay_7.jpg'))
 
-tour_18.photos.attach(io: file_1, filename: 'EphesusFullDay_1.jpg', content_type: 'image/jpg')
-tour_18.photos.attach(io: file_2, filename: 'EphesusFullDay_2.jpg', content_type: 'image/jpg')
-tour_18.photos.attach(io: file_3, filename: 'EphesusFullDay_3.jpg', content_type: 'image/jpg')
-tour_18.photos.attach(io: file_4, filename: 'EphesusFullDay_6.jpg', content_type: 'image/jpg')
-tour_18.photos.attach(io: file_5, filename: 'EphesusFullDay_7.jpg', content_type: 'image/jpg')
-tour_18.tag_list = "Ephesus"
-tour_18.save
+# tour_18.photos.attach(io: file_1, filename: 'EphesusFullDay_1.jpg', content_type: 'image/jpg')
+# tour_18.photos.attach(io: file_2, filename: 'EphesusFullDay_2.jpg', content_type: 'image/jpg')
+# tour_18.photos.attach(io: file_3, filename: 'EphesusFullDay_3.jpg', content_type: 'image/jpg')
+# tour_18.photos.attach(io: file_4, filename: 'EphesusFullDay_6.jpg', content_type: 'image/jpg')
+# tour_18.photos.attach(io: file_5, filename: 'EphesusFullDay_7.jpg', content_type: 'image/jpg')
+# tour_18.tag_list = "Ephesus"
+# tour_18.save
 
-tour_19 = Tour.create(title: "Ephesus Half Day", description: "Ephesus Ancient City, Temple of Artemis", duration: "4 hours", tag_text: "Skip the line", group_size: "8-12 People", price: 30, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Explore the man-made UNESCO sights of the Aegean on this customized half-day Ephesus tour, which will be an unforgettable experience. </p>
-<p>You will be picked up from your hotel in the early morning and driven to Ephesus.</p>
-<ul>
-  <li>Visit the well-preserved Ancient City of Ephesus</li>
-  <li>Admire the fascinating Temple Of Artemis</li>
-</ul>
-<p>At the end of the tour, we will transfer you back to your hotel.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_4.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_1.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_3.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_5.jpg'))
+# tour_19 = Tour.create(title: "Ephesus Half Day", description: "Ephesus Ancient City, Temple of Artemis", duration: "4 hours", tag_text: "Skip the line", group_size: "8-12 People", price: 30, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Explore the man-made UNESCO sights of the Aegean on this customized half-day Ephesus tour, which will be an unforgettable experience. </p>
+# <p>You will be picked up from your hotel in the early morning and driven to Ephesus.</p>
+# <ul>
+#   <li>Visit the well-preserved Ancient City of Ephesus</li>
+#   <li>Admire the fascinating Temple Of Artemis</li>
+# </ul>
+# <p>At the end of the tour, we will transfer you back to your hotel.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_4.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_2.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_1.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_3.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/half/EphesusHalfDay_5.jpg'))
 
-tour_19.photos.attach(io: file_1, filename: 'EphesusHalfDay_1.jpg', content_type: 'image/jpg')
-tour_19.photos.attach(io: file_2, filename: 'EphesusHalfDay_2.jpg', content_type: 'image/jpg')
-tour_19.photos.attach(io: file_3, filename: 'EphesusHalfDay_3.jpg', content_type: 'image/jpg')
-tour_19.photos.attach(io: file_4, filename: 'EphesusHalfDay_6.jpg', content_type: 'image/jpg')
-tour_19.photos.attach(io: file_5, filename: 'EphesusHalfDay_7.jpg', content_type: 'image/jpg')
-tour_19.tag_list = "Ephesus"
-tour_19.save
+# tour_19.photos.attach(io: file_1, filename: 'EphesusHalfDay_1.jpg', content_type: 'image/jpg')
+# tour_19.photos.attach(io: file_2, filename: 'EphesusHalfDay_2.jpg', content_type: 'image/jpg')
+# tour_19.photos.attach(io: file_3, filename: 'EphesusHalfDay_3.jpg', content_type: 'image/jpg')
+# tour_19.photos.attach(io: file_4, filename: 'EphesusHalfDay_6.jpg', content_type: 'image/jpg')
+# tour_19.photos.attach(io: file_5, filename: 'EphesusHalfDay_7.jpg', content_type: 'image/jpg')
+# tour_19.tag_list = "Ephesus"
+# tour_19.save
 
-tour_20 = Tour.create(title: "Highlights of Ephesus Tour", description: "Ephesus Ancient City, The House of Virgin Mary, Ephesus Museum, Seven Sleepers", duration: "Full Day", tag_text: "Skip the line", group_size: "Private", price: 169, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Be guided through the wealth of history in this region, guests have a chance to visit the Ancient City of Ephesus, Archaeological Museum of Ephesus, Temple of Artemis, House of the Mother Mary and Seven Sleepers Cave. Taste a traditional local lunch. An afternoon of legendary sightseeing of biblical proportion.</p>
-<p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
-<ul>
-  <li>Visit the well-preserved Ancient City of Ephesus</li>
-  <li>Admire the remarkable Temple Of Artemis</li>
-  <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
-  <li>Be mesmerised by all the artefacts in the Ephesus Archaeological Museum and learn more about what made Ephesus the thriving metropolis it once was.</li>
-  <li>Discover the impressive Seven Sleepers Cave.</li>
-</ul>
-<p>At the end of the tour, we will transfer you back to your hotel.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_1.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_3.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_4.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_5.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_2.jpg'))
+# tour_20 = Tour.create(title: "Highlights of Ephesus Tour", description: "Ephesus Ancient City, The House of Virgin Mary, Ephesus Museum, Seven Sleepers", duration: "Full Day", tag_text: "Skip the line", group_size: "Private", price: 169, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Be guided through the wealth of history in this region, guests have a chance to visit the Ancient City of Ephesus, Archaeological Museum of Ephesus, Temple of Artemis, House of the Mother Mary and Seven Sleepers Cave. Taste a traditional local lunch. An afternoon of legendary sightseeing of biblical proportion.</p>
+# <p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
+# <ul>
+#   <li>Visit the well-preserved Ancient City of Ephesus</li>
+#   <li>Admire the remarkable Temple Of Artemis</li>
+#   <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
+#   <li>Be mesmerised by all the artefacts in the Ephesus Archaeological Museum and learn more about what made Ephesus the thriving metropolis it once was.</li>
+#   <li>Discover the impressive Seven Sleepers Cave.</li>
+# </ul>
+# <p>At the end of the tour, we will transfer you back to your hotel.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_1.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_3.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_4.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_5.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/highlights/highlights_2.jpg'))
 
-tour_20.photos.attach(io: file_1, filename: 'highlights_1.jpg', content_type: 'image/jpg')
-tour_20.photos.attach(io: file_2, filename: 'highlights_3.jpg', content_type: 'image/jpg')
-tour_20.photos.attach(io: file_3, filename: 'highlights_4.jpg', content_type: 'image/jpg')
-tour_20.photos.attach(io: file_4, filename: 'highlights_5.jpg', content_type: 'image/jpg')
-tour_20.photos.attach(io: file_5, filename: 'highlights_2.jpg', content_type: 'image/jpg')
-tour_20.tag_list = "Ephesus"
-tour_20.save
+# tour_20.photos.attach(io: file_1, filename: 'highlights_1.jpg', content_type: 'image/jpg')
+# tour_20.photos.attach(io: file_2, filename: 'highlights_3.jpg', content_type: 'image/jpg')
+# tour_20.photos.attach(io: file_3, filename: 'highlights_4.jpg', content_type: 'image/jpg')
+# tour_20.photos.attach(io: file_4, filename: 'highlights_5.jpg', content_type: 'image/jpg')
+# tour_20.photos.attach(io: file_5, filename: 'highlights_2.jpg', content_type: 'image/jpg')
+# tour_20.tag_list = "Ephesus"
+# tour_20.save
 
-tour_21 = Tour.create(title: "Diamond of Ephesus", description: " Ephesus Ancient City, The House of Virgin Mary, Sirince Village, Ephesus Museum, Temple of Artemis", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 189, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Discover the ancient city of Ephesus with this tour and see monuments from Greek, Roman and Byzantine civilizations. Visit the Temple of Artemis, the House of Virgin Mary, Şirince Village and more. Enjoy the flavours of Turkish cuisine at a traditional Turkish restaurant.</p>
-<p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning and driven to Ephesus.</p>
-<ul>
-  <li>Visit the well-preserved Ancient City of Ephesus</li>
-  <li>Admire the remarkable Temple Of Artemis</li>
-  <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
-  <li>Be mesmerised by all the artefacts in the Ephesus Archaeological Museum and learn more about what made Ephesus the thriving metropolis it once was.</li>
-  <li>Be immersed in the charm and ambience of Sirince a Turkish-Orthodox village.</li>
-</ul>
-<p>At the end of the tour, we will transfer you back to your hotel.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_1.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_5.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_2.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_4.jpg'))
+# tour_21 = Tour.create(title: "Diamond of Ephesus", description: " Ephesus Ancient City, The House of Virgin Mary, Sirince Village, Ephesus Museum, Temple of Artemis", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 189, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Discover the ancient city of Ephesus with this tour and see monuments from Greek, Roman and Byzantine civilizations. Visit the Temple of Artemis, the House of Virgin Mary, Şirince Village and more. Enjoy the flavours of Turkish cuisine at a traditional Turkish restaurant.</p>
+# <p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning and driven to Ephesus.</p>
+# <ul>
+#   <li>Visit the well-preserved Ancient City of Ephesus</li>
+#   <li>Admire the remarkable Temple Of Artemis</li>
+#   <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
+#   <li>Be mesmerised by all the artefacts in the Ephesus Archaeological Museum and learn more about what made Ephesus the thriving metropolis it once was.</li>
+#   <li>Be immersed in the charm and ambience of Sirince a Turkish-Orthodox village.</li>
+# </ul>
+# <p>At the end of the tour, we will transfer you back to your hotel.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_1.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_5.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_3.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_2.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/diamond/diamond_4.jpg'))
 
-tour_21.photos.attach(io: file_1, filename: 'diamond_1.jpg', content_type: 'image/jpg')
-tour_21.photos.attach(io: file_2, filename: 'diamond_5.jpg', content_type: 'image/jpg')
-tour_21.photos.attach(io: file_3, filename: 'diamond_3.jpg', content_type: 'image/jpg')
-tour_21.photos.attach(io: file_4, filename: 'diamond_2.jpg', content_type: 'image/jpg')
-tour_21.photos.attach(io: file_5, filename: 'diamond_4.jpg', content_type: 'image/jpg')
-tour_21.tag_list = "Ephesus"
-tour_21.save
+# tour_21.photos.attach(io: file_1, filename: 'diamond_1.jpg', content_type: 'image/jpg')
+# tour_21.photos.attach(io: file_2, filename: 'diamond_5.jpg', content_type: 'image/jpg')
+# tour_21.photos.attach(io: file_3, filename: 'diamond_3.jpg', content_type: 'image/jpg')
+# tour_21.photos.attach(io: file_4, filename: 'diamond_2.jpg', content_type: 'image/jpg')
+# tour_21.photos.attach(io: file_5, filename: 'diamond_4.jpg', content_type: 'image/jpg')
+# tour_21.tag_list = "Ephesus"
+# tour_21.save
 
-tour_22 = Tour.create(title: "Biblical Ephesus Tour", description: "Ephesus Ancient City, The House of Virgin Mary, Terraced Houses, St. John Basilica", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 199, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>On this tour of the ancient city of Ephesus visit sites of biblical importance and gain greater insights into Christianity in antiquity on this tour.</p>
-<p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
-<ul>
-  <li>Visit the well-preserved Ancient City of Ephesus</li>
-  <li>Admire the remarkable Temple Of Artemis</li>
-  <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
-  <li>Visit the Basilica of St. John and see his burial place</li>
-  <li>Visit the well-preserved terraced houses to see how the elite lived in those times</li>
-</ul>
-<p>At the end of the tour, we will transfer you back to your hotel.</p>
-</div>")
+# tour_22 = Tour.create(title: "Biblical Ephesus Tour", description: "Ephesus Ancient City, The House of Virgin Mary, Terraced Houses, St. John Basilica", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 199, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>On this tour of the ancient city of Ephesus visit sites of biblical importance and gain greater insights into Christianity in antiquity on this tour.</p>
+# <p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
+# <ul>
+#   <li>Visit the well-preserved Ancient City of Ephesus</li>
+#   <li>Admire the remarkable Temple Of Artemis</li>
+#   <li>Take a trip outside of Ephesus up into the hills above and visit the House of the Virgin Mary, to see her final resting place</li>
+#   <li>Visit the Basilica of St. John and see his burial place</li>
+#   <li>Visit the well-preserved terraced houses to see how the elite lived in those times</li>
+# </ul>
+# <p>At the end of the tour, we will transfer you back to your hotel.</p>
+# </div>")
 
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_5.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_4.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_2.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_1.jpg'))
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_5.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_4.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_3.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_2.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/biblical/biblical_1.jpg'))
 
-tour_22.photos.attach(io: file_1, filename: 'biblical_5.jpg', content_type: 'image/jpg')
-tour_22.photos.attach(io: file_2, filename: 'biblical_4.jpg', content_type: 'image/jpg')
-tour_22.photos.attach(io: file_3, filename: 'biblical_3.jpg', content_type: 'image/jpg')
-tour_22.photos.attach(io: file_4, filename: 'biblical_2.jpg', content_type: 'image/jpg')
-tour_22.photos.attach(io: file_5, filename: 'biblical_1.jpg', content_type: 'image/jpg')
-tour_22.tag_list = "Ephesus"
-tour_22.save
+# tour_22.photos.attach(io: file_1, filename: 'biblical_5.jpg', content_type: 'image/jpg')
+# tour_22.photos.attach(io: file_2, filename: 'biblical_4.jpg', content_type: 'image/jpg')
+# tour_22.photos.attach(io: file_3, filename: 'biblical_3.jpg', content_type: 'image/jpg')
+# tour_22.photos.attach(io: file_4, filename: 'biblical_2.jpg', content_type: 'image/jpg')
+# tour_22.photos.attach(io: file_5, filename: 'biblical_1.jpg', content_type: 'image/jpg')
+# tour_22.tag_list = "Ephesus"
+# tour_22.save
 
-tour_23 = Tour.create(title: "Ephesus & Sirince Village Tour", description: "Ephesus Ancient City, The House of Virgin Mary, Sirince Village, Temple of Artemis", duration: "Full Day", tag_text: "Unique", group_size: "Private", price: 179, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Discover the ancient city of Ephesus and visit Şirince, a charming Turkish-Orthodox village located close in the hills above Ephesus.</p>
-<p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
-<ul>
-  <li>Visit the well-preserved Ancient City of Ephesus</li>
-  <li>Admire the remarkable Temple Of Artemis</li>
-  <li>Take a trip outside of Ephesus and visit the House of the Virgin Mary, to see her final resting place</li>
-  <li>Visit the Isa Bey Mosque, important as one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
-  <li>Be immersed in the charm and ambience of Şirince a Turkish-Orthodox village.</li>
-</ul>
-<p>At the end of the tour, we will transfer you back to your hotel.</p>
-</div>")
+# tour_23 = Tour.create(title: "Ephesus & Sirince Village Tour", description: "Ephesus Ancient City, The House of Virgin Mary, Sirince Village, Temple of Artemis", duration: "Full Day", tag_text: "Unique", group_size: "Private", price: 179, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Discover the ancient city of Ephesus and visit Şirince, a charming Turkish-Orthodox village located close in the hills above Ephesus.</p>
+# <p>You will be picked up from your hotel in Kusadasi or Selcuk in the early morning  and driven to Ephesus.</p>
+# <ul>
+#   <li>Visit the well-preserved Ancient City of Ephesus</li>
+#   <li>Admire the remarkable Temple Of Artemis</li>
+#   <li>Take a trip outside of Ephesus and visit the House of the Virgin Mary, to see her final resting place</li>
+#   <li>Visit the Isa Bey Mosque, important as one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
+#   <li>Be immersed in the charm and ambience of Şirince a Turkish-Orthodox village.</li>
+# </ul>
+# <p>At the end of the tour, we will transfer you back to your hotel.</p>
+# </div>")
 
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_2.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_3.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_4.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_5.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_1.jpg'))
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_2.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_3.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_4.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_5.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/sirince/sirince_1.jpg'))
 
-tour_23.photos.attach(io: file_1, filename: 'sirince_2.jpg', content_type: 'image/jpg')
-tour_23.photos.attach(io: file_2, filename: 'sirince_3.jpg', content_type: 'image/jpg')
-tour_23.photos.attach(io: file_3, filename: 'sirince_4.jpg', content_type: 'image/jpg')
-tour_23.photos.attach(io: file_4, filename: 'sirince_5.jpg', content_type: 'image/jpg')
-tour_23.photos.attach(io: file_5, filename: 'sirince_1.jpg', content_type: 'image/jpg')
-tour_23.tag_list = "Ephesus"
-tour_23.save
+# tour_23.photos.attach(io: file_1, filename: 'sirince_2.jpg', content_type: 'image/jpg')
+# tour_23.photos.attach(io: file_2, filename: 'sirince_3.jpg', content_type: 'image/jpg')
+# tour_23.photos.attach(io: file_3, filename: 'sirince_4.jpg', content_type: 'image/jpg')
+# tour_23.photos.attach(io: file_4, filename: 'sirince_5.jpg', content_type: 'image/jpg')
+# tour_23.photos.attach(io: file_5, filename: 'sirince_1.jpg', content_type: 'image/jpg')
+# tour_23.tag_list = "Ephesus"
+# tour_23.save
 
-# tour_24 = Tour.create(title: "Ephesus & Pamukkale Tour", description: "Ephesus Ancient City, Pamukkale, Hierapolis", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 249)
-# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_5.jpg'))
-# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_4.jpg'))
-# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_3.jpg'))
-# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_2.jpg'))
-# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_1.jpg'))
+# # tour_24 = Tour.create(title: "Ephesus & Pamukkale Tour", description: "Ephesus Ancient City, Pamukkale, Hierapolis", duration: "Full Day", tag_text: "Guided", group_size: "Private", price: 249)
+# # file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_5.jpg'))
+# # file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_4.jpg'))
+# # file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_3.jpg'))
+# # file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_2.jpg'))
+# # file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/ephesus_pamukkale/ephesus_pamukkale_1.jpg'))
 
-# tour_24.photos.attach(io: file_1, filename: 'ephesus_pamukkale_5.jpg', content_type: 'image/jpg')
-# tour_24.photos.attach(io: file_2, filename: 'ephesus_pamukkale_4.jpg', content_type: 'image/jpg')
-# tour_24.photos.attach(io: file_3, filename: 'ephesus_pamukkale_3.jpg', content_type: 'image/jpg')
-# tour_24.photos.attach(io: file_4, filename: 'ephesus_pamukkale_2.jpg', content_type: 'image/jpg')
-# tour_24.photos.attach(io: file_5, filename: 'ephesus_pamukkale_1.jpg', content_type: 'image/jpg')
-# tour_24.tag_list = "Ephesus"
-# tour_24.save
+# # tour_24.photos.attach(io: file_1, filename: 'ephesus_pamukkale_5.jpg', content_type: 'image/jpg')
+# # tour_24.photos.attach(io: file_2, filename: 'ephesus_pamukkale_4.jpg', content_type: 'image/jpg')
+# # tour_24.photos.attach(io: file_3, filename: 'ephesus_pamukkale_3.jpg', content_type: 'image/jpg')
+# # tour_24.photos.attach(io: file_4, filename: 'ephesus_pamukkale_2.jpg', content_type: 'image/jpg')
+# # tour_24.photos.attach(io: file_5, filename: 'ephesus_pamukkale_1.jpg', content_type: 'image/jpg')
+# # tour_24.tag_list = "Ephesus"
+# # tour_24.save
 
-tour_25 = Tour.create(title: "Ephesus Tour from Istanbul", description: "Ephesus Ancient City, Temple of Artemis, The House of Virgin Mary", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 299, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Istanbul – Izmir – Istanbul Domestic Flight Ticket</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportation</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Discover three of Turkey’s most important historical sites on a day journey from Istanbul. Explore the ancient city of Ephesus protected under UNESCO World Heritage status, as well as the Temple of Artemis, and the House of the Virgin Mary.</p>
-<p>You will be picked up early in the morning from your hotel in Istanbul and driven to Istanbul Airport. After landing in Izmir you will be greeted by our expert guide upon arrival and the tour will commence. </p>
-<ul>
-  <li>Explore the well preserved ruins of Ephesus with an expert guide</li>
-  <li>Discover the Temple of Artemis, one of the Seven Wonders of the Ancient World</li>
-  <li>Admire to the House of the Virgin Mary where she spent her final days</li>
-</ul>
-<p>At the end of this tour, you will be dropped off at Izmir Airport. From there you will fly direct to  Istanbul and be transferred back to your hotel upon arrival.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_5.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_4.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_1.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_2.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_3.jpg'))
+# tour_25 = Tour.create(title: "Ephesus Tour from Istanbul", description: "Ephesus Ancient City, Temple of Artemis, The House of Virgin Mary", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 299, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Istanbul – Izmir – Istanbul Domestic Flight Ticket</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Airport Transportation</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Discover three of Turkey’s most important historical sites on a day journey from Istanbul. Explore the ancient city of Ephesus protected under UNESCO World Heritage status, as well as the Temple of Artemis, and the House of the Virgin Mary.</p>
+# <p>You will be picked up early in the morning from your hotel in Istanbul and driven to Istanbul Airport. After landing in Izmir you will be greeted by our expert guide upon arrival and the tour will commence. </p>
+# <ul>
+#   <li>Explore the well preserved ruins of Ephesus with an expert guide</li>
+#   <li>Discover the Temple of Artemis, one of the Seven Wonders of the Ancient World</li>
+#   <li>Admire to the House of the Virgin Mary where she spent her final days</li>
+# </ul>
+# <p>At the end of this tour, you will be dropped off at Izmir Airport. From there you will fly direct to  Istanbul and be transferred back to your hotel upon arrival.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_5.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_4.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_1.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_2.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Ephesus/fromistanbul/fromistanbul_3.jpg'))
 
-tour_25.photos.attach(io: file_1, filename: 'fromistanbul_5.jpg', content_type: 'image/jpg')
-tour_25.photos.attach(io: file_2, filename: 'fromistanbul_4.jpg', content_type: 'image/jpg')
-tour_25.photos.attach(io: file_3, filename: 'fromistanbul_1.jpg', content_type: 'image/jpg')
-tour_25.photos.attach(io: file_4, filename: 'fromistanbul_2.jpg', content_type: 'image/jpg')
-tour_25.photos.attach(io: file_5, filename: 'fromistanbul_3.jpg', content_type: 'image/jpg')
-tour_25.tag_list = "Ephesus"
-tour_25.save
+# tour_25.photos.attach(io: file_1, filename: 'fromistanbul_5.jpg', content_type: 'image/jpg')
+# tour_25.photos.attach(io: file_2, filename: 'fromistanbul_4.jpg', content_type: 'image/jpg')
+# tour_25.photos.attach(io: file_3, filename: 'fromistanbul_1.jpg', content_type: 'image/jpg')
+# tour_25.photos.attach(io: file_4, filename: 'fromistanbul_2.jpg', content_type: 'image/jpg')
+# tour_25.photos.attach(io: file_5, filename: 'fromistanbul_3.jpg', content_type: 'image/jpg')
+# tour_25.tag_list = "Ephesus"
+# tour_25.save
 
-tour_26 = Tour.create(title: "Pamukkale Tour from Kusadasi", description: "Visits Pamukkale, Hierapolis, and inc Hot Air Balloon", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 199, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Travelling from Kusadasi explore the petrified waterfalls, snow white cliffs and travertines of Pamukkale (known as Cotton Palace in Turkish). Tour the ancient city of Hierapolis and unwind in the relaxing mineral waters of Cleopatra’s Ancient thermal pool. </p>
-<p>You will be picked up from your hotel in Kusadasi in the early morning. After a three hour drive we will arrive in Pamukkale. </p>
-<ul>
-  <li>Explore the petrified waterfalls of Pamukkale</li>
-  <li>Tour the ruins of Hierapolis Ancient City, Apollo Temple, and the largest Necropolis in Anatolia</li>
-  <li>Immerse yourself in the flavours of local Turkish cuisine during a buffet lunch at a local restaurant</li>
-  <li>Take a plunge in Cleopatra’s ancient thermal pool, be transported through time and enjoy the tranquil benefits of these mineral waters.</li>
-  <li>Admire the sarcophagi of Hierapolis</li>
-</ul>
-<p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_5.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_1.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_2.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_3.jpg'))
+# tour_26 = Tour.create(title: "Pamukkale Tour from Kusadasi", description: "Visits Pamukkale, Hierapolis, and inc Hot Air Balloon", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 199, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Travelling from Kusadasi explore the petrified waterfalls, snow white cliffs and travertines of Pamukkale (known as Cotton Palace in Turkish). Tour the ancient city of Hierapolis and unwind in the relaxing mineral waters of Cleopatra’s Ancient thermal pool. </p>
+# <p>You will be picked up from your hotel in Kusadasi in the early morning. After a three hour drive we will arrive in Pamukkale. </p>
+# <ul>
+#   <li>Explore the petrified waterfalls of Pamukkale</li>
+#   <li>Tour the ruins of Hierapolis Ancient City, Apollo Temple, and the largest Necropolis in Anatolia</li>
+#   <li>Immerse yourself in the flavours of local Turkish cuisine during a buffet lunch at a local restaurant</li>
+#   <li>Take a plunge in Cleopatra’s ancient thermal pool, be transported through time and enjoy the tranquil benefits of these mineral waters.</li>
+#   <li>Admire the sarcophagi of Hierapolis</li>
+# </ul>
+# <p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_5.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_1.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_2.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_4.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/private/private_3.jpg'))
 
-tour_26.photos.attach(io: file_1, filename: 'private_5.jpg', content_type: 'image/jpg')
-tour_26.photos.attach(io: file_2, filename: 'private_1.jpg', content_type: 'image/jpg')
-tour_26.photos.attach(io: file_3, filename: 'private_2.jpg', content_type: 'image/jpg')
-tour_26.photos.attach(io: file_4, filename: 'private_4.jpg', content_type: 'image/jpg')
-tour_26.photos.attach(io: file_5, filename: 'private_3.jpg', content_type: 'image/jpg')
-tour_26.tag_list = "Pamukkale"
-tour_26.save
+# tour_26.photos.attach(io: file_1, filename: 'private_5.jpg', content_type: 'image/jpg')
+# tour_26.photos.attach(io: file_2, filename: 'private_1.jpg', content_type: 'image/jpg')
+# tour_26.photos.attach(io: file_3, filename: 'private_2.jpg', content_type: 'image/jpg')
+# tour_26.photos.attach(io: file_4, filename: 'private_4.jpg', content_type: 'image/jpg')
+# tour_26.photos.attach(io: file_5, filename: 'private_3.jpg', content_type: 'image/jpg')
+# tour_26.tag_list = "Pamukkale"
+# tour_26.save
 
-tour_27 = Tour.create(title: "Pamukkale & Aphrodisias Tour From Kusadasi", description: "Visits Pamukkale, Hierapolis, and Aphrodisias", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 169, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Explore the ancient city of Aphrodisias named after the goddess Aphrodite and referred to as the ‘City of Love’. Marvel at one of the most important sites of  Greek and Roman periods in Turkey. Famous for its craftsmanship and use of quality marble, experience first hand the sculptural superiority of a once bustling metropolis. Finish off the tour with a visit to the white travertines of Pamukkale and the ancient city of Hierapolis.</p>
-<p>This tour is recommended for those with an interest in art, history and nature.</p>
-<p>You will be picked up from your hotel in Kusadasi in the early morning. We will arrive in Aphrodisias after a 1.5 hour drive. The tour will commence in Aphrodisias before we explore Pamukkale.</p>
-<ul>
-  <li>Be amazed by the marble and well preserved Aphrodisias city</li>
-  <li>Explore  the ancient city of Hierapolis, and its many highlights including the largest Necropolis in Anatolia</li>
-  <li>Be mesmerized by the petrified waterfalls and snow white cliffs of Pamukkale</li>
-</ul>
-<p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
-</div>")
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_2.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_1.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_5.jpg'))
+# tour_27 = Tour.create(title: "Pamukkale & Aphrodisias Tour From Kusadasi", description: "Visits Pamukkale, Hierapolis, and Aphrodisias", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 169, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Explore the ancient city of Aphrodisias named after the goddess Aphrodite and referred to as the ‘City of Love’. Marvel at one of the most important sites of  Greek and Roman periods in Turkey. Famous for its craftsmanship and use of quality marble, experience first hand the sculptural superiority of a once bustling metropolis. Finish off the tour with a visit to the white travertines of Pamukkale and the ancient city of Hierapolis.</p>
+# <p>This tour is recommended for those with an interest in art, history and nature.</p>
+# <p>You will be picked up from your hotel in Kusadasi in the early morning. We will arrive in Aphrodisias after a 1.5 hour drive. The tour will commence in Aphrodisias before we explore Pamukkale.</p>
+# <ul>
+#   <li>Be amazed by the marble and well preserved Aphrodisias city</li>
+#   <li>Explore  the ancient city of Hierapolis, and its many highlights including the largest Necropolis in Anatolia</li>
+#   <li>Be mesmerized by the petrified waterfalls and snow white cliffs of Pamukkale</li>
+# </ul>
+# <p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
+# </div>")
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_2.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_1.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_3.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_4.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/afro/afro_5.jpg'))
 
-tour_27.photos.attach(io: file_1, filename: 'afro_2.jpg', content_type: 'image/jpg')
-tour_27.photos.attach(io: file_2, filename: 'afro_1.jpg', content_type: 'image/jpg')
-tour_27.photos.attach(io: file_3, filename: 'afro_3.jpg', content_type: 'image/jpg')
-tour_27.photos.attach(io: file_4, filename: 'afro_4.jpg', content_type: 'image/jpg')
-tour_27.photos.attach(io: file_5, filename: 'afro_5.jpg', content_type: 'image/jpg')
-tour_27.tag_list = "Pamukkale"
-tour_27.save
+# tour_27.photos.attach(io: file_1, filename: 'afro_2.jpg', content_type: 'image/jpg')
+# tour_27.photos.attach(io: file_2, filename: 'afro_1.jpg', content_type: 'image/jpg')
+# tour_27.photos.attach(io: file_3, filename: 'afro_3.jpg', content_type: 'image/jpg')
+# tour_27.photos.attach(io: file_4, filename: 'afro_4.jpg', content_type: 'image/jpg')
+# tour_27.photos.attach(io: file_5, filename: 'afro_5.jpg', content_type: 'image/jpg')
+# tour_27.tag_list = "Pamukkale"
+# tour_27.save
 
-tour_28 = Tour.create(title: "Pamukkale & Laodicea Tour From Kusadasi", description: "Visits Pamukkale, Hierapolis, and Laodicea", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 149, 
-include: "<div>
-<ul class=\"list-inline mr-5\">
-  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
-  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
-  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
-</ul>
-</div>", exclude: "<div>
-<ul class=\"list-inline\">
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
-  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
-</ul>
-</div>", schedule: "<div>
-<p>Visit three of Turkey’s grandest historical and natural sites on a day journey to Pamukkale, Hierapolis and Laodicea. Soak in the soothing white thermal pools of Pamukkale and be amazed by the white travertines that cover the landscape. Visit the largest graveyard in antiquity and explore an ancient Greek city home to well-preserved sites of biblical significance, as one of the Seven Churches of Revelation.</p>
-<p>You will be picked up from your hotel in Kusadasi in the early morning and the tour will commence.</p>
-<ul>
-  <li>A full-day trip to Laodicea, Hierapolis and Pamukkale</li>
-  <li>Enjoy Turkish cuisine at a local restaurant</li>
-  <li>Visit three breathtaking attractions in  one day of sightseeing</li>
-  <li>Get an in-depth background into the early days of Greek and Roman rule in the region</li>
-</ul>
-<p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
-</div>")
+# tour_28 = Tour.create(title: "Pamukkale & Laodicea Tour From Kusadasi", description: "Visits Pamukkale, Hierapolis, and Laodicea", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 149, 
+# include: "<div>
+# <ul class=\"list-inline mr-5\">
+#   <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+#   <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+# </ul>
+# </div>", exclude: "<div>
+# <ul class=\"list-inline\">
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Cleaopatra’s Pool</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+#   <li><i class=\"fas fa-exclamation mr-2\"></i></i>Food & Drinks</li>
+# </ul>
+# </div>", schedule: "<div>
+# <p>Visit three of Turkey’s grandest historical and natural sites on a day journey to Pamukkale, Hierapolis and Laodicea. Soak in the soothing white thermal pools of Pamukkale and be amazed by the white travertines that cover the landscape. Visit the largest graveyard in antiquity and explore an ancient Greek city home to well-preserved sites of biblical significance, as one of the Seven Churches of Revelation.</p>
+# <p>You will be picked up from your hotel in Kusadasi in the early morning and the tour will commence.</p>
+# <ul>
+#   <li>A full-day trip to Laodicea, Hierapolis and Pamukkale</li>
+#   <li>Enjoy Turkish cuisine at a local restaurant</li>
+#   <li>Visit three breathtaking attractions in  one day of sightseeing</li>
+#   <li>Get an in-depth background into the early days of Greek and Roman rule in the region</li>
+# </ul>
+# <p>At the end of the tour we will drop you off at your hotel in Kusadasi.</p>
+# </div>")
 
-file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_1.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_5.jpg'))
+# file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_1.jpg'))
+# file_2 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_2.jpg'))
+# file_3 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_3.jpg'))
+# file_4 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_4.jpg'))
+# file_5 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/laodi/lao_5.jpg'))
 
-tour_28.photos.attach(io: file_1, filename: 'lao_1.jpg', content_type: 'image/jpg')
-tour_28.photos.attach(io: file_2, filename: 'lao_2.jpg', content_type: 'image/jpg')
-tour_28.photos.attach(io: file_3, filename: 'lao_3.jpg', content_type: 'image/jpg')
-tour_28.photos.attach(io: file_4, filename: 'lao_4.jpg', content_type: 'image/jpg')
-tour_28.photos.attach(io: file_5, filename: 'lao_5.jpg', content_type: 'image/jpg')
-tour_28.tag_list = "Pamukkale"
-tour_28.save
+# tour_28.photos.attach(io: file_1, filename: 'lao_1.jpg', content_type: 'image/jpg')
+# tour_28.photos.attach(io: file_2, filename: 'lao_2.jpg', content_type: 'image/jpg')
+# tour_28.photos.attach(io: file_3, filename: 'lao_3.jpg', content_type: 'image/jpg')
+# tour_28.photos.attach(io: file_4, filename: 'lao_4.jpg', content_type: 'image/jpg')
+# tour_28.photos.attach(io: file_5, filename: 'lao_5.jpg', content_type: 'image/jpg')
+# tour_28.tag_list = "Pamukkale"
+# tour_28.save
 
 # tour_29 = Tour.create(title: "Pamukkale Tour From Istanbul", description: "Visits Pamukkale,and Hierapolis", duration: "Daily", tag_text: "Guided", group_size: "Private", price: 249)
 # file_1 = File.open(File.join(Rails.root,'app/assets/images/Pamukkale/from_ist/from_ist_4.jpg'))

@@ -2,14 +2,12 @@
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
-        <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">History</button>
+        <button type="button" class="btn-display btn btn-link" data-toggle="collapse" data-target="#collapseOne">History</button>
       </h2>
     </div>
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#myAccordion">
       <div class="card-body">
-        <% if (@tour.history.html_safe?) %>
         <%= @tour.history.html_safe %>
-        <% end %>
       </div>
     </div>
   </div>
