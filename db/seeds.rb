@@ -1882,6 +1882,176 @@ tour_38.photos.attach(io: file_5, filename: 'BestOfTurkey5.jpg', content_type: '
 tour_38.tag_list = "Turkey Tours"
 tour_38.save
 
+tour_39 = Tour.create(title: "Discover Turkey Tour", description: "Istanbul - Cappadocia - Ephesus - Pamukkale - Troy - Pergamon", duration: "11 Days / 10 Nights", tag_text: "Limited Time", group_size: "Private", price: 1399, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Accommodations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Visit all the key sites in Turkey without the hassle of planning your own trip during this multi-day tour through most of the country's 
+attractions. Travel comfortably between locations by plane, and enjoy luxury transfers every step of the way. Tours include some leisure time, 
+so you can explore standout sights like Istanbul, Troy, Pergamon, Pamukkale, Ephesus, and Cappadocia at your own pace.</p>
+<p>Welcome to Turkey! Upon your arrival at Istanbul Airport you will be transferred in a VIP vehicle with your luggage to your hotel. 
+After some much needed rest the tour will begin.</p>
+<ul>
+  <li>Explore the beauty and history of Hagia Sophia</li>
+  <li>Admire the splendid Blue Mosque</li>
+  <li>Visit the Hippodrome and follow in the footsteps of chariot races</li>
+  <li>Stroll through the Grand Bazaar</li>
+  <li>Be amazed by the art and architecture at Topkapi Palace</li>
+  <li>Discover the ruins and temples of the legendary Ancient City of Troy</li>
+  <li>Visit the replica of the Trojan horse</li>
+  <li>Learn about the legends of Paris, Achilles and Helen of Troy</li>
+  <li>Discover the beauty of Pergamon and the Red Basilica with an expert guide</li>
+  <li>Explore the ancient city of Hierapolis</li>
+  <li>Discover Pamukkale, known as the white paradise of Turkey</li>
+  <li>Visit the well-preserved ancient city of Ephesus</li>
+  <li>Admire the remarkable Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus up into the hills above to the House of the Virgin Mary</li>
+  <li>Visit Isa Bey Mosque one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
+  <li>Marvel at fairy chimney formations in the Devrent and Pasabag valleys</li>
+  <li>See the rock-cut churches at the Göreme Open-Air Museum</li>
+  <li>Visit Uchisar Castle and Pigeon Valley, two of the most picturesque locations for photo-shoots in the world.</li>
+  <li>Discover the highlights of this UNESCO World Heritage Site in Cappadocia</li>
+  <li>Enjoy trekking in the Ihlara Valley</li>
+</ul>
+<p>At the end of your tour, check out from your hotel and relax in a private transfer to Istanbul airport for your flight back home.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Hipodrome of Constantinople</h4>
+<p> <li>Marvel at fairy chimney formations in the Devrent and Pasabag valleys</li>
+<li>See the rock-cut churches at the Göreme Open-Air Museum</li>
+<li>Visit Uchisar Castle and Pigeon Valley, two of the most picturesque locations for photo-shoots in the world.</li>
+<li>Discover the highlights of this UNESCO World Heritage Site in Cappadocia</li>
+<li>Enjoy trekking in the Ihlara Valley</li></p>
+<h4>Uchisar Town</h4>
+<p>Uchisar, which was the eastern border of Karaman emirates in the 14th century, is
+famous for its natural rock castle, Pigeon’s Valley and is the highest point in Cappadocia.
+If you join a Cappadocia tour this will be one of the destinations you will visit.
+Uchisar Castle provides a magnificent panorama of the surrounding area with Mount
+Erciyes in the distance. There are also several pigeon nests in Pigeon Valley (Guvercinlik
+in Turkish), which connects Uchisar to Goreme. Many of these cave dwellings have also
+been painted white to attract birds and their nutrient rich droppings.The fairy chimneys
+to the west, east and north of Uchisar were dug out and used as graves during the
+Roman period. Inside these rock cut tombs, the entrances, which generally face west, are
+stone slabs on which bodies were laid.</p>
+<h4>Ephesus</h4>
+<p></p></div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/Discover/Discover.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/Discover/Discover2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/Discover/Discover3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/Discover/Discover4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/Discover/Discover5.jpg'))
+
+tour_39.photos.attach(io: file_1, filename: 'Discover.jpg', content_type: 'image/jpg')
+tour_39.photos.attach(io: file_2, filename: 'Discover2.jpg', content_type: 'image/jpg')
+tour_39.photos.attach(io: file_3, filename: 'Discover3.jpg', content_type: 'image/jpg')
+tour_39.photos.attach(io: file_4, filename: 'Discover4.jpg', content_type: 'image/jpg')
+tour_39.photos.attach(io: file_5, filename: 'Discover5.jpg', content_type: 'image/jpg')
+tour_39.tag_list = "Turkey Tours"
+tour_39.save
+
+tour_40 = Tour.create(title: "Turkish Delight Tour", description: "Istanbul - Cappadocia - Ephesus - Pamukkale - Troy - Pergamon - Bursa", duration: "12 Days / 11 Nights", tag_text: "Unique", group_size: "Private", price: 2199, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Accommodations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>On this magnificent itinerary, you will explore all the highlights Turkey has to offer. With an expert guide you will journey into 
+history as you learn more about Turkey, it’s landscapes, traditions and culture on this 12-day tour. Take domestic flights between Istanbul, 
+Cappadocia, Ephesus, Pamukkale, Pergamon, Troy and Bursa and see the highlights from each destination. When on the ground, travel in luxury by 
+VIP van.</p>
+<p>Welcome to Turkey! Upon your arrival at Istanbul Airport you will be transferred in a VIP vehicle to your hotel. Then the tour will begin.</p>
+<ul>
+  <li>Explore the beauty and history of Hagia Sophia</li>
+  <li>Admire the splendid Blue Mosque</li>
+  <li>Visit the Hippodrome and follow in the footsteps of chariot races</li>
+  <li>Stroll through the Grand Bazaar</li>
+  <li>Be amazed by the art and architecture at Topkapi Palace</li>
+  <li>Discover the ruins and temples of the legendary Ancient City of Troy</li>
+  <li>Visit the replica of the Trojan horse</li>
+  <li>Learn about the legends of Paris, Achilles and Helen of Troy</li>
+  <li>Discover the beauty of Pergamon and the Red Basilica with an expert guide</li>
+  <li>Explore the ancient city of Hierapolis</li>
+  <li>Discover Pamukkale, known as the white paradise of Turkey</li>
+  <li>Discover Bursa City, the first capital city of the Ottoman Empire</li>
+  <li>Admire a 600-year-old pine tree</li>
+  li>Visit the Uludag mountain by cable car</li>
+  <li>Visit the well-preserved ancient city of Ephesus</li>
+  <li>Admire the remarkable Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus up into the hills above to the House of the Virgin Mary</li>
+  <li>Visit Isa Bey Mosque one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
+  <li>Marvel at fairy chimney formations in the Devrent and Pasabag valleys</li>
+  <li>See the rock-cut churches at the Göreme Open-Air Museum</li>
+  <li>Visit Uchisar Castle and Pigeon Valley, two of the most picturesque locations for photo-shoots in the world.</li>
+  <li>Discover the highlights of this UNESCO World Heritage Site in Cappadocia</li>
+  <li>Enjoy trekking in the Ihlara Valley</li>
+</ul>
+<p>At the end of your tour, check out from your hotel and relax in a private transfer to Istanbul airport for your flight back home.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Hipodrome of Constantinople</h4>
+<p> <li>Marvel at fairy chimney formations in the Devrent and Pasabag valleys</li>
+<li>See the rock-cut churches at the Göreme Open-Air Museum</li>
+<li>Visit Uchisar Castle and Pigeon Valley, two of the most picturesque locations for photo-shoots in the world.</li>
+<li>Discover the highlights of this UNESCO World Heritage Site in Cappadocia</li>
+<li>Enjoy trekking in the Ihlara Valley</li></p>
+<h4>Troy</h4>
+<p>Located between the Dardanelles, Sea of Marmara and Edremit Bay, the city of Troy (known as
+Troas or Troad in ancient times) is over 4000 years old. As one of the most famous excavation sites
+in the world, it has historical significance as the first place of contact made between civilisations in
+Anatolia and those of the Mediterranean World. Made famous by Homer in the Iliad, and known
+around the globe, this site has had a cultural impact on a global scale.
+If you join a Turkey package tour or a private Turkey tour you will have a chance to see that
+magnificent site from 3000 BC.</p>
+<h4>Bursa</h4>
+<p>Bursa which sits on the slopes of Uludag (Mount Olympos of Mysia) is the first capital city of Ottoman
+empire and commonly known as ‘Green Bursa.’ Rich in religious monuments, mosques, tombs
+(Turbe) and, baths it is a great place to visit and a wonderful example of Turkish history in Ottoman
+times. Places of interest include Yesil Cami (Green Mosque) known for its elaborate marble door and
+commissioned in 1412 by Sultan Mehmed and Yesil Türbe (Green Tomb), which both showcase the
+elaborate new building techniques and styles of the era. The Ethnographical Museum, as well as the
+The Yildirim Beyazit Mosque, the first mosques built in the new Ottoman style; and the Emir Sultan
+Mosque are all excellent destinations. This region is decorated with monuments of historical, cultural
+and architectural importance including the Ulu Cami (Grand Mosque) built in the Seljuk style, with
+impressive calligraphic wall decorations. A visit to the region is a must.
+We offer tours via a Turkey package tour or by a daily private tour from Istanbul.</p></div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/TurkishDelight/TurkishDelight.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/TurkishDelight/TurkishDelight2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/TurkishDelight/TurkishDelight3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/TurkishDelight/TurkishDelight4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/TurkishDelight/TurkishDelight5.jpg'))
+
+tour_40.photos.attach(io: file_1, filename: 'TurkishDelight.jpg', content_type: 'image/jpg')
+tour_40.photos.attach(io: file_2, filename: 'TurkishDelight2.jpg', content_type: 'image/jpg')
+tour_40.photos.attach(io: file_3, filename: 'TurkishDelight3.jpg', content_type: 'image/jpg')
+tour_40.photos.attach(io: file_4, filename: 'TurkishDelight4.jpg', content_type: 'image/jpg')
+tour_40.photos.attach(io: file_5, filename: 'TurkishDelight5.jpg', content_type: 'image/jpg')
+tour_40.tag_list = "Turkey Tours"
+tour_40.save
+
 # article_1 = Article.create(title: "Mesopotamia", author: "Lara Pak", author_img: "Middle East",
 # content: "<p>Mesopotamia which draws people with its fertile land from past to today is the place wherehistory of 
 # civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
