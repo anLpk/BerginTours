@@ -1497,6 +1497,391 @@ tour_33.photos.attach(io: file_5, filename: 'galli_5.jpg', content_type: 'image/
 tour_33.tag_list = "Gallipoli"
 tour_33.save
 
+tour_34 = Tour.create(title: "Colors Of Turkey", description: "Istanbul - Cappadocia - Ephesus - Pamukkale", duration: "6 Days / 5 Nights", tag_text: "Special", group_size: "Private", price: 599, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Accommodations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Explore the colours of Turkey on this 6-day tour, which includes visits to Istanbul, Ephesus, Pamukkale and Cappadocia. 
+Travel with an expert guide, breakfasts, hotel stays, domestic flights and much more included. 
+This tour will be truly beyond your wildest expectations.</p>
+<p>Welcome to Turkey! Upon your arrival at Istanbul Airport you will be transferred in a VIP vehicle to your hotel. 
+Then the package tour will begin.</p>
+<ul>
+  <li>Visit the stunning Blue Mosque, fascinating Hagia Sophia and amazing Topkapi Palace in Istanbul</li>
+  <li>See the most well known sights of Ephesus (The House of Virgin Mary, The Temple of Artemis, Isabey Mosque and Ancient City of Ephesus)</li>
+  <li>Marvel at the remarkable white paradise of Pamukkale and the ancient ruins of Hierapolis </li>
+  <li>Admire the spectacular Fairy Chimneys in Cappadocia.
+  </li>
+</ul>
+<p>At the end of your tour, check out from your hotel and relax in a private transfer 
+to Istanbul airport for your flight back home.
+</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Goreme</h4><p>The first human settlement in Goreme open-air museum dates back to 
+the first and second century AD. Christian communities lived in caves to escape persecution until Christianity was declared the 
+official religion of Rome. Once Rome became Christian these communities continued to live in caves, accepting of the difficulties of this
+environment, as it brought them closer to God. During a Cappadocia tour you will learn more about the beautiful region of Cappadocia as 
+well as its cultural and historical significance.</p>
+<h4>Blue Mosque</h4>
+<p>One of the most important aspects of any Istanbul City tour; is a visit to the Blue Mosque. The Blue Mosque built by Ahmed 
+I between 1609-1616 is an Ottoman era mosque famously known as Blue Mosque due to the blue Iznik tiles, which decorate the interior 
+walls of the mosque. The Blue Mosque is also unique as it is the only mosque in Istanbul with six minarets (towers) and is
+considered to be one of the last great mosques of the classical period. Mixing Byzantine elements with traditional Islamic architecture. 
+Visitors are amazed by 21,000 Iznik tiles in the mosque, which feature imagery of cypress trees, flowers and fruits.</p>
+<h4>Pamukkale</h4>
+<p>One of Turkey’s most famous sites Pamukkale (Cotton Castle) is a popular attraction on any Turkey Tour. 
+Pamukkale a UNESCO world heritage site features a unique landscape of white travertines, which hang from the hills as a result of 
+calcium bicarbonate deposits that have petrified and formed for over 400, 000 years. Filled with bright blue
+water, and considered to have healing powers as a thermal spring, this location has become a unique tourism and wellness destination. 
+Located next to the ancient city of Hierapolis, with well preserved Roman ruins and Cleopatra’s pool this is a wonderful destination to visit.</p></div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/ColorsOfTurkey/ColorsOfTurkey.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/ColorsOfTurkey/ColorsOfTurkey2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/ColorsOfTurkey/ColorsOfTurkey3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/ColorsOfTurkey/ColorsOfTurkey4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/ColorsOfTurkey/ColorsOfTurkey5.jpg'))
+
+tour_34.photos.attach(io: file_1, filename: 'ColorsOfTurkey.jpg', content_type: 'image/jpg')
+tour_34.photos.attach(io: file_2, filename: 'ColorsOfTurkey2.jpg', content_type: 'image/jpg')
+tour_34.photos.attach(io: file_3, filename: 'ColorsOfTurkey3.jpg', content_type: 'image/jpg')
+tour_34.photos.attach(io: file_4, filename: 'ColorsOfTurkey4.jpg', content_type: 'image/jpg')
+tour_34.photos.attach(io: file_5, filename: 'ColorsOfTurkey5.jpg', content_type: 'image/jpg')
+tour_34.tag_list = "Turkey Tours"
+tour_34.save
+
+tour_35 = Tour.create(title: "Classic Turkey Tour", description: "Istanbul - Cappadocia - Ephesus - Pamukkale", duration: "8 Days / 7 Nights", tag_text: "Unique", group_size: "Private", price: 699, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Accommodations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Discover the Classics of Turkey on this 8-day tour, which includes visits to Istanbul, Ephesus, Pamukkale and Cappadocia. 
+Breakfasts, accommodation, domestic flights and much more included. Prepare to be amazed by this experience.</p>
+<p>Welcome to Turkey! Upon your arrival at Istanbul Airport you will be transferred in a VIP vehicle with your luggage to your hotel. 
+Then the package tour will begin.</p>
+<p>Upon your arrival at Istanbul Airport you will be greeted by an expert guide with a VIP vehicle to transport you to your hotel. 
+After this, the tour will begin.</p>
+<ul>
+  <li>Visit the stunning Blue Mosque, fascinating Hagia Sophia and amazing Topkapi Palace in Istanbul</li>
+  <li>See the most well known sights of Ephesus (The House of Virgin Mary, The Temple of Artemis, Isabey Mosque and Ancient City of Ephesus)</li>
+  <li>Marvel at the remarkable white paradise of Pamukkale and the ancient ruins of Hierapolis </li>
+  <li>Admire the spectacular Fairy Chimneys and trek in unique valleys in Cappadocia.</li>
+</ul>
+<p>At the end of your tour, check out from your hotel and relax in a private transfer to Istanbul airport for your flight back home.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Goreme</h4><p>The first human settlement in Goreme open-air museum dates back to 
+the first and second century AD. Christian communities lived in caves to escape persecution until Christianity was declared the 
+official religion of Rome. Once Rome became Christian these communities continued to live in caves, accepting of the difficulties of this
+environment, as it brought them closer to God. During a Cappadocia tour you will learn more about the beautiful region of Cappadocia as 
+well as its cultural and historical significance.</p>
+<h4>Hagia Sophia</h4>
+<p>In the year of 532 AD the construction of the biggest church in the world commenced. The architects of Hagia Sophia came from the lands 
+of Ionia; Antemius from Tralleis and Isidoros from city of genius Miletos. The church completed after five years of construction 
+opened on the 27th December 532 and was the largest Christian church of the Byzantine Empire (Eastern Roman Empire). The church was
+dedicated to the Holy Wisdom, the Logos, and the second person of the Trinity. After the Fall of Constantinople to the Ottoman Empire in 
+1453 it was converted to a mosque by Mehmed the Conqueror. Hagia Sophia remained a mosque until 1931 before re-opening years later
+as a museum to be preserved and shared as a historical meeting point for two religions. In 2020 Hagia Sophia once again was used as a 
+mosque but remains open to the public as an important and protected site for all.
+This beautiful monument, and one of the cities most popular and inspiring attractions can be seen by booking a tour of Istanbul.</p>
+<h4>Ephesus</h4>
+<p></p></div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/ClassicTurkey/ClassicTurkey.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/ClassicTurkey/ClassicTurkey2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/ClassicTurkey/ClassicTurkey3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/ClassicTurkey/ClassicTurkey4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/ClassicTurkey/ClassicTurkey5.jpg'))
+
+tour_35.photos.attach(io: file_1, filename: 'ClassicTurkey.jpg', content_type: 'image/jpg')
+tour_35.photos.attach(io: file_2, filename: 'ClassicTurkey2.jpg', content_type: 'image/jpg')
+tour_35.photos.attach(io: file_3, filename: 'ClassicTurkey3.jpg', content_type: 'image/jpg')
+tour_35.photos.attach(io: file_4, filename: 'ClassicTurkey4.jpg', content_type: 'image/jpg')
+tour_35.photos.attach(io: file_5, filename: 'ClassicTurkey5.jpg', content_type: 'image/jpg')
+tour_35.tag_list = "Turkey Tours"
+tour_35.save
+
+tour_36 = Tour.create(title: "Flying Carpet Tour", description: "Istanbul - Cappadocia - Pergamon - Ephesus - Pamukkale", duration: "9 Days / 8 Nights", tag_text: "Unique", group_size: "Private", price: 799, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Accommodations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Discover history, culture and nature combined on this Turkey package tour. Enjoy all the highlights of Turkey with this extraordinary tour.
+Explore and unpack the layers of history in Istanbul. Experience the ancient ruins of Ephesus and walk through the white travertines 
+of Pamukkale. See the jaw-dropping fairy chimneys of Cappadocia and discover Pergamon with an expert biblical tour guide.</p>
+<p>Welcome to Turkey! Upon your arrival at Istanbul Airport you will be transferred in a VIP vehicle to your hotel. 
+Then the package tour will begin.</p>
+<ul>
+  <li>Explore the beauty and history of Hagia Sophia</li>
+  <li>Admire the splendid Blue Mosque</li>
+  <li>Visit the Hippodrome and follow in the footsteps of chariot races</li>
+  <li>Stroll through the Grand Bazaar</li>
+  <li>Marvel at the art and architecture at Topkapi Palace</li>
+  <li>Discover the beauty of Pergamon and the Red Basilica with an expert guide.</li>
+  <li>Visit the well-preserved ancient city of Ephesus</li>
+  <li>Admire the fascinating Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus up into the hills above to the House of the Virgin Mary</li>
+  <li>Visit Isa Bey Mosque one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
+  <li>Take a plunge in the tranquil hot springs in Pamukkale</li>
+  <li>Admire the sarcophagi of Hierapolis</li>
+  <li>Marvel at the fairy chimney formations in the Devrent and Pasabag valleys</li>
+  <li>See the rock-cut churches at the Göreme Open-Air Museum</li>
+  <li>Visit Uchisar Castle and Pigeon Valley, two of the most picturesque locations for photo-shoots in the world.</li>
+  <li>Discover the highlights of this UNESCO World Heritage site in Cappadocia</li>
+  <li>Visit typical Anatolian villages and their rock-cut churches</li>
+  <li>Enjoy trekking in the Ihlara Valley</li>
+</ul>
+<p>At the end of your tour, check out from your hotel and relax in a private transfer to Istanbul airport for your flight back home.
+</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Grand Bazaar</h4><p>The Grand Bazaar came to life in the 15th century when 
+Sultan Mehmed II ordered the construction of two stone Bedesten (domed buildings), where merchants could sell their goods, 
+in order to amass income for the Ayasofya Mosque. These two Bedesten, named Cevahir and Sandal, quickly became a central artery in 
+Istanbul’s commerce activities. When numerous stalls and shops began to pop up around the Bedesten, they were roofed over, and after 
+250 years the bazaar morphed into the structure it is today. Surviving many fires and earthquakes, you will have a chance to explore the
+shopping streets of the Grand Bazaar during a tour of Turkey and Istanbul.</p>
+<h4>Ihlara Valley</h4>
+<p>The Melendiz River is located to the east of Tuz Gölü Fault Zone in western Cappadocia.
+In the central part of Melendiz River Valley, Ihlara Canyon attracts many tourists due to
+its landscape, cultural and archaeological values. The Melendiz Valley also encompasses
+geological and geomorphological features that exemplify the evolutionary history of
+western Cappadocia. Visitors on foot also enjoy the many churches carved into the walls
+of the valley. With four entrances to Ihlara valley, Belisirma village allows you to enter
+the valley by driving and is located in the middle of the valley. Belisirma also has several
+restaurants by Melendiz River, which are popular for lunch. Most of our Cappadocia
+Turkey Tours conclude walking here after lunch.</p>
+<h4>House of the Virgin Marry</h4>
+<p></p></div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetTour/FlyingCarpet.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetTour/FlyingCarpet2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetTour/FlyingCarpet3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetTour/FlyingCarpet4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetTour/FlyingCarpet5.jpg'))
+
+tour_36.photos.attach(io: file_1, filename: 'FlyingCarpet.jpg', content_type: 'image/jpg')
+tour_36.photos.attach(io: file_2, filename: 'FlyingCarpet2.jpg', content_type: 'image/jpg')
+tour_36.photos.attach(io: file_3, filename: 'FlyingCarpet3.jpg', content_type: 'image/jpg')
+tour_36.photos.attach(io: file_4, filename: 'FlyingCarpet4.jpg', content_type: 'image/jpg')
+tour_36.photos.attach(io: file_5, filename: 'FlyingCarpet5.jpg', content_type: 'image/jpg')
+tour_36.tag_list = "Turkey Tours"
+tour_36.save
+
+tour_37 = Tour.create(title: "Highlights of Turkey", description: "Istanbul - Cappadocia - Pergamon - Ephesus - Pamukkale - Ankara - Konya - Troy - Gallipoli", duration: "12 Days / 11 Nights", tag_text: "Speciall Offer", group_size: "Private", price: 1999, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Accommodations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Explore Turkey with Turkey Tours Company and this 12 Days Turkey Package Tour including Istanbul, Ankara, Cappadocia, Konya, 
+Pamukkale, Ephesus, Pergamon, Troy and Gallipoli. </p>
+<p>Welcome to Turkey! Upon your arrival at Istanbul Airport you will be transferred in a VIP vehicle to your hotel. 
+The tour will commence after some much needed rest to prepare you for this exciting tour. </p>
+<ul>
+  <li>Explore the beauty and history of Hagia Sophia</li>
+  <li>Admire the splendid Blue Mosque</li>
+  <li>Visit the Hippodrome and follow in the footsteps of chariot races</li>
+  <li>Stroll through the Grand Bazaar</li>
+  <li>Marvel at the art and architecture at Topkapi Palace</li>
+  <li>Learn about and enjoy Ankara through the eyes of passionate locals</li>
+  <li>Learn about Ankara city’s many best-kept secrets</li>
+  <li>Marvel at the fairy chimney formations in the Devrent and Pasabag valleys</li>
+  <li>See the rock-cut churches at the Göreme Open-Air Museum</li>
+  <li>Visit Uchisar Castle and Pigeon Valley, two of the most picturesque locations for photo-shoots in the world.</li>
+  <li>Discover the highlights of this UNESCO World Heritage site in Cappadocia</li>
+  <li>Visit typical Anatolian villages and their rock-cut churches</li>
+  <li>Enjoy trekking in the Ihlara Valley</li>
+  <li>Explore the incredible history of a dervish lodge in Konya</li>
+  <li>Marvel at breathtaking works of art in Konya</li>
+  <li>Embark on a spiritual journey through the Sufis of Konya</li>
+  <li>Take a plunge in the tranquil hot springs in Pamukkale</li>
+  <li>Admire the sarcophagi of Hierapolis</li>
+  <li>Admire the sarcophagi of Hierapolis Visit the well-preserved ancient city of Ephesus</li>
+  <li>Admire the fascinating Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus up into the hills above to the House of the Virgin Mary</li>
+  <li>Visit Isa Bey Mosque one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
+  <li>Discover the beauty of Pergamon and Red Basilica with an expert guide.</li>
+  <li>Discover the ruins and temples of the legendary Ancient City of Troy</li>
+  <li>Visit the replica of the Trojan horse</li>
+  <li>Discover the war memorials and battlefields of Gallipoli</li>
+  <li>Learn in depth about the ANZAC troops</li>
+</ul>
+<p>At the end of your tour, check out from your hotel and relax in a private transfer to Istanbul airport for your flight back home.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Troy</h4><p>Located between the Dardanelles, Sea of Marmara and Edremit Bay, 
+the city of Troy (known as ‘Troas’ or ‘Troad’ in ancient times) is over 4000 years old. As one of the most famous excavation sites
+in the world, it has historical significance as the first place of contact made between civilisations in Anatolia and those of the 
+Mediterranean World. Made famous by Homer in the Iliad, and known around the globe, this site has had a cultural impact on a global scale.
+If you join a Turkey package tour or a private Turkey tour you will have a chance to see that magnificent site from 3000 BC.</p>
+<h4>Goreme</h4>
+<p>The first human settlement in Goreme open-air museum dates back to the first and
+second century AD. Christian communities lived in caves to escape persecution until
+Christianity was declared the official religion of Rome. Once Rome became Christian
+these communities continued to live in caves, accepting of the difficulties of this
+environment, as it brought them closer to God. During a Cappadocia tour you will learn
+more about the beautiful region of Cappadocia as well as its cultural and historical
+significance.</p>
+<h4>Topkapi Palace</h4>
+<p>As a part of a Guided Istanbul tour Topkapı Palace is one of the most important examples of Ottoman
+rule and influence during the Ottoman reign. Commissed by Mehmed II after conquering
+Constantinople, the capital of the Byzantine Empire in 1453. Members of the Ottoman Court resided
+in Topkapi Palace from 1478 to 1856, which house 30 sultans for over 400 years during the empires
+600 year reign.Acting as the centre of power, this palace is a physical example of the changing architecture of the
+period and interests of each sultan, with visitors to Topkapi seeing first hand various additions to the
+palace as a result of each new Sultan adding their influences to the space. This includes architectural
+styles including: Islamic, Ottoman and European architecture and decor.
+The palace, the royal residence of the sultan and the centre of social issues and government is a
+complex structure featuring four main courtyards. Each courtyard symbolises the relationship
+between the administrative, residential and auxiliary and each courtyard was designed to be more
+restricted than the previous; symbolising the importance of the inner sanctum. The palace housed
+over 1000-4000 people including 300 in the harem and is a pivotal stop on any Istanbul tour.</p></div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/Highlights/Highlights.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/Highlights/Highlights2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/Highlights/Highlights3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/Highlights/Highlights4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/Highlights/Highlights5.jpg'))
+
+tour_37.photos.attach(io: file_1, filename: 'Highlights.jpg', content_type: 'image/jpg')
+tour_37.photos.attach(io: file_2, filename: 'Highlights2.jpg', content_type: 'image/jpg')
+tour_37.photos.attach(io: file_3, filename: 'Highlights3.jpg', content_type: 'image/jpg')
+tour_37.photos.attach(io: file_4, filename: 'Highlights4.jpg', content_type: 'image/jpg')
+tour_37.photos.attach(io: file_5, filename: 'Highlights5.jpg', content_type: 'image/jpg')
+tour_37.tag_list = "Turkey Tours"
+tour_37.save
+
+tour_38 = Tour.create(title: "Best of Turkey", description: "Istanbul - Cappadocia - Ephesus - Pamukkale - Antalya", duration: "12 Days / 11 Nights", tag_text: "Limited Time", group_size: "Private", price: 1699, 
+include: "<div>
+<ul class=\"list-inline mr-5\">
+  <li><i class=\"fas fa-check mr-2\"></i>All Domestic Flight Tickets</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Airport Transportations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Accommodations</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Entrance Fees</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Professional Licensed Tour Guide</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Lunch</li>
+  <li><i class=\"fas fa-check mr-2\"></i>Hotel Pick Up & Drop Off</li>
+  <li><i class=\"fas fa-check mr-2\"></i>All Local Taxes</li>
+</ul>
+</div>", exclude: "<div>
+<ul class=\"list-inline\">
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Personal Expenses</li>
+  <li><i class=\"fas fa-exclamation mr-2\"></i></i>Drinks</li>
+</ul>
+</div>", schedule: "<div>
+<p>Immerse yourself in the great archaeological sites and natural landscapes of Turkey at your own pace on a private 12-day tour from Istanbul. 
+Visit magnificent cities like Istanbul, Cappadocia, Ephesus, Pamukkale and Antalya with the comfort and expertise of a private guide</p>
+<p> Visit ancient monuments, breath-taking natural landscapes and enrich your knowledge of Turkey’s history and culture. 
+Enjoy private transportation by luxury vehicle and relish the freedom to choose your own path throughout the tour.</p>
+<p>Welcome to Turkey! Upon your arrival at Istanbul Airport you will be transferred in a VIP vehicle to your hotel. Then the Best of Turkey package tour will begin.</p>
+<ul>
+  <li>Explore the beauty and history of Hagia Sophia</li>
+  <li>Admire the splendid Blue Mosque</li>
+  <li>Visit the Hippodrome and follow in the footsteps of chariot races</li>
+  <li>Stroll through the Grand Bazaar</li>
+  <li>Be amazed by the art and architecture at Topkapi Palace</li>
+  <li>Marvel at fairy chimney formations in the Devrent and Pasabag valleys</li>
+  <li>See the rock-cut churches at the Göreme Open-Air Museum</li>
+  <li>Visit Uchisar Castle and Pigeon Valley, two of the most picturesque locations for photo-shoots in the world.</li>
+  <li>Discover the highlights of this UNESCO World Heritage Site in Cappadocia</li>
+  <li>Enjoy trekking in the Ihlara Valley</li>
+  <li>Admire the sarcophagi of Hierapolis</li>
+  <li>Take a plunge in the tranquil hot springs in Pamukkale</li>
+  <li>Admire the sarcophagi of Hierapolis Visit the well-preserved ancient city of Ephesus</li>
+  <li>Admire the fascinating Temple Of Artemis</li>
+  <li>Take a trip outside of Ephesus up into the hills above to the House of the Virgin Mary</li>
+  <li>Visit Isa Bey Mosque one of the only remaining examples of architectural art from the Anatolian Beyliks</li>
+  <li>Explore the ruins of the ancient city of Perge</li>
+  <li>See the stunning Roman amphitheatre in Aspendos</li>
+  <li>Enjoy a stop at Kursunlu Waterfalls Natural Park</li>
+</ul>
+<p>At the end of your tour, check out from your hotel and relax in a private transfer to Istanbul airport for your flight back home.</p>
+</div>", history: "<div class=\"accordion-text\"><h4>Antalya</h4><p>Antalya located in the west of the Mediterranean is a tourism hub in Turkey. 
+Antalya, is a place where sea, sun, history and nature create a perfect harmony. Known for its crystal clear waters,
+beautiful landscape and historical significance it is a wonderful destination catering to all visitors.
+In ancient times the region was known as Pamphylia which means &quot;the land of all tribes&quot; the region
+was given this namesake as it was ruled by many civilisations and represented a colourful mixture of
+people; while being considered by many as one of the most beautiful destinations on earth.
+The most visited parts of Antalya include: Yivli Minaret from the 14th century, Kaleici (old town),
+Antalya Archaeology Museum, Duden and Kursunlu waterfalls, Perge and Termessos ancient cities.
+Which may be visited via private Turkey tours.</p>
+<h4>Hierapolis Ancient City</h4>
+<p>The ancient city of Hierapolis-Pamukkale is an ancient spa town founded at the end of
+2nd century B.C. Under UNESCO world heritage protection, this site is regarded as an
+important destination for those who wish to visit the ancient city and the white
+travertines of Pamukkale known as ‘Cotton Castle’. Many ancient remains of Greco-
+Roman times remain including: The City Walls, Theatre, St. Philip’s Martyrium,
+Churches, Great Bath Complex, Temple of Apollo, and The Necropolis. With a striking
+landscape, the opportunity to swim in the therapeutic springs, and the unique
+panorama, this is a popular destination for many on our tours.</p>
+<h4>Blue Mosque</h4>
+<p>One of the most important aspects of any Istanbul City tour; is a visit to the Blue Mosque. The Blue
+Mosque built by Ahmed I between 1609-1616 is an Ottoman era mosque famously known as Blue
+Mosque due to the blue Iznik tiles, which decorate the interior walls of the mosque. The Blue
+Mosque is also unique as it is the only mosque in Istanbul with six minarets (towers) and is
+considered to be one of the last great mosques of the classical period. Mixing Byzantine elements
+with traditional Islamic architecture. Visitors are amazed by 21,000 Iznik tiles in the mosque, which
+feature imagery of cypress trees, flowers and fruits.</p></div>")
+
+file_1 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/BestOfTurkey/BestOfTurkey.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/BestOfTurkey/BestOfTurkey2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/BestOfTurkey/BestOfTurkey3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/BestOfTurkey/BestOfTurkey4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/BestOfTurkey/BestOfTurkey5.jpg'))
+
+tour_38.photos.attach(io: file_1, filename: 'BestOfTurkey.jpg', content_type: 'image/jpg')
+tour_38.photos.attach(io: file_2, filename: 'BestOfTurkey2.jpg', content_type: 'image/jpg')
+tour_38.photos.attach(io: file_3, filename: 'BestOfTurkey3.jpg', content_type: 'image/jpg')
+tour_38.photos.attach(io: file_4, filename: 'BestOfTurkey4.jpg', content_type: 'image/jpg')
+tour_38.photos.attach(io: file_5, filename: 'BestOfTurkey5.jpg', content_type: 'image/jpg')
+tour_38.tag_list = "Turkey Tours"
+tour_38.save
+
 # article_1 = Article.create(title: "Mesopotamia", author: "Lara Pak", author_img: "Middle East",
 # content: "<p>Mesopotamia which draws people with its fertile land from past to today is the place wherehistory of 
 # civilization began; mankind abandoned nomadic life to becomesedentary; mankind started growing wheat; first 
