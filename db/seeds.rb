@@ -1688,11 +1688,11 @@ Turkey Tours conclude walking here after lunch.</p>
 <h4>House of the Virgin Marry</h4>
 <p></p></div>")
 
-file_1 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetTour/FlyingCarpet.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetTour/FlyingCarpet2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetTour/FlyingCarpet3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetTour/FlyingCarpet4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetTour/FlyingCarpet5.jpg'))
+file_1 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetsTour/FlyingCarpet.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetsTour/FlyingCarpet2.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetsTour/FlyingCarpet3.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetsTour/FlyingCarpet4.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/TurkeyTours/FlyingCarpetsTour/FlyingCarpet5.jpg'))
 
 tour_36.photos.attach(io: file_1, filename: 'FlyingCarpet.jpg', content_type: 'image/jpg')
 tour_36.photos.attach(io: file_2, filename: 'FlyingCarpet2.jpg', content_type: 'image/jpg')
