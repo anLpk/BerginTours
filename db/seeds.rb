@@ -535,16 +535,16 @@ features architectural influences from the Baroque, Rocco and Neoclassical style
 Visitors will see the extensive use of gold and crystal, which has been used as decoration throughout the palace.</p></div>")
 
 file_1 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_9.jpg'))
-file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_2.jpg'))
-file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_3.jpg'))
-file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_4.jpg'))
-file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/afternoon_5.jpg'))
+file_2 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/bosp_9.jpg'))
+file_3 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/bosp_7.jpg'))
+file_4 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/bosp_8.jpg'))
+file_5 = File.open(File.join(Rails.root,'app/assets/images/Istanbul/afternoon/bosp_10.jpg'))
 
 tour_11.photos.attach(io: file_1, filename: 'afternoon_9.jpg', content_type: 'image/jpg')
-tour_11.photos.attach(io: file_2, filename: 'afternoon_2.jpg', content_type: 'image/jpg')
-tour_11.photos.attach(io: file_3, filename: 'afternoon_3.jpg', content_type: 'image/jpg')
-tour_11.photos.attach(io: file_4, filename: 'afternoon_4.jpg', content_type: 'image/jpg')
-tour_11.photos.attach(io: file_5, filename: 'afternoon_5.jpg', content_type: 'image/jpg')
+tour_11.photos.attach(io: file_2, filename: 'bosp_9.jpg', content_type: 'image/jpg')
+tour_11.photos.attach(io: file_3, filename: 'bosp_7.jpg', content_type: 'image/jpg')
+tour_11.photos.attach(io: file_4, filename: 'bosp_8.jpg', content_type: 'image/jpg')
+tour_11.photos.attach(io: file_5, filename: 'bosp_10.jpg', content_type: 'image/jpg')
 tour_11.tag_list = "Istanbul"
 tour_11.save
 
